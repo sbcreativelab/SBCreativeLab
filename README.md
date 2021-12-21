@@ -1,6 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-On Heroku at sbcreativelab.herokuapp.com.
-Use git push heroku master to deploy.
+This branch has continuous deployment setup on netlify as a branch deploy.
 
 ## Available Scripts
 
