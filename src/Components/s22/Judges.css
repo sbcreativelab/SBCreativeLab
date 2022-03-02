@@ -1,0 +1,88 @@
+@media screen and (max-width: 1000px) {
+    .judges-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10vmin;
+        align-items: center;
+        padding: 0;
+        scroll-behavior: none;
+    }
+}
+
+@media screen and (max-width: 2000px){
+    .judges-card-container {
+        padding-left: 10vmin;
+        padding-right: 10vmin;
+        display: flex;
+        overflow: scroll;
+        gap: 10vmin;
+    }
+}
+
+.judges {
+    background-color: #FFE2DE;
+    padding-top: 20vmin;
+    padding-bottom: 20vmin;
+    display: flex;
+    flex-direction: column;
+    gap: 10vmin;
+}
+
+.judges-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.p-bold {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.p {
+    font-size: 1.3em;
+    margin: 0;
+    white-space: initial;
+}
+
+.images-container {
+    position: relative;
+}
+
+.headshot-img {
+    align-self: baseline;
+    position: relative;
+}
+
+.company-img {
+    opacity: 0;
+    align-self: baseline;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.company-img:hover {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 300ms;
+}
+
+.judges-title {
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}

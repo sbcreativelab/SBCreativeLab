@@ -1,0 +1,20 @@
+.faq-container {
+    padding-left: 10vmin; 
+    padding-right: 10vmin; 
+    padding-bottom: 10vmin;
+    padding-top: 0;
+    background-color: #FFE2DE;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10vmin;
+    width: 100%;
+}
+
+.faq-title {
+    width: 50%;
+}
+
+.faq-content {
+    width: 100%;
+}

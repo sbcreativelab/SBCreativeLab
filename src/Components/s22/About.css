@@ -1,0 +1,30 @@
+.about {
+    padding-top: 25vmin;
+    background-color: #FFE2DE;
+}
+
+.about-title {
+    width: 100%;
+}
+
+.about-content {
+    align-items: flex-start;
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+    padding-top: 10vmin;
+    display: flex;
+    flex-direction: row;
+    gap: 20vmin;
+}
+
+.about-text {
+    font-size: 1.9em;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.finn-orange {
+    width: 100%;
+    margin-top: 10vmin;
+}

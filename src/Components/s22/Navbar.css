@@ -1,0 +1,21 @@
+.sticky {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6vmin;;
+    padding-left: 6vmin;
+    padding-right: 6vmin;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.image {
+    width: 100%;
+}

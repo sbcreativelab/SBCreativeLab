@@ -1,0 +1,53 @@
+@media screen and (max-width: 1000px) {
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        gap: 15vmin;
+        align-items: center;
+    }
+
+    .figma {
+        width: 80%;
+    }
+    
+    .balsamiq {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .sponsors {
+        padding-left: 20vmin;
+        padding-right: 20vmin;
+        padding-top: 10vmin;
+        padding-bottom: 10vmin;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .figma {
+        margin-right: auto;
+        width: 25%;
+    }
+    
+    .balsamiq {
+        width: 25%;
+    }
+}
+
+.sponsors-container {
+    padding-left: 10vmin; 
+    padding-right: 10vmin; 
+    padding-bottom: 10vmin;
+    padding-top: 0;
+    background-color: #FFE2DE;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10vmin;
+}
+
+.title {
+    width: 40%;
+}
+

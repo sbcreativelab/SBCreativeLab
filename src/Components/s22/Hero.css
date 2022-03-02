@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+}
+
+.hero-background {
+    background-color: #527983;
+    padding: 6vmin;
+    padding-bottom: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.date {
+    position: absolute;
+    top: 60vmin;
+    width: 5vmin;
+    left: 10vmin;
+}
+
+.apply-now {
+    position: absolute;
+    bottom: -5vmin;
+    width: 80vmin;
+    right: 10vmin;
+}
+
+.apply-now:hover {
+    opacity:0;
+}
+
+.apply-now-hover {
+    position: absolute;
+    bottom: -5vmin;
+    width: 80vmin;
+    right: 10vmin;
+}
