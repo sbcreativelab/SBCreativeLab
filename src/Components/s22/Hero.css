@@ -15,10 +15,10 @@
     width: 100%;
 }
 
-.date {
+.date-frame {
     position: absolute;
-    top: 60vmin;
-    width: 5vmin;
+    top: 50vmin;
+    width: 4.5vmin;
     left: 10vmin;
 }
 

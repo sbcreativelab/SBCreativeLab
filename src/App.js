@@ -15,7 +15,9 @@ import ReactGA from 'react-ga'
 import Navbar from './Components/s22/Navbar'
 import Hero from './Components/s22/Hero'
 import About from './Components/s22/About'
+import Timeline from './Components/s22/Timeline'
 import Judges from './Components/s22/Judges'
+import Mentors from './Components/s22/Mentors'
 import FAQ from './Components/s22/FAQ'
 import Sponsors from './Components/s22/Sponsors'
 import Footer from './Components/s22/Footer'
@@ -48,9 +50,9 @@ export class App extends Component {
           <Hero />
           <Navbar />
           <About />
-          {/* <Timeline /> */}
+          <Timeline />
           <Judges />
-          {/* Mentors */}
+          <Mentors />
           <FAQ />
           <Sponsors />
           <Footer />

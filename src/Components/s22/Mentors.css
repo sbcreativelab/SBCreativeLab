@@ -1,0 +1,104 @@
+.mentors{
+    background-color: #527983;
+    padding: 5em;
+}
+
+.mentors-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10vmin;
+}
+
+.mentor-p {
+    color:#FFE2DE;
+    font-family: 'Poppins';
+    font-size:1.5em;
+}
+
+.mentor-p-desc {
+    color:#FFE2DE;
+    font-family: 'Poppins';
+    font-size:1.5em;
+    margin-bottom: 2.5em;  
+    margin-top: 1em;
+}
+
+.mentor-bold {
+    color:#FFE2DE;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size:1.2em;
+    margin: 0;
+}
+
+.mentor-p {
+    color:#FFE2DE;
+    font-family: 'Poppins';
+    font-size:1em;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+}
+
+.details{
+    padding-top:3em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+}
+
+
+.names{
+    font-weight:bold;
+    padding-right:2em;
+}
+
+.photos{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.mentor-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.images-container {
+    position: relative;
+}
+
+.headshot-img {
+    align-self: baseline;
+    position: relative;
+}
+
+.company-img {
+    opacity: 0;
+    align-self: baseline;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.company-img:hover {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 300ms;
+}

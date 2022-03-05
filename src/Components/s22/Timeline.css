@@ -1,0 +1,281 @@
+body {
+    background-color: #3A2F56;
+    margin: 0;
+}
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vmin;
+  padding-bottom: 15vmin;
+  gap: 8vmin;
+}
+  
+  .line1 {
+    grid-area: line1;
+  }
+  
+  .line2 {
+    grid-area: line2;
+  }
+  
+  .line3 {
+    grid-area: line3;
+    margin-top: 2px;
+  }
+  
+  .words {
+    font-family: Syncopate;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1.5em;
+    /* or 105% */
+  
+    letter-spacing: -0.02em;
+    color: #FFE2DE;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .words-and-finn {
+    display: flex;
+    flex-direction: row;
+    grid-area: w-a-f;
+    padding-top: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 75px;
+  }
+  
+  .finn-line {
+    /* margin-right: 20px; */
+    position: relative;
+  }
+  
+  .finn-overlay {
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; */
+    opacity: 0;
+    transition: .6s ease;
+  }
+  
+  .finn-container:hover .finn-overlay {
+    opacity: 1;
+  }
+  
+  .finn-colored {
+    -webkit-transform: translate(0, -102%);
+    -ms-transform: translate(0, -102%);
+    transform: translate(0, -102%);
+    position: absolute;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .timeline {
+    grid-area: timeline;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  
+  .pixelate {
+    color: #46C2C0;
+  }
+  
+  .deadline {
+    color: #46C2C0;
+    font-weight: bolder;
+  }
+  
+  .closing {
+    color: #46C2C0;
+    font-weight: bolder;
+  }
+  
+  .timeline-date {
+    font-family: Syncopate;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    letter-spacing: 0.15em;
+    color: #FFE2DE;
+  }
+
+  .timeline-date-bold {
+    font-family: Syncopate;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5em;
+    letter-spacing: 0.15em;
+    color: #46C2C0;
+  }
+
+  .timeline-p-bold {
+    font-family: Syncopate;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #46C2C0;
+  }
+  
+  .timeline-wrapper {
+    z-index: 1;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .timeline-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .day {
+    display: inline-block;
+    font-size: 100px;
+    max-width: 400px;
+    height: 500px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 83px 131px;
+    max-width: 400px;
+    min-width: 0;
+    word-wrap: break-word;
+  }
+  
+  .layer-1, .layer-2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .layer-3 {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 400px;
+  }
+
+  .card-words {
+    white-space: pre-wrap;
+    width: 52vmin;
+    color: #FFE6DE;
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+
+  .card-words-bold {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: underline;
+    color: #46C2C0;
+  }
+  
+  .card-words-07-1, .card-words-07-2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFE6DE;
+    /* white-space: pre-line; */
+    flex-wrap: wrap;
+  }
+
+  .timeline-card-first {
+    padding: 5vmin;
+    width: 100vmin;
+    border-width: 2px 0px 2px 2px; /* top right bottom left */
+    border-style: solid;
+    border-color: #FFE6DE;
+  }
+
+  .timeline-card {
+    padding: 5vmin;
+    width: 50%;
+    border-width: 2px 0px 2px 2px; /* top right bottom left */
+    border-style: solid;
+    border-color: #FFE6DE;
+  }
+
+  .timeline-card-last {
+    padding: 5vmin;
+    width: 100vmin;
+    border-width: 2px 2px 2px 2px; /* top right bottom left */
+    border-style: solid;
+    border-color: #FFE6DE;
+  }
+  
+  .card-words1 span {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-top: 50px;
+  }
+  
+  .card-words-08-1, .card-words-08-2, .card-words-08-3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFE6DE;
+    padding: 0;
+    margin-left: 25px;
+  
+    white-space: pre-line;
+  }
+  
+  .card-words-09-1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFE6DE;
+    padding: 0;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  
+    white-space: pre-line;
+  }
+  
+  .emph07 {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .emph10 {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #46C2C0;
+  }
+  
+  .card-num {
+    margin-top: 30px;
+    margin-left: 25px;
+    padding-bottom: 30px;
+  }
+
+  .gradient-wrapper {
+    position: relative;
+  }
+
+  .timeline-gradient {
+    position: fixed;
+    z-index: 100;
+    margin-left: auto;
+  }

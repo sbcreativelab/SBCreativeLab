@@ -1,8 +1,5 @@
 .faq-container {
-    padding-left: 10vmin; 
-    padding-right: 10vmin; 
-    padding-bottom: 10vmin;
-    padding-top: 0;
+    padding: 10vmin;
     background-color: #FFE2DE;
     
     display: flex;
@@ -13,6 +10,7 @@
 
 .faq-title {
     width: 50%;
+    padding-left: 10vmin;
 }
 
 .faq-content {
