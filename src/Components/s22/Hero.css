@@ -33,11 +33,12 @@
     bottom: -5vmin;
     width: 80vmin;
     right: 10vmin;
+    transition: .5s;
 }
 
-.apply-now:hover {
+/* .apply-now:hover {
     opacity:0;
-}
+} */
 
 .apply-now-hover {
     position: absolute;
@@ -45,3 +46,43 @@
     width: 80vmin;
     right: 10vmin;
 }
+
+.apply-button {
+    position: absolute;
+    bottom: 208px;
+    margin-left: 692px;
+    width: 577.14px;
+    height: 58.25px;
+    transition: .5s;
+}
+
+/* .apply-button:hover {
+    opacity: 0;
+}
+
+.apply-button-container:hover .apply-now {
+    opacity: 0;
+} */
+
+.apply-button-container:hover .apply-button {
+    opacity: 0;
+}
+
+.apply-button-container:hover .apply-now {
+    opacity: 0;
+}
+
+.apply-button-overlay {
+    position: absolute;
+    bottom: 214px;
+    margin-left: 730px;
+    width: 502px;
+    height: auto;
+}
+
+
+
+
+
+
+
