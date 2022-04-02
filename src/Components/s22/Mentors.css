@@ -1,12 +1,26 @@
+@media screen and (min-width: 1000px) {
+    .mentors-card-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10vmin;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mentors-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10vmin;
+    }
+}
+
 .mentors{
     background-color: #527983;
     padding: 5em;
 }
 
-.mentors-card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 10vmin;
+.mentor-header {
+    width: 100%;
 }
 
 .mentor-p {

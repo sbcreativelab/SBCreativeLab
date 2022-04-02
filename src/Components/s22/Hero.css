@@ -22,6 +22,12 @@
     left: 10vmin;
 }
 
+.apply-now-btn {
+    position: absolute;
+    bottom: 38vmin;
+    right: 10vmin;
+}
+
 .apply-now {
     position: absolute;
     bottom: -5vmin;

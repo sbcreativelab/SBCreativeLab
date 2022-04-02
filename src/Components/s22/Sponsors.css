@@ -6,6 +6,13 @@
         align-items: center;
     }
 
+    .sponsors-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15vmin;
+        align-items: center;        
+    }
+
     .figma {
         width: 80%;
     }
@@ -25,9 +32,23 @@
         flex-direction: row;
     }
 
+    .sponsors-2 {
+        padding-left: 20vmin;
+        padding-right: 20vmin;
+        padding-top: 10vmin;
+        padding-bottom: 10vmin;
+        display: flex;
+        flex-direction: row;
+        gap: 15vmin;        
+    }
+
     .figma {
         margin-right: auto;
         width: 25%;
+    }
+
+    .bombora {
+        width: 40%;
     }
     
     .balsamiq {

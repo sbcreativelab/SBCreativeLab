@@ -11,7 +11,7 @@ import rockOverlay from '../s22_images/rockOverlay.svg'
 const Mentors = () => {
     return (
         <div className="mentors">
-            <img src={mentorHeader}></img>
+            <img src={mentorHeader} className='mentor-header'></img>
             <div className="details">
                 <p className="mentor-p-desc">Our mentors are here to support you and answer any questions you may have about your project, breaking into design, landing internships, career advice, and much more.</p>
             </div>
@@ -37,8 +37,8 @@ const Mentors = () => {
                         <img src={rock} className='headshot-img'/>
                         <img src={rockOverlay} className='company-img'/>
                     </div>
-                    <p className='mentor-bold'>Mystery Mentor</p>
-                    <p className='mentor-p'>TBA</p>
+                    <p className='mentor-bold'>Dwayne “The Rock” Johnson</p>
+                    <p className='mentor-p'>UX Designer @ XYZ Company</p>
                 </div>
             </div>
         </div>

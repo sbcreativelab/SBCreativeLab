@@ -60,14 +60,28 @@ function Timeline () {
         <div className="timeline-card">
           <p className="timeline-date">11</p> 
           <p className="card-words">
-            TBD
+            Sit back and chill! Wait for our closing ceremony. Great work, give yourself a pat on the back!
           </p>
         </div>
-        <div className="timeline-card-last">
+        <div className="timeline-card">
           <p className="timeline-date">12</p> 
+            <p className="card-words">
+              <span className="card-words-bold">Closing Ceremony</span>
+              <br/>
+              Time: 6 pm
+              <br/>
+              Location: Zoom
+            </p>
+        </div>
+        <div className="timeline-card-last">
+          <p className="timeline-date">13</p> 
           <p className="card-words">
-            TBD
-          </p>
+              <span className="card-words-bold">In-Person After Party</span>
+              <br/>
+              Time: 7 pm
+              <br/>
+              Location: TBD
+            </p>
         </div>
       </div>
       </div>
