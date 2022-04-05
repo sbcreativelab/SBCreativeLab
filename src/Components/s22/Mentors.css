@@ -90,6 +90,7 @@
 .headshot-img {
     align-self: baseline;
     position: relative;
+    width: 100%;
 }
 
 .company-img {
@@ -98,6 +99,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
 }
 
 @keyframes fadeInOpacity {

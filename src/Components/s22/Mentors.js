@@ -5,8 +5,7 @@ import joyce from '../s22_images/joyce.png'
 import joyceOverlay from '../s22_images/joyce-overlay.svg'
 import eve from '../s22_images/eve.png'
 import eveOverlay from '../s22_images/eve-overlay.svg'
-import rock from '../s22_images/rock.png'
-import rockOverlay from '../s22_images/rockOverlay.svg' 
+import chloe from '../s22_images/chloe.png'
 
 const Mentors = () => {
     return (
@@ -34,11 +33,10 @@ const Mentors = () => {
                 </div>
                 <div className='mentor-card'>
                     <div className='images-container'>
-                        <img src={rock} className='headshot-img'/>
-                        <img src={rockOverlay} className='company-img'/>
+                        <img src={chloe} className='headshot-img'/>
                     </div>
-                    <p className='mentor-bold'>Dwayne “The Rock” Johnson</p>
-                    <p className='mentor-p'>UX Designer @ XYZ Company</p>
+                    <p className='mentor-bold'>Chloe Chow</p>
+                    <p className='mentor-p'>Product Design Intern @ Pride Places</p>
                 </div>
             </div>
         </div>
