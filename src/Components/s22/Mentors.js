@@ -17,7 +17,7 @@ const Mentors = () => {
             <div className='mentors-card-container'>
                 <div className='mentor-card'>
                     <div className='images-container'>
-                        <img src={joyce} className='headshot-img'/>
+                        <img src={joyce} className='headshot-img-mentor'/>
                         <img src={joyceOverlay} className='company-img'/>
                     </div>
                     <p className='mentor-bold'>Joyce Tsui</p>
@@ -25,7 +25,7 @@ const Mentors = () => {
                 </div>
                 <div className='mentor-card'>
                     <div className='images-container'>
-                        <img src={eve} className='headshot-img'/>
+                        <img src={eve} className='headshot-img-mentor'/>
                         <img src={eveOverlay} className='company-img'/>
                     </div>
                     <p className='mentor-bold'>Eve Huang</p>
@@ -33,7 +33,7 @@ const Mentors = () => {
                 </div>
                 <div className='mentor-card'>
                     <div className='images-container'>
-                        <img src={chloe} className='headshot-img'/>
+                        <img src={chloe} className='headshot-img-mentor'/>
                     </div>
                     <p className='mentor-bold'>Chloe Chow</p>
                     <p className='mentor-p'>Product Design Intern @ Pride Places</p>

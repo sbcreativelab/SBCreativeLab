@@ -90,6 +90,11 @@
 .headshot-img {
     align-self: baseline;
     position: relative;
+}
+
+.headshot-img-mentor {
+    align-self: baseline;
+    position: relative;
     width: 100%;
 }
 
