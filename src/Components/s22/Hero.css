@@ -64,7 +64,7 @@
     opacity: 0;
 } */
 
-.apply-button-container:hover .apply-button {
+.apply-button-container:hover .apply-now-btn {
     opacity: 0;
 }
 
@@ -74,9 +74,11 @@
 
 .apply-button-overlay {
     position: absolute;
-    bottom: 214px;
-    margin-left: 730px;
-    width: 502px;
+    /* bottom: 214px;
+    margin-left: 730px; */
+    bottom: 39.2vmin;
+    right: 10.7vmin;
+    /* width: 502px; */
     height: auto;
 }
 
