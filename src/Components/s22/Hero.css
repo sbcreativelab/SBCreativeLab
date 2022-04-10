@@ -82,6 +82,29 @@
     height: auto;
 }
 
+.view-prompt-overlay {
+    position: absolute;
+    width: 310px;
+    height: 60px;
+    left: 915px;
+    top: 760px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.view-prompt {
+    position: absolute;
+    width: 420px;
+    height: 60px;
+    left: 860px;
+    top: 760px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.view-prompt-container:hover .view-prompt {
+    opacity: 0;
+}
 
 
 
