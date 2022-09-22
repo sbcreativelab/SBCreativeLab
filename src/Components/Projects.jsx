@@ -20,6 +20,10 @@ const Projects = () => {
     const isSmallScreen = width <= SMALL_SCREEN_BREAKPOINT;
     const isExtraSmallScreen = width <= EXTRA_SMALL_SCREEN_BREAKPOINT;
     const isMedScreen = width <= MED_SCREEN_BREAKPOINT;
+
+    const applicationLink = "https://forms.gle/6zuYsBn22MkPw1W67"
+    const currentQuarter = "Fall 2022"
+
     useEffect(() => {
         document.body.classList.add("no-xscroll");
         gsap.to(".logo", {
@@ -75,7 +79,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className={`${isExtraSmallScreen ? 'tablist-small' : 'tablist'} header-right`}>
-                    <a href='https://tinyurl.com/ProjectsTeamW22' target="_blank" className='tab'>Apply</a>
+                    <a href={applicationLink} target="_blank" className='tab'>Apply</a>
                     <HashLink smooth to={`#about`} className='tab'>About</HashLink>
                     <HashLink smooth to={`#faq`} className='tab'>FAQ</HashLink>
                     {/* {!isExtraSmallScreen ? <span onClick={() => setGears(!gears)} className={`${gears ? 'active' : ''} toggle-switch`}>
@@ -108,7 +112,7 @@ const Projects = () => {
                                     </div>} */}
                                 <div className="w-100 d-flex flex-column justify-content-center">
                                     <div className={`${isExtraSmallScreen ? 'h3' : 'h1'} dthonTitle mb-5`}>Projects Teams</div>
-                                    <div className={`${isExtraSmallScreen ? 'h5' : 'h4'} date pb-4 italic`}>Apply for our Winter 2022 teams now!</div>
+                                    <div className={`${isExtraSmallScreen ? 'h5' : 'h4'} date pb-4 italic`}>Apply for our {currentQuarter} teams now!</div>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +120,7 @@ const Projects = () => {
                             <div className="col-10 col-sm-10">
                                 <div style={{ overflow: 'hidden' }} >
                                     <div className="animate-slideup py-3">
-                                        <a target="_blank" href="https://tinyurl.com/ProjectsTeamW22" className="button text-center">
+                                        <a target="_blank" href={applicationLink} className="button text-center">
                                             Apply
                                         </a>
                                     </div>
@@ -166,7 +170,7 @@ const Projects = () => {
                                     <div className="question mb-5">
                                         <div className="h2">Who?</div>
                                         <div className="b2">
-                                            All SBCL members can <span><a style={{ textDecoration: 'underline' }} href='https://tinyurl.com/ProjectsTeamW22' target="_blank">apply.</a></span> All experience levels are welcome (individuals with no experience as well)!
+                                            All SBCL members can <span><a style={{ textDecoration: 'underline' }} href={applicationLink} target="_blank">apply.</a></span> All experience levels are welcome (individuals with no experience as well)!
                                         </div>
                                     </div>
                                 </div>
@@ -186,7 +190,7 @@ const Projects = () => {
                     <div className="row d-flex flex-column align-items-center section-4 text-center">
                         <div className="h2" style={{ marginBottom: '36px' }}>How can I get involved?</div>
                         <div className="b2 pl-4 pr-4" >
-                            Applications for our Winter 2022 Projects Teams are <span><a style={{ textDecoration: 'underline' }} href='https://tinyurl.com/ProjectsTeamW22' target="_blank">open now!</a></span>
+                            Applications for our {currentQuarter} Projects Teams are <span><a style={{ textDecoration: 'underline' }} href={applicationLink} target="_blank">open now!</a></span>
                         </div>
                         <div className="b2 pl-4 pr-4" style={{ marginBottom: '36px' }}>
                             Keep an eye on our Instagram to know when the next cycle starts.
@@ -200,4 +204,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
