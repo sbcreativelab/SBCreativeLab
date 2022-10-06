@@ -141,7 +141,7 @@ export default class Home extends Component {
                     </div>
                     <div>
                         <a target="_blank" href={merchOrderFormURL} className="merch-button text-center">
-                            Purchase Here
+                            Order Here
                         </a>
                     </div>
                 </div>
