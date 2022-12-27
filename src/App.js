@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Route } from "react-router-dom";
-import './main.css'
+// import './main.css'
+import './w23proj.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
 import Oops from './Components/Oops'
@@ -11,6 +12,7 @@ import ReactGA from 'react-ga'
 import Challenge from './Components/Challenge';
 import Designathon from './Components/Designathon';
 import Projects from './Components/Projects';
+import W23Projects from './Components/W23Projects';
 
 export class App extends Component {
   constructor(props) {
@@ -38,6 +40,7 @@ export class App extends Component {
         </head>
         <div className="main-body">
           <Route exact path="/" render={(props) => <Projects {...props} />} />
+          <Route exact path="/w23" render={(props) => <W23Projects {...props} />} />
           {/* <Route exact path="/challenge" render={(props) => <Challenge {...props}/>}/>
               <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
               <Route exact path="/about" render={(props) => <About {...props}/>}/>

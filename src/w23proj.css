@@ -1,0 +1,8 @@
+@import url(App.css);
+.title-section{
+    background-image: url("/images/projects/background.png");
+}
+.tab-list{
+    font-family: "Poppins";
+    font-size: 32px;
+}
