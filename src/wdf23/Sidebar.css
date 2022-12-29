@@ -1,9 +1,3 @@
-.sidebar-container {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
 .sidebar {
 	position: fixed;
 	width: 82px;
@@ -12,6 +6,8 @@
 	top: 0px;
 
 	background: #E8DED1;
+
+	z-index: 10;
 }
 
 .sidebar-text {
@@ -39,7 +35,7 @@
 	position: absolute;
 	height: 100%;
 	width: 0px;
-	left: 83.25px;
+	left: 83px;
 	top: 0px;
 
 	border: 0.5px solid #201E29;

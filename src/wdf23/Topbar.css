@@ -9,6 +9,8 @@
 
 	background: #E8DED1;
 	border-bottom: 1px solid #201E29;
+
+	z-index: 10;
 }
 
 .corner-logo {
@@ -26,7 +28,7 @@
 	position: absolute;
 	height: 77px;
 	width: 0px;
-	left: 83.25px;
+	left: 83px;
 	top: 0px;
 
 	border: 0.5px solid #000000;

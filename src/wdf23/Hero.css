@@ -1,0 +1,149 @@
+.hero {
+	position: absolute;
+	left: 197px;
+	top: 0px;
+
+	width: calc(100% - 197px);
+	height: 100%;
+}
+
+.hero-text-styling {
+	position: absolute;
+	width: 780px;
+	height: 301.37px;
+	left: 62px;
+	top: 162px;
+}
+
+.hero-text-0 {
+	position: absolute;
+	width: 429px;
+	height: 65px;
+	left: 109px;
+	top: 101px;
+
+	font-family: 'Basteleur';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 65px;
+	/* identical to box height */
+	text-align: center;
+
+	color: #201E29;
+}
+
+.hero-text-1 {
+	position: absolute;
+	width: 270px;
+	height: 65px;
+	left: 566px;
+	top: 101px;
+
+	font-family: 'Basteleur';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 65px;
+	/* identical to box height */
+	text-align: center;
+
+	color: #201E29;
+}
+
+.hero-text-2 {
+	position: absolute;
+	width: 1042px;
+	height: 125px;
+	left: 111px;
+	top: 222px;
+
+	font-family: 'Pilowlava';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 104px;
+	line-height: 125px;
+	/* identical to box height */
+	font-variant: small-caps;
+
+	color: #201E29;
+}
+
+.hero-text-3 {
+	position: absolute;
+	width: 145px;
+	height: 116px;
+	left: 372px;
+	top: 360px;
+
+	font-family: 'Migra Italic';
+	font-style: italic;
+	font-weight: 200;
+	font-size: 96px;
+	line-height: 116px;
+	text-align: center;
+
+	color: #DB3A2C;
+}
+
+.hero-text-4 {
+	position: absolute;
+	width: 141px;
+	height: 62px;
+	right: 212px;
+	bottom: 333px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 31px;
+	text-align: center;
+
+	color: #FFFFFF;
+
+	text-shadow: 0px 0px 532.98px #FFFFFF, 0px 0px 304.56px #FFFFFF, 0px 0px 177.66px #FFFFFF, 0px 0px 88.83px #FFFFFF, 0px 0px 25.38px #FFFFFF, 0px 0px 12.69px #FFFFFF;
+	transform: rotate(-18.67deg);
+}
+
+.hero-text-4-star {
+	position: absolute;
+	width: 252px;
+	height: 252px;
+	right: 157px;
+	bottom: 238px;
+}
+
+.hero-text-5 {
+	position: absolute;
+	width: 520px;
+	height: 35px;
+	left: 35px;
+	bottom: 43px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 35px;
+
+	color: #FFFFFF;
+}
+
+.hero-text-6 {
+	position: absolute;
+	width: 333px;
+	height: 27px;
+	right: 144px;
+	bottom: 20px;
+
+	font-family: 'Migra';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+	/* identical to box height */
+	text-align: center;
+
+	color: #354563;
+}

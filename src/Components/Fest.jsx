@@ -3,6 +3,8 @@ import ReactGA from 'react-ga'
 import '../wdf23/fest.css';
 import Sidebar from '../wdf23/Sidebar';
 import Topbar from '../wdf23/Topbar';
+import SectionsBar from '../wdf23/SectionsBar';
+import Hero from '../wdf23/Hero'
 
 export default class Fest extends Component{
     initializeReactGA() {
@@ -14,6 +16,12 @@ export default class Fest extends Component{
             <div className='full-page'>
                 <Sidebar />
                 <Topbar />
+                <div className='scroll-view'>
+                    <div className='section-0'>
+                        <SectionsBar />
+                        <Hero />
+                    </div>
+                </div>
             </div>
         )
     }

@@ -1,3 +1,7 @@
+html {
+  font-size: 0.0661vw;
+}
+
 .full-page {
 	position: absolute;
 	width: 100%;
@@ -6,27 +10,44 @@
 	background: #E8DED1;
 }
 
-@font-face {
-  font-family: "Basteleur";
-  src: url("./fonts/Basteleur-Moonlight.otf") format('opentype');
-  font-weight: normal;
+.scroll-view {
+	position: absolute;
+	top: 77px;
+	left: 84px;
+}
+
+.section-0 {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	height: 901px;
+	width: calc(100vw - 77px - 7px);
+
+	border-bottom: 1px solid black;
 }
 
 @font-face {
-  font-family: "Pilowlava";
-  src: url("./fonts/Pilowlava-Regular.otf") format('opentype');
-  font-weight: normal;
+	font-family: "Basteleur";
+	src: url("./fonts/Basteleur-Moonlight.otf") format('opentype');
+	font-weight: normal;
 }
 
 @font-face {
-  font-family: "Neutral Face";
-  src: url("./fonts/NeutralFace.otf") format('opentype');
-  font-weight: normal;
+	font-family: "Pilowlava";
+	src: url("./fonts/Pilowlava-Regular.otf") format('opentype');
+	font-weight: normal;
 }
 
 @font-face {
-  font-family: "Neutral Face";
-  src: url("./fonts/NeutralFace-Bold.otf") format('opentype');
-  font-weight: normal;
-  font-weight: bold;
+	font-family: "Neutral Face";
+	src: url("./fonts/NeutralFace.otf") format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Neutral Face";
+	src: url("./fonts/NeutralFace-Bold.otf") format('opentype');
+	font-weight: normal;
+	font-weight: bold;
 }
