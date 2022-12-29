@@ -1,7 +1,13 @@
+.sidebar-container {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
 .sidebar {
-	position: sticky;
+	position: fixed;
 	width: 82px;
-	height: 100%;
+	height: 100vh;
 	left: 0px;
 	top: 0px;
 

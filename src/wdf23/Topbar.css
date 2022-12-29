@@ -1,8 +1,8 @@
 .topbar {
 	box-sizing: border-box;
 
-	position: absolute;
-	width: 100%;
+	position: fixed;
+	width: 100vw;
 	height: 77px;
 	left: 0px;
 	top: 0px;
