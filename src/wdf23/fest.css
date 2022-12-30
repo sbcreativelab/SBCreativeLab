@@ -27,6 +27,36 @@ html {
 	border-bottom: 1px solid black;
 }
 
+.noise-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	background-image: url("./imgs/noise.png");
+	mix-blend-mode: overlay;
+	pointer-events: none;
+
+	z-index: 5;
+}
+
+.background-circles-1 {
+	position: absolute;
+	width: 770px;
+	height: 1091px;
+	left: 26px;
+	top: 480px;
+}
+
+.background-circles-2 {
+	position: absolute;
+	width: 392px;
+	height: 531px;
+	right: 0px;
+	top: 0px;
+}
+
 @font-face {
 	font-family: "Basteleur";
 	src: url("./fonts/Basteleur-Moonlight.otf") format('opentype');

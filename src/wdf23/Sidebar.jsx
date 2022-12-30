@@ -6,6 +6,7 @@ export default function Sidebar() {
         <div className='sidebar'>
             <div className='sidebar-text'>January 09 - February 05</div>
             <div className='sidebar-separator'></div>
+            <div className='noise-background'></div>
         </div>
     )
 }
