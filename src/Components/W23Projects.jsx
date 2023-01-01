@@ -10,8 +10,6 @@ const gsap = window.gsap;
 gsap.registerPlugin(scrollTrigger)
 
 const W23Projects = () => {
-    ReactGA.initialize('UA-178117149-1');
-    ReactGA.pageview('projects');
     const applicationLink = "https://forms.gle/6zuYsBn22MkPw1W67"
     const currentQuarter = "Fall 2022"
     return (
