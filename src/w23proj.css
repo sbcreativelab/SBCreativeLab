@@ -1,8 +1,351 @@
 @import url(App.css);
-.title-section{
-    background-image: url("/images/projects/background.png");
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+@font-face {
+  font-family: 'Cooper Black';
+  src: url(./fonts/CooperBlack/CooperBlackRegular.ttf) format('truetype');
+  font-weight: normal;
 }
-.tab-list{
-    font-family: "Poppins";
-    font-size: 32px;
+
+@font-face {
+  font-family: 'MADE Soulmaze Brush';
+  src: url(./fonts/MADESoulmaze/MADESoulmazeBrush.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neutral Face';
+  src: url(./fonts/NEUTRALFACE/NeutralFace.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neutral Face';
+  src: url(./fonts/NEUTRALFACE/NeutralFace-Bold.otf) format('opentype');
+  font-weight: bold;
+}
+
+html {
+  background-color: #192022;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.title-section {
+  background-image: url(/images/projects/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1113px;
+}
+
+.header {
+  display: flex;
+  padding: 2.5% 1.5% 8%;
+}
+
+.nav {
+  display: flex;
+  font: 32px 'Poppins';
+  justify-content: space-between;
+  margin: auto;
+  width: 30%;
+}
+
+.nav a:link,
+.nav a:visited {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.title-container {
+  display: flex;
+  margin: auto 4.5%;
+}
+
+.title {
+  font: 600 calc(100vw * 0.03) 'Poppins';
+}
+
+.title strong {
+  font: bold calc(100vw * 0.10)/146.7px 'Neutral Face';
+  text-transform: uppercase;
+}
+
+.title-skill-1 {
+  font: normal 48px/63px 'MADE Soulmaze Brush';
+  position: absolute;
+  left: calc(73vw);
+  top: calc(40vh);
+  transform: matrix(0.97, -0.25, 0.24, 0.97, 0, 0);
+}
+
+.title-skill-2 {
+  font: normal 48px/63px 'MADE Soulmaze Brush';
+  position: absolute;
+  left: calc(71vw);
+  top: calc(47vh);
+  transform: matrix(0.97, -0.25, 0.24, 0.97, 0, 0);
+}
+
+.title-skill-3 {
+  font: normal 48px/63px 'MADE Soulmaze Brush';
+  position: absolute;
+  left: calc(75vw);
+  top: calc(51vh);
+  transform: matrix(0.97, -0.25, 0.24, 0.97, 0, 0);
+}
+
+.button {
+  border: 1px solid #192022;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font: normal 25px/38px 'Poppins';
+  letter-spacing: 0.03em;
+  margin: 4px 2px;
+  min-width: calc(100vw * 0.125);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:active {
+  border: 1px solid #192022;
+}
+
+.button-yellow {
+  background: #FFBB01;
+  color: #192022;
+  width: 45%;
+}
+
+.button-white,
+.button-black:active,
+.button-yellow:active {
+  background: white;
+  color: #192022;
+}
+
+.button-black,
+.button-white:active {
+  background: #192022;
+  color: white;
+}
+
+.top-button {
+  font: normal 32px/36.7px 'Cooper Black';
+}
+
+.content {
+  font: normal 24px/42px 'Poppins';
+  margin: auto auto calc(100vh * 0.50);
+  width: 69%;
+}
+
+h2 {
+  font: bold 56px/84px 'Poppins';
+}
+
+h3 {
+  font: 34px/39px 'Cooper Black';
+}
+
+.learn-series {
+  display: flex;
+  font: normal 23px/36px 'Poppins';
+  justify-content: space-between;
+  margin: calc(100vh * 0.075) 0 calc(100vh * 0.2);
+  text-align: center;
+}
+
+.flex-item {
+  border-radius: 10px;
+  padding: 0 1% 1%;
+  width: 45%;
+}
+
+.learn-series-beginner {
+  background: #FFBB01;
+  color: #192022;
+}
+
+.learn-series-intermediate {
+  background: #FF706E;
+}
+
+.real-series {
+  display: flex;
+  font: normal 24px/28px 'Poppins';
+  justify-content: space-between;
+  margin: calc(100vh * 0.075) 0 calc(100vh * 0.2);
+}
+
+.real-series-sas {
+  background: #FF862E;
+}
+
+.real-series-poolup {
+  background: #5481BF;
+  text-align: center;
+}
+
+.bottom-button {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .title-section {
+    background-image: url(./images/projects/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1113px;
+  }
+  
+  .header {
+    display: flex;
+    padding: 2.5% 1.5% 8%;
+  }
+  
+  .logo-wrapper {
+    height: 64px;
+    margin: 10px 0 0 0;
+    width: 64px;
+  }
+  
+  .nav {
+    display: flex;
+    font: 20px 'Poppins';
+    justify-content: space-between;
+    margin: auto;
+    width: 60%;
+  }
+  
+  .nav a:link,
+  .nav a:visited {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title-container {
+    display: flex;
+    margin: auto 4.5%;
+  }
+  
+  .title {
+    font: 600 25px/75px 'Poppins';
+  }
+  
+  .title strong {
+    font: bold 60px/75px 'Neutral Face';
+    text-transform: uppercase;
+  }
+  
+  .title-skill {
+    visibility: hidden;
+  }
+  
+  .button {
+    border: 1px solid #192022;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    font: normal 22px/34px 'Poppins';
+    letter-spacing: 0.03em;
+    margin: 4px 2px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .button:active {
+    border: 1px solid #192022;
+  }
+  
+  .button-yellow {
+    background: #FFBB01;
+    color: #192022;
+    width: 90%;
+  }
+  
+  .button-white,
+  .button-black:active,
+  .button-yellow:active {
+    background: white;
+    color: #192022;
+  }
+  
+  .button-black,
+  .button-white:active {
+    background: #192022;
+    color: white;
+  }
+  
+  .top-button {
+    font: normal 27px/32px 'Cooper Black';
+    width: auto;
+  }
+  
+  .content {
+    font: normal 18px/38px 'Poppins';
+    margin: auto auto calc(100vh * 0.10);
+    width: 88%;
+  }
+  
+  .learn-series {
+    display: grid;
+    font: normal 18px/27px 'Poppins';
+    grid-row-gap: 1em;
+    height: auto;
+    text-align: center;
+  }
+
+  .flex-item {
+    border-radius: 10px;
+    padding: 0 5% 5%;
+    width: auto;
+  }
+
+  .learn-series-beginner {
+    background: #FFBB01;
+    color: #192022;
+  }
+
+  .learn-series-intermediate {
+    background: #FF706E;
+  }
+
+  .real-series {
+    display: grid;
+    font: normal 18px/27px 'Poppins';
+    grid-row-gap: 1em;
+    height: auto;
+  }
+
+  .real-series-sas {
+    background: #FF862E;
+  }
+
+  .real-series-poolup {
+    background: #5481BF;
+    text-align: center;
+  }
+
+  .bottom-button {
+    display: block;
+    text-align: center;
+  }
 }
