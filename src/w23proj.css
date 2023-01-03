@@ -42,6 +42,12 @@
   padding: 2.5% 1.5% 8%;
 }
 
+.logo-wrapper {
+  height: 64px;
+  margin: 10px 0 0 0;
+  width: 64px;
+}
+
 .nav {
   display: flex;
   font: 32px 'Poppins';
@@ -148,11 +154,20 @@
 }
 
 h2 {
+  display: block;
   font: bold 56px/84px 'Poppins';
+  margin: 0.83em 0;
 }
 
 h3 {
+  display: block;
   font: 34px/39px 'Cooper Black';
+  margin: 1em 0;
+}
+
+p {
+  display: block;
+  margin: 1em 0;
 }
 
 .learn-series {
