@@ -268,20 +268,51 @@ p {
   }
   
   .title-skill {
-    visibility: hidden;
+    display: none;
   }
   
   .button {
+    border: 1px solid #192022;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
     font: normal 22px/34px 'Poppins';
+    letter-spacing: 0.03em;
+    margin: 4px 2px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .button:active {
+    border: 1px solid #192022;
   }
   
   .button-yellow {
+    background: #FFBB01;
+    color: #192022;
     width: 90%;
   }
-
-  .top-button,
-  .top-button:hover,
-  .top-button:active {
+  
+  .button-white,
+  .button-black:active,
+  .button-yellow:active {
+    background: white;
+    color: #192022;
+  }
+  
+  .button-black,
+  .button-white:active {
+    background: #192022;
+    color: white;
+  }
+  
+  .top-button {
     font: normal 27px/32px 'Cooper Black';
     width: auto;
   }
