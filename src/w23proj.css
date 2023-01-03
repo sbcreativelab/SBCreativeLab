@@ -260,11 +260,11 @@ p {
   }
   
   .title {
-    font: 600 25px/75px 'Poppins';
+    font: 600 calc(100vw * 0.03)/75px 'Poppins';
   }
   
   .title strong {
-    font: bold 60px/75px 'Neutral Face';
+    font: bold calc(100vw * 0.10)/75px 'Neutral Face';
   }
   
   .title-skill {
