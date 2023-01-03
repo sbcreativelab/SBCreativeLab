@@ -5,6 +5,7 @@ import Sidebar from '../wdf23/Sidebar';
 import Topbar from '../wdf23/Topbar';
 import SectionsBar from '../wdf23/SectionsBar';
 import Hero from '../wdf23/Hero'
+import Prompts from '../wdf23/Prompts'
 
 import backgroundCircles1 from '../wdf23/imgs/background-circles-1.svg'
 import backgroundCircles2 from '../wdf23/imgs/background-circles-2.svg'
@@ -26,6 +27,9 @@ export default class Fest extends Component{
                         <div className='noise-background'></div>
                         <SectionsBar />
                         <Hero />
+                    </div>
+                    <div className='section-1'>
+                        <Prompts />
                     </div>
                 </div>
             </div>

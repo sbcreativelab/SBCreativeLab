@@ -27,6 +27,17 @@ html {
 	border-bottom: 1px solid black;
 }
 
+.section-1 {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	height: 901px;
+	width: calc(100vw - 77px - 7px);
+
+	border-bottom: 1px solid black;
+}
+
 .noise-background {
 	position: absolute;
 	width: 100%;
@@ -78,6 +89,33 @@ html {
 @font-face {
 	font-family: "Neutral Face";
 	src: url("./fonts/NeutralFace-Bold.otf") format('opentype');
-	font-weight: normal;
 	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/Migra-Extralight.otf") format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/MigraItalic-ExtralightItalic.otf") format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/Migra-Extrabold.otf") format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Migra";
+	src: url("./fonts/MigraItalic-ExtraboldItalic.otf") format('opentype');
+	font-weight: bold;
+	font-style: italic;
 }

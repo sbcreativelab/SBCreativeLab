@@ -1,9 +1,6 @@
 import React from 'react'
 import './Hero.css'
 
-// import heroTextStyling from './imgs/hero-text-styling.svg'
-// import heroStar from './imgs/hero-star.svg'
-
 import heroImg from './imgs/hero-img.svg'
 import heroArrow from './imgs/hero-arrow.svg'
 
