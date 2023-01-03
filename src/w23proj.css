@@ -31,7 +31,7 @@
 }
 
 .title-section {
-  background-image: url(./background.png);
+  background-image: url(./images/projects/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 1113px;
@@ -166,7 +166,9 @@
   color: white;
 }
 
-.top-button {
+.top-button,
+.top-button:hover,
+.top-button:active {
   font: normal 32px/36.7px 'Cooper Black';
 }
 
@@ -240,42 +242,9 @@ p {
 }
 
 @media only screen and (max-width: 991px) {
-  .title-section {
-    background-image: url(./images/projects/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1113px;
-  }
-  
-  .header {
-    display: flex;
-    padding: 2.5% 1.5% 8%;
-  }
-  
-  .logo-wrapper {
-    height: 64px;
-    margin: 10px 0 0 0;
-    width: 64px;
-  }
-  
   .nav {
-    display: flex;
     font: 20px 'Poppins';
-    justify-content: space-between;
-    margin: auto;
     width: 60%;
-  }
-  
-  .nav a:link,
-  .nav a:visited {
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .title-container {
-    display: flex;
-    margin: auto 4.5%;
   }
   
   .title {
@@ -284,7 +253,6 @@ p {
   
   .title strong {
     font: bold 60px/75px 'Neutral Face';
-    text-transform: uppercase;
   }
   
   .title-skill {
@@ -292,54 +260,19 @@ p {
   }
   
   .button {
-    border: 1px solid #192022;
-    border-radius: 100px;
-    cursor: pointer;
-    display: inline-block;
     font: normal 22px/34px 'Poppins';
-    letter-spacing: 0.03em;
-    margin: 4px 2px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.4s;
   }
-  
-  .button:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  .button:active {
-    border: 1px solid #192022;
-  }
-  
-  .button-yellow {
-    background: #FFBB01;
-    color: #192022;
-    width: 90%;
-  }
-  
-  .button-white,
-  .button-black:active,
-  .button-yellow:active {
-    background: white;
-    color: #192022;
-  }
-  
-  .button-black,
-  .button-white:active {
-    background: #192022;
-    color: white;
-  }
-  
-  .top-button {
+
+  .top-button,
+  .top-button:hover,
+  .top-button:active {
     font: normal 27px/32px 'Cooper Black';
     width: auto;
   }
   
   .content {
     font: normal 18px/38px 'Poppins';
-    margin: auto auto calc(100vh * 0.10);
+    padding-bottom: calc(100vh * 0.10);
     width: 88%;
   }
   
@@ -348,22 +281,11 @@ p {
     font: normal 18px/27px 'Poppins';
     grid-row-gap: 1em;
     height: auto;
-    text-align: center;
   }
 
   .flex-item {
-    border-radius: 10px;
     padding: 0 5% 5%;
     width: auto;
-  }
-
-  .learn-series-beginner {
-    background: #FFBB01;
-    color: #192022;
-  }
-
-  .learn-series-intermediate {
-    background: #FF706E;
   }
 
   .real-series {
@@ -371,15 +293,6 @@ p {
     font: normal 18px/27px 'Poppins';
     grid-row-gap: 1em;
     height: auto;
-  }
-
-  .real-series-sas {
-    background: #FF862E;
-  }
-
-  .real-series-poolup {
-    background: #5481BF;
-    text-align: center;
   }
 
   .bottom-button {
