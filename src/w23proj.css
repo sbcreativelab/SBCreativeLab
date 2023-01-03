@@ -241,7 +241,7 @@ p {
   text-align: center;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1000px) {
   .nav {
     font: 20px 'Poppins';
     width: 60%;
