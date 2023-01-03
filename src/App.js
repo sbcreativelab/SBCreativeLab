@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from "react-router-dom";
-// import './main.css'
+import './main.css'
 import './w23proj.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
