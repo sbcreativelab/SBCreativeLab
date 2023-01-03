@@ -24,6 +24,10 @@
   font-weight: bold;
 }
 
+* {
+  box-sizing: content-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,7 +46,10 @@ html {
 
 .header {
   display: flex;
+  margin: 0;
   padding: 2.5% 1.5% 8%;
+  position: static;
+  width: auto;
 }
 
 .logo-wrapper {
@@ -56,7 +63,7 @@ html {
   font: 32px 'Poppins';
   justify-content: space-between;
   margin: auto;
-  width: 30%;
+  width: 40%;
 }
 
 .nav a:link,
@@ -73,6 +80,7 @@ html {
 
 .title {
   font: 600 calc(100vw * 0.03) 'Poppins';
+  margin: 0.67em 0;
 }
 
 .title strong {
