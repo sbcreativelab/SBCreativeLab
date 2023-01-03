@@ -32,7 +32,7 @@ html {
 }
 
 .title-section {
-  background-image: url(/public/images/projects/background.png);
+  background-image: url(../public/images/projects/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 1113px;
