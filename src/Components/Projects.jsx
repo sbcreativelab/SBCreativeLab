@@ -3,6 +3,7 @@ import ReactGA from 'react-ga'
 import { ReactComponent as Logo } from "./logo.svg";
 import useWindowDimensions from '../utils/useWindowDimensions';
 import { HashLink } from 'react-router-hash-link';
+import '../App.css';
 
 const scrollTrigger = window.ScrollTrigger
 const gsap = window.gsap;
