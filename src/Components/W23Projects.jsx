@@ -14,7 +14,7 @@ function W23Projects() {
   const currentQuarter = 'winter'
   const currentYear = '2023'
   return (
-    <div>
+    <div className="w23projects">
       <div className="title-section">
         <div className="header">
           <div className="logo-wrapper">
