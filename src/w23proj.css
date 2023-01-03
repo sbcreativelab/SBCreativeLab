@@ -24,10 +24,13 @@
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .w23projects {
   background-color: #192022;
   color: white;
-  scroll-behavior: smooth;
 }
 
 .title-section {
