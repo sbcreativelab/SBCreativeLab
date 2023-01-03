@@ -24,11 +24,13 @@ export default class Fest extends Component{
                 <Topbar />
                 <div className='scroll-view'>
                     <div className='section-0'>
+                        <div className='section-0-background'></div>
                         <div className='noise-background'></div>
                         <SectionsBar />
                         <Hero />
                     </div>
                     <div className='section-1'>
+                        <div className='section-1-background'></div>
                         <Prompts />
                     </div>
                 </div>
