@@ -262,6 +262,10 @@ p {
   .button {
     font: normal 22px/34px 'Poppins';
   }
+  
+  .button-yellow {
+    width: 90%;
+  }
 
   .top-button,
   .top-button:hover,
