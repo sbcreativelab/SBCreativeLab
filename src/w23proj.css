@@ -332,7 +332,7 @@ p {
     height: auto;
   }
 
-  .bottom-button {
+  .bottom-button-container {
     display: block;
     text-align: center;
   }
