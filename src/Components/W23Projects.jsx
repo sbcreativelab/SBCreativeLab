@@ -101,8 +101,8 @@ function W23Projects() {
         </p>
         <div className="real-series">
           <div className="flex-item real-series-sas">
-            <h3 style={{textAlign: 'center'}}>SAS x SBCL</h3>
-            <p style={{textAlign: 'center'}}>
+            <h3 className="real-series-content">SAS x SBCL</h3>
+            <p className="real-series-content">
               Work with <u>Small Acts for 
               Sustainability</u> to create a better 
               world for the underserved!
@@ -116,12 +116,12 @@ function W23Projects() {
               uterus owners in their 
               mentruational process.
             </p>
-            <small style={{textAlign: 'left'}}>Note: Graphic Designers & Illustrators welcome to apply!</small>
-            <div style={{textAlign: 'center'}}><button className="button button-black">Apply</button></div>
+            <small>Note: Graphic Designers & Illustrators welcome to apply!</small>
+            <div className="real-series-content real-series-button"><button className="button button-black">Apply</button></div>
           </div>
           <div className="flex-item real-series-poolup">
-            <h3>PoolUp x SBCL</h3>
-            <p>
+            <h3 className="real-series-content">PoolUp x SBCL</h3>
+            <p className="real-series-content">
               An one-quarter internship 
               experience working under PoolUP 
               design leads to conduct UX 
@@ -133,7 +133,9 @@ function W23Projects() {
               can work efficiently and create 
               beautiful designs.
             </p>
-            <button className="button" disabled style={{marginTop: '5%'}}>Application closed</button>
+            <div className="real-series-content real-series-button-container">
+              <button className="button" disabled>Application closed</button>
+            </div>
           </div>
         </div>
         <h2 id="about">about.</h2>
@@ -173,9 +175,9 @@ function W23Projects() {
           Keep an eye on our <b>Instagram</b> to know when applications open for 
           each cycle!
         </p>
-        <div className="bottom-button">
+        <div className="bottom-button-container">
           <button className="button button-yellow">Submit a project idea!</button>
-          <button className="button button-yellow">Join SBCL mailing List</button>
+          <a className="button button-yellow" href="http://eepurl.com/hcKGCP" target="_blank">Join SBCL mailing List</a>
         </div>
       </div>
     </div>

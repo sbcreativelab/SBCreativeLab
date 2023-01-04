@@ -113,7 +113,8 @@ html {
   transform: matrix(0.97, -0.25, 0.24, 0.97, 0, 0);
 }
 
-.button {
+.button,
+.button:active {
   border: 1px solid #192022;
   border-radius: 100px;
   cursor: pointer;
@@ -144,10 +145,15 @@ html {
   transition-duration: 0.4s;
 }
 
-.button:active {
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+  background: #646D70;
   border: 1px solid #192022;
   border-radius: 100px;
-  cursor: pointer;
+  box-shadow: none;
+  color: white;
+  cursor: auto;
   display: inline-block;
   font: normal 25px/38px 'Poppins';
   letter-spacing: 0.03em;
@@ -240,14 +246,25 @@ p {
 
 .real-series-sas {
   background: #FF862E;
+  display: flex;
+  flex-direction: column;
+}
+
+.real-series-content {
+  text-align: center;
+}
+
+.real-series-button-container {
+  margin-top: auto;
 }
 
 .real-series-poolup {
   background: #5481BF;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-button {
+.bottom-button-container {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -270,9 +287,24 @@ p {
   .title-skill {
     display: none;
   }
+
+  .button,
+  .button:hover,
+  .button:active,
+  .button:disabled,
+  .button:disabled:hover,
+  .button:disabled:active {
+    font: normal 19px/38px 'Poppins';
+  }
   
   .button-yellow {
     width: 90%;
+  }
+
+  .top-button,
+  .top-button:hover,
+  .top-button:active {
+    font: normal 25px/36.7px 'Cooper Black';
   }
   
   .content {
