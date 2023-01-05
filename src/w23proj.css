@@ -165,6 +165,28 @@ body {
   transition-duration: 0.4s;
 }
 
+.button-white,
+.button-white:hover {
+  background: white;
+  color: #192022;
+}
+
+.button-white:active {
+  background: #192022;
+  color: white;
+}
+
+.button-black,
+.button-black:hover {
+  background: #192022;
+  color: white;
+}
+
+.button-black:active {
+  background: white;
+  color: #192022;
+}
+
 .button-yellow,
 .button-yellow:hover {
   background: #FFBB01;
@@ -172,19 +194,9 @@ body {
   flex: 1;
 }
 
-.button-white,
-.button-white:hover,
-.button-black:active,
 .button-yellow:active {
   background: white;
   color: #192022;
-}
-
-.button-black,
-.button-black:hover,
-.button-white:active {
-  background: #192022;
-  color: white;
 }
 
 .top-button,
