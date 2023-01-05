@@ -165,13 +165,15 @@ body {
   transition-duration: 0.4s;
 }
 
-.button-yellow {
+.button-yellow,
+.button-yellow:hover {
   background: #FFBB01;
   color: #192022;
   flex: 1;
 }
 
 .button-white,
+.button-white:hover,
 .button-black:active,
 .button-yellow:active {
   background: white;
@@ -179,6 +181,7 @@ body {
 }
 
 .button-black,
+.button-black:hover,
 .button-white:active {
   background: #192022;
   color: white;
