@@ -11,7 +11,7 @@ const gsap = window.gsap;
 gsap.registerPlugin(scrollTrigger)
 
 function W23Projects() {
-  const applicationLink = 'https://www.sbcreativelab.com/oops'
+  const applicationLink = 'https://forms.gle/JZuDZW7EN7UehWHb7'
   const currentQuarter = 'winter'
   const currentYear = '2023'
   return (
@@ -119,7 +119,9 @@ function W23Projects() {
               mentruational process.
             </p>
             <small>Note: Graphic Designers & Illustrators welcome to apply!</small>
-            <div className="real-series-content real-series-button"><button className="button button-black">Apply</button></div>
+            <div className="real-series-content real-series-button">
+              <a className="button button-black" href="https://forms.gle/RRDPhDknzdZTnDyX9" rel="noreferrer" target="_blank">Apply</a>
+            </div>
           </div>
           <div className="flex-item real-series-poolup">
             <h3 className="real-series-content">PoolUp x SBCL</h3>
@@ -178,7 +180,7 @@ function W23Projects() {
           each cycle!
         </p>
         <div className="bottom-button-container">
-          <button className="button button-yellow">Submit a project idea!</button>
+          <a className="button button-yellow" href="https://forms.gle/UvAzffBRRXjNCaFe9" rel="noreferrer" target="_blank">Submit a project idea!</a>
           <a className="button button-yellow" href="http://eepurl.com/hcKGCP" rel="noreferrer" target="_blank">Join SBCL mailing List</a>
         </div>
       </div>
