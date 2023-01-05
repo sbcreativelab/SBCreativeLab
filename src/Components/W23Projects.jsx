@@ -112,11 +112,11 @@ function W23Projects() {
               Students of the SAS x SBCL Project 
               Team will work with software 
               developers from BUILD UMass 
-              and Founder of SAS to create a 
+              and Founder of SAS to create an 
               educational menstrual app that 
               helps educate and empower 
               uterus owners in their 
-              mentruational process.
+              mentruational processes.
             </p>
             <small>Note: Graphic Designers & Illustrators welcome to apply!</small>
             <div className="real-series-content real-series-button">
@@ -126,7 +126,7 @@ function W23Projects() {
           <div className="flex-item real-series-poolup">
             <h3 className="real-series-content">PoolUp x SBCL</h3>
             <p className="real-series-content">
-              An one-quarter internship 
+              A one-quarter internship 
               experience working under PoolUP 
               design leads to conduct UX 
               research at UCSB and help 
