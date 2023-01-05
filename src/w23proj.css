@@ -32,7 +32,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.w23projects {
+body {
   background-color: #192022;
   color: white;
 }
@@ -121,9 +121,9 @@ html {
   display: inline-block;
   font: normal 25px/38px 'Poppins';
   letter-spacing: 0.03em;
-  margin: 4px 2px;
+  margin: 20px auto;
   min-width: calc(100vw * 0.125);
-  padding: 10px;
+  padding: 10px 40px;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -137,9 +137,9 @@ html {
   display: inline-block;
   font: normal 25px/38px 'Poppins';
   letter-spacing: 0.03em;
-  margin: 4px 2px;
+  margin: 20px auto;
   min-width: calc(100vw * 0.125);
-  padding: 10px;
+  padding: 10px 40px;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -157,9 +157,9 @@ html {
   display: inline-block;
   font: normal 25px/38px 'Poppins';
   letter-spacing: 0.03em;
-  margin: 4px 2px;
+  margin: 20px auto;
   min-width: calc(100vw * 0.125);
-  padding: 10px;
+  padding: 10px 40px;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
@@ -168,7 +168,7 @@ html {
 .button-yellow {
   background: #FFBB01;
   color: #192022;
-  width: 45%;
+  flex: 1;
 }
 
 .button-white,
@@ -200,13 +200,13 @@ html {
 h2 {
   display: block;
   font: bold 56px/84px 'Poppins';
-  margin: 0.83em 0;
+  margin: calc(100vh * 0.2) 0 0.83em;
 }
 
 h3 {
   display: block;
   font: 34px/39px 'Cooper Black';
-  margin: 1em 0;
+  margin: calc(100vh * 0.075) 0 1em;
 }
 
 p {
@@ -215,17 +215,17 @@ p {
 }
 
 .learn-series {
+  column-gap: 5%;
   display: flex;
   font: normal 23px/36px 'Poppins';
-  justify-content: space-between;
-  margin: calc(100vh * 0.075) 0 calc(100vh * 0.2);
+  margin: 6.9% 0 0;
   text-align: center;
 }
 
 .flex-item {
   border-radius: 10px;
-  padding: 0 1% 1%;
-  width: 45%;
+  flex: 1;
+  padding: 0 3% 1%;
 }
 
 .learn-series-beginner {
@@ -238,10 +238,10 @@ p {
 }
 
 .real-series {
+  column-gap: 5%;
   display: flex;
   font: normal 24px/28px 'Poppins';
-  justify-content: space-between;
-  margin: calc(100vh * 0.075) 0 calc(100vh * 0.2);
+  margin: 6.9% 0 0;
 }
 
 .real-series-sas {
@@ -265,8 +265,8 @@ p {
 }
 
 .bottom-button-container {
+  column-gap: 5%;
   display: flex;
-  justify-content: space-between;
   text-align: center;
 }
 
@@ -296,10 +296,6 @@ p {
   .button:disabled:active {
     font: normal 19px/38px 'Poppins';
   }
-  
-  .button-yellow {
-    width: 90%;
-  }
 
   .top-button,
   .top-button:hover,
@@ -309,7 +305,7 @@ p {
   
   .content {
     font: normal 18px/38px 'Poppins';
-    padding-bottom: calc(100vh * 0.10);
+    padding-bottom: calc(100vh * 0.5);
     width: 88%;
   }
   

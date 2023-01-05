@@ -177,7 +177,7 @@ function W23Projects() {
         </p>
         <div className="bottom-button-container">
           <button className="button button-yellow">Submit a project idea!</button>
-          <a className="button button-yellow" href="http://eepurl.com/hcKGCP" target="_blank">Join SBCL mailing List</a>
+          <a className="button button-yellow" href="http://eepurl.com/hcKGCP" rel="noreferrer" target="_blank">Join SBCL mailing List</a>
         </div>
       </div>
     </div>
