@@ -62,8 +62,10 @@ function W23Projects() {
           Experience Level: Participants should have experience ranging from no 
           UI/UX experience to those who have completed at least 1 project.
         </p>
-        <a href={applicationLink} className="button button-white" target="_blank" rel="noreferrer">Apply</a>
-        <div className="learn-series">
+        <div className="learn-series-button-container">
+          <a className="button button-white" href={applicationLink} rel="noreferrer" target="_blank">Apply</a>
+        </div>
+        <div className="learn-series-card-container">
           <div className="flex-item learn-series-beginner">
             <h3>Beginners</h3>
             <p>
@@ -99,7 +101,7 @@ function W23Projects() {
           and have some work examples to show as part of their application. This 
           should not be your first UI/UX project!
         </p>
-        <div className="real-series">
+        <div className="real-series-card-container">
           <div className="flex-item real-series-sas">
             <h3 className="real-series-content">SAS x SBCL</h3>
             <p className="real-series-content">
@@ -150,7 +152,7 @@ function W23Projects() {
         </p>
         <p>
           We have recently expanded our Projects Teams Series to be more experience-
-          leve inlusive as well as partnering with other organizations and local businesses. 
+          level inclusive as well as partnering with other organizations and local businesses. 
           So stay tuned to what we have in store for you!
         </p>
         <h2 id="faq">faqs.</h2>
