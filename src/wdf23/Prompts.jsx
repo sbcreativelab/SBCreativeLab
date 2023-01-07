@@ -8,7 +8,7 @@ import decoStar1 from './imgs/prompt-star-3.svg'
 import decoStar2 from './imgs/prompt-star-4.svg'
 import decoStar3 from './imgs/prompt-star-5.svg'
 
-export default function Hero() {
+export default function Prompts() {
     return (
         <div className='prompts'>
             <div className='prompts-title'>Prompts</div>
