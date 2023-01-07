@@ -22,6 +22,16 @@
 
 	background-image: url('./imgs/logo-black.png');
 	background-size: cover;
+
+	transition: 0.2s;
+}
+
+.corner-logo:hover {
+	filter:
+		drop-shadow(0px 0px 10.6px #FF0000)
+		drop-shadow(0px 0px 5.3px #FF0000)
+		drop-shadow(0px 0px 2.6px #FF0000);
+	background-image: url('./imgs/logo-color.png');
 }
 
 .logo-separator {
@@ -49,6 +59,19 @@
 	text-align: center;
 
 	color: #201E29;
+
+	transition: 0.2s;
+}
+
+.quarter-text:hover {
+	text-shadow:
+		0px 0px 532.98px #2F00FF,
+		0px 0px 304.56px #2F00FF,
+		0px 0px 177.66px #2F00FF,
+		0px 0px 88.83px #2F00FF,
+		0px 0px 25.38px #2F00FF,
+		0px 0px 12.69px #2F00FF,
+		0px 0px 6.35px #2F00FF;
 }
 
 .quarter-separator {
@@ -73,7 +96,6 @@
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 41px;
-	/* identical to box height */
 	text-align: center;
 
 	color: #000000;

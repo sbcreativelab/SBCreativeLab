@@ -186,8 +186,17 @@
 
 .finn-img {
 	position: absolute;
-	width: 278px;
-	height: 195px;
-	right: 30px;
-	bottom: 35px;
+	width: calc(278px + 30px);
+	height: calc(195px + 60px);
+	right: 0px;
+	bottom: 5px;
+	padding: 30px;
+
+	transition: 0.2s;
+}
+
+.finn-img:hover {
+	filter:
+		drop-shadow(0px 0px 25.02px #DB3A2C)
+		drop-shadow(0px 0px 12.5px #DB3A2C);
 }
