@@ -29,23 +29,23 @@ export default class Fest extends Component{
                 <Sidebar />
                 <Topbar />
                 <div className='scroll-view'>
-                    <div className='section-0'>
-                        <div className='section-0-background'></div>
+                    <div className='section section-0'>
+                        <div className='section-background section-0-background'></div>
                         <div className='noise-background'></div>
                         <SectionsBar />
                         <Hero />
                     </div>
-                    <div className='section-1'>
-                        <div className='section-1-background'></div>
+                    <div className='section section-1' id='prompts'>
+                        <div className='section-background section-1-background'></div>
                         <Prompts />
                     </div>
-                    <div className='section-2'>
-                        <div className='section-2-background'></div>
+                    <div className='section section-2' id='workshops'>
+                        <div className='section-background section-2-background'></div>
                         <div className='noise-background'></div>
                         <Workshops />
                     </div>
-                    <div className='section-3'>
-                        <div className='section-3-background'></div>
+                    <div className='section section-3' id='schedule'>
+                        <div className='section-background section-3-background'></div>
                         <Calendar />
                     </div>
                 </div>
