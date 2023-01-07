@@ -26,7 +26,7 @@
 	position: absolute;
 	width: 304px;
 	height: 70px;
-	left: 130px;
+	left: calc((100% - 1245px) / 2 + 130px);
 	bottom: 199px;
 
 	background: #201E29;
@@ -64,7 +64,7 @@
 	position: absolute;
 	width: 304px;
 	height: 70px;
-	left: 468px;
+	left: calc((100% - 1245px) / 2 + 468px);
 	bottom: 199px;
 
 	background: #E8DED1;
@@ -129,6 +129,6 @@
 	position: absolute;
 	width: 24px;
 	height: 77px;
-	left: 587px;
+	left: calc(50% - 12px);
 	bottom: 20px;
 }
