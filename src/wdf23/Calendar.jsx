@@ -6,7 +6,7 @@ import judgingNoteArrow from './imgs/judging-note-arrow.svg'
 export default function Calendar() {
     return (
     	<div className='calendar'>
-            <div className='calendar-title'>WDF Calendar</div>
+            <div className='calendar-title'>Schedule</div>
             <div className='calendar-container'>
                 <div className='calendar-dates-container'>
                     <div className='calendar-date calendar-registration-event'>January 9</div>

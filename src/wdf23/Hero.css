@@ -15,6 +15,14 @@
 	top: 0px;
 }
 
+.button {
+	transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.button:hover {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .register-button-container {
 	display: flex;
 	flex-direction: row;
@@ -31,6 +39,9 @@
 
 	background: #201E29;
 	border-radius: 100px;
+	color: #E8DED1;
+
+	cursor: pointer;
 }
 
 .register-button {
@@ -44,11 +55,18 @@
 	line-height: 24px;
 	letter-spacing: 0.03em;
 
-	color: #E8DED1;
-
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+
+	cursor: pointer;
+}
+
+.register-button-container:active {
+	background: #E8DED1;
+	color: #201E29;
+	box-shadow: inset 0px 2px rgba(0, 0, 0, 0.25);
+	border: 1px solid black;
 }
 
 .learn-more-button-container {
@@ -70,6 +88,8 @@
 	background: #E8DED1;
 	border: 1px solid #201E29;
 	border-radius: 100px;
+
+	cursor: pointer;
 }
 
 .learn-more-button {
@@ -88,6 +108,12 @@
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+
+	cursor: pointer;
+}
+
+.learn-more-button-container:active {
+	box-shadow: inset 0px 2px rgba(0, 0, 0, 0.25);
 }
 
 .hero-text-1 {
