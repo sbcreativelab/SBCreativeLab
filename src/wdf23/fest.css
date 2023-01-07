@@ -6,6 +6,8 @@ html {
 	position: absolute;
 	width: 100%;
 	height: 4000px;
+
+	overflow-x: hidden;
 }
 
 .scroll-view {
@@ -72,6 +74,26 @@ html {
     position: absolute;
 
     background: #E8DED1;
+    z-index: -1;
+}
+
+.section-3 {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	height: 922px;
+	width: calc(100vw - 77px - 7px);
+
+	border-bottom: 1px solid black;
+}
+
+.section-3-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background: #FBF2E6;
     z-index: -1;
 }
 

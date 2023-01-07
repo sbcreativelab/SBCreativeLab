@@ -1,0 +1,111 @@
+.calendar-title {
+	position: absolute;
+	width: 346px;
+	height: 43px;
+	left: 65px;
+	top: 68px;
+
+	font-family: 'Pilowlava';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 43px;
+
+	color: #000000;
+}
+
+.calendar-container {
+	position: absolute;
+	top: 212px;
+	left: 65px;
+
+	width: 85%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calendar-dates-container {
+	width: 280px;
+	height: 551px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	flex-shrink: 0;
+}
+
+.calendar-date {
+	width: 229px;
+	height: 33px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 33px;
+}
+
+.calendar-events-container {
+	width: 911px;
+	height: 566px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	flex-shrink: 0;
+}
+
+.calendar-event {
+	width: 911px;
+	height: 48px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 48px;
+}
+
+.calendar-registration-event {
+	color: #708539;
+}
+
+.calendar-submission-event {
+	color: #DB3B2D;
+}
+
+.calendar-judging-note {
+	position: absolute;
+	width: 146px;
+	height: 29px;
+	left: max(calc(65px + 280px + (85% - 911px - 280px) + 537px + 23px), calc(65px + 280px + 537px + 23px));
+	top: 626px;
+}
+
+.calendar-judging-note-arrow {
+	position: absolute;
+	width: 7px;
+	height: 14.82px;
+	left: 0px;
+	top: 5px;
+}
+
+.calendar-judging-note-text {
+	position: absolute;
+	width: 129px;
+	height: 29px;
+	left: 17px;
+	top: 0px;
+
+	font-family: 'Migra';
+	font-style: italic;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #000000;
+}

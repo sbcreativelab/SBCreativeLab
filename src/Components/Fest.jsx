@@ -7,6 +7,7 @@ import SectionsBar from '../wdf23/SectionsBar';
 import Hero from '../wdf23/Hero'
 import Prompts from '../wdf23/Prompts'
 import Workshops from '../wdf23/Workshops'
+import Calendar from '../wdf23/Calendar'
 
 import backgroundCircles1 from '../wdf23/imgs/background-circles-1.svg'
 import backgroundCircles2 from '../wdf23/imgs/background-circles-2.svg'
@@ -42,6 +43,10 @@ export default class Fest extends Component{
                         <div className='section-2-background'></div>
                         <div className='noise-background'></div>
                         <Workshops />
+                    </div>
+                    <div className='section-3'>
+                        <div className='section-3-background'></div>
+                        <Calendar />
                     </div>
                 </div>
             </div>
