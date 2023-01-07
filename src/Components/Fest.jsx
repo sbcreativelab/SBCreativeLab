@@ -6,9 +6,12 @@ import Topbar from '../wdf23/Topbar';
 import SectionsBar from '../wdf23/SectionsBar';
 import Hero from '../wdf23/Hero'
 import Prompts from '../wdf23/Prompts'
+import Workshops from '../wdf23/Workshops'
 
 import backgroundCircles1 from '../wdf23/imgs/background-circles-1.svg'
 import backgroundCircles2 from '../wdf23/imgs/background-circles-2.svg'
+import backgroundCircles3 from '../wdf23/imgs/background-circles-3.svg'
+import backgroundCircles4 from '../wdf23/imgs/background-circles-4.svg'
 
 export default class Fest extends Component{
     initializeReactGA() {
@@ -18,8 +21,10 @@ export default class Fest extends Component{
     render () {
         return (
             <div className='full-page'>
-                <img className='background-circles-2' src={backgroundCircles2} alt='' />
                 <img className='background-circles-1' src={backgroundCircles1} alt='' />
+                <img className='background-circles-2' src={backgroundCircles2} alt='' />
+                <img className='background-circles-3' src={backgroundCircles3} alt='' />
+                <img className='background-circles-4' src={backgroundCircles4} alt='' />
                 <Sidebar />
                 <Topbar />
                 <div className='scroll-view'>
@@ -32,6 +37,11 @@ export default class Fest extends Component{
                     <div className='section-1'>
                         <div className='section-1-background'></div>
                         <Prompts />
+                    </div>
+                    <div className='section-2'>
+                        <div className='section-2-background'></div>
+                        <div className='noise-background'></div>
+                        <Workshops />
                     </div>
                 </div>
             </div>
