@@ -6,7 +6,7 @@ html {
 .full-page {
 	position: absolute;
 	width: 100%;
-	height: 4000px;
+	height: 8000px;
 
 	overflow-x: hidden;
 }
@@ -108,6 +108,46 @@ html {
 	height: 762px;
 	right: -62px;
 	top: 1813px;
+}
+
+.background-circles-5 {
+	position: absolute;
+	width: 531px;
+	height: 807px;
+	right: 0px;
+	top: 3222px;
+}
+
+.background-circles-6 {
+	position: absolute;
+	width: 605px;
+	height: 762px;
+	left: 38px;
+	top: 4032px;
+}
+
+.background-circles-7 {
+	position: absolute;
+	width: 758px;
+	height: 807px;
+	right: -33px;
+	top: 4373px;
+}
+
+.background-circles-8 {
+	position: absolute;
+	width: 525px;
+	height: 762px;
+	left: -17px;
+	top: 5131px;
+}
+
+.background-circles-9 {
+	position: absolute;
+	width: 606px;
+	height: 942px;
+	right: -72px;
+	top: 6021px;
 }
 
 @font-face {
