@@ -82,6 +82,14 @@ html {
     background: #FBF2E6;
 }
 
+.section-6 {
+	height: 935px;
+}
+
+.section-6-background {
+	background: #E8DED1;
+}
+
 .noise-background {
 	position: absolute;
 	width: 100%;

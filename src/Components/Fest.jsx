@@ -11,6 +11,7 @@ import Workshops from '../wdf23/Workshops'
 import Calendar from '../wdf23/Calendar'
 import Rubric from '../wdf23/Rubric';
 import Judges from '../wdf23/Judges';
+import Prizes from '../wdf23/Prizes';
 
 import backgroundCircles1 from '../wdf23/imgs/background-circles-1.svg'
 import backgroundCircles2 from '../wdf23/imgs/background-circles-2.svg'
@@ -69,6 +70,11 @@ export default class Fest extends Component{
                     <div className='section section-5' id='judges'>
                         <div className='section-background section-5-background'></div>
                         <Judges />
+                    </div>
+                    <div className='section section-6' id='prizes'>
+                        <div className='section-background section-6-background'></div>
+                        <div className='noise-background'></div>
+                        <Prizes />
                     </div>
                 </div>
             </div>
