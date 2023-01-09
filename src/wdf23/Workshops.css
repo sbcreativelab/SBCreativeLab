@@ -14,132 +14,94 @@
 	color: #000000;
 }
 
-.workshop-1-title {
-	position: absolute;
-	width: 696px;
-	height: 79px;
-	left: 66px;
-	top: 151px;
+.workshop {
+	display: flex;
+	flex-direction: column;
+}
+
+.workshop-title {
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+
+	color: #000000;
+}
+
+.workshop-subtitle {
+	width: 520px;
+	height: 33px;
 
 	font-family: 'Neutral Face';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 95px;
-	line-height: 99px;
+	font-size: 32px;
+	line-height: 33px;
+}
+
+.workshop-lead {
+	width: 303px;
+	height: 46px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 31px;
+
+	margin-top: 20px;
 
 	color: #000000;
+}
+
+.workshop-info {
+	width: 706px;
+	height: 99px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 33px;
+
+	margin-top: 20px;
+
+	color: #000000;
+}
+
+.workshop-1 {
+	position: absolute;
+	left: 66px;
+	top: 151px;
+}
+
+.workshop-1-title {
+	width: 696px;
+	height: 79px;
+
+	font-size: 95px;
+	line-height: 99px;
 }
 
 .workshop-1-subtitle {
-	position: absolute;
-	width: 520px;
-	height: 33px;
-	left: 66px;
-	top: 230px;
-
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 33px;
-
 	color: #8E8E8E;
 }
 
-.workshop-1-lead {
+.workshop-2 {
 	position: absolute;
-	width: 303px;
-	height: 46px;
 	left: 66px;
-	top: 293px;
-
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 31px;
-
-	color: #000000;
-}
-
-.workshop-1-info {
-	position: absolute;
-	width: 706px;
-	height: 99px;
-	left: 66px;
-	top: 371px;
-
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 33px;
-
-	color: #000000;
+	top: 507px;
 }
 
 .workshop-2-title {
-	position: absolute;
 	width: 717px;
-	height: 134px;
-	left: 66px;
-	top: 507px;
+	height: 121px;
 
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 400;
 	font-size: 65px;
 	line-height: 67px;
-
-	color: #000000;
 }
 
 .workshop-2-subtitle {
-	position: absolute;
-	width: 518px;
-	height: 33px;
-	left: 66px;
-	top: 628px;
-
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 33px;
-
 	color: #F4F4F4;
-}
-
-.workshop-2-lead {
-	position: absolute;
-	width: 278px;
-	height: 46px;
-	left: 66px;
-	top: 680px;
-
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 31px;
-
-	color: #000000;
-}
-
-.workshop-2-info {
-	position: absolute;
-	width: 706px;
-	height: 99px;
-	left: 66px;
-	top: 749px;
-
-	font-family: 'Neutral Face';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 33px;
-
-	color: #000000;
 }
 
 .workshop-lead-italic {
