@@ -74,6 +74,14 @@ html {
     background: #E8DED1;
 }
 
+.section-5 {
+	height: 922px;
+}
+
+.section-5-background {
+    background: #FBF2E6;
+}
+
 .noise-background {
 	position: absolute;
 	width: 100%;
