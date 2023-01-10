@@ -18,7 +18,7 @@ export default function Judges() {
                 />
                 <Judge
                     name={'Jeanette Zhu (aka JZ)'}
-                    description={'Jeanette is a content creator, designer, and illustrator with 9+ years of experience in creating brands and content for the digital age.<br><br>As a content creator, JZ creates aesthetic art for the soul: illustrations, designs, and animations that talk about modern life and what it means to be human.<br><br>As a designer, I’ve helped transform the branding strategy and design capabilities.'}
+                    description={'Jeanette is a content creator, designer, and illustrator with 9+ years of experience in creating brands and content for the digital age.<br><br>As a content creator, JZ creates aesthetic art for the soul: illustrations, designs, and animations that talk about modern life and what it means to be human. As a designer, JZ has helped transform the branding strategy and design capabilities of dozens of clients (incl. Facebook, Dropbox, and Spotify).'}
                     image={judgeImage2}
                     padding={'small'}
                 />

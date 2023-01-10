@@ -25,6 +25,23 @@
 	align-items: center;
 }
 
+.prize {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.prize-symbol {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 160px;
+	line-height: 26px;
+
+	text-align: center;
+
+	color: #000000;
+}
+
 .prize-1 {
 	box-sizing: border-box;
 

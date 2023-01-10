@@ -16,7 +16,7 @@ export default function Calendar() {
                     <div className='calendar-date'>February 3</div>
                     <div className='calendar-date calendar-submission-event'>February 5</div>
                     <div className='calendar-date'>February 22</div>
-                    <div className='calendar-date'>MONTH DATE</div>
+                    <div className='calendar-date'>(TBA)</div>
                 </div>
                 <div className='calendar-events-container'>
                     <div className='calendar-event calendar-registration-event'>Registration Open</div>
