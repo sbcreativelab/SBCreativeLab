@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './SectionsBar.css'
 
+import instagramImg from './imgs/instagram-icon.png'
+import discordImg from './imgs/discord-icon.png'
+import emailImg from './imgs/email-icon.png'
+
 export default function SectionsBar() {
     return (
         <div className='sectionsbar'>
@@ -13,6 +17,20 @@ export default function SectionsBar() {
                 {/*<SectionButton name='Mentors' />*/}
                 <SectionButton name='Prizes' id='prizes' />
                 <SectionButton name='FAQ' id='faq' />
+            </div>
+            <div className='socials-container'>
+                <SocialButton
+                    img={instagramImg}
+                    link={'https://www.instagram.com/sbcreativelab/'}
+                />
+                <SocialButton
+                    img={discordImg}
+                    link={'https://discord.gg/fc8Rrn7VdV'}
+                />
+                <SocialButton
+                    img={emailImg}
+                    link={''}
+                />
             </div>
         </div>
     )
@@ -36,5 +54,13 @@ function SectionButton({name, id}) {
                 {name}
             </div>
         </a>
+    )
+}
+
+function SocialButton({img, link}) {
+    const handleOnClick = () => window.open(link, '_blank', 'noreferrer');
+
+    return (
+        <img className='social-button' src={img} alt='' onClick={handleOnClick} />
     )
 }
