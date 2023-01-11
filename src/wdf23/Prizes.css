@@ -26,38 +26,88 @@
 }
 
 .prize {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 550px;
+	height: 650px;
+
+	border: 1px solid #000000;
 }
 
-.prize-symbol {
-	font-style: normal;
-	font-weight: 600;
-	font-size: 160px;
-	line-height: 26px;
+.prize-title-container {
+	width: 100%;
+	height: 141px;
+	margin-top: 25px;
+}
 
-	text-align: center;
+.prize-title {
+	width: 300px;
+	height: 141px;
+	margin-left: 25px;
+
+	font-family: 'Neutral Face';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 47px;
 
 	color: #000000;
 }
 
-.prize-1 {
-	box-sizing: border-box;
-
-	width: 473px;
-	height: 473px;
-
-	background: #D9D9D9;
-	border: 1px solid #000000;
+.prize-description {
+	margin-left: 22px;
+	margin-right: 22px;
+	margin-top: 25px;
 }
 
-.prize-2 {
-	box-sizing: border-box;
+.prize-description-line {
+	display: flex;
+	gap: 25px;
+}
 
-	width: 443px;
-	height: 647px;
+.prize-description-point {
+	height: 6px;
+	width: 6px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
 
-	background: #D9D9D9;
-	border: 1px solid #000000;
+	flex-shrink: 0;
+	margin-top: 16px;
+}
+
+.prize-description-text {
+	font-family: 'Migra';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #000000;
+}
+
+.prize-image-container-1 {
+	position: absolute;
+	top: 463px;
+	width: 550px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.prize-image-1 {
+	width: 281.52px;
+	height: 116px;
+}
+
+.prize-image-container-2 {
+	position: absolute;
+	top: 293px;
+	width: 550px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.prize-image-2 {
+	width: 340px;
+	height: 340px;
 }
