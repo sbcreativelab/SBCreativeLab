@@ -8,13 +8,23 @@ export default function Hero() {
     return (
         <div className='hero'>
             <img className='hero-img' src={heroImg} alt='' />
-            <div className='register-button-container button'>
-                <div className='register-button'>Register Now</div>
+            <div className='button-container'>
+                <RegisterButton />
+                <LearnMoreButton />
             </div>
-            <LearnMoreButton />
             <div className='hero-text-1'>Find the hidden colors.</div>
             <div className='hero-text-2'>Registration deadline: February 3</div>
             <img className='hero-arrow' src={heroArrow} alt='' />
+        </div>
+    )
+}
+
+function RegisterButton() {
+    const handleOnClick = () => window.open('https://forms.gle/8ETGQsboJ9JNzpt77', '_blank', 'noreferrer');
+
+    return (
+        <div className='register-button-container button' onClick={handleOnClick}>
+            <div className='register-button'>Register Now</div>
         </div>
     )
 }
