@@ -24,7 +24,7 @@ export default function Judges() {
                 />
                 <Judge
                     name={'Alyssa Long'}
-                    description={''}
+                    description={'After graduating from UCSB in 2021, Alyssa began her role as the communications designer for tonies, a German toy company. She writes and design their email communications, ads, and other creative marketing materials.'}
                     image={judgeImage3}
                     padding={'large'}
                 />
