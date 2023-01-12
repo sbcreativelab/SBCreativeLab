@@ -8,31 +8,54 @@ export default function Calendar() {
     	<div className='calendar'>
             <div className='calendar-title'>Schedule</div>
             <div className='calendar-container'>
-                <div className='calendar-dates-container'>
-                    <div className='calendar-date calendar-registration-event'>January 9</div>
-                    <div className='calendar-date'>January 17</div>
-                    <div className='calendar-date'>January 19</div>
-                    <div className='calendar-date'>January 26</div>
-                    <div className='calendar-date'>February 3</div>
-                    <div className='calendar-date calendar-submission-event'>February 5</div>
-                    <div className='calendar-date'>February 22</div>
-                    <div className='calendar-date'>(TBA)</div>
-                </div>
-                <div className='calendar-events-container'>
-                    <div className='calendar-event calendar-registration-event'>Registration Open</div>
-                    <div className='calendar-event'>Illustration Workshop</div>
-                    <div className='calendar-event'>Poster Design / Fonts workshop</div>
-                    <div className='calendar-event'>GM2 - WDF Worktime</div>
-                    <div className='calendar-event'>Registration Deadline</div>
-                    <div className='calendar-event calendar-submission-event'>Submission Deadline</div>
-                    <div className='calendar-event'>Results Announced</div>
-                    <div className='calendar-event'>Prizes Sent!</div>
-                </div>
+                <CalendarEvent
+                    date={'January 9'}
+                    event={'Registration Open'}
+                    colorClass={'calendar-registration-event'}
+                />
+                <CalendarEvent
+                    date={'January 17'}
+                    event={'Illustration Workshop'}
+                />
+                <CalendarEvent
+                    date={'January 19'}
+                    event={'Poster Design / Fonts workshop'}
+                />
+                <CalendarEvent
+                    date={'January 26'}
+                    event={'GM2 - WDF Worktime'}
+                />
+                <CalendarEvent
+                    date={'February 3'}
+                    event={'Registration Deadline'}
+                />
+                <CalendarEvent
+                    date={'February 5'}
+                    event={'Submission Deadline'}
+                    colorClass={'calendar-submission-event'}
+                />
+                <CalendarEvent
+                    date={'February 22'}
+                    event={'Results Announced'}
+                />
+                <CalendarEvent
+                    date={'(TBA)'}
+                    event={'Prizes Sent!'}
+                />
             </div>
             <div className='calendar-judging-note'>
                 <img className='calendar-judging-note-arrow' src={judgingNoteArrow} alt='' />
                 <div className='calendar-judging-note-text'>Judging Period</div>
             </div>
+        </div>
+    )
+}
+
+function CalendarEvent({date, event, colorClass}) {
+    return (
+        <div className={'calendar-row' + (colorClass ? ' ' + colorClass : '')}>
+            <div className='calendar-date'>{date}</div>
+            <div className='calendar-event'>{event}</div>
         </div>
     )
 }

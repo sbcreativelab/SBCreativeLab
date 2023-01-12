@@ -19,26 +19,25 @@
 	top: 212px;
 	left: 65px;
 
-	width: 85%;
+	width: 80%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 26px;
+}
+
+.calendar-row {
+	width: 100%;
 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.calendar-dates-container {
-	width: 280px;
-	height: 551px;
-
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-
-	flex-shrink: 0;
-}
-
 .calendar-date {
-	width: 229px;
+	width: 260px;
 	height: 33px;
 
 	font-family: 'Neutral Face';
@@ -46,15 +45,6 @@
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 33px;
-}
-
-.calendar-events-container {
-	width: 911px;
-	height: 566px;
-
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
 
 	flex-shrink: 0;
 }
@@ -68,6 +58,8 @@
 	font-weight: 400;
 	font-size: 46px;
 	line-height: 48px;
+
+	flex-shrink: 0;
 }
 
 .calendar-registration-event {
@@ -82,7 +74,8 @@
 	position: absolute;
 	width: 146px;
 	height: 29px;
-	left: max(calc(65px + 280px + (85% - 911px - 280px) + 537px + 23px), calc(65px + 280px + 537px + 23px));
+	/* container padding + date width + (gap = container size - event width - date width) + event width + padding */
+	left: max(calc(65px + 260px + (80% - 911px - 260px) + 537px + 23px), calc(65px + 260px + 537px + 23px));
 	top: 626px;
 }
 
