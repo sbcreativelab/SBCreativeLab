@@ -14,6 +14,7 @@ function W23Projects() {
   const applicationLink = 'https://forms.gle/JZuDZW7EN7UehWHb7'
   const currentQuarter = 'winter'
   const currentYear = '2023'
+  const dueTime = 'January 14th 9pm'
   return (
     <div className="w23projects">
       <div className="title-section">
@@ -30,15 +31,20 @@ function W23Projects() {
           </div>
         </div>
         <div className="title-container">
-          <h1 className="title">
-            sb creative lab presents.<br/>
-            <strong>
-              projects<br/>
-              teams
-            </strong>
-            <br/>
-            {currentQuarter + " " + currentYear}.
-          </h1>
+          <div>
+            <h1 className="title">
+              sb creative lab presents.<br/>
+              <strong>
+                projects<br/>
+                teams
+              </strong>
+              <br/>
+              {currentQuarter + " " + currentYear}.
+            </h1>
+            <p className="due-time">
+              Applications close <b>{dueTime}</b>!
+            </p>
+          </div>
           <p className="title-skill title-skill-1">team work</p>
           <p className="title-skill title-skill-2">mentorship</p>
           <p className="title-skill title-skill-3">networking</p>

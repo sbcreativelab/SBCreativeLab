@@ -89,6 +89,14 @@ body {
   text-transform: uppercase;
 }
 
+.due-time {
+  font: normal 28px/42px 'Poppins';
+}
+
+.due-time > b {
+  text-decoration: wavy underline white;
+}
+
 .title-skill-1 {
   font: normal 48px/63px 'MADE Soulmaze Brush';
   position: absolute;
@@ -311,6 +319,10 @@ p {
   
   .title strong {
     font: bold calc(100vw * 0.15)/calc(100vh * 0.12) 'Neutral Face';
+  }
+
+  .due-time {
+    font: normal 17px/38px 'Poppins';
   }
   
   .title-skill {
