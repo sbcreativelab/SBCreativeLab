@@ -51,3 +51,42 @@
 
 	padding-top: 7px;
 }
+
+@media only screen and (max-width: 1300px) {
+	.faq-title {
+        position: absolute;
+        width: 170px;
+        height: 34px;
+        left: 24px;
+        top: 20px;
+
+        font-family: 'Pilowlava';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #000000;
+    }
+
+    .faq-container {
+    	top: 121px;
+    	left: 24px;
+    	right: 30px;
+    }
+
+    .faq-question {
+    	width: min(100%, 600px);
+
+		font-size: 20px;
+		line-height: 20px;
+		letter-spacing: 0.03em;
+    }
+
+    .faq-answer {
+    	width: min(100%, 600px);
+
+		font-size: 20px;
+		line-height: 28px;
+    }
+}

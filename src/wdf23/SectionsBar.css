@@ -84,6 +84,9 @@
 
 @media only screen and (max-width: 1300px) {
 	.sectionsbar {
-		display: none;
+		background: #FBF2E6;
+
+		width: 100%;
+		height: calc(100vh - 77px);
 	}
 }

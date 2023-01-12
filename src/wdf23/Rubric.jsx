@@ -1,9 +1,12 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive';
 import './Rubric.css'
 
 import rubricArrow from './imgs/rubric-arrow.svg'
 
 export default function Rubric() {
+    const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
+
     return (
     	<div className='rubric'>
     		<div className='rubric-title'>Rubric</div>
@@ -14,17 +17,17 @@ export default function Rubric() {
             </div>
             <div className='rubric-container rubric-album-cover-container'>
                 <RubricSection
-                    maxWidth={420}
+                    sectionClass={'rubric-album-cover-section'}
                     title={"Composition & Design"}
                     description={"Strong and unique composition. Layout is cohesive and actively contributes to the meaning of the design."}
                 />
                 <RubricSection
-                    maxWidth={420}
+                    sectionClass={'rubric-album-cover-section rubric-right-align-section-container'}
                     title={"Originality & Creativity"}
                     description={"Excellent approach to developing and clearly expressing an original idea, with evidence of risk-taking."}
                 />
                 <RubricSection
-                    maxWidth={420}
+                    sectionClass={'rubric-album-cover-section'}
                     title={"Rendering & Completion"}
                     description={"No noticeable gaps or discrepancies within the design. Design is mostly to fully done with a clear concept."}
                 />
@@ -35,33 +38,36 @@ export default function Rubric() {
             </div>
             <div className='rubric-container rubric-music-fest-container'>
                 <RubricSection
-                    maxWidth={320}
+                    sectionClass={'rubric-music-fest-section'}
                     title={"Composition & Design"}
                     description={"Strong and unique composition. Layout is cohesive and actively contributes to the meaning of the design."}
                 />
                 <RubricSection
-                    maxWidth={320}
+                    sectionClass={'rubric-music-fest-section rubric-right-align-section-container'}
                     title={"Originality & Creativity"}
                     description={"Excellent approach to developing and clearly expressing an original idea, with evidence of risk-taking."}
                 />
                 <RubricSection
-                    maxWidth={320}
+                    sectionClass={'rubric-music-fest-section'}
                     title={"Information Hierarchy"}
                     description={"Presents different types of text in an intuitive manner that does not overwhelm the reader."}
                 />
                 <RubricSection
-                    maxWidth={320}
+                    sectionClass={'rubric-music-fest-section rubric-right-align-section-container'}
                     title={"Use of Copy & Legibility"}
                     description={"Utilizes copy efficiently and creatively, without compromising the legibility of the text."}
                 />
+            </div>
+            <div className='rubric-detailed-scoring-button'>
+                <div className='rubric-detailed-scoring-text'>{!isMobile ? 'See detailed scoring' : 'See detailed scoring on desktop'}</div>
             </div>
     	</div>
     )
 }
 
-function RubricSection({ title, description, maxWidth }) {
+function RubricSection({ title, description, sectionClass }) {
     return (
-        <div className='rubric-section-container' style={{ maxWidth: maxWidth }}>
+        <div className={'rubric-section-container ' + sectionClass}>
             <div className='rubric-section-title'>{title}</div>
             <div className='rubric-section-description'>{description}</div>
         </div>

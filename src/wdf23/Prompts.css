@@ -84,7 +84,7 @@
     position: absolute;
     width: 243px;
     height: 33px;
-    top: 31px;
+    margin-top: 31px;
 }
 
 .album-cover-title-text {
@@ -116,7 +116,7 @@
     position: absolute;
     width: 415px;
     height: 117px;
-    top: 136px;
+    margin-top: 136px;
 
     font-family: 'Migra';
     font-style: normal;
@@ -140,7 +140,7 @@
     position: absolute;
     width: 392px;
     height: 87px;
-    top: 368px;
+    margin-top: 368px;
 
     font-family: 'Migra';
     font-style: normal;
@@ -278,7 +278,7 @@
     position: absolute;
     width: 395px;
     height: 33px;
-    top: 31px;
+    margin-top: 31px;
 }
 
 .music-fest-title-star {
@@ -310,7 +310,7 @@
     position: absolute;
     width: 384px;
     height: 78px;
-    top: 136px;
+    margin-top: 136px;
 
     font-family: 'Migra';
     font-style: normal;
@@ -334,7 +334,7 @@
     position: absolute;
     width: 392px;
     height: 58px;
-    top: 368px;
+    margin-top: 368px;
 
     font-family: 'Migra';
     font-style: normal;
@@ -394,4 +394,209 @@
     height: 61px;
     right: -28px;
     top: 196px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .prompts-title {
+        position: absolute;
+        width: 170px;
+        height: 34px;
+        left: 24px;
+        top: 20px;
+
+        font-family: 'Pilowlava';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #000000;
+    }
+
+    .prompts-subtitle {
+        position: absolute;
+        width: 358px;
+        height: 34px;
+        left: 24px;
+        top: 69px;
+
+        font-family: 'Neutral Face';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+
+        color: #000000;
+    }
+
+    .prompts-footer {
+        display: none;
+    }
+
+    .prompt-boxes {
+        top: 159px;
+        height: 656px;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0%;
+    }
+
+    .album-cover-container {
+        width: 320px;
+        height: 307px;
+    }
+
+    .album-cover-box {
+        width: 320px;
+        height: 253px;
+    }
+
+    .album-cover-title-container {
+        width: 172px;
+        height: 24px;
+        margin-top: 22px;
+    }
+
+    .album-cover-title-text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .album-cover-title-star {
+        width: 40px;
+        height: 40px;
+        top: -10px;
+        left: -12.5px;
+    }
+
+    .album-cover-description {
+        width: 294.19px;
+        height: 81px;
+        margin-top: 72px;
+
+        font-size: 22.6844px;
+        line-height: 27px;
+    }
+
+    .album-cover-note {
+        width: 277.88px;
+        height: 63px;
+        margin-top: 162.59px;
+
+        font-size: 17.0133px;
+        line-height: 21px;
+    }
+
+    .album-cover-deco {
+        display: none;
+    }
+
+    .illustration-box {
+        padding: 6.79527px;
+        gap: 6.8px;
+
+        width: 153.59px;
+        height: 33.59px;
+
+        border: 1.35905px solid #441A15;
+    }
+
+    .illustration-text {
+        width: 140px;
+        height: 20px;
+
+        font-size: 19.0267px;
+        line-height: 23px;
+    }
+
+    .multimedia-box {
+        padding: 6.79527px;
+        gap: 6.8px;
+
+        width: 133.59px;
+        height: 33.59px;
+
+        border: 1.35905px solid #441A15;
+    }
+
+    .multimedia-text {
+        width: 120px;
+        height: 20px;
+
+        font-size: 19.0267px;
+        line-height: 23px;
+    }
+
+    .music-fest-container {
+        width: 320px;
+        height: 313px;
+    }
+
+    .music-fest-box {
+        width: 320px;
+        height: 258px;
+    }
+
+    .music-fest-title-container {
+        width: 280.01px;
+        height: 24px;
+        margin-top: 22px;
+    }
+
+    .music-fest-title-text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .music-fest-title-star {
+        width: 40px;
+        height: 40px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .music-fest-description {
+        width: 272.21px;
+        height: 54px;
+        margin-top: 96.41px;
+
+        font-size: 22.6844px;
+        line-height: 27px;
+    }
+
+    .music-fest-note {
+        width: 277.88px;
+        height: 42px;
+        margin-top: 182px;
+
+        font-size: 17.0133px;
+        line-height: 21px;
+    }
+
+    .graphic-design-box {
+        padding: 7.08889px;
+        gap: 7.09px;
+
+        width: 189.18px;
+        height: 35.18px;
+        
+        border: 1.41778px solid #441A15;
+    }
+
+    .graphic-design-text {
+        width: 176px;
+        height: 21px;
+
+        font-family: 'Neutral Face';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.8489px;
+        line-height: 23px;
+    }
+
+    .music-fest-deco {
+        display: none;
+    }
 }

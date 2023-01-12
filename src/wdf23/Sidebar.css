@@ -40,3 +40,9 @@
 
 	border: 0.5px solid #201E29;
 }
+
+@media only screen and (max-width: 1300px) {
+  	.sidebar {
+  		display: none;
+  	}
+}

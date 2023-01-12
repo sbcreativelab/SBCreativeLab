@@ -1,9 +1,13 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive';
 import './Calendar.css'
 
 import judgingNoteArrow from './imgs/judging-note-arrow.svg'
+import judgingNoteArrowSmall from './imgs/judging-note-arrow-small.svg'
 
 export default function Calendar() {
+    const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
+
     return (
     	<div className='calendar'>
             <div className='calendar-title'>Schedule</div>
@@ -44,7 +48,7 @@ export default function Calendar() {
                 />
             </div>
             <div className='calendar-judging-note'>
-                <img className='calendar-judging-note-arrow' src={judgingNoteArrow} alt='' />
+                <img className='calendar-judging-note-arrow' src={!isMobile ? judgingNoteArrow : judgingNoteArrowSmall} alt='' />
                 <div className='calendar-judging-note-text'>Judging Period</div>
             </div>
         </div>

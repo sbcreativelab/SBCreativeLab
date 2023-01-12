@@ -1,13 +1,18 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive';
 import './Hero.css'
 
 import heroImg from './imgs/hero-img.svg'
+import heroImgSmall from './imgs/hero-img-small.svg'
 import heroArrow from './imgs/hero-arrow.svg'
 
 export default function Hero() {
+    const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
+
     return (
         <div className='hero'>
-            <img className='hero-img' src={heroImg} alt='' />
+            <div className='hero-tagline'>Unleash your creativity.</div>
+            <img className='hero-img' src={!isMobile ? heroImg : heroImgSmall} alt='' />
             <div className='button-container'>
                 <RegisterButton />
                 <LearnMoreButton />

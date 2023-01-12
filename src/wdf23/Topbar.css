@@ -100,3 +100,50 @@
 
 	color: #000000;
 }
+
+.menu-button {
+	display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  	.tagline-text {
+  		display: none;
+  	}
+
+  	.corner-logo {
+  		width: 31px;
+  		height: 33px;
+  		top: initial;
+  		left: 12px;
+  		bottom: 8px;
+  	}
+
+  	.logo-separator {
+  		left: 55px;
+  	}
+
+  	.quarter-text {
+  		width: 79px;
+		height: 36px;
+		top: initial;
+		left: 74px;
+		bottom: 8px;
+
+  		font-size: 18px;
+		line-height: 18px;
+  	}
+
+  	.quarter-separator {
+  		left: 170px;
+  	}
+
+  	.menu-button {
+  		display: block;
+
+  		position: absolute;
+		width: 40px;
+		height: 40px;
+		right: 8px;
+		bottom: 8px;
+  	}
+}

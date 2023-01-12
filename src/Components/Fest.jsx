@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import ReactGA from 'react-ga'
+import { useMediaQuery } from 'react-responsive';
 import '../wdf23/fest.css';
 
 import BackgroundCircles from '../wdf23/BackgroundCircles';
@@ -15,59 +16,60 @@ import Judges from '../wdf23/Judges';
 import Prizes from '../wdf23/Prizes';
 import FAQ from '../wdf23/FAQ';
 
-export default class Fest extends Component{
-    initializeReactGA() {
+export default function Fest() {
+    useEffect(() => {
         ReactGA.initialize('UA-178117149-1');
         ReactGA.pageview('/fest');
-    }
-    render () {
-        return (
-            <div className='full-page'>
-                <BackgroundCircles />
-                <Sidebar />
-                <Topbar />
-                <div className='scroll-view'>
-                    <div className='section section-0'>
-                        <div className='section-background section-0-background'></div>
-                        <div className='noise-background'></div>
-                        <SectionsBar />
-                        <Hero />
-                    </div>
-                    <div className='section section-1' id='prompts'>
-                        <div className='section-background section-1-background'></div>
-                        <Prompts />
-                    </div>
-                    <div className='section section-2' id='workshops'>
-                        <div className='section-background section-2-background'></div>
-                        <div className='noise-background'></div>
-                        <Workshops />
-                    </div>
-                    <div className='section section-3' id='schedule'>
-                        <div className='section-background section-3-background'></div>
-                        <Calendar />
-                    </div>
-                    <div className='section section-4' id='rubric'>
-                        <div className='section-background section-4-background'></div>
-                        <div className='noise-background'></div>
-                        <Rubric />
-                    </div>
-                    <div className='section section-5' id='judges'>
-                        <div className='section-background section-5-background'></div>
-                        <Judges />
-                    </div>
-                    <div className='section section-6' id='prizes'>
-                        <div className='section-background section-6-background'></div>
-                        <div className='noise-background'></div>
-                        <Prizes />
-                    </div>
-                    <div className='section section-7' id='faq'>
-                        <div className='section-background section-7-background'></div>
-                        <FAQ />
-                    </div>
+    }, [])
+
+    const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
+
+    return (
+        <div className='full-page'>
+            <BackgroundCircles />
+            <Sidebar />
+            <Topbar />
+            <div className='scroll-view'>
+                <div className='section section-0'>
+                    <div className='section-background section-0-background'></div>
+                    <div className='noise-background'></div>
+                    {!isMobile && <SectionsBar />}
+                    <Hero />
+                </div>
+                <div className='section section-1' id='prompts'>
+                    <div className='section-background section-1-background'></div>
+                    <Prompts />
+                </div>
+                <div className='section section-2' id='workshops'>
+                    <div className='section-background section-2-background'></div>
+                    <div className='noise-background'></div>
+                    <Workshops />
+                </div>
+                <div className='section section-3' id='schedule'>
+                    <div className='section-background section-3-background'></div>
+                    <Calendar />
+                </div>
+                <div className='section section-4' id='rubric'>
+                    <div className='section-background section-4-background'></div>
+                    <div className='noise-background'></div>
+                    <Rubric />
+                </div>
+                <div className='section section-5' id='judges'>
+                    <div className='section-background section-5-background'></div>
+                    <Judges />
+                </div>
+                <div className='section section-6' id='prizes'>
+                    <div className='section-background section-6-background'></div>
+                    <div className='noise-background'></div>
+                    <Prizes />
+                </div>
+                <div className='section section-7' id='faq'>
+                    <div className='section-background section-7-background'></div>
+                    <FAQ />
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 /** 2022 Winter Design Challenge **/ 

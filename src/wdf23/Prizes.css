@@ -85,8 +85,7 @@
 }
 
 .prize-image-container-1 {
-	position: absolute;
-	top: 463px;
+	margin-top: 134px;
 	width: 550px;
 
 	display: flex;
@@ -99,8 +98,7 @@
 }
 
 .prize-image-container-2 {
-	position: absolute;
-	top: 293px;
+	margin-top: -32px;
 	width: 550px;
 
 	display: flex;
@@ -110,4 +108,107 @@
 .prize-image-2 {
 	width: 340px;
 	height: 340px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.prizes-title {
+        position: absolute;
+        width: 170px;
+        height: 34px;
+        left: 24px;
+        top: 20px;
+
+        font-family: 'Pilowlava';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #000000;
+    }
+
+    .prizes-container {
+    	top: 110px;
+
+    	flex-direction: column;
+    	gap: 40px;
+    }
+
+    .prize {
+    	width: 315px;
+    	height: unset;
+    }
+
+    .prize-title-container {
+		height: 54px;
+    	margin-top: 14px;
+    }
+
+    .prize-title {
+    	width: 171.82px;
+		height: 54px;
+		margin-left: 14px;
+
+		font-size: 27.4909px;
+		line-height: 27px;
+    }
+
+    .prize-description-line {
+    	gap: 15px;
+    }
+
+    .prize-description-text {
+		font-size: 20.6182px;
+		line-height: 25px;
+    }
+
+    .prize-description-point {
+    	width: 4px;
+    	height: 4px;
+
+		margin-top: 9px;
+    }
+
+    .prize-1 {
+    	height: 253px;
+    }
+
+    .prize-2 {
+    	height: 311px;
+    }
+
+    .prize-title-container {
+    	height: unset;
+    }
+
+    .prize-title {
+    	height: unset;
+    }
+
+    .prize-description {
+    	margin-left: 16px;
+    	margin-right: 16px;
+    }
+
+    .prize-image-container-1 {
+    	width: 315px;
+    	margin-top: 0px;
+    	margin-left: 60px;
+    }
+
+    .prize-image-1 {
+    	width: 125px;
+		height: 51.51px;
+    }
+
+    .prize-image-container-2 {
+    	width: 315px;
+    	margin-top: -13px;
+    	margin-left: 60px;
+    }
+
+    .prize-image-2 {
+    	width: 121.19px;
+		height: 121.19px;
+    }
 }

@@ -102,3 +102,82 @@
 
 	color: #000000;
 }
+
+@media only screen and (max-width: 1300px) {
+	.calendar-title {
+        position: absolute;
+        width: 170px;
+        height: 34px;
+        left: 24px;
+        top: 20px;
+
+        font-family: 'Pilowlava';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+
+        color: #000000;
+    }
+
+	.calendar-container {
+		left: 24px;
+		top: 130px;
+		width: unset;
+
+		gap: 30px;
+	}
+
+	.calendar-row {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.calendar-date {
+		width: 100px;
+		height: 19px;
+
+		font-family: 'Migra';
+		font-style: italic;
+		font-weight: 200;
+		font-size: 16px;
+		line-height: 19px;
+
+		color: #8E8E8E;
+	}
+
+	.calendar-event {
+		width: 400px;
+		height: 20px;
+
+		font-family: 'Neutral Face';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 19.548px;
+		line-height: 20px;
+	}
+
+	.calendar-judging-note {
+		width: 115px;
+		height: 61px;
+		top: 506px;
+		left: 270px;
+	}
+
+	.calendar-judging-note-arrow {
+		width: 15px;
+		height: 61px;
+		left: 0px;
+		top: 0px;
+	}
+
+	.calendar-judging-note-text {
+		width: 86px;
+		height: 19px;
+		left: 25px;
+		top: 21px;
+
+		font-size: 16px;
+		line-height: 19px;
+	}
+}

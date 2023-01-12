@@ -1,6 +1,8 @@
 import React from 'react'
 import './Topbar.css'
 
+import menuButton from './imgs/menu-button.svg'
+
 export default function Topbar() {
     return (
         <div className='topbar'>
@@ -12,6 +14,7 @@ export default function Topbar() {
             <div className='quarter-text'>Winter 2023</div>
             <div className='quarter-separator'></div>
             <div className='tagline-text'>Unleash your creativity.</div>
+            <img className='menu-button' src={menuButton} alt='' />
         </div>
     )
 }
