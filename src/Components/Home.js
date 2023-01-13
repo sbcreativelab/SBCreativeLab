@@ -338,11 +338,11 @@ export default class Home extends Component {
                                                 />
                                                 </div>
                                             </div>
-                                            {/* <div className="button-hover">
-                                                <a target="_blank" rel="noopener noreferrer" href="https://projects.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-dark">
-                                                    Apply for Projects Teams! 🦊
+                                            <div className="button-hover">
+                                                <a target="_blank" rel="noopener noreferrer" href="https://designathon.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-dark">
+                                                    See Our Spring Designathon!
                                                 </a>
-                                            </div> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

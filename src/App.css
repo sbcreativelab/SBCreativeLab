@@ -1270,6 +1270,7 @@ label {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: .035em;
+  text-align: center;
 }
 
 #skytram{
@@ -1354,8 +1355,7 @@ a .icon-title:hover{
 }
 
 .about-title-3{
-  text-align: right;
-  margin-right: 10%;
+  margin-left: 10%;
   margin-bottom: 5%;
 }
 
@@ -2084,20 +2084,72 @@ a .icon-title:hover{
   padding-top: 140px;
 }
 
-.resources{
+.resources, .merch {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-top: 140px;
 }
 
-.resources-section{
+.resources-section {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
     font-family: "Poppins";
 }
+
+.merch-section {
+  width: 100%;
+  margin-right: auto;
+  max-width: 1100px;
+  font-family: "Poppins";
+}
+
+.merch-button {
+  background-color: invisible;
+  font-family: "Poppins";
+  border: 3px solid #356A69;
+  color: #356A69;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 8px 24px 8px;
+  border-radius: 13px;
+  transition: all .3s ease;
+}
+
+.merch-button:hover {
+  background-color: #356A69;
+  color: white;
+  padding: 8px 24px 8px;
+}
+
+/* .merch-button {
+  background-color: black;
+  font-family: "Poppins";
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1;
+  padding: 16px 48px 18px;
+  transition-property: background-color, border-color, color, filter, transform;
+  transition-duration: 0.3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  width: 392px;
+  display: block;
+  border: none;
+  border-radius: 45px;
+  text-transform: uppercase;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.merch-button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+} */
 
 .masonry-grid{
   margin-left: auto;
@@ -2295,7 +2347,7 @@ a.event-subtitle{
     color: white;
     background-color: #356A69;
     font-family: "Poppins";
-    font-size: 14px;
+    font-size: 15px;
     line-height: 6;
     padding: 8px 24px 8px;
     border-radius: 45px;
@@ -2307,7 +2359,7 @@ a.event-subtitle{
     border: 3px solid #356A69;
     background-color: white;
     color: #356A69;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 6;
     padding: 8px 24px 8px;
     border-radius: 45px;
