@@ -69,3 +69,69 @@
 	right: -72px;
 	top: 6021px;
 }
+
+@media only screen and (max-width: 1300px) {
+	.background-circles-1 {
+		width: 353px;
+		height: 572px;
+		left: -44px;
+		top: 516px;
+	}
+
+	.background-circles-2 {
+		width: 428px;
+		height: 707px;
+		right: -80px;
+		top: 910px;
+	}
+
+	.background-circles-3 {
+		width: 243px;
+		height: 435px;
+		left: unset;
+		right: -20px;
+		top: 1624px;
+	}
+
+	.background-circles-4 {
+		width: 322px;
+		height: 569px;
+		left: -10px;
+		top: 2006px;
+	}
+
+	.background-circles-5 {
+		width: 290px;
+		height: 494px;
+		right: -10px;
+		top: 2610px;
+	}
+
+	.background-circles-6 {
+		width: 428px;
+		height: 762px;
+		left: -50px;
+		top: 3854px;
+	}
+
+	.background-circles-7 {
+		width: 334px;
+		height: 643px;
+		right: 0px;
+		top: 4493px;
+	}
+
+	.background-circles-8 {
+		width: 428px;
+		height: 762px;
+		left: -50px;
+		top: 5374px;
+	}
+
+	.background-circles-9 {
+		width: 285px;
+		height: 563px;
+		left: 293px;
+		top: 6256px;
+	}
+}
