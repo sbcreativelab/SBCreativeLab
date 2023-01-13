@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import ReactGA from 'react-ga'
+import React, { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
 import { useMediaQuery } from 'react-responsive';
 import '../wdf23/fest.css';
 
@@ -24,11 +24,22 @@ export default function Fest() {
 
     const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
 
+    let [isMenuOpen, setIsMenuOpen] = useState(false);
+    let [anchorTarget, setAnchorTarget] = useState(null)
+    let toggleMenu = (anchorID) => {
+        setIsMenuOpen(!isMenuOpen);
+        anchorID && setAnchorTarget(document.getElementById(anchorID))
+    }
+
+    useEffect(() => {
+        isMobile && anchorTarget && anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    })
+
     return (
-        <div className='full-page'>
+        <div className={'full-page' + (isMenuOpen ? ' no-scroll' : '')}>
             <BackgroundCircles />
             <Sidebar />
-            <Topbar />
+            <Topbar toggleMenu={toggleMenu} />
             <div className='scroll-view'>
                 <div className='section section-0'>
                     <div className='section-background section-0-background'></div>
@@ -68,6 +79,7 @@ export default function Fest() {
                     <FAQ />
                 </div>
             </div>
+            {isMobile && <SectionsBar isOpen={isMenuOpen} toggleMenu={toggleMenu} />}
         </div>
     )
 }

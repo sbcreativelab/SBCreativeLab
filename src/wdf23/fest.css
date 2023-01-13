@@ -5,15 +5,21 @@ html {
 .full-page {
 	position: absolute;
 	width: 100%;
-	height: 7562px;
 
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .scroll-view {
-	position: absolute;
+	position: relative;
 	top: 77px;
 	left: 84px;
+
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
 }
 
 .section {
@@ -111,10 +117,6 @@ html {
 }
 
 @media only screen and (max-width: 1300px) {
-	.full-page {
-		height: 7859px;
-	}
-
 	.scroll-view {
 		left: 0px;
 	}

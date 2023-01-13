@@ -84,9 +84,47 @@
 
 @media only screen and (max-width: 1300px) {
 	.sectionsbar {
+		display: none;
 		background: #FBF2E6;
 
 		width: 100%;
 		height: calc(100vh - 77px);
+
+		border: none;
+
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.drop {
+		display: flex;
+		position: fixed;
+		top: 77px;
+	}
+
+	.sections-text {
+		position: unset;
+
+		align-items: center;
+		justify-content: center;
+	}
+
+	.socials-container {
+		position: unset;
+		width: 50%;
+	}
+
+	.social-button {
+		background-color: rgba(200, 200, 200, 0.6);
+	}
+
+	.section-button-container {
+		justify-content: center;
+	}
+
+	.section-button {
+		width: 126px;
+		text-align: center;
 	}
 }
