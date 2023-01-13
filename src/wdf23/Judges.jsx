@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive'
 import './Judges.css'
 
 import judgeImage1 from './imgs/judge-1.png'

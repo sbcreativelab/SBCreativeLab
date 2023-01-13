@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive'
 import './Calendar.css'
 
 import judgingNoteArrow from './imgs/judging-note-arrow.svg'

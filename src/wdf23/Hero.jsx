@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive'
 import './Hero.css'
 
 import heroImg from './imgs/hero-img.svg'

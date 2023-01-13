@@ -1,5 +1,5 @@
 import React from 'react'
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive'
 import './Rubric.css'
 
 import rubricArrow from './imgs/rubric-arrow.svg'
