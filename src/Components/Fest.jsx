@@ -1,57 +1,145 @@
-import React, { Component } from 'react'
-import ReactGA from 'react-ga'
-import '../wdc22/challenge.css'
-import Navbar from '../wdc22/Navbar';
-import Hero from '../wdc22/Hero';
-import About from '../wdc22/About';
-import Details from '../wdc22/Details';
-import Rubric from '../wdc22/Rubric';
-import Judges from '../wdc22/Judges';
-import Calendar from '../wdc22/Calendar';
-import FAQ from '../wdc22/FAQ';
-import Footer from '../wdc22/Footer';
-import '../wdc22/index.css';
+import React, { useEffect, useState } from 'react';
+import ReactGA from 'react-ga';
+import { useMediaQuery } from 'react-responsive';
+import '../wdf23/fest.css';
 
-export default class Challenge extends Component{
-    constructor(props) {
-        super(props);
-    }
-    initializeReactGA() {
+import BackgroundCircles from '../wdf23/BackgroundCircles';
+import Sidebar from '../wdf23/Sidebar';
+import Topbar from '../wdf23/Topbar';
+import SectionsBar from '../wdf23/SectionsBar';
+import Hero from '../wdf23/Hero'
+import Prompts from '../wdf23/Prompts'
+import Workshops from '../wdf23/Workshops'
+import Calendar from '../wdf23/Calendar'
+import Rubric from '../wdf23/Rubric';
+import Judges from '../wdf23/Judges';
+import Prizes from '../wdf23/Prizes';
+import FAQ from '../wdf23/FAQ';
+
+export default function Fest() {
+    useEffect(() => {
         ReactGA.initialize('UA-178117149-1');
-        ReactGA.pageview('/challenge');
+        ReactGA.pageview('/fest');
+    }, [])
+
+    const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
+
+    let [isMenuOpen, setIsMenuOpen] = useState(false);
+    let [anchorTarget, setAnchorTarget] = useState(null)
+    let toggleMenu = (anchorID) => {
+        setIsMenuOpen(!isMenuOpen);
+        anchorID && setAnchorTarget(document.getElementById(anchorID))
     }
-    render () {
-        return (
-            <div className='app'>
-            <div className='section-0'>
-              <header className='section-1'>
-                <Navbar />
-                <Hero />
-                <div id='home'>
-                  <About />
+
+    useEffect(() => {
+        isMobile && anchorTarget && anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    })
+
+    return (
+        <div className={'full-page' + (isMenuOpen ? ' no-scroll' : '')}>
+            <BackgroundCircles />
+            <Sidebar />
+            <Topbar toggleMenu={toggleMenu} />
+            <div className='scroll-view'>
+                <div className='section section-0'>
+                    <div className='section-background section-0-background'></div>
+                    <div className='noise-background'></div>
+                    {!isMobile && <SectionsBar />}
+                    <Hero />
                 </div>
-                <Details />
-              </header>
+                <div className='section section-1' id='prompts'>
+                    <div className='section-background section-1-background'></div>
+                    <Prompts />
+                </div>
+                <div className='section section-2' id='workshops'>
+                    <div className='section-background section-2-background'></div>
+                    <div className='noise-background'></div>
+                    <Workshops />
+                </div>
+                <div className='section section-3' id='schedule'>
+                    <div className='section-background section-3-background'></div>
+                    <Calendar />
+                </div>
+                <div className='section section-4' id='rubric'>
+                    <div className='section-background section-4-background'></div>
+                    <div className='noise-background'></div>
+                    <Rubric />
+                </div>
+                <div className='section section-5' id='judges'>
+                    <div className='section-background section-5-background'></div>
+                    <Judges />
+                </div>
+                <div className='section section-6' id='prizes'>
+                    <div className='section-background section-6-background'></div>
+                    <div className='noise-background'></div>
+                    <Prizes />
+                </div>
+                <div className='section section-7' id='faq'>
+                    <div className='section-background section-7-background'></div>
+                    <FAQ />
+                </div>
             </div>
-            <div className='section-2' id='rubric'>
-              <Rubric id='rubric'/>
-            </div>
-            <div className='section-3'>
-              <Judges />
-            </div>
-            <div className='section-4' id='calendar'>
-              <Calendar />
-            </div>
-            <div id='faq'>
-              <FAQ />
-            </div>
-            <div className='section-6'>
-              <Footer />
-            </div>
-          </div>
-        )
-    }
+            {isMobile && <SectionsBar isOpen={isMenuOpen} toggleMenu={toggleMenu} />}
+        </div>
+    )
 }
+
+/** 2022 Winter Design Challenge **/ 
+
+// import React, { Component } from 'react'
+// import ReactGA from 'react-ga'
+// import '../wdc22/challenge.css'
+// import Navbar from '../wdc22/Navbar';
+// import Hero from '../wdc22/Hero';
+// import About from '../wdc22/About';
+// import Details from '../wdc22/Details';
+// import Rubric from '../wdc22/Rubric';
+// import Judges from '../wdc22/Judges';
+// import Calendar from '../wdc22/Calendar';
+// import FAQ from '../wdc22/FAQ';
+// import Footer from '../wdc22/Footer';
+// import '../wdc22/index.css';
+
+// export default class Challenge extends Component{
+//     constructor(props) {
+//         super(props);
+//     }
+//     initializeReactGA() {
+//         ReactGA.initialize('UA-178117149-1');
+//         ReactGA.pageview('/challenge');
+//     }
+//     render () {
+//         return (
+//             <div>
+//             <div className='section-0'>
+//               <header className='section-1'>
+//                 <Navbar />
+//                 <Hero />
+//                 <div id='home'>
+//                   <About />
+//                 </div>
+//                 <Details />
+//               </header>
+//             </div>
+//             <div className='section-2' id='rubric'>
+//               <Rubric id='rubric'/>
+//             </div>
+//             <div className='section-3'>
+//               <Judges />
+//             </div>
+//             <div className='section-4' id='calendar'>
+//               <Calendar />
+//             </div>
+//             <div id='faq'>
+//               <FAQ />
+//             </div>
+//             <div className='section-6'>
+//               <Footer />        
+//             </div>
+//           </div>
+//         )
+//     }
+// }
 
 /** 2021 Winter Design Challenge */
 
@@ -223,3 +311,4 @@ export default class Challenge extends Component{
 //         )
 //     }
 // };
+
