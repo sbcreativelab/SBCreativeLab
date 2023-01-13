@@ -12,7 +12,6 @@
 .sections-text {
 	position: relative;
 	width: 149px;
-	height: 548px;
 	left: 26px;
 	top: 116px;
 
@@ -95,6 +94,8 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+
+		padding-bottom: 80px;
 	}
 
 	.drop {
@@ -108,6 +109,9 @@
 
 		align-items: center;
 		justify-content: center;
+
+		gap: 10px;
+		padding: 25px;
 	}
 
 	.socials-container {
