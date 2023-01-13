@@ -93,7 +93,7 @@
 		border: none;
 
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: flex-start;
 		align-items: center;
 	}
 
