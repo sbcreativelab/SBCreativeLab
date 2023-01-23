@@ -12,6 +12,7 @@ import Prompts from '../wdf23/Prompts'
 import Workshops from '../wdf23/Workshops'
 import Calendar from '../wdf23/Calendar'
 import Rubric from '../wdf23/Rubric';
+import RubricOverlay from '../wdf23/RubricOverlay';
 import Judges from '../wdf23/Judges';
 import Prizes from '../wdf23/Prizes';
 import FAQ from '../wdf23/FAQ';
@@ -20,20 +21,24 @@ export default function Fest() {
     useEffect(() => {
         ReactGA.initialize('UA-178117149-1');
         ReactGA.pageview('/fest');
-    }, [])
+    }, []);
 
     const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
 
     let [isMenuOpen, setIsMenuOpen] = useState(false);
-    let [anchorTarget, setAnchorTarget] = useState(null)
+    let [anchorTarget, setAnchorTarget] = useState(null);
     let toggleMenu = (anchorID) => {
         setIsMenuOpen(!isMenuOpen);
-        anchorID && setAnchorTarget(document.getElementById(anchorID))
+        anchorID && setAnchorTarget(document.getElementById(anchorID));
     }
+
+    let [isRubricOverlayOpen, setIsRubricOverlayOpen] = useState(false);
+    let openRubricOverlay = () => setIsRubricOverlayOpen(true);
+    let closeRubricOverlay = () => setIsRubricOverlayOpen(false);
 
     useEffect(() => {
         isMobile && anchorTarget && anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    })
+    });
 
     return (
         <div className={'full-page' + (isMenuOpen ? ' no-scroll' : '')}>
@@ -63,7 +68,8 @@ export default function Fest() {
                 <div className='section section-4' id='rubric'>
                     <div className='section-background section-4-background'></div>
                     <div className='noise-background'></div>
-                    <Rubric />
+                    {/*<RubricOverlay />*/}
+                    <Rubric openRubricOverlay={openRubricOverlay} />
                 </div>
                 <div className='section section-5' id='judges'>
                     <div className='section-background section-5-background'></div>
@@ -80,6 +86,7 @@ export default function Fest() {
                 </div>
             </div>
             {isMobile && <SectionsBar isOpen={isMenuOpen} toggleMenu={toggleMenu} />}
+            {isRubricOverlayOpen && <RubricOverlay closeRubricOverlay={closeRubricOverlay} />}
         </div>
     )
 }

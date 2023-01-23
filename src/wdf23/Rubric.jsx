@@ -4,7 +4,7 @@ import './Rubric.css'
 
 import rubricArrow from './imgs/rubric-arrow.svg'
 
-export default function Rubric() {
+export default function Rubric({ openRubricOverlay }) {
     const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
 
     return (
@@ -58,7 +58,7 @@ export default function Rubric() {
                     description={"Utilizes copy efficiently and creatively, without compromising the legibility of the text."}
                 />
             </div>
-            <div className='rubric-detailed-scoring-button'>
+            <div className='rubric-detailed-scoring-button button' onClick={openRubricOverlay}>
                 <div className='rubric-detailed-scoring-text'>{!isMobile ? 'See detailed scoring' : 'See detailed scoring on desktop'}</div>
             </div>
     	</div>
