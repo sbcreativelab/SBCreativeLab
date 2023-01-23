@@ -233,6 +233,10 @@
 		height: 51.51px;
     }
 
+    .prize-deco-1 {
+    	display: none;
+    }
+
     .prize-image-container-2 {
     	width: 315px;
     	margin-top: -13px;
@@ -242,5 +246,9 @@
     .prize-image-2 {
     	width: 121.19px;
 		height: 121.19px;
+    }
+
+    .prize-deco-2 {
+    	display: none;
     }
 }
