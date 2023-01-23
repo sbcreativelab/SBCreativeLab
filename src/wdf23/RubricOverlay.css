@@ -25,6 +25,14 @@
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+.rubric-overlay-close-button {
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	right: 65px;
+	top: 55px;
+}
+
 .rubric-overlay-container {
 	position: absolute;
 	width: 100%;

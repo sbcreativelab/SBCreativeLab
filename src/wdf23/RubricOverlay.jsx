@@ -2,6 +2,7 @@ import React from 'react'
 import './RubricOverlay.css'
 
 import rubricOverlayArrow from './imgs/rubric-overlay-arrow.svg'
+import rubricOverlayCloseButton from './imgs/rubric-overlay-close.png'
 
 export default function RubricOverlay({ closeRubricOverlay }) {
     return (
@@ -9,6 +10,7 @@ export default function RubricOverlay({ closeRubricOverlay }) {
             <div className='overlay-shadow' onClick={closeRubricOverlay}></div>
             <div className='rubric-overlay'>
                 <div className='rubric-title'>Rubric</div>
+                <img className='rubric-overlay-close-button' src={rubricOverlayCloseButton} alt='' onClick={closeRubricOverlay} />
                 <div className='rubric-overlay-container album-cover-rubric-overlay-container'>
                     <div className='rubric-overlay-project-title'>
                         <img className='rubric-overlay-project-title-arrow' src={rubricOverlayArrow} alt='' />
