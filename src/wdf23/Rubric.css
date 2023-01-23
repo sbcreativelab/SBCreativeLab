@@ -109,6 +109,9 @@
 
 	background: #201E29;
 	border-radius: 100px;
+	color: #E8DED1;
+
+	cursor: pointer;
 }
 
 .rubric-detailed-scoring-text {
@@ -124,11 +127,16 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 
-	color: #E8DED1;
-
 	flex: none;
 	order: 0;
 	flex-grow: 0;
+}
+
+.rubric-detailed-scoring-button:active {
+	background: #E8DED1;
+	color: #000000;
+	box-shadow: inset 4px 6px 12px rgba(0, 0, 0, 0.5);
+	border: 1px solid #201E29;
 }
 
 .rubric-album-cover-title {
