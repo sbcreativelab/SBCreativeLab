@@ -97,6 +97,25 @@
 	height: 116px;
 }
 
+.prize-deco-1 {
+    position: absolute;
+    top: 0px;
+    width: 550px;
+    height: 650px;
+}
+
+.prize-star-1 {
+	position: absolute;
+	right: 18px;
+	top: -30px;
+}
+
+.prize-star-2 {
+	position: absolute;
+	left: -45px;
+	bottom: -10px;
+}
+
 .prize-image-container-2 {
 	margin-top: -32px;
 	width: 550px;
@@ -108,6 +127,19 @@
 .prize-image-2 {
 	width: 340px;
 	height: 340px;
+}
+
+.prize-deco-2 {
+    position: absolute;
+    top: 0px;
+    width: 550px;
+    height: 650px;
+}
+
+.prize-star-3 {
+	position: absolute;
+	top: 137px;
+	right: -19px;
 }
 
 @media only screen and (max-width: 1300px) {
