@@ -9,7 +9,7 @@ function TeamInfo(props) {
         <div class={"team-info-shape team-info-shape" + props.clsid}>
             <div className="team-info-title">{props.title}</div>
             <img className="team-info-image" src={"images/" + props.imgsrc}/>
-            <div className="team-info-subtitle">{props.subtitle}</div>
+            <div className="about-subtitle team-info-subtitle">{props.subtitle}</div>
         </div>
     );
 }
@@ -18,8 +18,8 @@ function TeamMember(props) {
     return(
         <div className="team-member">
             <img className="team-member-image" src={"/images/member/" + (props.imgsrc ? props.imgsrc : "empty.png")}></img>
-            <div style={{ marginTop: "10px" }} className="team-member-name title-small">{props.name}</div>
-            <div className="team-member-team longCaption">{props.role}</div>
+            <div className="team-member-name title-small">{props.name}</div>
+            <div className="about-subtitle longCaption">{props.role}</div>
         </div>
     );
 }
@@ -36,7 +36,7 @@ export default function Team() {
                     <TeamInfo clsid="4" title="Web Development Team" imgsrc="webdev-art.png" subtitle="The “web-dev” team focuses on maintaining SBCL’s main website as well as creating any events websites such as for our WDC’s and Designathons!" />
                     <div className="team-join">
                         <p className="team-join-title">Want to join our team?</p>
-                        <p className="team-join-subtitle">Stay tuned to our upcoming recruitment cycle! All updates will be posted on Instagram.</p>
+                        <p className="about-subtitle team-join-subtitle">Stay tuned to our upcoming recruitment cycle! All updates will be posted on Instagram.</p>
                     </div>
                 </div>
             </div>

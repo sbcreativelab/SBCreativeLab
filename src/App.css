@@ -1270,7 +1270,11 @@ label {
   text-align: center;
 }
 
-.about-subtitle{
+.about-subtitle {
+  font: normal 20px 'Poppins';
+}
+
+.about-subtitle-1 {
   width: 49%;
   margin-left: auto;
   margin-right: auto;
@@ -1280,8 +1284,8 @@ label {
 
 #skytram{
   width: 100%;
-  position: absolute;
-  top: 252px;
+  position: relative;
+  top: -125px;
   left: 0;
   pointer-events: none;
 }
@@ -1291,10 +1295,19 @@ label {
   opacity: .95;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about-subtitle {
+    font: 14px/1.6 'Poppins';
+  }
+
+  .about-subtitle-1 {
+    width: 80%;
+  }
+}
+
 .about-section-2{
   width: 100%;
   display: block;
-  padding-top: 45%;
 }
 
 .about-title-2{
@@ -1377,6 +1390,7 @@ a .icon-title:hover{
   justify-items: center;
   width: 80%;
 }
+
 .team-info-shape {
   background-color: transparent;
   border: 2px solid #000000;
@@ -1387,10 +1401,12 @@ a .icon-title:hover{
   position: relative;
   width: 35vw;
 }
+
 .team-info-shape2,
 .team-info-shape4 {
   top: 55%;
 }
+
 .team-info-title{
   position: relative;
   margin-top: 1em;
@@ -1398,6 +1414,7 @@ a .icon-title:hover{
   margin-right: auto;
   font: bold 23px/calc(24px + 16 * (100vw - 320px) / 1120) 'Poppins';
 }
+
 .team-info-image{
   display: block;
   margin-left: auto;
@@ -1405,12 +1422,12 @@ a .icon-title:hover{
   width: 70%;
   height: auto;
 }
+
 .team-info-subtitle{
   display: block;
   margin-left: 1em;
   margin-right: 1em;
   position: relative;
-  font: normal 20px/calc(16px + 12 * (100vw - 320px) / 1120) 'Poppins';
   text-align: center;
 }
 .team-join {
@@ -1419,11 +1436,8 @@ a .icon-title:hover{
 .team-join-title{
   font: normal 38px/calc(28px + 24 * (100vw - 320px) / 1120) 'Cooper Black';
 }
-.team-join-subtitle{
-  font: normal 19px/calc(16px + 12 * (100vw - 320px) / 1120) 'Poppins';
-}
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .team-info-container{
     display: grid;
     max-width: 80%;
@@ -1436,42 +1450,21 @@ a .icon-title:hover{
     align-items: center;
     justify-items: center;
   }
-  .team-info-shape1{
-    position: relative;
-    left: 0;
+  .team-info-shape {
     background-color: transparent;
-    color:black;
     border: 2px solid #000000;
     border-radius: 20px;
-    height: 100%;
-  }
-  .team-info-shape2{
+    color: black;
+    height: 105%;
     position: relative;
+    width: 100%;
+  }
+
+  .team-info-shape2,
+  .team-info-shape4 {
     top: 0;
-    background-color: transparent;
-    color:black;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    height: 100%;
   }
-  .team-info-shape3{
-    position: relative;
-    left: 0;
-    background-color: transparent;
-    color:black;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    height: 100%;
-  }
-  .team-info-shape4{
-    position: relative;
-    top: 0;
-    background-color: transparent;
-    color:black;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    height: 100%;
-  }
+
   .team-info-title{
     position: relative;
     margin-left: 1em;
@@ -1479,9 +1472,9 @@ a .icon-title:hover{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: calc(12px + 10 * (100vw - 320px) / 1120);
-    line-height: 24px;
+    font-size: 16px;
   }
+
   .team-info-image{
     display: block;
     margin-left: auto;
@@ -1489,35 +1482,16 @@ a .icon-title:hover{
     max-width: 75%;
     height: auto;
   }
+
   .team-info-subtitle{
     display: block;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin: auto 2em;
     position: relative;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(10px + 10 * (100vw - 320px) / 1120);
-    line-height: 21px;
     text-align: center;
   }
+
   .team-join-title{
-    position: relative;
-    left: 0.5em;
-    font-family: 'Cooper Black';
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(14px + 24 * (100vw - 320px) / 1120);
-    line-height: calc(28px + 24 * (100vw - 320px) / 1120);
-  }
-  .team-join-subtitle{
-    position: relative;
-    left: 0.5em;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(8px + 12 * (100vw - 320px) / 1120);
-    line-height: calc(16px + 12 * (100vw - 320px) / 1120);
+    font: 16px 'Cooper Black';
   }
 }
 
@@ -1529,6 +1503,7 @@ a .icon-title:hover{
   font-family: 'Cooper Black';
   margin-left: 10%;
   margin-bottom: 5%;
+  white-space: normal;
 }
 
 .decoration-sparkle {
@@ -1567,39 +1542,25 @@ a .icon-title:hover{
   width: 96%;
   margin-left: auto;
   margin-right: auto;
-  /* display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateZ(20px);
-  bottom: 4.5%; */
 }
+
 .team-member-name{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(12px + 16 * (100vw - 320px) / 1120);
-  line-height: calc(24px + 16 * (100vw - 320px) / 1120);
+  font: 28px 'Poppins';
 }
-.team-member-team{
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc(8px + 12 * (100vw - 320px) / 1120);
-  line-height: calc(16px + 12 * (100vw - 320px) / 1120);
-}
+
 .group-member-image{
   max-width: 50em;
   width: calc(17.5em + 32 * (100vw - 320px) / 100);
   height: auto;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .decoration-sparkle {
     display: none;
+  }
+
+  .team-member-name{
+    font: 24px 'Poppins';
   }
 }
 
@@ -2248,7 +2209,7 @@ a .icon-title:hover{
     max-width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     column-gap: 2vw;
-    row-gap: 2vw;
+    row-gap: 2vh;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
