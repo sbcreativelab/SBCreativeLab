@@ -1341,8 +1341,6 @@ label {
 
 .icon-text{
   text-align: center;
-  width: 275px;
-  align-self: center;
 }
 
 a .icon-title{
@@ -2195,11 +2193,6 @@ a .icon-title:hover{
   .icon{
     max-width: 200px;
   }
-  .icon-text {
-    text-align: center;
-    width: 200px;
-    align-self: center;
-  }
 }
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   .gallery-container{
@@ -2229,9 +2222,7 @@ a .icon-title:hover{
     max-width: 200px;
   }
   .icon-text {
-    text-align: center;
     width: 200px;
-    align-self: center;
   }
   #skytram{
     position: initial;
