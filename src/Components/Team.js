@@ -58,7 +58,7 @@ export default function Team() {
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "93%", top: "470%", width: "40px" }} />
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "6%", top: "495%", width: "50px" }} />
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "90%", top: "520%", width: "50px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "84%", top: "554%", width: "30px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "84%", top: "557%", width: "30px" }} />
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "80px", left: "2%", top: "580%", width: "40px" }} />
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "35%", top: "610%", width: "30px" }} />
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "90%", top: "660%", width: "50px" }} />
