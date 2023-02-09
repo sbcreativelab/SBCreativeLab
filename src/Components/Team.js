@@ -16,8 +16,8 @@ function TeamInfo(props) {
 
 function TeamMember(props) {
     return(
-        <div className="team-member">
-            <img className="team-member-image" src={"/images/member/" + (props.imgsrc ? props.imgsrc : "empty.png")}></img>
+        <div className="team-member" style={ {display: (props.imgsrc ? "initial" : "none")}}>
+            <img className={"team-member-image"} src={"/images/member/" + props.imgsrc}></img>
             <div className="team-member-name title-small">{props.name}</div>
             <div className="about-subtitle longCaption">{props.role}</div>
         </div>
