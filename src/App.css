@@ -1535,9 +1535,7 @@ a .icon-title:hover{
 }
 
 .team-member-image{
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .team-member-name{
