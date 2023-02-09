@@ -1396,8 +1396,7 @@ a .icon-title:hover{
   border: 2px solid #000000;
   border-radius: 20px;
   color: black;
-  /* height: calc(340px + 100vw / 13); */
-  height: 60vh;
+  height: 475px;
   position: relative;
   width: 35vw;
 }
