@@ -238,6 +238,7 @@ p {
 }
 
 .learn-series-button-container {
+  display: grid;
   text-align: left;
 }
 
