@@ -68,8 +68,9 @@ function W23Projects() {
           Experience Level: Participants should have experience ranging from no 
           UI/UX experience to those who have completed at least 1 project.
         </p>
-        <div className="learn-series-button-container">
-          <a className="button button-white" href={applicationLink} rel="noreferrer" target="_blank">Apply</a>
+        <div style={{ textAlign: "center" }} className="learn-series-button-container">
+          <button className="button" disabled>Application closed</button>
+          <small>Please look out for our <b>Fall</b> quarter applications soon!</small>
         </div>
         <div className="learn-series-card-container">
           <div className="flex-item learn-series-beginner">
@@ -126,7 +127,7 @@ function W23Projects() {
             </p>
             <small>Note: Graphic Designers & Illustrators welcome to apply!</small>
             <div className="real-series-content real-series-button">
-              <a className="button button-black" href="https://forms.gle/RRDPhDknzdZTnDyX9" rel="noreferrer" target="_blank">Apply</a>
+              <button className="button" disabled>Application closed</button>
             </div>
           </div>
           <div className="flex-item real-series-poolup">
