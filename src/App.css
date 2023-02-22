@@ -2525,3 +2525,28 @@ a:hover i.fa-cog{
   color: #356A69;
   transition: all .3s ease;
 }
+
+.calendar-months-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calendar-month-image {
+  width: 90%;
+}
+
+.calendar-legend-image {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(251, 242, 230, 0.801);
+}
+
+@media only screen and (max-width: 1000px) {
+  .calendar-months-container {
+    gap: 8vw;
+    padding-bottom: 35vw;
+  }
+}
