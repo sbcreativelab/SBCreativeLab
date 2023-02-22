@@ -2525,3 +2525,14 @@ a:hover i.fa-cog{
   color: #356A69;
   transition: all .3s ease;
 }
+
+.calendar-months-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calendar-month-image {
+  width: 90%;
+}
