@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import { ReactComponent as Logo } from "./logo.svg";
 import { useMediaQuery } from 'react-responsive';
 import Menu from './Menu';
-import imagesLoaded from 'imagesloaded';
-import Masonry from 'masonry-layout';
 import ReactGA from 'react-ga';
-
-import EventItem from './EventItem';
 
 // const hexRgb = require('hex-rgb');
 let backgroundColor="#faf2e6"
 let primaryColor="#1BB994"
 let darkColor="#356A69"
-const gsap = window.gsap;
  
 export class Events extends Component {
     
@@ -52,14 +47,7 @@ export class Events extends Component {
     componentDidMount(){
         var checkbox = document.querySelector("input[name=checkbox]");
         checkbox.addEventListener( 'change',this.handleMenu.bind(this));
-        // imagesLoaded( document.querySelector('.resources'), function( instance ) {
-        //     // images have loaded        
-        //     var container = document.querySelector('.masonry-grid');
-        //     var msnry = new Masonry( container, {
-        //     columnWidth: 100,
-        //     itemSelector: '.grid-item'
-        //     });    
-        // });
+
         this.initializeReactGA();
     }
 
@@ -116,7 +104,6 @@ export class Events extends Component {
 export const withMediaQuery = (queries = []) => Component => props => {
   const mediaProps = {}
   Object.entries(queries).forEach(q => {
-    console.log("QUERY", q[0], q[1])
     mediaProps[q[0]] = useMediaQuery({query: q[1]})
   })
   return <Component {...mediaProps} {...props} />
