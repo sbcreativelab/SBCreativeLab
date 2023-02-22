@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ReactComponent as Logo } from "./logo.svg";
+import { useMediaQuery } from 'react-responsive';
 import Menu from './Menu';
 import imagesLoaded from 'imagesloaded';
 import Masonry from 'masonry-layout';
@@ -13,7 +14,7 @@ let primaryColor="#1BB994"
 let darkColor="#356A69"
 const gsap = window.gsap;
  
-export default class Home extends Component {
+export class Events extends Component {
     
     constructor(props){
         super(props);
@@ -63,6 +64,8 @@ export default class Home extends Component {
     }
 
     render() {
+        const { isMobile } = this.props
+        
         return (
             <div style={{backgroundColor: backgroundColor}} className="content">
                 <Menu/>
@@ -98,20 +101,25 @@ export default class Home extends Component {
                     <div style={{color: darkColor, marginBottom: "1rem"}} className="title about-title-2">
                         Events
                     </div>
-                        <div className="about-title-2" style={{marginBottom: "2rem"}}>
-                        <span className="event-subtitle subtitle-med color-black">
-                            Spring Designathon coming soon!
-                        </span>
-                        {/* <a target="blank" href="/challenge" className="button-small button-dark">
-                                        Check out our Winter Design Challenge!&nbsp;&nbsp;<i class="fas fa-palette fa-lg"></i></a> */}
-                    </div>
                     <div className='calendar-months-container'>
-                        <img className='calendar-month-image' src='/images/events/January.svg' />
-                        <img className='calendar-month-image' src='/images/events/February.svg' />
-                        <img className='calendar-month-image' src='/images/events/March.svg' />
+                        <img className='calendar-month-image' src={`/images/events/january${isMobile ? "-mobile" : ""}.svg`} />
+                        <img className='calendar-month-image' src={`/images/events/february${isMobile ? "-mobile" : ""}.svg`} />
+                        <img className='calendar-month-image' src={`/images/events/march${isMobile ? "-mobile" : ""}.svg`} />
+                        {isMobile && <img className='calendar-legend-image' src='/images/events/legend-mobile.svg'/>}
                     </div>
                 </div>
             </div>
         )
     }
 }
+
+export const withMediaQuery = (queries = []) => Component => props => {
+  const mediaProps = {}
+  Object.entries(queries).forEach(q => {
+    console.log("QUERY", q[0], q[1])
+    mediaProps[q[0]] = useMediaQuery({query: q[1]})
+  })
+  return <Component {...mediaProps} {...props} />
+}
+
+export default withMediaQuery({"isMobile": '(max-width:1000px)'})(Events);

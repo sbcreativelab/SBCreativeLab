@@ -2536,3 +2536,17 @@ a:hover i.fa-cog{
 .calendar-month-image {
   width: 90%;
 }
+
+.calendar-legend-image {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(251, 242, 230, 0.801);
+}
+
+@media only screen and (max-width: 1000px) {
+  .calendar-months-container {
+    gap: 8vw;
+    padding-bottom: 35vw;
+  }
+}
