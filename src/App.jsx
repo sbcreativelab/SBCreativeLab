@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
+import './App.css'
 import './index.css'
 import ReactGA from 'react-ga'
+
+import Hero from './Components/s23/Hero'
 
 export class App extends Component {
   constructor(props) {
@@ -22,11 +25,11 @@ export class App extends Component {
 
     return (
       <div>
-        <head>
-          <title>SB Creative Lab</title>
-        </head>
         <div>
-          
+          <title>SB Creative Lab</title>
+        </div>
+        <div>
+          <Hero />
         </div>
       </div>
     )

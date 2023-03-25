@@ -1,0 +1,201 @@
+.hero {
+	position: relative;
+	background-color: #2F302D;
+	height: 974px;
+}
+
+.logo {
+	position: absolute;
+	width: 70.19px;
+	height: 74px;
+	left: 42px;
+	top: 42px;
+
+/*	filter: blur(0.5px);*/
+}
+
+.navbar {
+	position: absolute;
+	width: 746px;
+	height: 46px;
+	right: 102px;
+	top: 46px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.navbar-item {
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 10px;
+	gap: 10px;
+}
+
+.navbar-item-text {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	/* identical to box height */
+
+	/* Beige */
+
+	color: #E1DBD2;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.hero-content {
+	position: absolute;
+	top: 170px;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-title {
+	width: min(1700px, 100%);
+}
+
+.register-button-container {
+	position: relative;
+
+	width: 190px;
+	height: 43px;
+	margin-top: 24px;
+}
+
+.register-button {
+	box-sizing: border-box;
+
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+
+	width: 190px;
+	height: 43px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	/* Beige */
+
+	background: #E1DBD2;
+	border-radius: 100px;
+}
+
+.register-button-blur {
+	filter: blur(7.5px);
+}
+
+.register-button-text {
+	width: 88px;
+	height: 30px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	/* identical to box height */
+
+	letter-spacing: 0.03em;
+
+	/* Black */
+
+	color: #2F302D;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.register-deadline {
+	width: 359px;
+	height: 28px;
+
+	margin-top: 15px;
+
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+
+	/* Beige */
+
+	color: #E1DBD2;
+
+/*	filter: blur(0.25px);*/
+}
+
+.hero-description-container {
+	position: relative;
+
+	width: 994px;
+	height: 130px;
+	margin-top: 48px;
+}
+
+.hero-description {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 994px;
+	height: 130px;
+
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	/* Beige */
+
+	color: #E1DBD2;
+
+/*	filter: blur(0.5px);*/
+}
+
+.hero-description-deco {
+	position: absolute;
+	top: -16px;
+	left: -26px;
+
+	width: 1046px;
+	height: 165px;
+}
+
+.blob-1 {
+	position: absolute;
+	width: 17vw;
+	height: 1.75vw;
+	left: 108px;
+	bottom: 76px;
+}
