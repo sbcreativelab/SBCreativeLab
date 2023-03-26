@@ -7,6 +7,7 @@ import descriptionDeco from '../s23_images/hero-description-deco.svg'
 import blob1 from '../s23_images/blob-1.svg'
 
 export default function Hero() {
+    var applicationLink = "https://tinyurl.com/SBCLDesignathon23"
     return (
         <div className='hero'>
             <img src={logo} className='logo' alt='' />
@@ -23,14 +24,21 @@ export default function Hero() {
                 <img src={title} className='hero-title' alt='' />
                 <div className='register-button-container'>
                     <div className='register-button register-button-blur'></div>
-                    <div className='register-button'>
+                    <a className='register-button' href={applicationLink} target="_blank">
                         <div className='register-button-text'>Register</div>
-                    </div>
+                    </a>
                 </div>
                 <div className='register-deadline'>Register Deadline: April 13th 11:59</div>
                 <div className='hero-description-container'>
                     <div className='hero-description'>
-                        SB Creative Lab presents its 2023 JUMPSTART Designathon! Get hands-on design experience by challenging the normal with out-of-the-box ideas and intentional design. Join us in kicking off our 3-day challenge April 14th through April 16th. During this time, students will participate on various design workshops and meet new friends from other US college campuses to tackle a design challenge together! 
+                        SB Creative Lab presents its 2023 JUMPSTART 
+                        Designathon! Get hands-on design experience by 
+                        challenging the normal with out-of-the-box ideas and 
+                        intentional design. Join us in kicking off our 3-day 
+                        challenge April 14th through April 16th. During this 
+                        time, students will participate on various design 
+                        workshops and meet new friends from other US college 
+                        campuses to tackle a design challenge together! 
                     </div>
                     <img src={descriptionDeco} className='hero-description-deco' alt='' />
                 </div>

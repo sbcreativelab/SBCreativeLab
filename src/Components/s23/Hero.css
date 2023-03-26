@@ -101,6 +101,33 @@
 
 	background: #E1DBD2;
 	border-radius: 100px;
+
+	/* Black */
+
+	color: #2F302D;
+}
+
+.register-button:hover {
+	/* Beige */
+
+	background: #E1DBD2;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	/* Black */
+
+	color: #2F302D;
+
+	text-decoration: none;
+}
+
+.register-button:active {
+	/* Black */
+	background: #2F302D;
+	
+	/* Beige */
+	color: #E1DBD2;
+
+	text-decoration: none;
 }
 
 .register-button-blur {
@@ -119,11 +146,6 @@
 	/* identical to box height */
 
 	letter-spacing: 0.03em;
-
-	/* Black */
-
-	color: #2F302D;
-
 
 	/* Inside auto layout */
 
