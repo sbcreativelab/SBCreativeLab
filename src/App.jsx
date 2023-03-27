@@ -25,12 +25,7 @@ export class App extends Component {
 
     return (
       <div>
-        <div>
-          <title>SB Creative Lab</title>
-        </div>
-        <div>
-          <Hero />
-        </div>
+        <Hero />
       </div>
     )
   }
