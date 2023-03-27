@@ -4,9 +4,9 @@ import './Hero.css'
 import logo from '../../images/s23_images/logo.svg'
 import titleLarge from '../../images/s23_images/hero-title.svg'
 import blob1 from '../../images/s23_images/blob-1.svg'
-import titleSmallSBCL from '../../images/s23_images/phone_view/hero-sbcl.svg'
-import titleSmallJumpstart from '../../images/s23_images/phone_view/hero-jumpstart.svg'
-import titleSmallDesignathon from '../../images/s23_images/phone_view/hero-spring_designathon.svg'
+import titleSmallSBCL from '../../images/s23_images/phone_view/hero-sbcl-noblur.svg'
+import titleSmallJumpstart from '../../images/s23_images/phone_view/hero-jumpstart-noblur.svg'
+import titleSmallDesignathon from '../../images/s23_images/phone_view/hero-spring_designathon-noblur.svg'
 
 export default function Hero() {
     const applicationLink = 'https://tinyurl.com/SBCLDesignathon23'
@@ -28,9 +28,10 @@ export default function Hero() {
                 <div className='hero-title'>
                     <img className='hero-title-large-view' src={titleLarge} alt='' />
                     <div className='hero-title-small-view'>
-                        <img src={titleSmallSBCL} alt='' />
-                        <img src={titleSmallJumpstart} alt='' />
-                        <img src={titleSmallDesignathon} alt='' />
+                        <img src={titleSmallSBCL} style={{ filter: "blur(0.3px)" }} alt='' />
+                        <img src={titleSmallJumpstart} style={{ filter: "blur(0.3px)" }} alt='' />
+                        <img src={titleSmallDesignathon} style={{ filter: "blur(2.5px)" }} alt='' />
+                        <img src={titleSmallDesignathon} style={{ position: "absolute", top: "114px" }} alt='' />
                         <p>April 14th ~ 16th, 2023</p>
                     </div>
                 </div>
