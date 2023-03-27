@@ -1,5 +1,17 @@
 @font-face {
-  font-family: "PP Object Sans";
-  src: url("./Components/s23_fonts/PPObjectSans-Regular.otf") format('opentype');
-  font-weight: normal;
+	font-family: 'Magilio';
+	src: url(./fonts/MagilioRegular.ttf) format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'PP Object Sans';
+	src: url(./fonts/PP-Object-Sans/PPObjectSans-Regular.otf) format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'PP Object Sans';
+	src: url(./fonts/PP-Object-Sans/PPObjectSans-Heavy.otf) format('opentype');
+	font-weight: 800;
 }
