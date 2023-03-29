@@ -17,3 +17,24 @@
 	src: url(./fonts/PP-Object-Sans/PPObjectSans-Heavy.otf) format('opentype');
 	font-weight: 800;
 }
+
+html,
+body {
+	/* Beige */
+	color: #E1DBD2;
+
+	scroll-behavior: smooth;
+}
+
+.noise-background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+
+	background: url('./images/s23_images/noise.png');
+	mix-blend-mode: overlay;
+
+	z-index: -1;
+}

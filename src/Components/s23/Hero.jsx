@@ -17,6 +17,7 @@ export default function Hero() {
 
     return (
         <div className='hero'>
+            <div className='hero-background' />
             <header>
                 <img src={logo} className='logo' alt='' />
                 <nav style={{ display: 'none' }}>
@@ -61,8 +62,8 @@ export default function Hero() {
                     campuses to tackle a design challenge together! 
                 </p>
             </div>
-            <img src={blob1} className='blob-1' alt='' style={{ position: 'fixed', bottom: '-2px' }}/>
-            <footer style={{ fontSize: '12px', margin: '24px', textAlign: 'right' }}>more info coming soon...</footer>
+            <img src={blob1} className='blob-1' alt='' />
+            {/*<footer style={{ fontSize: '12px', margin: '24px', textAlign: 'right' }}>more info coming soon...</footer>*/}
         </div>
     )
 }

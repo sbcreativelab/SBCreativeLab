@@ -1,6 +1,18 @@
-.FAQs-frame {
+.FAQs {
+    position: relative;
+    padding-bottom: 15%;
+}
+
+.FAQs-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
     background-color: #2F302D;
-    margin-bottom: 15%;
+    z-index: -2;
+}
+
+.FAQs-frame {
     padding: 0 8%;
 }
 
