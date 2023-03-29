@@ -184,7 +184,7 @@ nav a:visited {
 	padding: 2%;
 	width: 75%;
 
-	background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco-large-view.svg);
+	background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco.svg);
 
 /*	filter: blur(0.5px);*/
 }
@@ -230,7 +230,7 @@ nav a:visited {
 	}
 
 	.hero-description {
-		background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco-small-view.svg);
+		background: center / 100% auto no-repeat url(../../images/s23_images/phone_view/hero-description-deco-phone.svg);
 		font: 4vw/5vw 'PP Object Sans';
 		
 		padding: 10% 7.5%;
