@@ -4,6 +4,7 @@ import './index.css'
 import ReactGA from 'react-ga'
 
 import Hero from './Components/s23/Hero'
+import FAQs from './Components/s23/FAQs'
 
 export class App extends Component {
   constructor(props) {
@@ -25,7 +26,9 @@ export class App extends Component {
 
     return (
       <div>
+        <div className='noise-background' />
         <Hero />
+        <FAQs />
       </div>
     )
   }
