@@ -74,7 +74,9 @@ nav a:visited {
 }
 
 .hero-title-small-view {
-	display: none;
+	display: grid;
+	margin: 0 auto;
+	position: relative;
 }
 
 .register-button-container {
@@ -189,16 +191,6 @@ nav a:visited {
 @media only screen and (max-width: 600px) {
 	.register-deadline {
 		font: 16px/21px 'PP Object Sans';
-	}
-
-	.hero-title-large-view {
-		display: none;
-	}
-
-	.hero-title-small-view {
-		display: grid;
-		margin: 0 auto;
-		position: relative;
 	}
 
 	.hero-title-small-view > img {

@@ -5,17 +5,19 @@
 }
 
 .FAQs-header {
-    background: top / 100% no-repeat url(../../images/s23_images/faqs-header-deco.svg);
-    font-size: 3.75em;
-    line-height: 70px;
-    padding: 3% 0;
-    text-align: center;
+    height: 100px;
+    position: relative;
+}
+
+.FAQs-header > img {
+    position: absolute;
+    width: 100%;
 }
 
 .FAQs-question {
     letter-spacing: 0.03em;
-    line-height: 47px;
-    font-size: 2.5vw;
+    line-height: 2.25em;
+    font-size: 2.25em;
     font-weight: 800;
     margin-top: 4%;
 }
@@ -25,7 +27,9 @@
 }
 
 .FAQs-answer {
-    font: normal 1.6vw/31px "PP Object Sans";
+    font: normal 1.5em/1.5em 'PP Object Sans';
     letter-spacing: 0.03em;
     width: 88%;
 }
+
+@media only screen and (max-width: 600px) {}

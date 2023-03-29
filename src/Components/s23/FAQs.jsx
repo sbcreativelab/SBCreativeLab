@@ -1,10 +1,23 @@
 import React from 'react'
 import './FAQs.css'
+import useWindowDimensions from '../../utils/useWindowDimensions';
+
+import faqsHeaderDeco from '../../images/s23_images/faqs-header-deco.svg'
+import faqsHeader from '../../images/s23_images/faqs-header.svg'
+import faqsHeaderPhoneDeco from '../../images/s23_images/phone_view/faqs-header-phone-deco.svg'
+import faqsHeaderPhone from '../../images/s23_images/phone_view/faqs-header-phone.svg'
 
 export default function FAQs() {
+    const { width } = useWindowDimensions();
+    const PHONE_SCREEN_BREAKPOINT = 600;
+    const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
+
     return (
         <div className='FAQs-frame'>
-            <h1 className='FAQs-header'>Frequently Asked Questions</h1>
+            <div className='FAQs-header'>
+                <img src={isPhoneScreen ? faqsHeaderPhoneDeco : faqsHeaderDeco} alt='' />
+                <img src={isPhoneScreen ? faqsHeaderPhone : faqsHeader} alt='Frequently Asked Questions' />
+            </div>
             <h2 className='FAQs-question'>What is a <b>designathon</b>?</h2>
             <p className='FAQs-answer'>
                 A designathon is an event where teams of designers are tasked 

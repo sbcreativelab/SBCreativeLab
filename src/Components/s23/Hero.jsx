@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import useWindowDimensions from '../../utils/useWindowDimensions';
 
 import logo from '../../images/s23_images/logo.svg'
 import titleLarge from '../../images/s23_images/hero-title.svg'
@@ -9,7 +10,11 @@ import titleSmallJumpstart from '../../images/s23_images/phone_view/hero-jumpsta
 import titleSmallDesignathon from '../../images/s23_images/phone_view/hero-spring_designathon-noblur.svg'
 
 export default function Hero() {
+    const { width } = useWindowDimensions();
+    const PHONE_SCREEN_BREAKPOINT = 600;
+    const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
     const applicationLink = 'https://tinyurl.com/SBCLDesignathon23'
+
     return (
         <div className='hero'>
             <header>
@@ -26,14 +31,17 @@ export default function Hero() {
             </header>
             <div className='hero-content'>
                 <div className='hero-title'>
-                    <img className='hero-title-large-view' src={titleLarge} alt='' />
-                    <div className='hero-title-small-view'>
-                        <img src={titleSmallSBCL} style={{ filter: "blur(0.3px)" }} alt='' />
-                        <img src={titleSmallJumpstart} style={{ filter: "blur(0.3px)" }} alt='' />
-                        <img src={titleSmallDesignathon} style={{ filter: "blur(2.5px)" }} alt='' />
-                        <img src={titleSmallDesignathon} style={{ position: "absolute", top: "114px" }} alt='' />
-                        <p>April 14th ~ 16th, 2023</p>
-                    </div>
+                    {isPhoneScreen ?
+                        <div className='hero-title-small-view'>
+                            <img src={titleSmallSBCL} style={{ filter: "blur(0.3px)" }} alt='' />
+                            <img src={titleSmallJumpstart} style={{ filter: "blur(0.3px)" }} alt='' />
+                            <img src={titleSmallDesignathon} style={{ filter: "blur(2.5px)" }} alt='' />
+                            <img src={titleSmallDesignathon} style={{ position: "absolute", top: "114px" }} alt='' />
+                            <p>April 14th ~ 16th, 2023</p>
+                        </div>
+                        :
+                        <img className='hero-title-large-view' src={titleLarge} alt='' />
+                    }
                 </div>
                 <div className='register-button-container'>
                     <div className='register-button register-button-blur'></div>
