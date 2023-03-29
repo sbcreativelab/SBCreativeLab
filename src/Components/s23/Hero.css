@@ -172,7 +172,7 @@ nav a:visited {
 }
 
 .hero-description {
-	background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco-large-view.svg);
+	background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco.svg);
 	font: 1.4vw/2vw 'PP Object Sans';
 	letter-spacing: 0.06em;
 	margin: 2% 15%;
@@ -206,7 +206,7 @@ nav a:visited {
 	}
 
 	.hero-description {
-		background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco-small-view.svg);
+		background: center / 100% auto no-repeat url(../../images/s23_images/phone_view/hero-description-deco-phone.svg);
 		font: 4vw/5vw 'PP Object Sans';
 		margin: 0 7.5%;
 		padding: 10% 7.5%;

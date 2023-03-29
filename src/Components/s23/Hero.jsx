@@ -5,9 +5,9 @@ import useWindowDimensions from '../../utils/useWindowDimensions';
 import logo from '../../images/s23_images/logo.svg'
 import titleLarge from '../../images/s23_images/hero-title.svg'
 import blob1 from '../../images/s23_images/blob-1.svg'
-import titleSmallSBCL from '../../images/s23_images/phone_view/hero-sbcl-noblur.svg'
-import titleSmallJumpstart from '../../images/s23_images/phone_view/hero-jumpstart-noblur.svg'
-import titleSmallDesignathon from '../../images/s23_images/phone_view/hero-spring_designathon-noblur.svg'
+import titleSmallSBCL from '../../images/s23_images/phone_view/hero-sbcl-phone.svg'
+import titleSmallJumpstart from '../../images/s23_images/phone_view/hero-jumpstart-phone.svg'
+import titleSmallDesignathon from '../../images/s23_images/phone_view/hero-spring_designathon-phone.svg'
 
 export default function Hero() {
     const { width } = useWindowDimensions();
