@@ -32,4 +32,22 @@
     width: 88%;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .FAQs-header {
+        height: 69px;
+    }
+    
+    .FAQs-question {
+        letter-spacing: 0.03em;
+        line-height: 1.2em;
+        font-size: 1.2em;
+        font-weight: 800;
+        margin-top: 10%;
+    }
+
+    .FAQs-answer {
+        font: normal 0.8em 'PP Object Sans';
+        letter-spacing: 0.03em;
+        width: 100%;
+    }
+}
