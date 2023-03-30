@@ -1,0 +1,44 @@
+.sponsors-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: #2F302D;
+    z-index: -2;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-auto-rows: 43.1%;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.sponsors-cell {
+    display: flex;
+    position: relative;
+}
+
+.sponsors-cell-purple {
+    background-color: #8151FB;
+}
+
+.sponsors-cell-white {
+    background-color: #E1DBD2;
+}
+
+.sponsors-header {
+    left: 0px;
+    position: absolute;
+    top: 38%;
+    max-width: 97.5%;
+}
+
+.sponsors-image-container {
+    margin: auto;
+    text-align: center;
+}
+
+.sponsors-image {
+    max-width: 90%;
+    mix-blend-mode: multiply;
+}

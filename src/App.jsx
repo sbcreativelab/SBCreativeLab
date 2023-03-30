@@ -5,6 +5,7 @@ import ReactGA from 'react-ga'
 
 import Hero from './Components/s23/Hero'
 import FAQs from './Components/s23/FAQs'
+import Sponsors from './Components/s23/Sponsors'
 
 export class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ export class App extends Component {
         <div className='noise-background' />
         <Hero />
         <FAQs />
+        <Sponsors />
       </div>
     )
   }
