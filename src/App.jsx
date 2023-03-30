@@ -4,6 +4,7 @@ import './index.css'
 import ReactGA from 'react-ga'
 
 import Hero from './Components/s23/Hero'
+import Timeline from './Components/s23/Timeline'
 import Speakers from './Components/s23/Speakers'
 import FAQs from './Components/s23/FAQs'
 import Sponsors from './Components/s23/Sponsors'
@@ -32,6 +33,7 @@ export class App extends Component {
       <div>
         <div className='noise-background' style={{zIndex: isSafari ? -2 : 1}} />
         <Hero />
+        <Timeline />
         <Speakers />
         <FAQs />
         <Sponsors />
