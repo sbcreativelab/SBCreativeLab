@@ -25,10 +25,12 @@ export class App extends Component {
   }
 
   render() {
+    // eslint-disable-next-line
+    const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
     return (
       <div>
-        <div className='noise-background' />
+        <div className='noise-background' style={{zIndex: isSafari ? -2 : 1}} />
         <Hero />
         <Speakers />
         <FAQs />
