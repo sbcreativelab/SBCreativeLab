@@ -18,14 +18,6 @@
 	font-weight: 800;
 }
 
-html,
-body {
-	/* Beige */
-	color: #E1DBD2;
-
-	scroll-behavior: smooth;
-}
-
 .noise-background {
 	position: fixed;
 	width: 100vw;
