@@ -1,0 +1,92 @@
+.timeline {
+	position: relative;
+}
+
+.timeline-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-color: #E5E5E5;
+	z-index: -1; /* higher index here since noise doesn't look good on light backgrounds */
+}
+
+.timeline-container {
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.timeline-side-deco {
+	width: 21%;
+}
+
+.timeline-content {
+	width: 79%;
+
+	padding-left: 3%;
+	padding-right: 4.5%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.timeline-header {
+	margin-top: 3%;
+	margin-right: 3%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.timeline-title {
+
+}
+
+.timeline-gcal {
+	width: 320px;
+	height: 47px;
+
+	box-sizing: border-box;
+	border: 2px solid #8151FB;
+	border-radius: 10px;
+
+	transition: border 0.3s;
+
+	cursor: pointer;
+}
+
+.timeline-gcal:hover {
+	border: 2px solid #623dc0;
+	text-decoration: none;
+}
+
+.timeline-gcal-text {
+	width: 100%;
+	height: 100%;
+	padding: 8px 14px;
+
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #8151FB;
+
+	transition: color 0.3s;
+}
+
+.timeline-gcal-text:hover {
+	color: #623dc0;
+}
+
+.timeline-body {
+	margin-bottom: 7%;
+}

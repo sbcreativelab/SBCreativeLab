@@ -4,6 +4,7 @@ import './index.css'
 import ReactGA from 'react-ga'
 
 import Hero from './Components/s23/Hero'
+import Timeline from './Components/s23/Timeline'
 import Speakers from './Components/s23/Speakers'
 import Judges from './Components/s23/Judges'
 import FAQs from './Components/s23/FAQs'
@@ -26,11 +27,14 @@ export class App extends Component {
   }
 
   render() {
+    // eslint-disable-next-line
+    const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
     return (
       <div>
-        <div className='noise-background' />
+        <div className='noise-background' style={{zIndex: isSafari ? -2 : 1}} />
         <Hero />
+        <Timeline />
         <Speakers />
         <Judges />
         <FAQs />

@@ -47,7 +47,7 @@ export default function Hero() {
                 </div>
                 <div className='register-button-container'>
                     <div className='register-button register-button-blur'></div>
-                    <a className='register-button' href={applicationLink} target="_blank">
+                    <a className='register-button' href={applicationLink} target="_blank" rel="noreferrer">
                         <div className='register-button-text'>Register</div>
                     </a>
                 </div>

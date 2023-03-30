@@ -27,6 +27,4 @@
 
 	background: url('./images/s23_images/noise.png');
 	mix-blend-mode: overlay;
-
-	z-index: -1;
 }

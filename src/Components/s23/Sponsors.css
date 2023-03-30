@@ -1,3 +1,7 @@
+.sponsors {
+    position: relative;
+}
+
 .sponsors-background {
     position: absolute;
     width: 100%;
@@ -16,6 +20,8 @@
 .sponsors-cell {
     display: flex;
     position: relative;
+
+    justify-content: center;
 }
 
 .sponsors-cell-purple {
@@ -27,7 +33,6 @@
 }
 
 .sponsors-header {
-    left: 0px;
     position: absolute;
     top: 38%;
     max-width: 97.5%;
