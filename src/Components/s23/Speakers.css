@@ -1,5 +1,6 @@
 .speakers {
     background: right / auto 100% no-repeat url(../../images/s23_images/speakers-background.svg);
+    height: 95vh;
     padding: 2em 8%;
 }
 

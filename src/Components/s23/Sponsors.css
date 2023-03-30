@@ -9,7 +9,7 @@
 
 .sponsors-grid {
     display: grid;
-    grid-auto-rows: 43.1%;
+    grid-auto-rows: 20vw;
     grid-template-columns: repeat(5, 20%);
 }
 
