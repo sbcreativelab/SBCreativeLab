@@ -23,6 +23,7 @@ export default function Hero() {
                 <nav style={{ display: 'none' }}>
                     <NavBarItem name={"Prompt"} />
                     <NavBarItem name={"Timeline"} />
+                    <NavBarItem name={"Speakers"} />
                     <NavBarItem name={"Judges"} />
                     <NavBarItem name={"Mentors"} />
                     <NavBarItem name={"Prizes"} />
