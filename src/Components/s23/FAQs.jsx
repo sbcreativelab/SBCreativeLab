@@ -1,6 +1,6 @@
 import React from 'react'
 import './FAQs.css'
-import useWindowDimensions from '../../utils/useWindowDimensions';
+import useWindowDimensions from '../../utils/useWindowDimensions'
 
 import faqsHeaderDeco from '../../images/s23_images/faqs-header-deco.svg'
 import faqsHeader from '../../images/s23_images/faqs-header.svg'

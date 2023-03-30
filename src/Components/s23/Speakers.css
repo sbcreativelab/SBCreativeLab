@@ -1,0 +1,65 @@
+.speakers {
+    background: right / auto 100% no-repeat url(../../images/s23_images/speakers-background.svg);
+    padding: 2em 8%;
+}
+
+.speakers-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-color: #2F302D;
+	z-index: -2;
+}
+
+.speakers-header {
+    height: 100px;
+    position: relative;
+}
+
+.speakers-header > img {
+    position: absolute;
+    width: 42%;
+}
+
+.speakers-grid {
+    column-gap: 4%;
+    display: grid;
+}
+
+.speakers-grid-1 {
+    grid-template-columns: repeat(3, 25%);
+}
+
+.speakers-grid-2 {
+    grid-template-columns: repeat(2, 25%);
+    margin-top: 3%;
+    margin-left: 12%;
+}
+
+.speakers-cell {
+    position: relative;
+}
+
+.speakers-cell > img {
+    width: 100%;
+}
+
+.speakers-desc {
+    background-color: #8151FB;
+    padding: 0.5vw 1vw;
+    position: absolute;
+    right: -10%;
+    text-align: center;
+    top: 80%;
+    width: fit-content;
+}
+
+.speakers-desc > strong {
+    font: 800 1.4vw/1.4vw 'PP Object Sans';
+}
+
+.speakers-desc > p {
+    font: 1vw/1.25vw 'PP Object Sans';
+    margin: 0;
+}

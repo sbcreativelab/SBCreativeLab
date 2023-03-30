@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import useWindowDimensions from '../../utils/useWindowDimensions';
+import useWindowDimensions from '../../utils/useWindowDimensions'
 
 import logo from '../../images/s23_images/logo.svg'
 import titleLarge from '../../images/s23_images/hero-title.svg'
