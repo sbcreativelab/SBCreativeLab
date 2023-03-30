@@ -1,6 +1,6 @@
 .speakers {
+    position: relative;
     background: right / auto 100% no-repeat url(../../images/s23_images/speakers-background.svg);
-    padding: 2em 8%;
 }
 
 .speakers-background {
@@ -9,7 +9,11 @@
 	height: 100%;
 
 	background-color: #2F302D;
-	z-index: -2;
+	z-index: -3;
+}
+
+.speakers-frame {
+    padding: 2em 8%;
 }
 
 .speakers-header {
