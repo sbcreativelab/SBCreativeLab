@@ -9,7 +9,7 @@ import Speakers from './Components/s23/Speakers'
 import Judges from './Components/s23/Judges'
 import Mentors from './Components/s23/Mentors'
 import FAQs from './Components/s23/FAQs'
-// import Sponsors from './Components/s23/Sponsors'
+import Sponsors from './Components/s23/Sponsors'
 import Footer from './Components/s23/Footer'
 
 export class App extends Component {
@@ -42,7 +42,7 @@ export class App extends Component {
         <Judges />
         <Mentors />
         <FAQs />
-        {/*<Sponsors />*/}
+        <Sponsors />
         <Footer />
       </div>
     )

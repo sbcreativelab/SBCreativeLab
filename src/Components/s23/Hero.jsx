@@ -30,7 +30,7 @@ export default function Hero() {
                     <NavBarItem name={"Mentors"} id={"mentors"} />
                     {/*<NavBarItem name={"Prizes"} id={"prizes"} />*/}
                     <NavBarItem name={"FAQ"} id={"FAQs"} />
-                    {/*<NavBarItem name={"Sponsors"} id={"sponsors"} />*/}
+                    <NavBarItem name={"Sponsors"} id={"sponsors"} />
                 </nav>
             </header>
             <div className='hero-content'>

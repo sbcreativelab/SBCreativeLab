@@ -33,7 +33,7 @@ export default function Footer() {
 							<SectionButton name={"Mentors"} id={"mentors"} />
 							{/*<SectionButton name={"Prizes"} id={"prizes"} />*/}
 							<SectionButton name={"FAQ"} id={"FAQs"} />
-							{/*<SectionButton name={"Sponsors"} id={"sponsors"} />*/}
+							<SectionButton name={"Sponsors"} id={"sponsors"} />
 						</div>
 						<div className='footer-links-container'>
 							<a href='https://sbcreativelab.com' className='footer-links-header'>SBCL</a>
