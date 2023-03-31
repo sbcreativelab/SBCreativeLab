@@ -38,6 +38,7 @@ export default function Footer() {
 						<div className='footer-links-container'>
 							<a href='https://sbcreativelab.com' className='footer-links-header'>SBCL</a>
 							<a href='https://sbcreativelab.com/about' className='footer-link'>About</a>
+							<a href='https://sbcreativelab.com/resources' className='footer-link'>Resources</a>
 							<a href='https://sbcreativelab.com/events' className='footer-link'>Events</a>
 							<a href='https://projects.sbcreativelab.com' className='footer-link'>Projects Teams</a>
 							<a href='https://sbcreativelab.com/merch' className='footer-link'>Merch</a>
