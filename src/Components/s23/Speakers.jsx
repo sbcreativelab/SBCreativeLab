@@ -23,7 +23,8 @@ function SpeakersCell(props) {
                     </p>
                     :
                     <p className='speakers-position'>
-                        [{props.position}]
+                        [{props.position}<br/>
+                        {props.position2}]
                     </p>
                 }
             </div>
@@ -47,7 +48,7 @@ export default function Speakers() {
                 </div>
                 <div className='speakers-grid speakers-grid-2'>
                     <SpeakersCell company='Pitchbook Data' img={jahng} name='Christine Jahng' position='Product Designer'/>
-                    <SpeakersCell img={bours} name='Enya Bours' position='Freelance Product Designer'/>
+                    <SpeakersCell img={bours} name='Enya Bours' position='Freelance Product' position2='Designer'/>
                 </div>
             </div>
         </div>

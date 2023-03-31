@@ -21,7 +21,8 @@ function MentorsCell(props) {
                     </p>
                     :
                     <p className='mentors-position'>
-                        [{props.position}]
+                        [{props.position}<br/>
+                        {props.position2}]
                     </p>
                 }
             </div>
@@ -39,7 +40,7 @@ export default function Mentors() {
                     <img src={mentorsHeader} style={{ left: '1px' }} alt='mentors' />
                 </div>
                 <div className='mentors-grid'>
-                    <MentorsCell class='mentors-cell-1' img={wu} name='Bianca Wu' position='Freelance Product Designer'/>
+                    <MentorsCell class='mentors-cell-1' img={wu} name='Bianca Wu' position='Freelance Product' position2='Designer'/>
                     <MentorsCell class='mentors-cell-2' company='Blizzard' img={chow} name='Chloe Chow' position='Associate UX Designer'/>
                     <MentorsCell class='mentors-cell-3' company='PoolUp' img={lo} name='Felicia Lo' position='Product Designer'/>
                 </div>
