@@ -8,6 +8,7 @@ import Timeline from './Components/s23/Timeline'
 import Speakers from './Components/s23/Speakers'
 import FAQs from './Components/s23/FAQs'
 import Sponsors from './Components/s23/Sponsors'
+import Footer from './Components/s23/Footer'
 
 export class App extends Component {
   constructor(props) {
@@ -38,6 +39,7 @@ export class App extends Component {
         <Speakers />
         <FAQs />
         <Sponsors />
+        <Footer />
       </div>
     )
   }
