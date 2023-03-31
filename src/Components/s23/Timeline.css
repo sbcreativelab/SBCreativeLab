@@ -31,7 +31,6 @@
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 .timeline-header {
@@ -44,16 +43,15 @@
 }
 
 .timeline-title {
-
+	width: 18vw;
 }
 
 .timeline-gcal {
-	width: 320px;
-	height: 47px;
+	height: 3.4vw;
 
 	box-sizing: border-box;
-	border: 2px solid #8151FB;
-	border-radius: 10px;
+	border: 0.25vw solid #8151FB;
+	border-radius: 1vw;
 
 	transition: border 0.3s;
 
@@ -68,13 +66,12 @@
 .timeline-gcal-text {
 	width: 100%;
 	height: 100%;
-	padding: 8px 14px;
+	padding: 1.5% 14px;
 
 	font-family: 'PP Object Sans';
 	font-style: normal;
 	font-weight: 800;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 1.67vw;
 	text-align: center;
 	letter-spacing: 0.03em;
 
@@ -87,6 +84,8 @@
 	color: #623dc0;
 }
 
-.timeline-body {
-	margin-bottom: 7%;
+@media only screen and (max-width: 600px) {
+	.timeline-gcal-text {
+		padding: 0 8px;
+	}
 }
