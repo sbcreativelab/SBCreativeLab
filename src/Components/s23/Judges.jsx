@@ -13,14 +13,14 @@ function JudgesCell(props) {
         <div className={'judges-cell ' + props.class}>
             <img src={props.img} alt={props.name} />
             <div className='judges-desc'>
-                <strong>{props.name}</strong>
+                <p className='judges-name'>{props.name}</p>
                 {props.company ?
-                    <p>
+                    <p className='judges-position'>
                         [{props.position}<br/>
                         @ {props.company}]
                     </p>
                     :
-                    <p>
+                    <p className='judges-position'>
                         [{props.position}]
                     </p>
                 }

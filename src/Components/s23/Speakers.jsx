@@ -15,14 +15,14 @@ function SpeakersCell(props) {
         <div className='speakers-cell'>
             <img src={props.img} alt={props.name} />
             <div className='speakers-desc'>
-                <strong>{props.name}</strong>
+                <p className='speakers-name'>{props.name}</p>
                 {props.company ?
-                    <p>
+                    <p className='speakers-position'>
                         [{props.position}<br/>
                         @ {props.company}]
                     </p>
                     :
-                    <p>
+                    <p className='speakers-position'>
                         [{props.position}]
                     </p>
                 }

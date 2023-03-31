@@ -61,11 +61,12 @@
     width: fit-content;
 }
 
-.speakers-desc > strong {
-    font: 800 1.4vw/1.4vw 'PP Object Sans';
+.speakers-name {
+    font: 800 1.4vw/2vw 'PP Object Sans';
+    margin: 0;
 }
 
-.speakers-desc > p {
+.speakers-position {
     font: 1vw/1.25vw 'PP Object Sans';
     margin: 0;
 }
