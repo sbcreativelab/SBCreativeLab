@@ -44,7 +44,7 @@ export default function Speakers() {
                 <div className='speakers-grid speakers-grid-1'>
                     <SpeakersCell company='Figma' img={cardona} name='Miguel Cardona' position='Designer Advocate for Education'/>
                     <SpeakersCell company='Riot Games' img={xue} name='Janny Xue' position='User Experience Designer'/>
-                    <SpeakersCell company='Gaucho Creative Marketing Group' img={vo} name='Van Vo' position='Director of Design'/>
+                    <SpeakersCell company='Gaucho Creative' img={vo} name='Van Vo' position='Director of Design'/>
                 </div>
                 <div className='speakers-grid speakers-grid-2'>
                     <SpeakersCell company='Pitchbook Data' img={jahng} name='Christine Jahng' position='Product Designer'/>
