@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 600px) {
     .sponsors-grid {
-        grid-auto-rows: 34%;
+        grid-auto-rows: 33vw;
         grid-template-columns: repeat(3, 33.33%);
     }
 
