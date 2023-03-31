@@ -27,4 +27,17 @@
 
 	background: url('./images/s23_images/noise.png');
 	mix-blend-mode: overlay;
+	pointer-events: none;
+}
+
+.app-background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+
+	z-index: -2;
+
+	background-color: #2F302D;
 }

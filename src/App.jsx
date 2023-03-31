@@ -9,6 +9,7 @@ import Speakers from './Components/s23/Speakers'
 import Judges from './Components/s23/Judges'
 import FAQs from './Components/s23/FAQs'
 import Sponsors from './Components/s23/Sponsors'
+import Footer from './Components/s23/Footer'
 
 export class App extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ export class App extends Component {
 
     return (
       <div>
+        <div className='app-background' />
         <div className='noise-background' style={{zIndex: isSafari ? -2 : 1}} />
         <Hero />
         <Timeline />
@@ -39,6 +41,7 @@ export class App extends Component {
         <Judges />
         <FAQs />
         <Sponsors />
+        <Footer />
       </div>
     )
   }
