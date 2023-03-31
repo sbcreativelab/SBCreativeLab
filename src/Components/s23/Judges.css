@@ -1,8 +1,6 @@
 .judges {
     background: left / auto 100% no-repeat url(../../images/s23_images/judges-background.svg);
     height: 48vw;
-    padding-top: 4vw;
-    margin-bottom: 3vw;
 }
 
 .judges-background {
@@ -15,7 +13,7 @@
 }
 
 .judges-frame {
-    padding: 2em 4% 0 24%;
+    padding: 4vw 4% 0 24%;
 }
 
 .judges-header {
