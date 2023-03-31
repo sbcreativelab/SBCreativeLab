@@ -19,7 +19,9 @@ export default function Hero() {
         <div className='hero' id='hero'>
             <div className='hero-background' />
             <header>
-                <img src={logo} className='logo' alt='' />
+                <a href="https://sbcreativelab.com">
+                    <img src={logo} className='logo' alt='' />
+                </a>
                 <nav>
                     {/*<NavBarItem name={"Prompt"} id={"prompt"} />*/}
                     <NavBarItem name={"Timeline"} id={"timeline"} />

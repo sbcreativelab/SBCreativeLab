@@ -54,7 +54,9 @@ export default function Footer() {
 				</div>
 				<div className='footer-bottom'>
 					<div className='footer-socials-container'>
-						<img src={sbclLogo} alt='' className='footer-logo' />
+						<a href="https://sbcreativelab.com">
+		                    <img src={sbclLogo} alt='' className='footer-logo' />
+		                </a>
 						<div className='footer-socials'>
 							<SocialBox image={facebookLogo} link={facebookLink} color={beigeColor} />
 							<SocialBox image={instagramLogo} link={instagramLink} color={purpleColor} />
