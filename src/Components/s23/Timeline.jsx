@@ -3,10 +3,11 @@ import './Timeline.css'
 import useWindowDimensions from '../../utils/useWindowDimensions'
 
 import sideDeco from '../../images/s23_images/timeline-background.svg'
-import timelinePhone from '../../images/s23_images/phone_view/timeline-phone.svg'
 import sectionTitle from '../../images/s23_images/timeline-title.svg'
+import sectionTitlePhone from '../../images/s23_images/phone_view/timeline-title-phone.svg'
 
 import timeline from '../../images/s23_images/timeline.svg'
+import timelinePhone from '../../images/s23_images/phone_view/timeline-phone.svg'
 
 export default function Timeline() {
     const { width } = useWindowDimensions();
@@ -18,10 +19,10 @@ export default function Timeline() {
 		<div className='timeline' id='timeline'>
 			<div className='timeline-background' />
 				{isPhoneScreen ?
-					<div>
+					<div style={{ paddingBottom: '10vw' }}>
 						<div style={{ position: 'relative' }}>
-							<div style={{ display: 'grid', position: 'absolute', right: '2em', top: '2em', width: '32%' }}>
-								<img src={sectionTitle} alt='Timeline' style={{ width: '100%' }} />
+							<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em', position: 'absolute', right: '2em', top: '2em', width: '40%' }}>
+								<img src={sectionTitlePhone} alt='Timeline' style={{ width: '100%' }} />
 								<a className='timeline-gcal' href={gcalLink} target="_blank" rel="noreferrer">
 									<div className='timeline-gcal-text'>+ ADD TO YOUR GCAL</div>
 								</a>

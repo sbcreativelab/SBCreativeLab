@@ -58,6 +58,10 @@
 	transition: border 0.3s;
 
 	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .timeline-gcal:hover {
@@ -87,7 +91,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.timeline-gcal {
+		height: 5.1vw;
+	}
+
 	.timeline-gcal-text {
-		padding: 0 8px;
+		font-size: 2.6vw;
 	}
 }
