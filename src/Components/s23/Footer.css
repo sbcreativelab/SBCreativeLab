@@ -235,3 +235,69 @@
 
 	color: #E1DBD2;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer-link-sections {
+    	flex-direction: column;
+    	gap: 20px;
+    }
+
+    .footer-links-header {
+    	height: 9.0vw;
+    	font-size: 8.2vw;
+    	line-height: 9.0vw;
+
+    	margin-bottom: 10px;
+    }
+
+    .footer-link {
+    	height: 5.9vw;
+    	font-size: 4.6vw;
+    	line-height: 5.9vw;
+
+    	margin-bottom: 10px;
+    }
+
+    .footer-button {
+    	width: 36vw;
+    	height: 9.2vw;
+    }
+
+    .footer-button-text {
+    	height: 4.9vw;
+    	font-size: 3.3vw;
+    	line-height: 4.9vw;
+    }
+
+    .footer-bottom {
+    	flex-direction: column-reverse;
+    	gap: 30px;
+    }
+
+    .footer-socials-container {
+    	width: 100%;
+    	justify-content: space-evenly;
+    }
+
+    .footer-logo {
+    	width: 11.5vw;
+    	height: 12vw;
+    }
+
+    .footer-socials {
+    	width: 53vw;
+    	height: 13vw;
+    }
+
+    .footer-designathon-top-text {
+    	height: 5.6vw;
+    	font-size: 5.1vw;
+    	line-height: 5.6vw;
+    }
+
+    .footer-designathon-bottom-text {
+    	height: 11vw;
+    	font-size: 10vw;
+    	line-height: 11vw;
+    }
+}
