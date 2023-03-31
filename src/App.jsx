@@ -31,6 +31,7 @@ export class App extends Component {
 
     return (
       <div>
+        <div className='app-background' />
         <div className='noise-background' style={{zIndex: isSafari ? -2 : 1}} />
         <Hero />
         <Timeline />
