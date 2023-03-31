@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Footer.css'
 
 import sbclLogo from '../../images/s23_images/logo.svg'
@@ -25,15 +25,15 @@ export default function Footer() {
 				<div className='footer-top'>
 					<div className='footer-link-sections'>
 						<div className='footer-links-container'>
-							<a href='#hero' className='footer-links-header'>JUMPSTART</a>
-							{/*<a href='#prompt' className='footer-link'>Prompt</a>*/}
-							<a href='#timeline' className='footer-link'>Timeline</a>
-							<a href='#speakers' className='footer-link'>Speakers</a>
-							<a href='#judges' className='footer-link'>Judges</a>
-							<a href='#mentors' className='footer-link'>Mentors</a>
-							{/*<a href='#prizes' className='footer-link'>Prizes</a>*/}
-							<a href='#FAQs' className='footer-link'>FAQ</a>
-							<a href='#sponsors' className='footer-link'>Sponsors</a>
+							<SectionButton name={"JUMPSTART"} id={"hero"} isHeader={true} />
+							{/*<SectionButton name={"Prompt"} id={"prompt"} />*/}
+							<SectionButton name={"Timeline"} id={"timeline"} />
+							<SectionButton name={"Speakers"} id={"speakers"} />
+							<SectionButton name={"Judges"} id={"judges"} />
+							<SectionButton name={"Mentors"} id={"mentors"} />
+							{/*<SectionButton name={"Prizes"} id={"prizes"} />*/}
+							<SectionButton name={"FAQ"} id={"FAQs"} />
+							<SectionButton name={"Sponsors"} id={"sponsors"} />
 						</div>
 						<div className='footer-links-container'>
 							<a href='https://sbcreativelab.com' className='footer-links-header'>SBCL</a>
@@ -73,6 +73,23 @@ export default function Footer() {
 			</div>
 		</div>
 	)
+}
+
+function SectionButton({ name, id, isHeader = false }) {
+    const [anchorTarget, setAnchorTarget] = useState(null);
+
+    useEffect(() => {
+        setAnchorTarget(document.getElementById(id));
+    }, [id])
+
+    const handleClick = event => {
+        event.preventDefault();
+        anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    return (
+		<a href={'#' + id} className={isHeader ? 'footer-links-header' : 'footer-link'} onClick={handleClick}>{name}</a>
+    )
 }
 
 function SocialBox({image, link, color}) {

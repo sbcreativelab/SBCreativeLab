@@ -31,7 +31,7 @@ function JudgesCell(props) {
 
 export default function Judges() {
     return (
-        <div className='judges'>
+        <div className='judges' id='judges'>
             <div className='judges-background'/>
             <div className='judges-frame'>
                 <div className='judges-header'>

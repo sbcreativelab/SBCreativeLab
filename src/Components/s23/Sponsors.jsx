@@ -23,7 +23,7 @@ function SponsorsCell(props) {
 
 export default function Sponsors() {
     return (
-        <div className='sponsors'>
+        <div className='sponsors' id='sponsors'>
             <div className='sponsors-background' />
             <div className='sponsors-grid'>
                 <div className='sponsors-cell sponsors-cell-purple' />

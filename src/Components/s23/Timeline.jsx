@@ -10,7 +10,7 @@ export default function Timeline() {
 	const gcalLink = "https://calendar.google.com/calendar/u/1?cid=ZjBiZmEyNzUxOWQ5MTNiNjQ3NzVjMDI0ZTc5MzA0MDNhYWE1ZjhhMTBiYWMwZjhlYTM5MDA5M2ExNTA1NGNkYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
 
 	return (
-		<div className='timeline'>
+		<div className='timeline' id='timeline'>
 			<div className='timeline-background' />
 			<div className='timeline-container'>
 				<img src={sideDeco} alt='' className='timeline-side-deco' />

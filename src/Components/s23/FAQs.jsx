@@ -13,7 +13,7 @@ export default function FAQs() {
     const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
 
     return (
-        <div className='FAQs'>
+        <div className='FAQs' id='FAQs'>
             <div className='FAQs-background' />
             <div className='FAQs-frame'>
                 <div className='FAQs-header'>

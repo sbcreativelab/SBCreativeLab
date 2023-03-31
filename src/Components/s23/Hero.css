@@ -48,6 +48,8 @@ nav a:visited {
 	align-items: flex-start;
 	padding: 10px;
 	gap: 10px;
+
+	cursor: pointer;
 }
 
 .navbar-item-text {

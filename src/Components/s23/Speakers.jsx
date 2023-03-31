@@ -33,7 +33,7 @@ function SpeakersCell(props) {
 
 export default function Speakers() {
     return (
-        <div className='speakers'>
+        <div className='speakers' id='speakers'>
             <div className='speakers-background'/>
             <div className='speakers-frame'>
                 <div className='speakers-header'>

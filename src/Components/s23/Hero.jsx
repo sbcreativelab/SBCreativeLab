@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Hero.css'
 import useWindowDimensions from '../../utils/useWindowDimensions'
 
@@ -16,19 +16,19 @@ export default function Hero() {
     const applicationLink = 'https://tinyurl.com/SBCLDesignathon23'
 
     return (
-        <div className='hero'>
+        <div className='hero' id='hero'>
             <div className='hero-background' />
             <header>
                 <img src={logo} className='logo' alt='' />
-                <nav style={{ display: 'none' }}>
-                    <NavBarItem name={"Prompt"} />
-                    <NavBarItem name={"Timeline"} />
-                    <NavBarItem name={"Speakers"} />
-                    <NavBarItem name={"Judges"} />
-                    <NavBarItem name={"Mentors"} />
-                    <NavBarItem name={"Prizes"} />
-                    <NavBarItem name={"FAQ"} />
-                    <NavBarItem name={"Sponsors"} />
+                <nav>
+                    {/*<NavBarItem name={"Prompt"} id={"prompt"} />*/}
+                    <NavBarItem name={"Timeline"} id={"timeline"} />
+                    <NavBarItem name={"Speakers"} id={"speakers"} />
+                    <NavBarItem name={"Judges"} id={"judges"} />
+                    <NavBarItem name={"Mentors"} id={"mentors"} />
+                    {/*<NavBarItem name={"Prizes"} id={"prizes"} />*/}
+                    <NavBarItem name={"FAQ"} id={"FAQs"} />
+                    <NavBarItem name={"Sponsors"} id={"sponsors"} />
                 </nav>
             </header>
             <div className='hero-content'>
@@ -69,9 +69,20 @@ export default function Hero() {
     )
 }
 
-function NavBarItem({name}) {
+function NavBarItem({ name, id }) {
+    const [anchorTarget, setAnchorTarget] = useState(null);
+
+    useEffect(() => {
+        setAnchorTarget(document.getElementById(id));
+    }, [id])
+
+    const handleClick = event => {
+        event.preventDefault();
+        anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     return (
-        <div className='navbar-item'>
+        <div className='navbar-item' onClick={handleClick}>
             <div className='navbar-item-text'>{name}</div>
         </div>
     )
