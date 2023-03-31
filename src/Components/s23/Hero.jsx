@@ -35,8 +35,8 @@ export default function Hero() {
                 <div className='hero-title'>
                     {isPhoneScreen ?
                         <div className='hero-title-small-view'>
-                            <img src={titleSmallSBCL} style={{ filter: "blur(0.3px)" }} alt='' />
-                            <img src={titleSmallJumpstart} style={{ filter: "blur(0.3px)" }} alt='' />
+                            <img src={titleSmallSBCL} alt='' />
+                            <img src={titleSmallJumpstart} alt='' />
                             <img src={titleSmallDesignathon} style={{ filter: "blur(2.5px)" }} alt='' />
                             <img src={titleSmallDesignathon} style={{ position: "absolute", top: "114px" }} alt='' />
                             <p>April 14th ~ 16th, 2023</p>
