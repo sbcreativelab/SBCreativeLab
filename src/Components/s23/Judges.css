@@ -1,8 +1,7 @@
 .judges {
     background: left / auto 100% no-repeat url(../../images/s23_images/judges-background.svg);
-    height: 80vh;
-    margin-top: 6vh;
-    padding: 2em 8%;
+    height: 48vw;
+    margin-top: 4vw;
 }
 
 .judges-background {
@@ -15,7 +14,7 @@
 }
 
 .judges-frame {
-    margin-left: 20%;
+    padding: 2em 4% 0 24%;
 }
 
 .judges-header {
@@ -26,7 +25,7 @@
 
 .judges-header > img {
     position: absolute;
-    right: 0;
+    right: 5%;
     width: 42%;
 }
 
@@ -34,7 +33,7 @@
     column-gap: 2%;
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3, 160px);
+    grid-template-rows: repeat(3, 12vw);
 }
 
 .judges-cell {
