@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syncopate:wght@400;700&display=swap');
+
 @font-face {
 	font-family: 'Magilio';
 	src: url(./fonts/MagilioRegular.ttf) format('truetype');
@@ -14,4 +16,28 @@
 	font-family: 'PP Object Sans';
 	src: url(./fonts/PP-Object-Sans/PPObjectSans-Heavy.otf) format('opentype');
 	font-weight: 800;
+}
+
+.noise-background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+
+	background: url('./images/s23_images/noise.png');
+	mix-blend-mode: overlay;
+	pointer-events: none;
+}
+
+.app-background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+
+	z-index: -3;
+
+	background-color: #2F302D;
 }

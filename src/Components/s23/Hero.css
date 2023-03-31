@@ -1,16 +1,19 @@
-html,
-body {
+.hero {
+	position: relative;
+}
+
+.hero-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
 	background-color: #2F302D;
-
-	/* Beige */
-	color: #E1DBD2;
-
-	scroll-behavior: smooth;
+	z-index: -3;
 }
 
 header {
 	display: flex;
-	margin: 42px;
+	padding: 42px;
 }
 
 .logo {
@@ -45,6 +48,8 @@ nav a:visited {
 	align-items: flex-start;
 	padding: 10px;
 	gap: 10px;
+
+	cursor: pointer;
 }
 
 .navbar-item-text {
@@ -112,6 +117,8 @@ nav a:visited {
 	/* Black */
 
 	color: #2F302D;
+
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .register-button:hover {
@@ -170,14 +177,25 @@ nav a:visited {
 }
 
 .hero-description {
-	background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco-large-view.svg);
 	font: 1.4vw/2vw 'PP Object Sans';
 	letter-spacing: 0.06em;
-	margin: 2% 15%;
-	padding: 2%;
 	text-align: center;
 
+	margin-top: 30px;
+	margin-bottom: 12%;
+	padding: 2%;
+	width: 75%;
+
+	background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco.svg);
+
 /*	filter: blur(0.5px);*/
+}
+
+.blob-1 {
+	position: absolute;
+	left: 108px;
+	bottom: 76px;
+	width: 15%;
 }
 
 @media only screen and (max-width: 992px) {
@@ -214,9 +232,15 @@ nav a:visited {
 	}
 
 	.hero-description {
-		background: center / 100% auto no-repeat url(../../images/s23_images/hero-description-deco-small-view.svg);
+		background: center / 100% auto no-repeat url(../../images/s23_images/phone_view/hero-description-deco-phone.svg);
 		font: 4vw/5vw 'PP Object Sans';
-		margin: 0 7.5%;
+		
 		padding: 10% 7.5%;
+		margin-bottom: 20%;
+		width: 85%;
+	}
+
+	.blob-1 {
+		width: 30%;
 	}
 }
