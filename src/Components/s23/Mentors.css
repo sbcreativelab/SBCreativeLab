@@ -1,8 +1,6 @@
 .mentors {
     background: right / auto 100% no-repeat url(../../images/s23_images/mentors-background.svg);
     height: 56.5vw;
-    padding-top: 4vw;
-    margin-bottom: 3vw;
 }
 
 .mentors-background {
@@ -15,7 +13,7 @@
 }
 
 .mentors-frame {
-    padding: 2em 8%;
+    padding: 4vw 8%;
 }
 
 .mentors-header {
