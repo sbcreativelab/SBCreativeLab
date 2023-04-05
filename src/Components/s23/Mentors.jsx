@@ -31,20 +31,38 @@ function MentorsCell(props) {
 }
 
 export default function Mentors() {
+    const { width } = useWindowDimensions();
+    const PHONE_SCREEN_BREAKPOINT = 600;
+    const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
+
     return (
         <div className='mentors' id='mentors'>
             <div className='mentors-background'/>
-            <div className='mentors-frame'>
-                <div className='mentors-header'>
-                    <img src={mentorsHeaderDeco} alt='' />
-                    <img src={mentorsHeader} style={{ left: '1px' }} alt='mentors' />
+            {isPhoneScreen ?
+                <div className='mentors-frame'>
+                    <div className='mentors-header'>
+                        <img src={mentorsHeaderDeco} alt='' />
+                        <img src={mentorsHeader} style={{ left: '1px' }} alt='mentors' />
+                    </div>
+                    <div className='mentors-grid'>
+                        <MentorsCell class='mentors-cell-left' img={wu} name='Bianca Wu' position='Freelance Product' position2='Designer'/>
+                        <MentorsCell class='mentors-cell-right' company='Blizzard' img={chow} name='Chloe Chow' position='Associate UX Designer'/>
+                        <MentorsCell class='mentors-cell-left' company='PoolUp' img={lo} name='Felicia Lo' position='Product Designer'/>
+                    </div>
                 </div>
-                <div className='mentors-grid'>
-                    <MentorsCell class='mentors-cell-1' img={wu} name='Bianca Wu' position='Freelance Product' position2='Designer'/>
-                    <MentorsCell class='mentors-cell-2' company='Blizzard' img={chow} name='Chloe Chow' position='Associate UX Designer'/>
-                    <MentorsCell class='mentors-cell-3' company='PoolUp' img={lo} name='Felicia Lo' position='Product Designer'/>
+                :
+                <div className='mentors-frame'>
+                    <div className='mentors-header'>
+                        <img src={mentorsHeaderDeco} alt='' />
+                        <img src={mentorsHeader} style={{ left: '1px' }} alt='mentors' />
+                    </div>
+                    <div className='mentors-grid'>
+                        <MentorsCell class='mentors-cell-1' img={wu} name='Bianca Wu' position='Freelance Product' position2='Designer'/>
+                        <MentorsCell class='mentors-cell-2' company='Blizzard' img={chow} name='Chloe Chow' position='Associate UX Designer'/>
+                        <MentorsCell class='mentors-cell-3' company='PoolUp' img={lo} name='Felicia Lo' position='Product Designer'/>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }
