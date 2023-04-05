@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import './index.css'
 import ReactGA from 'react-ga'
+import { UserAgent } from "react-useragent"
 
 import Hero from './Components/s23/Hero'
 import Timeline from './Components/s23/Timeline'
@@ -29,13 +30,16 @@ export class App extends Component {
   }
 
   render() {
-    // eslint-disable-next-line
-    const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
     return (
       <div>
         <div className='app-background' />
-        <div className='noise-background' style={{zIndex: isSafari ? -2 : 1}} />
+        <UserAgent>
+          {({ ua }) => {
+            const iOS = ua.md.ua.match(/iP(ad|od|hone)/i)
+            const desktopSafari = !iOS && ua.md.ua.match(/^((?!chrome|android).)*safari/i)
+            return <div className='noise-background' style={{zIndex: (iOS || desktopSafari) ? -2 : 1}} />
+          }}
+        </UserAgent>
         <Hero />
         <Timeline />
         <Speakers />
