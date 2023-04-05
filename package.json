@@ -22,6 +22,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.0",
     "react-scripts": "^5.0.1",
+    "react-useragent": "^1.1.2",
     "tilt.js": "^1.2.1",
     "typewriter-effect": "^2.13.1"
   },
