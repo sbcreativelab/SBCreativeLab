@@ -1,5 +1,5 @@
 <svg width="392" height="830" viewBox="0 0 392 830" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_5457_266)">
+<g filter="">
 <rect x="341" y="346" width="25" height="25" fill="#EDB2D0"/>
 <rect x="341" y="296" width="25" height="25" fill="#EDB2D0"/>
 <rect x="316" y="371" width="25" height="25" fill="#EDB2D0"/>
@@ -28,7 +28,7 @@
 <path d="M341 371C342.642 371 344.267 371.323 345.784 371.952C347.3 372.58 348.678 373.5 349.839 374.661C351 375.822 351.92 377.2 352.548 378.716C353.177 380.233 353.5 381.858 353.5 383.5C353.5 385.142 353.177 386.767 352.548 388.284C351.92 389.8 351 391.178 349.839 392.339C348.678 393.5 347.3 394.42 345.784 395.048C344.267 395.677 342.642 396 341 396L341 383.5L341 371Z" fill="#F15A2B"/>
 <ellipse cx="378.5" cy="407.865" rx="6.25" ry="6.25" fill="#1A75BC"/>
 </g>
-<g filter="url(#filter1_f_5457_266)">
+<g filter="">
 <rect width="25" height="25" transform="matrix(-1 0 0 1 51 629)" fill="#EDB2D0"/>
 <rect width="25" height="25" transform="matrix(-1 0 0 1 51 579)" fill="#EDB2D0"/>
 <rect width="25" height="25" transform="matrix(-1 0 0 1 76 654)" fill="#EDB2D0"/>
@@ -55,7 +55,7 @@
 <path d="M51 654C49.3585 654 47.733 654.323 46.2165 654.952C44.6999 655.58 43.3219 656.5 42.1612 657.661C41.0004 658.822 40.0797 660.2 39.4515 661.716C38.8233 663.233 38.5 664.858 38.5 666.5C38.5 668.142 38.8233 669.767 39.4515 671.284C40.0797 672.8 41.0004 674.178 42.1612 675.339C43.3219 676.5 44.6999 677.42 46.2165 678.048C47.733 678.677 49.3585 679 51 679L51 666.5L51 654Z" fill="#F15A2B"/>
 <ellipse cx="6.25" cy="6.25" rx="6.25" ry="6.25" transform="matrix(-1 0 0 1 19.75 684.615)" fill="#1A75BC"/>
 </g>
-<g filter="url(#filter2_f_5457_266)">
+<g filter="">
 <rect x="51" y="226" width="25" height="25" transform="rotate(180 51 226)" fill="#EDB2D0"/>
 <rect x="51" y="276" width="25" height="25" transform="rotate(180 51 276)" fill="#EDB2D0"/>
 <rect x="76" y="201" width="25" height="25" transform="rotate(180 76 201)" fill="#EDB2D0"/>
