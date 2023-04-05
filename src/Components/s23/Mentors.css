@@ -72,3 +72,67 @@
     font: 1vw/1.25vw 'PP Object Sans';
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .mentors {
+        background: left / 100% auto no-repeat url(../../images/s23_images/phone_view/mentors-background-phone.svg);
+        height: 100%;
+    }
+
+    .mentors-frame {
+        padding: 2.4em 8%;
+    }
+
+    .mentors-header {
+        height: 16vw;
+        position: relative;
+    }
+    
+    .mentors-header > img {
+        position: absolute;
+        width: 66%;
+    }
+
+    .mentors-grid {
+        row-gap: 3em;
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+    }
+
+    .mentors-cell {
+        position: relative;
+    }
+
+    .mentors-cell > img {
+        width: 66%;
+    }
+
+    .mentors-cell-left > .mentors-desc {
+        right: 30%;
+    }
+
+    .mentors-cell-right {
+        justify-items: right;
+    }
+
+    .mentors-cell-right > .mentors-desc {
+        left: 30%;
+    }
+
+    .mentors-desc {
+        padding: 4.8px 9.6px;
+        position: absolute;
+        top: 90%;
+    }
+
+    .mentors-name {
+        font: 800 12.8px/16.64px 'PP Object Sans';
+        margin: 0;
+    }
+
+    .mentors-position {
+        font: 9.6px/12.48px 'PP Object Sans';
+        margin: 0;
+    }
+}
