@@ -68,3 +68,68 @@
     font: 1vw/1.25vw 'PP Object Sans';
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .speakers {
+        background: right / 100% auto no-repeat url(../../images/s23_images/phone_view/speakers-background-phone.svg);
+        height: 100%;
+    }
+
+    .speakers-frame {
+        padding: 2.4em 8%;
+    }
+
+    .speakers-header {
+        height: 16vw;
+        position: relative;
+    }
+    
+    .speakers-header > img {
+        position: absolute;
+        width: 66%;
+    }
+
+    .speakers-grid {
+        row-gap: 3em;
+        display: grid;
+    }
+
+    .speakers-cell {
+        position: relative;
+    }
+
+    .speakers-cell > img {
+        width: 66%;
+    }
+
+    .speakers-cell-left > .speakers-desc {
+        right: 30%;
+    }
+
+    .speakers-cell-right {
+        text-align: right;
+    }
+
+    .speakers-cell-right > .speakers-desc {
+        left: 30%;
+    }
+
+    .speakers-desc {
+        background-color: #8151FB;
+        padding: 4.8px 9.6px;
+        position: absolute;
+        text-align: center;
+        top: 90%;
+        width: fit-content;
+    }
+
+    .speakers-name {
+        font: 800 12.8px/16.64px 'PP Object Sans';
+        margin: 0;
+    }
+
+    .speakers-position {
+        font: 9.6px/12.48px 'PP Object Sans';
+        margin: 0;
+    }
+}
