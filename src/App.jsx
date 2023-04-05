@@ -5,6 +5,7 @@ import ReactGA from 'react-ga'
 import { UserAgent } from "react-useragent"
 
 import Hero from './Components/s23/Hero'
+import RegisterSideButton from './Components/s23/RegisterSideButton'
 import Timeline from './Components/s23/Timeline'
 import Speakers from './Components/s23/Speakers'
 import Judges from './Components/s23/Judges'
@@ -37,10 +38,11 @@ export class App extends Component {
           {({ ua }) => {
             const iOS = ua.md.ua.match(/iP(ad|od|hone)/i)
             const desktopSafari = !iOS && ua.md.ua.match(/^((?!chrome|android).)*safari/i)
-            return <div className='noise-background' style={{zIndex: (iOS || desktopSafari) ? -2 : 1}} />
+            return <div className='noise-background' style={{zIndex: (iOS || desktopSafari) ? -2 : 2}} />
           }}
         </UserAgent>
         <Hero />
+        <RegisterSideButton />
         <Timeline />
         <Speakers />
         <Judges />
