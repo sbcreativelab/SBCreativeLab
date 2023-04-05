@@ -30,20 +30,38 @@ function JudgesCell(props) {
 }
 
 export default function Judges() {
+    const { width } = useWindowDimensions();
+    const PHONE_SCREEN_BREAKPOINT = 600;
+    const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
+
     return (
         <div className='judges' id='judges'>
             <div className='judges-background'/>
-            <div className='judges-frame'>
-                <div className='judges-header'>
-                    <img src={judgesHeaderDeco} alt='' />
-                    <img src={judgesHeader} alt='judges' />
+            {isPhoneScreen ?
+                <div className='judges-frame'>
+                    <div className='judges-header'>
+                        <img src={judgesHeaderDeco} alt='' />
+                        <img src={judgesHeader} alt='judges' />
+                    </div>
+                    <div className='judges-grid'>
+                        <JudgesCell class='judges-cell-right' company='PoolUp' img={vu} name='Priscilla Vu' position='Product Designer'/>
+                        <JudgesCell class='judges-cell-left' company='Internet Brands' img={huang} name='Eve Huang' position='Associate Product Designer'/>
+                        <JudgesCell class='judges-cell-right' company='Disney Streaming' img={dizon} name='Jeremy Dizon' position='Lead Product Designer'/>
+                    </div>
                 </div>
-                <div className='judges-grid'>
-                    <JudgesCell class='judges-cell-1' company='PoolUp' img={vu} name='Priscilla Vu' position='Product Designer'/>
-                    <JudgesCell class='judges-cell-2' company='Internet Brands' img={huang} name='Eve Huang' position='Associate Product Designer'/>
-                    <JudgesCell class='judges-cell-3' company='Disney Streaming' img={dizon} name='Jeremy Dizon' position='Lead Product Designer'/>
+                :
+                <div className='judges-frame'>
+                    <div className='judges-header'>
+                        <img src={judgesHeaderDeco} alt='' />
+                        <img src={judgesHeader} alt='judges' />
+                    </div>
+                    <div className='judges-grid'>
+                        <JudgesCell class='judges-cell-1' company='PoolUp' img={vu} name='Priscilla Vu' position='Product Designer'/>
+                        <JudgesCell class='judges-cell-2' company='Internet Brands' img={huang} name='Eve Huang' position='Associate Product Designer'/>
+                        <JudgesCell class='judges-cell-3' company='Disney Streaming' img={dizon} name='Jeremy Dizon' position='Lead Product Designer'/>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }
