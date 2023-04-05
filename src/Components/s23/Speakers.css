@@ -94,10 +94,6 @@
         display: grid;
     }
 
-    .speakers-cell {
-        position: relative;
-    }
-
     .speakers-cell > img {
         width: 66%;
     }

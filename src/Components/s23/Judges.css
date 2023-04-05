@@ -72,3 +72,70 @@
     font: 1vw/1.25vw 'PP Object Sans';
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .judges {
+        background: left / 100% auto no-repeat url(../../images/s23_images/phone_view/judges-background-phone.svg);
+        height: 100%;
+    }
+
+    .judges-frame {
+        padding: 2.4em 8%;
+    }
+
+    .judges-header {
+        height: 16vw;
+        position: relative;
+    }
+    
+    .judges-header > img {
+        position: absolute;
+        width: 66%;
+    }
+
+    .judges-grid {
+        row-gap: 3em;
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+    }
+
+    .judges-cell {
+        position: relative;
+    }
+
+    .judges-cell > img {
+        width: 66%;
+    }
+
+    .judges-cell-left > .judges-desc {
+        right: 30%;
+    }
+
+    .judges-cell-right {
+        justify-items: right;
+    }
+
+    .judges-cell-right > .judges-desc {
+        left: 30%;
+    }
+
+    .judges-desc {
+        background-color: #8151FB;
+        padding: 4.8px 9.6px;
+        position: absolute;
+        text-align: center;
+        top: 90%;
+        width: fit-content;
+    }
+
+    .judges-name {
+        font: 800 12.8px/16.64px 'PP Object Sans';
+        margin: 0;
+    }
+
+    .judges-position {
+        font: 9.6px/12.48px 'PP Object Sans';
+        margin: 0;
+    }
+}
