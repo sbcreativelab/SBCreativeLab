@@ -1,0 +1,17 @@
+.prizes {
+    position: relative;
+    padding: 4vw 0;
+}
+
+.prizes-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: #2F302D;
+    z-index: -3;
+}
+
+.prizes-frame {
+    padding: 0 8%;
+}
