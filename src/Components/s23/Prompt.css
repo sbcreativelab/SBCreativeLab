@@ -1,0 +1,232 @@
+.prompt {
+	position: relative;	
+}
+
+.prompt-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	background-color: #2F302D;
+	z-index: -3;
+}
+
+.prompt-title {
+	position: absolute;
+	left: 8.0vw;
+	top: 3.2vw;
+	width: 13.0vw;
+	height: 4.6vw;
+}
+
+.prompt-side-deco {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 21.2vw;
+	height: 58.2vw;
+}
+
+.blob-deco {
+	position: absolute;
+	left: 46.3vw;
+	top: 11.5vw;
+	width: 11.7vw;
+}
+
+.prompt-content {
+	position: relative;
+	padding-left: 10.8vw;
+	padding-top: 11.8vw;
+	padding-bottom: 6.0vw;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.prompt-subtitle {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 2.4vw;
+	line-height: 3.1vw;
+	/* identical to box height */
+	
+	/* Beige */
+	
+	color: #E1DBD2;
+}
+
+.prompt-row {
+	width: 60.2vw;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.prompt-text {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3vw;
+	line-height: 2.0vw;
+	/* or 150% */
+	
+	/* Beige */
+	
+	color: #E1DBD2;
+}
+
+.prompt-text-bold {
+	font-weight: 800;
+}
+
+.prompt-text-highlight {
+	background-color: #596619;
+	color: #DFE3A1;
+}
+
+.prompt-text-small {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1vw;
+	line-height: 1.3vw;
+	/* or 150% */
+	
+	/* Beige */
+	
+	color: #E1DBD2;
+}
+
+.prompt-stat-container {
+	max-width: 26.5vw;
+	height: 11.4vw;
+	
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	/* align-items: flex-end; */
+}
+
+.prompt-stat-diagram {
+	width: 11.4vw;
+	height: 11.4vw;
+}
+
+.prompt-stat-text-container {
+	margin-left: -4.0vw;
+	
+	width: 19.0vw;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.prompt-stat-percentage {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 2.1vw;
+	line-height: 2.8vw;
+	/* identical to box height */
+	
+	text-transform: uppercase;
+	
+	color: #8151FB;
+}
+
+.prompt-stat-info {
+	width: 19.0vw;
+	
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3vw;
+	line-height: 1.7vw;
+	
+	/* Beige */
+	
+	color: #E1DBD2;
+}
+
+.prompt-stat-link {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.92vw;
+	line-height: 1.2vw;
+	text-decoration-line: underline;
+	
+	/* Beige */
+	
+	color: #E1DBD2;
+	
+	opacity: 0.5;
+}
+
+.prompt-stat-link:hover {
+	color: #E1DBD2;
+	background-color: #194E6D;
+}
+
+.prompt-arrow-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	
+	gap: 0.93vw;
+}
+
+.prompt-arrow {
+	width: 8.6vw
+}
+
+.prompt-arrow-text {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6vw;
+	line-height: 2.0vw;
+	/* identical to box height, or 125% */
+	
+	/* Beige */
+	
+	color: #E1DBD2;
+}
+
+.prompt-arrow-text-blue {
+	font-weight: 800;
+	color: #57CFBA;
+}
+
+.prompt-arrow-text-orange {
+	font-weight: 800;
+	color: #F55E2F;
+}
+
+.prompt-tip-container {
+	box-sizing: border-box;
+	
+	width: 30.6vw;
+	height: 8.9vw;
+	
+	/* Beige */
+	
+	border: 1px solid #E1DBD2;
+	border-radius: 1.3vw;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	
+	padding-left: 1.8vw;
+	padding-right: 1.8vw;
+}
