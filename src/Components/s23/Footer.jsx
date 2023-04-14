@@ -9,6 +9,7 @@ import discordLogo from '../../images/s23_images/discord.svg'
 
 export default function Footer() {
 	const applicationLink = 'https://tinyurl.com/SBCLDesignathon23'
+	const submitLink = 'https://forms.gle/BugadXrreZY93TuY6'
 
 	const facebookLink = "https://www.facebook.com/sbcreativelab/"
 	const instagramLink = "https://www.instagram.com/sbcreativelab/"
@@ -48,9 +49,9 @@ export default function Footer() {
 						<a href={applicationLink} className='footer-button'>
 							<div className='footer-button-text'>Register</div>
 						</a>
-						{/*<a className='footer-button'>
+						<a href={submitLink} className='footer-button'>
 							<div className='footer-button-text'>Submit Project</div>
-						</a>*/}
+						</a>
 					</div>
 				</div>
 				<div className='footer-bottom'>
