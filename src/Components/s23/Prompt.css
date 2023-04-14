@@ -103,7 +103,7 @@
 }
 
 .prompt-stat-container {
-	max-width: 26.5vw;
+	width: 26.5vw;
 	height: 11.4vw;
 	
 	display: flex;
@@ -229,4 +229,106 @@
 	
 	padding-left: 1.8vw;
 	padding-right: 1.8vw;
+}
+
+@media only screen and (max-width: 600px) {
+	.prompt-title {
+		left: 7.2vw;
+		top: 10.5vw;
+		width: 28.5vw;
+		height: 10.3vw;
+	}
+	
+	.prompt-side-deco {
+		top: 15.4vw;
+		
+		width: 32.1vw;
+		height: 89.7vw;
+	}
+	
+	.blob-deco {
+		left: 42.0vw;
+		top: 15.0vw;
+		width: 28.0vw;
+	}
+	
+	.prompt-content {
+		padding-left: 11.2vw;
+		padding-top: 22.3vw;
+		padding-bottom: 13.1vw;
+	}
+	
+	.prompt-subtitle {
+		font-size: 4.6vw;
+		line-height: 5.9vw;
+	}
+	
+	.prompt-row {
+		width: 75.0vw;
+		
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.prompt-text {
+		font-size: 3.6vw;
+		line-height: 5.1vw;
+	}
+	
+	.prompt-text-small {
+		font-size: 3.1vw;
+		line-height: 3.7vw;
+	}
+	
+	.prompt-stat-container {
+		width: 60.1vw;
+		height: 36.4vw;
+	}
+	
+	.prompt-stat-diagram {
+		width: 36.4vw;
+		height: 36.4vw;
+	}
+	
+	.prompt-stat-text-container {
+		margin-left: -13vw;
+		
+		width: 37.7vw;
+	}
+	
+	.prompt-stat-percentage {
+		font-size: 6.2vw;
+		line-height: 7.9vw;
+	}
+	
+	.prompt-stat-info {
+		width: 37.7vw;
+		
+		font-size: 3.6vw;
+		line-height: 4.6vw;
+	}
+	
+	.prompt-stat-link {
+		font-size: 3.1vw;
+		line-height: 4.1vw;
+	}
+	
+	.prompt-arrow {
+		width: 7.7vw;
+	}
+	
+	.prompt-arrow-text {
+		font-size: 4.1vw;
+		line-height: 7.7vw;
+	}
+	
+	.prompt-tip-container {
+		width: 78.2vw;
+		height: 25.4vw;
+		
+		border-radius: 2.6vw;
+		
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
+	}
 }
