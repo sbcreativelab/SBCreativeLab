@@ -26,12 +26,12 @@ export default function Footer() {
 					<div className='footer-link-sections'>
 						<div className='footer-links-container'>
 							<SectionButton name={"JUMPSTART"} id={"hero"} isHeader={true} />
-							{/*<SectionButton name={"Prompt"} id={"prompt"} />*/}
+							<SectionButton name={"Prompt"} id={"prompt"} />
 							<SectionButton name={"Timeline"} id={"timeline"} />
 							<SectionButton name={"Speakers"} id={"speakers"} />
 							<SectionButton name={"Judges"} id={"judges"} />
 							<SectionButton name={"Mentors"} id={"mentors"} />
-							{/*<SectionButton name={"Prizes"} id={"prizes"} />*/}
+							<SectionButton name={"Prizes"} id={"prizes"} />
 							<SectionButton name={"FAQ"} id={"FAQs"} />
 							<SectionButton name={"Sponsors"} id={"sponsors"} />
 						</div>

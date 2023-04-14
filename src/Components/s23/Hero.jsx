@@ -22,12 +22,12 @@ export default function Hero() {
                     <img src={logo} className='logo' alt='' />
                 </a>
                 <nav>
-                    {/*<NavBarItem name={"Prompt"} id={"prompt"} />*/}
+                    <NavBarItem name={"Prompt"} id={"prompt"} />
                     <NavBarItem name={"Timeline"} id={"timeline"} />
                     <NavBarItem name={"Speakers"} id={"speakers"} />
                     <NavBarItem name={"Judges"} id={"judges"} />
                     <NavBarItem name={"Mentors"} id={"mentors"} />
-                    {/*<NavBarItem name={"Prizes"} id={"prizes"} />*/}
+                    <NavBarItem name={"Prizes"} id={"prizes"} />
                     <NavBarItem name={"FAQ"} id={"FAQs"} />
                     <NavBarItem name={"Sponsors"} id={"sponsors"} />
                 </nav>
