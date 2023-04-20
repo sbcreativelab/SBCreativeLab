@@ -44,14 +44,14 @@ export default function Footer() {
 							<a href='https://sbcreativelab.com/merch' className='footer-link'>Merch</a>
 						</div>
 					</div>
-					<div className='footer-buttons-container'>
+					{/* <div className='footer-buttons-container'>
 						<a href={applicationLink} className='footer-button'>
 							<div className='footer-button-text'>Register</div>
 						</a>
-						{/*<a className='footer-button'>
+						<a className='footer-button'>
 							<div className='footer-button-text'>Submit Project</div>
-						</a>*/}
-					</div>
+						</a>
+					</div> */}
 				</div>
 				<div className='footer-bottom'>
 					<div className='footer-socials-container'>

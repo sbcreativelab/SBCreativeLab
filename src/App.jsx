@@ -43,7 +43,7 @@ export class App extends Component {
           }}
         </UserAgent>
         <Hero />
-        <RegisterSideButton />
+        {/* <RegisterSideButton /> */}
         <Timeline />
         <Speakers />
         <Judges />

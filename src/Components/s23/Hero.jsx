@@ -47,13 +47,14 @@ export default function Hero() {
                         <img className='hero-title-large-view' src={titleLarge} alt='' />
                     }
                 </div>
-                <div className='register-button-container'>
+                {/* <div className='register-button-container'>
                     <div className='register-button register-button-blur'></div>
                     <a className='register-button' href={applicationLink} target="_blank" rel="noreferrer">
                         <div className='register-button-text'>Register</div>
                     </a>
-                </div>
-                <div className='register-deadline'>Register Deadline: April 13th 11:59 P.M.</div>
+                </div> */}
+                {/* <div className='register-deadline'>Register Deadline: April 13th 11:59 P.M.</div> */}
+                <div className='register-deadline'>Event ended, check back next year!</div>
                 <p className='hero-description'>
                     SB Creative Lab presents its 2023 JUMPSTART 
                     Designathon! Get hands-on design experience by 
