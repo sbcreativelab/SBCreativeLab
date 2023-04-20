@@ -23,9 +23,9 @@ export default function Timeline() {
 						<div style={{ position: 'relative' }}>
 							<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em', position: 'absolute', right: '2em', top: '2em', width: '40%' }}>
 								<img src={sectionTitlePhone} alt='Timeline' style={{ width: '100%' }} />
-								<a className='timeline-gcal' href={gcalLink} target="_blank" rel="noreferrer">
+								{/* <a className='timeline-gcal' href={gcalLink} target="_blank" rel="noreferrer">
 									<div className='timeline-gcal-text'>+ ADD TO YOUR GCAL</div>
-								</a>
+								</a> */}
 							</div>
 						</div>
 						<img src={timelinePhone} alt='' className='timeline-phone' style={{ width: '100%' }} />
@@ -36,9 +36,9 @@ export default function Timeline() {
 						<div className='timeline-content'>
 							<div className='timeline-header'>
 								<img src={sectionTitle} alt='Timeline' className='timeline-title' />
-								<a className='timeline-gcal' href={gcalLink} target="_blank" rel="noreferrer">
+								{/* <a className='timeline-gcal' href={gcalLink} target="_blank" rel="noreferrer">
 									<div className='timeline-gcal-text'>+ ADD TO YOUR GCAL</div>
-								</a>
+								</a> */}
 							</div>
 							<img src={timeline} alt='' className='timeline-body' />
 						</div>

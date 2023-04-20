@@ -44,7 +44,7 @@ export class App extends Component {
           }}
         </UserAgent>
         <Hero />
-        <RegisterSideButton />
+        {/* <RegisterSideButton /> */}
         <Prompt />
         <Timeline />
         <Speakers />
