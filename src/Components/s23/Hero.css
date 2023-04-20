@@ -191,13 +191,6 @@ nav a:visited {
 /*	filter: blur(0.5px);*/
 }
 
-.blob-1 {
-	position: absolute;
-	left: 108px;
-	bottom: 76px;
-	width: 15%;
-}
-
 @media only screen and (max-width: 992px) {
 	nav {
 		display: none;

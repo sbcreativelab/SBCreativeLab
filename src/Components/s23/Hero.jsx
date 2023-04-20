@@ -4,7 +4,6 @@ import useWindowDimensions from '../../utils/useWindowDimensions'
 
 import logo from '../../images/s23_images/logo.svg'
 import titleLarge from '../../images/s23_images/hero-title.svg'
-import blob1 from '../../images/s23_images/blob-1.svg'
 import titleSmallSBCL from '../../images/s23_images/phone_view/hero-sbcl-phone.svg'
 import titleSmallJumpstart from '../../images/s23_images/phone_view/hero-jumpstart-phone.svg'
 import titleSmallDesignathon from '../../images/s23_images/phone_view/hero-spring_designathon-phone.svg'
@@ -23,12 +22,12 @@ export default function Hero() {
                     <img src={logo} className='logo' alt='' />
                 </a>
                 <nav>
-                    {/*<NavBarItem name={"Prompt"} id={"prompt"} />*/}
+                    <NavBarItem name={"Prompt"} id={"prompt"} />
                     <NavBarItem name={"Timeline"} id={"timeline"} />
                     <NavBarItem name={"Speakers"} id={"speakers"} />
                     <NavBarItem name={"Judges"} id={"judges"} />
                     <NavBarItem name={"Mentors"} id={"mentors"} />
-                    {/*<NavBarItem name={"Prizes"} id={"prizes"} />*/}
+                    <NavBarItem name={"Prizes"} id={"prizes"} />
                     <NavBarItem name={"FAQ"} id={"FAQs"} />
                     <NavBarItem name={"Sponsors"} id={"sponsors"} />
                 </nav>
@@ -66,8 +65,6 @@ export default function Hero() {
                     campuses to tackle a design challenge together! 
                 </p>
             </div>
-            <img src={blob1} className='blob-1' alt='' />
-            {/*<footer style={{ fontSize: '12px', margin: '24px', textAlign: 'right' }}>more info coming soon...</footer>*/}
         </div>
     )
 }

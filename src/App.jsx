@@ -6,6 +6,7 @@ import { UserAgent } from "react-useragent"
 
 import Hero from './Components/s23/Hero'
 import RegisterSideButton from './Components/s23/RegisterSideButton'
+import Prompt from './Components/s23/Prompt'
 import Timeline from './Components/s23/Timeline'
 import Speakers from './Components/s23/Speakers'
 import Judges from './Components/s23/Judges'
@@ -44,6 +45,7 @@ export class App extends Component {
         </UserAgent>
         <Hero />
         {/* <RegisterSideButton /> */}
+        <Prompt />
         <Timeline />
         <Speakers />
         <Judges />
