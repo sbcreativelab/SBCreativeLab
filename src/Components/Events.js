@@ -90,10 +90,7 @@ export class Events extends Component {
                         Events
                     </div>
                     <div className='calendar-months-container'>
-                        <img className='calendar-month-image' src={`/images/events/january${isMobile ? "-mobile" : ""}.svg`} />
-                        <img className='calendar-month-image' src={`/images/events/february${isMobile ? "-mobile" : ""}.svg`} />
-                        <img className='calendar-month-image' src={`/images/events/march${isMobile ? "-mobile" : ""}.svg`} />
-                        {isMobile && <img className='calendar-legend-image' src='/images/events/legend-mobile.svg'/>}
+                        <img className='calendar-month-image' src={`/images/events/2023-november${isMobile ? "-mobile" : ""}.svg`} />
                     </div>
                 </div>
             </div>
@@ -102,11 +99,11 @@ export class Events extends Component {
 }
 
 export const withMediaQuery = (queries = []) => Component => props => {
-  const mediaProps = {}
-  Object.entries(queries).forEach(q => {
+    const mediaProps = {}
+    Object.entries(queries).forEach(q => {
     mediaProps[q[0]] = useMediaQuery({query: q[1]})
-  })
-  return <Component {...mediaProps} {...props} />
+    })
+    return <Component {...mediaProps} {...props} />
 }
 
 export default withMediaQuery({"isMobile": '(max-width:1000px)'})(Events);
