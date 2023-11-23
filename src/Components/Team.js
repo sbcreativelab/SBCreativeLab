@@ -115,7 +115,7 @@ export default function Team() {
                     <TeamMember
                         imgsrc="felix.png"
                         name="Felix Lo"
-                        role={<div>Vice President {'\u2022'} UIUX Lead {'\u2022'} PT Lead</div>}
+                        role={<div>Vice President {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams Lead</div>}
                     />
                 </div>
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "6%", top: "200%", width: "50px" }} />
