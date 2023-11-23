@@ -133,7 +133,7 @@ export default function Team() {
                     <TeamMember
                         imgsrc="finn.png"
                         name="Christy Yu"
-                        role={<div>Design</div>}
+                        role={<div>Design {'\u2022'} Web Dev</div>}
                     />
                     <TeamMember
                         imgsrc="finn.png"
@@ -146,15 +146,10 @@ export default function Team() {
                         role={<div>Design {'\u2022'} Marketing</div>}
                     />
                     {/* <TeamMember
-                        imgsrc="hasith.png"
-                        name="Hasith Basnayake"
-                        role={<div>UIUX</div>}
-                    /> */}
-                    <TeamMember
-                        imgsrc="finn.png"
+                        imgsrc=""
                         name="Hannah Su"
                         role={<div>Marketing</div>}
-                    />
+                    /> */}
                     <TeamMember
                         imgsrc="ian.png"
                         name="Ian Wen"
@@ -169,11 +164,6 @@ export default function Team() {
                         imgsrc="finn.png"
                         name="Julie Broch"
                         role={<div>Design</div>}
-                    />
-                    <TeamMember
-                        imgsrc="finn.png"
-                        name="Katherine Sun"
-                        role={<div>Project Teams</div>}
                     />
                     <TeamMember
                         imgsrc="finn.png"
@@ -197,18 +187,8 @@ export default function Team() {
                     />
                     <TeamMember
                         imgsrc="finn.png"
-                        name="Selena Zeng"
-                        role={<div>Events</div>}
-                    />
-                    <TeamMember
-                        imgsrc="finn.png"
                         name="Sharon Tan"
                         role={<div>Design Lead {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams</div>}
-                    />
-                    <TeamMember
-                        imgsrc="finn.png"
-                        name="Stanton Li"
-                        role={<div>Events</div>}
                     />
                     <TeamMember
                         imgsrc="zoe.png"
