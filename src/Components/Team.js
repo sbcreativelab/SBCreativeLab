@@ -175,7 +175,7 @@ export default function Team() {
                     <TeamMember
                         imgsrc="finn.png"
                         name="Katherine Sun"
-                        role={<div>PT</div>}
+                        role={<div>Project Teams</div>}
                     />
                     <TeamMember
                         imgsrc="finn.png"
@@ -205,7 +205,7 @@ export default function Team() {
                     <TeamMember
                         imgsrc="finn.png"
                         name="Sharon Tan"
-                        role={<div>Design Lead {'\u2022'} UIUX Lead {'\u2022'} PT</div>}
+                        role={<div>Design Lead {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams</div>}
                     />
                     <TeamMember
                         imgsrc="finn.png"
