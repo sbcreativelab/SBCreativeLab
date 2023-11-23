@@ -1430,7 +1430,7 @@ a .icon-title:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, auto));
   justify-items: center;
-  margin: 0 auto 2em;
+  margin: auto;
   max-width: 80%;
   position: relative;
   row-gap: 2vw;
