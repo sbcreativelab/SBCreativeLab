@@ -1426,16 +1426,14 @@ a .icon-title:hover{
 }
 
 .gallery-container{
-  display: grid;
-  max-width: 80%;
-  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
   column-gap: 2vw;
-  row-gap: 2vw;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
   justify-items: center;
+  margin: 0 auto 2em;
+  max-width: 80%;
+  position: relative;
+  row-gap: 2vw;
   z-index: 1;
 }
 
