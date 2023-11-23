@@ -136,30 +136,35 @@ export default function Team() {
                         role={<div>Design {'\u2022'} Web Dev</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="Diane Kim"
-                        role={<div>Design</div>}
-                    />
-                    <TeamMember
-                        imgsrc="finn.png"
-                        name="Elyse Denzler"
-                        role={<div>Design {'\u2022'} Marketing</div>}
-                    />
-                    {/* <TeamMember
-                        imgsrc=""
-                        name="Hannah Su"
-                        role={<div>Marketing</div>}
-                    /> */}
-                    <TeamMember
                         imgsrc="ian.png"
                         name="Ian Wen"
                         role={<div>Web Dev</div>}
+                    />
+                    <TeamMember
+                        imgsrc="finn.png"
+                        name="Diane Kim"
+                        role={<div>Design</div>}
                     />
                     <TeamMember
                         imgsrc="jackson.png"
                         name="Jackson Cooley"
                         role={<div>Web Dev Lead</div>}
                     />
+                    <TeamMember
+                        imgsrc="finn.png"
+                        name="Elyse Denzler"
+                        role={<div>Design {'\u2022'} Marketing</div>}
+                    />
+                    <TeamMember
+                        imgsrc="zoe.png"
+                        name="Zoe Luu"
+                        role={<div>Marketing Lead</div>}
+                    />
+                    {/* <TeamMember
+                        imgsrc=""
+                        name="Hannah Su"
+                        role={<div>Marketing</div>}
+                    /> */}
                     <TeamMember
                         imgsrc="finn.png"
                         name="Julie Broch"
@@ -189,11 +194,6 @@ export default function Team() {
                         imgsrc="finn.png"
                         name="Sharon Tan"
                         role={<div>Design Lead {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams</div>}
-                    />
-                    <TeamMember
-                        imgsrc="zoe.png"
-                        name="Zoe Luu"
-                        role={<div>Marketing Lead</div>}
                     />
                     <TeamMember
                         imgsrc="finn.png"
