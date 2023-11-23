@@ -101,6 +101,14 @@ export default function Team() {
             </div>
             <div className="about-section-4">
                 <div style={{ color: darkColor }} className="title about-title-4">Meet our Executive Team</div>
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "6%", top: "200%", width: "50px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "90%", top: "240%", width: "50px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "80px", left: "2%", top: "280%", width: "40px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "48%", top: "320%", width: "40px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "84%", top: "360%", width: "30px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "35%", top: "400%", width: "30px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "90%", top: "440%", width: "50px" }} />
+                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "80px", left: "62%", top: "480%", width: "40px" }} />
                 <div className="gallery-container">
                     <TeamMember
                         imgsrc="kaien.png"
@@ -117,16 +125,6 @@ export default function Team() {
                         name="Felix Lo"
                         role={<div>Vice President {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams Lead</div>}
                     />
-                </div>
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "6%", top: "200%", width: "50px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "90%", top: "240%", width: "50px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "80px", left: "2%", top: "280%", width: "40px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "48%", top: "320%", width: "40px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "84%", top: "360%", width: "30px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "70px", left: "35%", top: "400%", width: "30px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "90px", left: "90%", top: "440%", width: "50px" }} />
-                <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "80px", left: "62%", top: "480%", width: "40px" }} />
-                <div className="gallery-container">
                     <TeamMember
                         imgsrc="caren.png"
                         name="Caren Chua"
