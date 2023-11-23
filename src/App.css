@@ -1311,7 +1311,7 @@ label {
 }
 
 .about-title-2{
-  font-family: 'Cooper Black';
+  font-family: 'Bookmania';
   margin-left: 10%;
   margin-bottom: 5%;
 }
@@ -1372,123 +1372,41 @@ a .icon-title:hover{
 }
 
 .about-title-3{
-  font-family: 'Cooper Black';
+  font-family: 'Bookmania';
   margin-left: 10%;
   margin-bottom: 5%;
 }
 
 .team-info-container{
+  column-gap: 4rem;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(360px, auto)); */
-  grid-template-columns: 48% 48%;
-  row-gap: 3em;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  row-gap: 4rem;
   width: 80%;
 }
 
-.team-info-shape {
-  background-color: transparent;
-  border: 2px solid #000000;
+.team-info-shape{
+  border: solid black;
   border-radius: 20px;
-  color: black;
-  height: 475px;
-  position: relative;
-  width: 35vw;
-}
-
-.team-info-shape2,
-.team-info-shape4 {
-  top: 55%;
-}
-
-.team-info-title{
-  position: relative;
-  margin-top: 1em;
-  margin-left: 1.5em;
-  margin-right: auto;
-  font: bold 23px/calc(24px + 16 * (100vw - 320px) / 1120) 'Poppins';
-}
-
-.team-info-image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  height: auto;
-}
-
-.team-info-subtitle{
-  display: block;
-  margin-left: 1em;
-  margin-right: 1em;
-  position: relative;
   text-align: center;
+  padding: 2rem 1rem;
 }
-.team-join {
-  padding: 0 7%;
-}
-.team-join-title{
-  font: normal 38px/calc(28px + 24 * (100vw - 320px) / 1120) 'Cooper Black';
+
+.team-join{
+  margin: auto;
+  width: 80%;
 }
 
 @media only screen and (max-width: 1024px) {
   .team-info-container{
-    display: grid;
-    max-width: 80%;
-    /* grid-template-columns: repeat(auto-fit, minmax(360px, auto)); */
-    grid-template-columns: auto;
-    column-gap: 3em;
-    row-gap: 3em;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    justify-items: center;
-  }
-  .team-info-shape {
-    background-color: transparent;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    color: black;
-    height: 105%;
-    position: relative;
-    width: 100%;
-  }
-
-  .team-info-shape2,
-  .team-info-shape4 {
-    top: 0;
-  }
-
-  .team-info-title{
-    position: relative;
-    margin-left: 1em;
-    margin-right: auto;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-  }
-
-  .team-info-image{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%;
-    height: auto;
+    margin: auto;
+    width: 80%;
   }
 
-  .team-info-subtitle{
-    display: block;
-    margin: auto 2em;
-    position: relative;
-    text-align: center;
-  }
-
-  .team-join-title{
-    font: 16px 'Cooper Black';
+  .team-info-shape{
+    margin: 1rem auto;
   }
 }
 
@@ -1497,7 +1415,7 @@ a .icon-title:hover{
 }
 
 .about-title-4{
-  font-family: 'Cooper Black';
+  font-family: 'Bookmania';
   margin: 0 10% 5%;
   white-space: normal;
 }
@@ -1508,16 +1426,14 @@ a .icon-title:hover{
 }
 
 .gallery-container{
-  display: grid;
-  max-width: 80%;
-  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
   column-gap: 2vw;
-  row-gap: 2vw;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
   justify-items: center;
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+  row-gap: 2vw;
   z-index: 1;
 }
 
