@@ -11,10 +11,10 @@ const gsap = window.gsap;
 gsap.registerPlugin(scrollTrigger)
 
 function W23Projects() {
-  const applicationLink = 'https://forms.gle/JZuDZW7EN7UehWHb7'
+  const applicationLink = 'https://forms.gle/cm4kcFaSrsJowfvCA'
   const currentQuarter = 'winter'
-  const currentYear = '2023'
-  const dueTime = 'January 14th 9pm'
+  const currentYear = '2024'
+  const dueTime = 'November 28th 11:59pm'
   return (
     <div className="w23projects">
       <div className="title-section">
@@ -57,20 +57,36 @@ function W23Projects() {
         <h2 id="winter-projects">winter projects.</h2>
         <h3>Learning Series</h3>
         <p>
-          The Learning Series is a UI/UX course designed for students to learn and 
-          gain experience in the field. The projects usually run between 7-9 weeks 
-          during a quarter (fall and winter, and sometimes summer). You will be 
-          guided by a student project manager and will come out of this project 
-          with the knowledge needed for your future design endeavors as well as 
-          a case study that is ready for your portfolio!
+          The Learning Series is a 10 week UI/UX course designed for students to 
+          learn and gain experience in the field. You will be placed in a team 
+          of 3-4 designers and be guided by a student project manager and will 
+          come out of this project with the knowledge needed for your future 
+          design endeavors as well as a case study that is ready for your 
+          portfolio!
         </p>
+        <ul style="display: flex; list-style-type: none">
+          <li>
+            Learn about the foundation of UX design, user research, and UI/UX 
+            principles
+          </li>
+          <li>
+            Brainstorm and work within a team setting to solve a complex 
+            design problem
+          </li>
+          <li>
+            Create a case study and present it at a project showcase at the 
+            end of the quarter
+          </li>
+        </ul>
         <p>
           Experience Level: Participants should have experience ranging from no 
-          UI/UX experience to those who have completed at least 1 project.
+          UI/UX experience to those who have completed at least 1 project. 
         </p>
         <div style={{ textAlign: "center" }} className="learn-series-button-container">
-          <button className="button" disabled>Application closed</button>
-          <small>Please look out for our <b>Fall</b> quarter applications soon!</small>
+        <a className="button button-white" href={applicationLink} rel="noreferrer" target="_blank">
+          <button>Apply</button>
+        </a>
+          {/* <small>Please look out for our <b>Fall</b> quarter applications soon!</small> */}
         </div>
         <div className="learn-series-card-container">
           <div className="flex-item learn-series-beginner">
@@ -98,17 +114,24 @@ function W23Projects() {
         </div>
         <h3>Real World Series (a.k.a Clients Teams)</h3>
         <p>
-          Want to try out the real deal? Join our Clients Team to work with industry 
-          professionals and receive mentorship from experienced designers! You'll get the 
-          opportunity to take on real life projects that provide value and impact to 
-          potential users.
+          Want to try out the real deal? Join our Clients Team to work with 
+          industry professionals and receive mentorship from experienced 
+          designers! You'll get the opportunity to take on real life projects 
+          that provide value and impact to potential users. 
         </p>
         <p>
           Experience Level: Participants should have completed at least 1 project 
           and have some work examples to show as part of their application. This 
           should not be your first UI/UX project!
         </p>
-        <div className="real-series-card-container">
+        <small>
+          ❗️Note❗️: We currently do not have a partnered project. If you are a 
+          student, please stay tuned for future Real World Series projects. If 
+          you are a small business looking for UX design work, please contact 
+          <a href="mailto:ucsbsbcreativelab@gmail.com">ucsbsbcreativelab@gmail.com</a> 
+          to partner with us!
+        </small>
+        {/* <div className="real-series-card-container">
           <div className="flex-item real-series-sas">
             <h3 className="real-series-content">SAS x SBCL</h3>
             <p className="real-series-content">
@@ -148,7 +171,7 @@ function W23Projects() {
               <button className="button" disabled>Application closed</button>
             </div>
           </div>
-        </div>
+        </div> */}
         <h2 id="about">about.</h2>
         <p>
           Interested in UX design, but don't know where to start?
@@ -168,7 +191,7 @@ function W23Projects() {
         <h3>When?</h3>
         <p>
           We rotate between Fall, Winter, and Summer quarters. Each cycle will 
-          last 8ish weeks (weeks 2(3)-9).
+          last 9ish weeks (weeks 1-9).
         </p>
         <h3>Who?</h3>
         <p>
@@ -177,7 +200,7 @@ function W23Projects() {
         </p>
         <h3>What can I get out of this?</h3>
         <p>
-          At the end of the 8-week program, projects team participants will have 
+          At the end of the 9-week program, projects team participants will have 
           developed a tangible case study or finished product for portfolios and 
           first-hand UX experience for UX design interviews.
         </p>
