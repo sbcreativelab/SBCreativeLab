@@ -1,207 +1,324 @@
-import React, { useEffect, useState } from 'react';
-import ReactGA from 'react-ga'
-import { ReactComponent as Logo } from "./logo.svg";
-import useWindowDimensions from '../utils/useWindowDimensions';
-import { HashLink } from 'react-router-hash-link';
-import '../main.css';
+import React, { Component } from 'react';
+import { ReactComponent as Logo } from "../images/logo.svg";
+import './projects.css'
+import Menu from './Menu';
+// import $ from 'jquery'
 
 const scrollTrigger = window.ScrollTrigger
 const gsap = window.gsap;
+const applicationLink = 'https://forms.gle/cm4kcFaSrsJowfvCA'
+const currentQuarter = 'winter'
+const currentYear = '2024'
+const dueTime = 'November 28th 11:59pm'
 
 gsap.registerPlugin(scrollTrigger)
 
-const Projects = () => {
-    ReactGA.initialize('UA-178117149-1');
-    ReactGA.pageview('projects');
-    const [gears, setGears] = useState(false);
-    const { width } = useWindowDimensions();
-    const MED_SCREEN_BREAKPOINT = 1200;
-    const SMALL_SCREEN_BREAKPOINT = 992;
-    const EXTRA_SMALL_SCREEN_BREAKPOINT = 767;
-    const isSmallScreen = width <= SMALL_SCREEN_BREAKPOINT;
-    const isExtraSmallScreen = width <= EXTRA_SMALL_SCREEN_BREAKPOINT;
-    const isMedScreen = width <= MED_SCREEN_BREAKPOINT;
+export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      wave: "",
+      menuOpen: false,
+    }
+  }
 
-    const applicationLink = "https://forms.gle/6zuYsBn22MkPw1W67"
-    const currentQuarter = "Fall 2022"
+  handleMenu() {
+    this.setState(prevState => ({
+        menuOpen: !prevState.menuOpen
+    }))
+  }
+  
+  componentDidUpdate() {
+    let menu = document.getElementById("menu");
+    var hideImg = document.getElementsByClassName('team-member-image');
+    // var isMobile = window.matchMedia("only screen and (max-width: 768px)").matches;
+    if (this.state.menuOpen === true) {
+      menu.classList.add("drop");
+      document.body.classList.add("no-scroll");
+      document.body.addEventListener('touchmove', function(e){e.preventDefault()});
+      for (var i = 0; i < hideImg.length; i++) {
+        hideImg[i].classList.remove('opacity-transition-delay');
+        hideImg[i].classList.add('opacity-transition');
+        hideImg[i].style.opacity = 0;
+      }
+    } else if (this.state.menuOpen === false) {
+      menu.classList.remove("drop");
+      console.log(menu.classList);
+      document.body.classList.remove("no-scroll");
+      document.body.removeEventListener('touchmove', function(e){e.preventDefault()});
+      for (var j = 0; j < hideImg.length; j++) {
+        hideImg[j].classList.remove('opacity-transition');
+        hideImg[j].classList.add('opacity-transition-delay');
+        hideImg[j].style.opacity = 1;
+      }
+    }
+  }
 
-    useEffect(() => {
-        document.body.classList.add("no-xscroll");
-        gsap.to(".logo", {
-            scrollTrigger: {
-                trigger: ".section-2",
-                start: "top +275",
-                toggleActions: "play none none reverse",
-                toggleClass: { targets: ".logo-link", className: "pointer" }
-            },
-            ease: "power1.inOut",
-            duration: .4,
-            opacity: 0,
-            y: -12,
-        });
-        gsap.to(".tablist", {
-            scrollTrigger: {
-                trigger: ".section-2",
-                start: "top +275",
-                toggleActions: "play none none reverse",
-                toggleClass: { targets: ".tablist", className: "pointer" }
-            },
-            ease: "power1.inOut",
-            duration: .4,
-            opacity: 0,
-            y: -12,
-        });
-        const tl = gsap.timeline();
-        tl.fromTo('.dthonTitle', .6, { y: '40', opacity: 0 }, { y: 0, opacity: 1, delay: 1 })
-        tl.fromTo('.date', .6, { y: '40', opacity: 0 }, { y: 0, opacity: 1, delay: .1 });
-        tl.fromTo('.arrow', .6, { y: '-40', opacity: 0 }, { y: 0, opacity: 1, delay: .22 });
-        // this.initializeReactGA();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        var defaultPlane = document.getElementById("plane");
-        var defaultSwoosh = document.getElementById("swoosh_desaturated");
-        var defaultBase = document.getElementById("base_blue");
-        defaultPlane.style.opacity = 0;
-        defaultSwoosh.style.opacity = 0;
-        defaultBase.style.opacity = 0;
-        var altLogo = document.getElementsByClassName("st4");
-        for (var i = 0; i < 3; i++) {
-            altLogo[i].style.opacity = 1;
-        }
-    }, []);
+  componentDidMount() {
+    var checkbox = document.querySelector("input[name=checkbox]");
+    checkbox.addEventListener( 'change',this.handleMenu.bind(this));
+    // const tilt = $('.team-member-container').tilt({
+    //     maxTilt: 5,
+    //     scale: 1.05,
+    // });
+  }
 
+  render() {
     return (
-        <div>
-            <div className="projects-header">
-                <div className="header-left">
-                    <div className="logo-wrapper">
-                        <a className="logo-link" href="https://www.sbcreativelab.com">
-                            <Logo id="logo" className="logo" width="100%" display="block" height="auto" />
-                        </a>
-                    </div>
-                </div>
-                <div className={`${isExtraSmallScreen ? 'tablist-small' : 'tablist'} header-right`}>
-                    <a href={applicationLink} target="_blank" className='tab'>Apply</a>
-                    <HashLink smooth to={`#about`} className='tab'>About</HashLink>
-                    <HashLink smooth to={`#faq`} className='tab'>FAQ</HashLink>
-                    {/* {!isExtraSmallScreen ? <span onClick={() => setGears(!gears)} className={`${gears ? 'active' : ''} toggle-switch`}>
-                        <span class="toggle-knob"></span>
-                    </span> : null} */}
-                </div>
+      <div className="w23projects">
+        <Menu />
+        <section className="hero">
+          <header>
+            <div className="header-left">
+              <div className="logo-wrapper">
+                <a href="https://www.sbcreativelab.com">
+                  <Logo id="logo"/>
+                </a>
+              </div>
             </div>
-            <div className="projects">
-                <div className="container-fluid">
-                    <div className="section-1">
-                        <div className="row d-flex justify-content-center">
-                            <div className="col-10 col-sm-10">
-                                <div className="b1 italic dthonHeader" style={{ fontSize: "35px", marginBottom: "12px" }}>SB Creative Lab presents</div>
-                                {/* {isExtraSmallScreen ? <div style={{ position: "relative" }} className="textbox-small-container w-100 d-flex flex-column justify-content-center">
-                                    <div className={`${isExtraSmallScreen ? 'h3' : 'h1'} dthonTitle px-5 pt-4`}>2021: Spring into Designathon</div>
-                                    <div className={`${isExtraSmallScreen ? 'h5' : 'h4'} date px-5 pb-4`}>April 9 - 11</div>
-                                    <div style={{ top: "0", left: "0", transform: "translate(-50%,-50%)" }} className="square"></div>
-                                    <div style={{ top: "0", right: "0", transform: "translate(50%,-50%)" }} className="square"></div>
-                                    <div style={{ bottom: "0", left: "0", transform: "translate(-50%, 50%)" }} className="square"></div>
-                                    <div style={{ bottom: "0", right: "0", transform: "translate(50%, 50%)" }} className="square"></div>
-                                </div>
-                                    :
-                                    <div style={{ position: "relative" }} className="textbox-container w-100 d-flex flex-column justify-content-center">
-                                        <div className={`${isSmallScreen ? 'h1' : 'h1'} dthonTitle px-5 pt-4`}>2021: Spring into Designathon</div>
-                                        <div className={`${isSmallScreen ? 'h1' : 'h4'} date px-5 pb-4`}>April 9 - 11</div>
-                                        <div style={{ top: "0", left: "0", transform: "translate(-50%,-50%)" }} className="square"></div>
-                                        <div style={{ top: "0", right: "0", transform: "translate(50%,-50%)" }} className="square"></div>
-                                        <div style={{ bottom: "0", left: "0", transform: "translate(-50%, 50%)" }} className="square"></div>
-                                        <div style={{ bottom: "0", right: "0", transform: "translate(50%, 50%)" }} className="square"></div>
-                                    </div>} */}
-                                <div className="w-100 d-flex flex-column justify-content-center">
-                                    <div className={`${isExtraSmallScreen ? 'h3' : 'h1'} dthonTitle mb-5`}>Projects Teams</div>
-                                    <div className={`${isExtraSmallScreen ? 'h5' : 'h4'} date pb-4 italic`}>Apply for our {currentQuarter} teams now!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row d-flex justify-content-center">
-                            <div className="col-10 col-sm-10">
-                                <div style={{ overflow: 'hidden' }} >
-                                    <div className="animate-slideup py-3">
-                                        <a target="_blank" href={applicationLink} className="button text-center">
-                                            Apply
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className={`arrow ${isExtraSmallScreen ? 'hidden' : ''} fadeInOut`} style={{ top: "-8px", left: "250px", position: "absolute" }}>
-                                    <img src="/images/projects/arrow.png" />
-                                </div>
-                            </div>
-                        </div>
-                        {isExtraSmallScreen ? <div /> :
-                            <div className="imageContainer" style={{ position: "absolute" }}>
-                                <HashLink smooth to={`#about`} className='arrow-down'>
-                                    <img style={{ position: "absolute", bottom: "-5%", left: "50%", transform: "translate(-50%,-50%)" }} src="/images/projects/arrow-down.png"></img>
-                                </HashLink>
-                            </div>}
-                    </div>
-                    {isExtraSmallScreen ? <div /> : <div>
-                        <div className='prototypeGraphic' style={{ position: 'absolute' }}>
-                            <img id="prototypeGraphic" src="/images/projects/prototype.png" />
-                        </div>
-                    </div>}
-                    <div className="row d-flex justify-content-center projectsAbout section-2" id="about">
-                        <div className="col-10">
-                            <div className="h2" style={{ marginBottom: '36px' }}>What are projects teams?</div>
-                            <div className="dthonAboutText" style={{ width: '75%' }}>
-                                <div className="b2" style={{ marginBottom: '16px' }}>Interested in UX design, but don’t know where to start?
-                                </div>
-                                <div className="b2" style={{ marginBottom: '16px' }}>
-                                    SB Creative Lab presents our <b>Projects Teams</b>— an 8 week program where you can exercise your UX design skills and put together a case study in a team setting. We want to give beginner UX designers the building blocks to enter the UX space, and come out with tangible oppurtunities for portfolios and interviews.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row d-flex justify-content-center dthonDetails section-3" id="faq">
-                        <div className="col-10">
-                            {/* <div className="h2 mb-5">FAQ</div> */}
-                            <div className="row">
-                                <div className="col-md-6 b1">
-                                    <div className="question mb-5">
-                                        <div className="h2">When?</div>
-                                        <div className="b2">
-                                            We rotate between Fall, Winter, and Summer quarters. Each cycle will last 8 weeks (weeks 2-9).
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 b1">
-                                    <div className="question mb-5">
-                                        <div className="h2">Who?</div>
-                                        <div className="b2">
-                                            All SBCL members can <span><a style={{ textDecoration: 'underline' }} href={applicationLink} target="_blank">apply.</a></span> All experience levels are welcome (individuals with no experience as well)!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12 b1">
-                                    <div className="question">
-                                        <div className="h2">What can I get out of this?</div>
-                                        <div className="b2">
-                                            At the end of the 8 week program, projects team participants will have developed a tangible case study for portfolios and first-hand UX experience for UX design interviews.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container-fluid">
-                    <div className="row d-flex flex-column align-items-center section-4 text-center">
-                        <div className="h2" style={{ marginBottom: '36px' }}>How can I get involved?</div>
-                        <div className="b2 pl-4 pr-4" >
-                            Applications for our {currentQuarter} Projects Teams are <span><a style={{ textDecoration: 'underline' }} href={applicationLink} target="_blank">open now!</a></span>
-                        </div>
-                        <div className="b2 pl-4 pr-4" style={{ marginBottom: '36px' }}>
-                            Keep an eye on our Instagram to know when the next cycle starts.
-                        </div>
-                        <a href="https://www.sbcreativelab.com"><Logo height="80px"></Logo></a>
-                    </div>
-                </div>
-            </div >
-        </div >
+            <nav>
+              <a
+                href={applicationLink}
+                className="tab"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Apply
+              </a>
+              <a href="#about" className="tab">About</a>
+              <a href="#faq" className="tab">FAQ</a>
+            </nav>
+            <div className="header-right">
+              <div className="hamburger-circle">
+                  <div className="menu1 cross menu--1">
+                      <label>
+                          <input name="checkbox" type="checkbox" />
+                          <svg
+                            className="menuSVG"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 80 80"
+                          >
+                            <circle cx="40" cy="40" r="30" />
+                            <path
+                              className="line--1"
+                              d="M-10,30h62c13,0,6,28-4,18L25,25"
+                            />
+                            <path
+                              className="line--1"
+                              d="M-10,30h62c13,0,6,28-4,18L25,25"
+                            />
+                            <path
+                              className="line--2"
+                              d="M-10,40h70"
+                            />
+                            <path
+                              className="line--2"
+                              d="M-10,40h70"
+                            />
+                            <path
+                              className="line--3"
+                              d="M-10,50h62c13,0,6-28-4-18L25,55"
+                            />
+                            <path
+                              className="line--3"
+                              d="M-10,50h62c13,0,6-28-4-18L25,55"
+                            />
+                          </svg>
+                      </label>
+                  </div>
+              </div>
+            </div>
+          </header>
+          <div className="title-container">
+            <h1 className="title">
+              sb creative lab presents.<br/>
+              <b>
+                projects<br/>
+                teams
+              </b>
+              <br/>
+              {currentQuarter + " " + currentYear}.
+            </h1>
+            <div className="due-time">
+              Applications close <strong>{dueTime}</strong>!
+            </div>
+            <a
+              href={applicationLink}
+              target="_blank"
+              rel="noreferrer"
+              className="button button-white"
+            >
+              Apply
+            </a>
+          </div>
+        </section>
+        <section className="content">
+          <h2 id="winter-projects">winter projects.</h2>
+          <h3>Learning Series</h3>
+          <p>
+            The Learning Series is a 10 week UI/UX course designed for 
+            students to learn and gain experience in the field. You will be 
+            placed in a team of 3-4 designers and be guided by a student 
+            project manager and will come out of this project with the 
+            knowledge needed for your future design endeavors as well as a 
+            case study that is ready for your portfolio!
+          </p>
+          <ul className="learn-series-desc-container">
+            <li>
+              Learn about the foundation of UX design, user research, and 
+              UI/UX principles
+            </li>
+            <li>
+              Brainstorm and work within a team setting to solve a complex 
+              design problem
+            </li>
+            <li>
+              Create a case study and present it at a project showcase at the 
+              end of the quarter
+            </li>
+          </ul>
+          <p>
+            Experience Level: Participants should have experience ranging from 
+            no UI/UX experience to those who have completed at least 1 project.
+          </p>
+          <div className="learn-series-button-container">
+            <a
+              className="button button-white"
+              href={applicationLink}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Apply
+            </a>
+            {/* <small>
+              Please look out for our <b>Fall</b> quarter applications soon!
+            </small> */}
+          </div>
+          <div className="learn-series-card-container">
+            <div className="flex-item learn-series-beginner">
+              <h3>Beginners</h3>
+              <p>
+                If you've never touched Figma 
+                before, don't worry! The 
+                beginners team is perfect for 
+                students with little to no 
+                experience and are curious 
+                about UI/UX design!
+              </p>
+            </div>
+            <div className="flex-item learn-series-intermediate">
+              <h3>Intermediate +</h3>
+              <p>
+                If you've worked on UI/UX projects 
+                before, join our intermediate+ 
+                team to work with other designers 
+                and challenge your creativity and 
+                work on more challenging 
+                prompts to fill that portfolio up!
+              </p>
+            </div>
+          </div>
+          <h3>Real World Series (a.k.a Clients Teams)</h3>
+          <p>
+            Want to try out the real deal? Join our Clients Team to work with 
+            industry professionals and receive mentorship from experienced 
+            designers! You'll get the opportunity to take on real life 
+            projects that provide value and impact to potential users. 
+          </p>
+          <p>
+            Experience Level: Participants should have completed at least 1 
+            project and have some work examples to show as part of their 
+            application. This should not be your first UI/UX project!
+          </p>
+          <small>
+            &#10071;Note&#10071;: We currently do not have a partnered 
+            project. If you are a student, please stay tuned for future Real 
+            World Series projects. If you are a small business looking for UX 
+            design work, please 
+            contact <a href="mailto:ucsbsbcreativelab@gmail.com">ucsbsbcreativelab<wbr/>@gmail.com</a> to 
+            partner with us!
+          </small>
+          {/* <div className="real-series-card-container">
+            <div className="flex-item real-series-1">
+              <h3 className="real-series-content">real series title</h3>
+              <p className="real-series-content">
+                real series description
+              </p>
+              <div className="real-series-content real-series-button">
+                <button className="button" disabled>Application closed</button>
+              </div>
+            </div>
+            <div className="flex-item real-series-2">
+              <h3 className="real-series-content">real series title</h3>
+              <p className="real-series-content">
+                real series description
+              </p>
+              <div className="real-series-content real-series-button-container">
+                <button className="button" disabled>Application closed</button>
+              </div>
+            </div>
+          </div> */}
+          <h2 id="about">about.</h2>
+          <p>
+            Interested in UX design, but don't know where to start?
+          </p>
+          <p>
+            SB Creative Lab presents our Projects Teams— a quarter-long 
+            program where you can exercise your UX design skills and put 
+            together a case study in a team setting. We want to give beginner 
+            UX designers the building blocks to enter the UX space, and come 
+            out with tangible oppurtunities for portfolios and interviews.
+          </p>
+          <p>
+            We have recently expanded our Projects Teams Series to be more 
+            experience-level inclusive as well as partnering with other 
+            organizations and local businesses. So stay tuned to what we have 
+            in store for you!
+          </p>
+          <h2 id="faqs">faqs.</h2>
+          <h3>When?</h3>
+          <p>
+            We rotate between Fall, Winter, and Summer quarters. Each cycle 
+            will last 9ish weeks (weeks 1-9).
+          </p>
+          <h3>Who?</h3>
+          <p>
+            All SBCL members can <a href={applicationLink}>apply</a>. All 
+            experience levels are welcome (individuals with no experience as 
+            well)!
+          </p>
+          <h3>What can I get out of this?</h3>
+          <p>
+            At the end of the 9-week program, projects team participants will 
+            have developed a tangible case study or finished product for 
+            portfolios and first-hand UX experience for UX design interviews.
+          </p>
+          <h3>How can I get involved?</h3>
+          <p>
+            Keep an eye on 
+            our <a href="https://www.instagram.com/sbcreativelab/"><b>Instagram</b></a> to 
+            know when applications open for each cycle!
+          </p>
+          <div className="bottom-button-container">
+            <a
+              className="button button-yellow"
+              href="https://forms.gle/UvAzffBRRXjNCaFe9"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Submit a project idea!
+            </a>
+            <a
+              className="button button-yellow"
+              href="http://eepurl.com/hcKGCP"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Join SBCL mailing List
+            </a>
+          </div>
+        </section>
+      </div>
     )
-};
-
-export default Projects;
+  }
+}

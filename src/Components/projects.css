@@ -1,0 +1,421 @@
+@import url(../App.css);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+
+@font-face {
+  font-family: 'Cooper Black';
+  src: url(../fonts/CooperBlack/CooperBlackRegular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MADE Soulmaze Brush';
+  src: url(../fonts/MADESoulmaze/MADESoulmazeBrush.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neutral Face';
+  src: url(../fonts/NEUTRALFACE/NeutralFace.otf) format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neutral Face';
+  src: url(../fonts/NEUTRALFACE/NeutralFace-Bold.otf) format('opentype');
+  font-weight: bold;
+}
+
+body {
+  background-color: #192022;
+  color: white;
+}
+
+.hero {
+  background-image: url(../images/projects/bright-gradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1113px;
+}
+
+.hero > header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 3.5% 0;
+  pointer-events: initial;
+  position: relative;
+  width: 90%;
+}
+
+.logo-wrapper {
+  left: 4.5rem;
+  pointer-events: initial;
+  position: fixed;
+  top: 2.25rem;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  font: 2rem 'Poppins';
+  justify-content: space-between;
+  margin: auto;
+  pointer-events: auto;
+  width: 40%;
+}
+
+nav > a {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+header > .header-right {
+  z-index: 3;
+}
+
+.title-container {
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 1.25rem;
+  display: grid;
+  grid-row-gap: 0.5rem;
+  padding: 2.5rem 5%;
+  margin: auto;
+  width: fit-content;
+}
+
+.title {
+  font: 600 3rem 'Poppins';
+}
+
+.title b {
+  font: bold 9.5rem 'Neutral Face';
+  text-transform: uppercase;
+}
+
+.title-container > a,
+.title-container > a:hover,
+.title-container > a:active {
+  font-weight: bold;
+}
+
+.due-time {
+  font: normal 2rem 'Poppins';
+}
+
+.due-time > strong {
+  text-decoration: wavy underline white;
+}
+
+.button,
+.button:active {
+  border: 1px solid #192022;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  font: normal 25px 'Poppins';
+  letter-spacing: 0.03em;
+  margin: auto;
+  min-width: calc(100vw * 0.125);
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  border: 1px solid #192022;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: inline-block;
+  font: normal 25px 'Poppins';
+  letter-spacing: 0.03em;
+  margin: auto;
+  min-width: calc(100vw * 0.125);
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+  background: #646D70;
+  border: 1px solid #192022;
+  border-radius: 100px;
+  box-shadow: none;
+  color: white;
+  cursor: auto;
+  display: inline-block;
+  font: normal 25px 'Poppins';
+  letter-spacing: 0.03em;
+  margin: auto;
+  min-width: calc(100vw * 0.125);
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.button-white,
+.button-white:hover {
+  background: white;
+  color: #192022;
+}
+
+.button-white:active {
+  background: #192022;
+  color: white;
+}
+
+.button-black,
+.button-black:hover {
+  background: #192022;
+  color: white;
+}
+
+.button-black:active {
+  background: white;
+  color: #192022;
+}
+
+.button-yellow,
+.button-yellow:hover {
+  background: #FFBB01;
+  color: #192022;
+  flex: 1;
+}
+
+.button-yellow:active {
+  background: white;
+  color: #192022;
+}
+
+.content {
+  font: normal 1.5rem 'Poppins';
+  margin: auto;
+  padding-bottom: 12rem;
+  width: 66.7%;
+}
+
+h2 {
+  font: bold 3.5rem 'Poppins';
+  margin-top: 7.5rem;
+}
+
+#winter-projects {
+  font-weight: bold;
+  color: #CEBBFF;
+}
+
+h3 {
+  display: block;
+  font: 2rem 'Cooper Black';
+  margin-top: 2.5rem;
+}
+
+p {
+  display: block;
+  margin: 1em 0;
+}
+
+.learn-series-desc-container {
+  display: flex;
+  gap: 3rem;
+  margin: initial;
+  padding: initial;
+}
+
+.learn-series-desc-container > li {
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  list-style-type: none;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.learn-series-button-container {
+  display: grid;
+  text-align: center;
+}
+
+.learn-series-card-container {
+  column-gap: 5%;
+  display: flex;
+  font: normal 23px 'Poppins';
+  margin: 2em 0 4em;
+  text-align: center;
+}
+
+.flex-item {
+  border-radius: 10px;
+  flex: 1;
+  padding: 0 1em 1.5em;
+}
+
+.learn-series-beginner {
+  background: #FFBB01;
+  color: #192022;
+}
+
+.learn-series-intermediate {
+  background: #FF706E;
+}
+
+.real-series-card-container {
+  column-gap: 5%;
+  display: flex;
+  font: normal 24px 'Poppins';
+  margin: 2em 0 0;
+  text-align: center;
+}
+
+.real-series-1 {
+  background: #FF862E;
+  display: flex;
+  flex-direction: column;
+}
+
+.real-series-content {
+  text-align: center;
+}
+
+.real-series-button-container {
+  margin-top: auto;
+}
+
+.real-series-2 {
+  background: #5481BF;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  color: #FFBBBB;
+  font-weight: bold;
+}
+
+#faqs {
+  color: #C1FFF4;
+  font-weight: bold;
+}
+
+.bottom-button-container {
+  display: flex;
+  gap: 2em;
+  margin-top: 4em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    background-size: auto 840px;
+    height: 840px;
+  }
+  
+  .logo-wrapper {
+    left: 1.25rem;
+    top: 1.5rem;
+  }
+  
+  nav {
+    display: flex;
+    font-size: initial;
+    justify-content: space-evenly;
+    margin: 2.5rem auto 2.5rem 2rem;
+    width: 80%;
+  }
+  
+  .title-container {
+    margin: 2.5rem auto;
+  }
+  
+  .title {
+    font-size: calc(0.06 * 100vw);
+  }
+  
+  .title b {
+    font-size: calc(0.15 * 100vw);
+  }
+  
+  .due-time {
+    font-size: initial;
+  }
+
+  .button,
+  .button:hover,
+  .button:active,
+  .button:disabled,
+  .button:disabled:hover,
+  .button:disabled:active {
+    cursor: initial;
+    font-size: 1rem;
+    letter-spacing: initial;
+    min-width: 8rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .content {
+    font-size: 1rem;
+    padding-bottom: 8rem;
+    width: 75%;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: initial;
+    margin-top: 4rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: initial;
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: 2rem;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+  
+  .learn-series-desc-container {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .learn-series-desc-container > li {
+    padding: 1rem;
+  }
+  
+  .learn-series-card-container {
+    display: grid;
+    font-size: initial;
+    grid-row-gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .real-series-card-container {
+    display: grid;
+    font-size: initial;
+    grid-row-gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .real-series-1 {
+    display: initial;
+  }
+  
+  .real-series-2 {
+    display: initial;
+  }
+  
+  .bottom-button-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: initial;
+  }
+}
