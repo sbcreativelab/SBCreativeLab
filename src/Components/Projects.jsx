@@ -86,7 +86,7 @@ export default class Projects extends Component {
                 Apply
               </a>
               <a href="#about" className="tab">About</a>
-              <a href="#faq" className="tab">FAQ</a>
+              <a href="#faqs" className="tab">FAQs</a>
             </nav>
             <div className="header-right">
               <div className="hamburger-circle">
