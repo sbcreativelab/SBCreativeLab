@@ -3,93 +3,122 @@ import ReactGA from 'react-ga';
 import { useMediaQuery } from 'react-responsive';
 import '../wdf23/fest.css';
 
-import BackgroundCircles from '../wdf23/BackgroundCircles';
-import Sidebar from '../wdf23/Sidebar';
-import Topbar from '../wdf23/Topbar';
-import SectionsBar from '../wdf23/SectionsBar';
-import Hero from '../wdf23/Hero'
-import Prompts from '../wdf23/Prompts'
-import Workshops from '../wdf23/Workshops'
-import Calendar from '../wdf23/Calendar'
-import Rubric from '../wdf23/Rubric';
-import RubricOverlay from '../wdf23/RubricOverlay';
-import Judges from '../wdf23/Judges';
-import Prizes from '../wdf23/Prizes';
-import FAQ from '../wdf23/FAQ';
+import Hero from '../wdf24/Hero'
+import Coke from '../wdf24/imgs/coke.svg';
+import Hotdog from '../wdf24/imgs/Hotdog.svg';
+import Popcorn from '../wdf24/imgs/Popcorn.svg';
+import PromptTicket from '../wdf24/imgs/PromptTicket.svg'
+import RubricBg from '../wdf24/imgs/rubric-bg.png'
+import RubricCardBg from '../wdf24/imgs/rubric-card-bg.svg'
+import RubricCompBg from '../wdf24/imgs/rubric-comp-bg.png'
+import RubricGrammarBg from '../wdf24/imgs/rubric-grammar-bg.png';
+import RubricOrgBg from '../wdf24/imgs/rubric-org-bg.png';
+import RubricTextBg from '../wdf24/imgs/rubric-text-bg.png';
+import RubricBanner from '../wdf24/imgs/rubric-banner.svg';
+
 
 export default function Fest() {
-    useEffect(() => {
-        ReactGA.initialize('UA-178117149-1');
-        ReactGA.pageview('/fest');
-    }, []);
-
-    const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
-
-    let [isMenuOpen, setIsMenuOpen] = useState(false);
-    let [anchorTarget, setAnchorTarget] = useState(null);
-    let toggleMenu = (anchorID) => {
-        setIsMenuOpen(!isMenuOpen);
-        anchorID && setAnchorTarget(document.getElementById(anchorID));
-    }
-
-    let [isRubricOverlayOpen, setIsRubricOverlayOpen] = useState(false);
-    let openRubricOverlay = () => setIsRubricOverlayOpen(true);
-    let closeRubricOverlay = () => setIsRubricOverlayOpen(false);
-
-    useEffect(() => {
-        isMobile && anchorTarget && anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-
     return (
-        <div className={'full-page' + (isMenuOpen ? ' no-scroll' : '')}>
-            <BackgroundCircles />
-            <Sidebar />
-            <Topbar toggleMenu={toggleMenu} />
-            <div className='scroll-view'>
-                <div className='section section-0'>
-                    <div className='section-background section-0-background'></div>
-                    <div className='noise-background'></div>
-                    {!isMobile && <SectionsBar />}
-                    <Hero />
-                </div>
-                <div className='section section-1' id='prompts'>
-                    <div className='section-background section-1-background'></div>
-                    <Prompts />
-                </div>
-                <div className='section section-2' id='workshops'>
-                    <div className='section-background section-2-background'></div>
-                    <div className='noise-background'></div>
-                    <Workshops />
-                </div>
-                <div className='section section-3' id='schedule'>
-                    <div className='section-background section-3-background'></div>
-                    <Calendar />
-                </div>
-                <div className='section section-4' id='rubric'>
-                    <div className='section-background section-4-background'></div>
-                    <div className='noise-background'></div>
-                    {/*<RubricOverlay />*/}
-                    <Rubric openRubricOverlay={openRubricOverlay} />
-                </div>
-                <div className='section section-5' id='judges'>
-                    <div className='section-background section-5-background'></div>
-                    <Judges />
-                </div>
-                <div className='section section-6' id='prizes'>
-                    <div className='section-background section-6-background'></div>
-                    <div className='noise-background'></div>
-                    <Prizes />
-                </div>
-                <div className='section section-7' id='faq'>
-                    <div className='section-background section-7-background'></div>
-                    <FAQ />
-                </div>
-            </div>
-            {isMobile && <SectionsBar isOpen={isMenuOpen} toggleMenu={toggleMenu} />}
-            {isRubricOverlayOpen && <RubricOverlay closeRubricOverlay={closeRubricOverlay} />}
+        <div className='full-page'>
+            <Hero />
         </div>
     )
 }
+
+/** 2023 Winter Design Challenge **/ 
+
+// import React, { useEffect, useState } from 'react';
+// import ReactGA from 'react-ga';
+// import { useMediaQuery } from 'react-responsive';
+// import '../wdf23/fest.css';
+
+// import BackgroundCircles from '../wdf23/BackgroundCircles';
+// import Sidebar from '../wdf23/Sidebar';
+// import Topbar from '../wdf23/Topbar';
+// import SectionsBar from '../wdf23/SectionsBar';
+// import Hero from '../wdf23/Hero'
+// import Prompts from '../wdf23/Prompts'
+// import Workshops from '../wdf23/Workshops'
+// import Calendar from '../wdf23/Calendar'
+// import Rubric from '../wdf23/Rubric';
+// import RubricOverlay from '../wdf23/RubricOverlay';
+// import Judges from '../wdf23/Judges';
+// import Prizes from '../wdf23/Prizes';
+// import FAQ from '../wdf23/FAQ';
+
+// export default function Fest() {
+//     useEffect(() => {
+//         ReactGA.initialize('UA-178117149-1');
+//         ReactGA.pageview('/fest');
+//     }, []);
+
+//     const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
+
+//     let [isMenuOpen, setIsMenuOpen] = useState(false);
+//     let [anchorTarget, setAnchorTarget] = useState(null);
+//     let toggleMenu = (anchorID) => {
+//         setIsMenuOpen(!isMenuOpen);
+//         anchorID && setAnchorTarget(document.getElementById(anchorID));
+//     }
+
+//     let [isRubricOverlayOpen, setIsRubricOverlayOpen] = useState(false);
+//     let openRubricOverlay = () => setIsRubricOverlayOpen(true);
+//     let closeRubricOverlay = () => setIsRubricOverlayOpen(false);
+
+//     useEffect(() => {
+//         isMobile && anchorTarget && anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//     });
+
+//     return (
+//         <div className={'full-page' + (isMenuOpen ? ' no-scroll' : '')}>
+//             <BackgroundCircles />
+//             <Sidebar />
+//             <Topbar toggleMenu={toggleMenu} />
+//             <div className='scroll-view'>
+//                 <div className='section section-0'>
+//                     <div className='section-background section-0-background'></div>
+//                     <div className='noise-background'></div>
+//                     {!isMobile && <SectionsBar />}
+//                     <Hero />
+//                 </div>
+//                 <div className='section section-1' id='prompts'>
+//                     <div className='section-background section-1-background'></div>
+//                     <Prompts />
+//                 </div>
+//                 <div className='section section-2' id='workshops'>
+//                     <div className='section-background section-2-background'></div>
+//                     <div className='noise-background'></div>
+//                     <Workshops />
+//                 </div>
+//                 <div className='section section-3' id='schedule'>
+//                     <div className='section-background section-3-background'></div>
+//                     <Calendar />
+//                 </div>
+//                 <div className='section section-4' id='rubric'>
+//                     <div className='section-background section-4-background'></div>
+//                     <div className='noise-background'></div>
+//                     {/*<RubricOverlay />*/}
+//                     <Rubric openRubricOverlay={openRubricOverlay} />
+//                 </div>
+//                 <div className='section section-5' id='judges'>
+//                     <div className='section-background section-5-background'></div>
+//                     <Judges />
+//                 </div>
+//                 <div className='section section-6' id='prizes'>
+//                     <div className='section-background section-6-background'></div>
+//                     <div className='noise-background'></div>
+//                     <Prizes />
+//                 </div>
+//                 <div className='section section-7' id='faq'>
+//                     <div className='section-background section-7-background'></div>
+//                     <FAQ />
+//                 </div>
+//             </div>
+//             {isMobile && <SectionsBar isOpen={isMenuOpen} toggleMenu={toggleMenu} />}
+//             {isRubricOverlayOpen && <RubricOverlay closeRubricOverlay={closeRubricOverlay} />}
+//         </div>
+//     )
+// }
 
 /** 2022 Winter Design Challenge **/ 
 

@@ -339,8 +339,8 @@ export default class Home extends Component {
                                                 </div>
                                             </div>
                                             <div className="button-hover">
-                                                <a target="_blank" rel="noopener noreferrer" href="https://projects.sbcreativelab.com" style={{ whiteSpace: "nowrap" }} className="button-dark">
-                                                    Apply for Projects Teams! 🦊
+                                                <a target="_blank" rel="noopener noreferrer" href="/fest" style={{ whiteSpace: "nowrap" }} className="button-dark">
+                                                    Register for Design Fest! 🦊
                                                 </a>
                                             </div>
                                         </div>
