@@ -6,6 +6,7 @@ import CurtainBackground from '../wdf24/imgs/curtain-background.svg';
 import WhiteLogo from '../wdf24/imgs/whitelogo.svg';
 import HeroBannerBg from '../wdf24/imgs/HeroBannerBg.svg';
 import DownButton from '../wdf24/imgs/DownButton.svg';
+import mobileCurtainBg from '../wdf24/imgs/mobile-curtain-bg.svg';
 
 
 
@@ -28,7 +29,7 @@ export default function Hero() {
 
                     {/* <div className='button'>Register Now
                     </div> */}
-                    <div className='button-des'>Registeration by February 24 <br/> @11:59pm eST</div>
+                    <div className='button-des'>Registeration Deadline: February 24 <br/> @11:59pm eST</div>
                 </div>
                 <div className='button-container'>
                     <SubmitButton />
