@@ -1,0 +1,57 @@
+.winners-section-bg {
+    background: url(./imgs/winners-bg.svg);
+    height: 88vh;
+}
+
+.winners-section {
+    display: flex;
+    gap: 6em;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: 6em 0;
+    width: 60%;
+}
+
+.second-third-place-container {
+    background: black;
+    height: 28em;
+    margin-top: auto;
+    padding: 1em;
+    text-align: center;
+    width: 18em;
+}
+
+.second-third-place-container h2 {
+    color: white;
+    font-weight: bold;
+    height: 2em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.second-third-place-container img {
+    height: 20em;
+    width: auto;
+}
+
+.first-place-container {
+    background: black;
+    height: 34em;
+    padding: 1em;
+    text-align: center;
+    width: 22em;
+}
+
+.first-place-container h2 {
+    color: white;
+    font-weight: bold;
+    height: 2em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.first-place-container img {
+    height: 26em;
+    width: auto;
+}

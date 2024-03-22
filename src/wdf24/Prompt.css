@@ -1,0 +1,9 @@
+.prompt-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 6em 0;
+}
+
+.prompt-ticket {
+    margin-left: 8em;
+}

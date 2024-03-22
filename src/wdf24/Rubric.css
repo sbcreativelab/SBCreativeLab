@@ -1,0 +1,30 @@
+.rubric-section-bg {
+    background-image: url(./imgs/rubric-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rubric-section {
+    text-align: center;
+    margin: auto;
+    max-width: 96%;
+    padding-bottom: 10em;
+}
+
+.rubric-banner {
+    margin-bottom: 4em;
+    max-width: 90%;
+}
+
+.rubric-container {
+    display: grid;
+    gap: 4em;
+    grid-template-columns: repeat(2, 48%);
+    justify-items: center;
+    margin: auto;
+    max-width: 90%;
+}
+
+.rubric-container img {
+    width: 100%;
+}

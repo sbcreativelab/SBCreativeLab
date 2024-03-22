@@ -2,13 +2,11 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import './Hero.css'
 
-import CurtainBackground from '../wdf24/imgs/curtain-background.svg';
-import WhiteLogo from '../wdf24/imgs/whitelogo.svg';
-import HeroBannerBg from '../wdf24/imgs/HeroBannerBg.svg';
-import DownButton from '../wdf24/imgs/DownButton.svg';
-import mobileCurtainBg from '../wdf24/imgs/mobile-curtain-bg.svg';
-
-
+import CurtainBackground from './imgs/curtain-background.svg';
+import WhiteLogo from './imgs/whitelogo.svg';
+import HeroBannerBg from './imgs/HeroBannerBg.svg';
+import DownButton from './imgs/DownButton.svg';
+import mobileCurtainBg from './imgs/mobile-curtain-bg.svg';
 
 export default function Hero() {
     const isMobile = useMediaQuery({ query: `(max-width: 1300px)` });
@@ -47,21 +45,17 @@ export default function Hero() {
 }
 
 function RegisterButton() {
-    const handleOnClick = () => window.open('https://forms.gle/LpSovLUPSrcmfpr37', '_blank', 'noreferrer');
-
     return (
-        <div className='button-container' onClick={handleOnClick}>
-            <div className='button'>Register Now</div>
+        <div className='button-container'>
+            <button className='button' disabled>Event ended</button>
         </div>
     )
 }
 
 function SubmitButton() {
-    const handleOnClick = () => window.open('https://forms.gle/8Nq8Lu1arz8a89oG6', '_blank', 'noreferrer');
-
     return (
-        <div className='button-container' onClick={handleOnClick}>
-            <div className='button'>Submit Now</div>
+        <div className='button-container'>
+            <button className='button' disabled>Event ended</button>
         </div>
     )
 }

@@ -4,23 +4,17 @@ import { useMediaQuery } from 'react-responsive';
 import '../wdf23/fest.css';
 
 import Hero from '../wdf24/Hero'
-import Coke from '../wdf24/imgs/coke.svg';
-import Hotdog from '../wdf24/imgs/Hotdog.svg';
-import Popcorn from '../wdf24/imgs/Popcorn.svg';
-import PromptTicket from '../wdf24/imgs/PromptTicket.svg'
-import RubricBg from '../wdf24/imgs/rubric-bg.png'
-import RubricCardBg from '../wdf24/imgs/rubric-card-bg.svg'
-import RubricCompBg from '../wdf24/imgs/rubric-comp-bg.png'
-import RubricGrammarBg from '../wdf24/imgs/rubric-grammar-bg.png';
-import RubricOrgBg from '../wdf24/imgs/rubric-org-bg.png';
-import RubricTextBg from '../wdf24/imgs/rubric-text-bg.png';
-import RubricBanner from '../wdf24/imgs/rubric-banner.svg';
-
+import Winners from '../wdf24/Winners'
+import Prompt from '../wdf24/Prompt'
+import Rubric from '../wdf24/Rubric'
 
 export default function Fest() {
     return (
         <div className='full-page'>
             <Hero />
+            <Winners />
+            <Prompt />
+            <Rubric />
         </div>
     )
 }
