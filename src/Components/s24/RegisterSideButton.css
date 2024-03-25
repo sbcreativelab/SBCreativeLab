@@ -1,0 +1,48 @@
+.register-side-button {
+	position: fixed;
+	--width: 15.4vw;
+	--height: 3.8vw;
+	width: var(--width);
+	height: var(--height);
+	right: calc(var(--height)/2 - var(--width)/2);
+	top: 37%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: #8151FB;
+	border-radius: 0.66vw 0.66vw 0 0;
+
+	transform: rotate(-90deg);
+
+	cursor: pointer;
+
+	z-index: 1;
+}
+
+.register-side-button:hover {
+	text-decoration: none;
+}
+
+.register-side-button-text {
+	font-family: 'PP Object Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 1.3vw;
+	line-height: 1.7vw;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #D9D9D9;
+}
+
+@media only screen and (max-width: 600px) {
+	.register-side-button {
+		display: none;
+	}
+}

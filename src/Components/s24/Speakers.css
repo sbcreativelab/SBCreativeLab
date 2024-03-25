@@ -1,0 +1,131 @@
+.speakers {
+    background: right / auto 100% no-repeat url(../../images/s23_images/speakers-background.svg);
+    height: 56.5vw;
+}
+
+.speakers-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-color: #2F302D;
+	z-index: -3;
+}
+
+.speakers-frame {
+    padding: 4vw 8%;
+}
+
+.speakers-header {
+    height: 7.5vw;
+    position: relative;
+}
+
+.speakers-header > img {
+    position: absolute;
+    width: 42%;
+}
+
+.speakers-grid {
+    column-gap: 4%;
+    display: grid;
+}
+
+.speakers-grid-1 {
+    grid-template-columns: repeat(3, 25%);
+}
+
+.speakers-grid-2 {
+    grid-template-columns: repeat(2, 25%);
+    margin-top: 3%;
+    margin-left: 12%;
+}
+
+.speakers-cell {
+    position: relative;
+}
+
+.speakers-cell > img {
+    width: 100%;
+}
+
+.speakers-desc {
+    background-color: #8151FB;
+    padding: 0.5vw 1vw;
+    position: absolute;
+    right: -10%;
+    text-align: center;
+    top: 80%;
+    width: fit-content;
+}
+
+.speakers-name {
+    font: 800 1.4vw/2vw 'PP Object Sans';
+    margin: 0;
+}
+
+.speakers-position {
+    font: 1vw/1.25vw 'PP Object Sans';
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .speakers {
+        background: right / 100% auto no-repeat url(../../images/s23_images/phone_view/speakers-background-phone.svg);
+        height: 100%;
+    }
+
+    .speakers-frame {
+        padding: 2.4em 8%;
+    }
+
+    .speakers-header {
+        height: 16vw;
+        position: relative;
+    }
+    
+    .speakers-header > img {
+        position: absolute;
+        width: 66%;
+    }
+
+    .speakers-grid {
+        row-gap: 3em;
+        display: grid;
+    }
+
+    .speakers-cell > img {
+        width: 66%;
+    }
+
+    .speakers-cell-left > .speakers-desc {
+        right: 30%;
+    }
+
+    .speakers-cell-right {
+        text-align: right;
+    }
+
+    .speakers-cell-right > .speakers-desc {
+        left: 30%;
+    }
+
+    .speakers-desc {
+        background-color: #8151FB;
+        padding: 4.8px 9.6px;
+        position: absolute;
+        text-align: center;
+        top: 90%;
+        width: fit-content;
+    }
+
+    .speakers-name {
+        font: 800 12.8px/16.64px 'PP Object Sans';
+        margin: 0;
+    }
+
+    .speakers-position {
+        font: 9.6px/12.48px 'PP Object Sans';
+        margin: 0;
+    }
+}
