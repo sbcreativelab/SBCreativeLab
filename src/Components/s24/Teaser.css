@@ -1,0 +1,22 @@
+.teaser-section {
+    text-align: center;
+}
+
+.teaser-section h2 {
+    -webkit-text-stroke: 4px #46C2C0;
+    color: rgb(0,0,0,0);
+    font: 8em/normal Magilio;
+    margin: 20vh auto 0;
+}
+
+.teaser-section p {
+    color: #F7F3ED;
+    font: 40px/normal "PP Object Sans";
+    margin: 0 auto 30vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .teaser-section p {
+        font: 4vw/5vw 'PP Object Sans';
+    }
+}

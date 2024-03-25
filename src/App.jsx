@@ -4,17 +4,18 @@ import './index.css'
 import ReactGA from 'react-ga'
 import { UserAgent } from "react-useragent"
 
-import Hero from './Components/s23/Hero'
-import RegisterSideButton from './Components/s23/RegisterSideButton'
-import Prompt from './Components/s23/Prompt'
-import Timeline from './Components/s23/Timeline'
-import Speakers from './Components/s23/Speakers'
-import Judges from './Components/s23/Judges'
-import Mentors from './Components/s23/Mentors'
-import Prizes from './Components/s23/Prizes'
-import FAQs from './Components/s23/FAQs'
-import Sponsors from './Components/s23/Sponsors'
-import Footer from './Components/s23/Footer'
+import Hero from './Components/s24/Hero'
+import RegisterSideButton from './Components/s24/RegisterSideButton'
+import Teaser from './Components/s24/Teaser'
+// import Speakers from './Components/s24/Speakers'
+// import Judges from './Components/s24/Judges'
+// import Mentors from './Components/s24/Mentors'
+// import Prompt from './Components/s24/Prompt'
+// import Timeline from './Components/s24/Timeline' // should change to "Schedule"
+// import Prizes from './Components/s24/Prizes'
+import FAQs from './Components/s24/FAQs'
+import Sponsors from './Components/s24/Sponsors'
+import Footer from './Components/s24/Footer'
 
 export class App extends Component {
   constructor(props) {
@@ -44,13 +45,14 @@ export class App extends Component {
           }}
         </UserAgent>
         <Hero />
+	<Teaser />
         {/* <RegisterSideButton /> */}
-        <Prompt />
-        <Timeline />
-        <Speakers />
-        <Judges />
-        <Mentors />
-        <Prizes />
+	{/* <Speakers /> */}
+        {/* <Judges /> */}
+        {/* <Mentors /> */}
+	{/* <Prompt /> */}
+        {/* <Timeline /> */}
+        {/* <Prizes /> */}
         <FAQs />
         <Sponsors />
         <Footer />
