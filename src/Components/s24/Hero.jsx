@@ -64,10 +64,10 @@ export default function Hero() {
                     intentional design. Join us in kicking off our 4-day 
                     challenge April 11th through April 14th. During this 
                     time, students will participate on various design 
-                    workshops and meet new friends from other US college 
+                    workshops and meet new friends from other college 
                     campuses to tackle a design challenge together! 
                 </p>
-	        <p className='eligibility-text'>Eligibility: any undergrad or grad students in the US can participate</p>
+	        <p className='eligibility-text'>Eligibility: any undergrad or grad students in North America can participate</p>
             </div>
         </div>
     )
