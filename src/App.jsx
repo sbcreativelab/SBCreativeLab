@@ -7,7 +7,7 @@ import { UserAgent } from "react-useragent"
 import Hero from './Components/s24/Hero'
 import RegisterSideButton from './Components/s24/RegisterSideButton'
 import Teaser from './Components/s24/Teaser'
-// import Speakers from './Components/s24/Speakers'
+import Speakers from './Components/s24/Speakers'
 // import Judges from './Components/s24/Judges'
 // import Mentors from './Components/s24/Mentors'
 // import Prompt from './Components/s24/Prompt'
@@ -45,12 +45,12 @@ export class App extends Component {
           }}
         </UserAgent>
         <Hero />
-	<Teaser />
+	    <Teaser />
+	    <Speakers />
         {/* <RegisterSideButton /> */}
-	{/* <Speakers /> */}
         {/* <Judges /> */}
         {/* <Mentors /> */}
-	{/* <Prompt /> */}
+	    {/* <Prompt /> */}
         {/* <Timeline /> */}
         {/* <Prizes /> */}
         <FAQs />
