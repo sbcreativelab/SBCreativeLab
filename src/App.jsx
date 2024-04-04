@@ -11,7 +11,7 @@ import Teaser from './Components/s24/Teaser'
 // import Judges from './Components/s24/Judges'
 // import Mentors from './Components/s24/Mentors'
 // import Prompt from './Components/s24/Prompt'
-// import Timeline from './Components/s24/Timeline' // should change to "Schedule"
+// import Schedule from './Components/s24/Schedule'
 // import Prizes from './Components/s24/Prizes'
 import FAQs from './Components/s24/FAQs'
 import Sponsors from './Components/s24/Sponsors'
@@ -51,7 +51,7 @@ export class App extends Component {
         {/* <Judges /> */}
         {/* <Mentors /> */}
 	{/* <Prompt /> */}
-        {/* <Timeline /> */}
+        {/* <Schedule /> */}
         {/* <Prizes /> */}
         <FAQs />
         <Sponsors />
