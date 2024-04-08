@@ -1,9 +1,6 @@
 import React from 'react'
 import './Speakers.css'
-import useWindowDimensions from '../../utils/useWindowDimensions'
-
-import speakersHeaderDeco from '../../images/s24_images/speakers-header-deco.svg'
-import speakersHeader from '../../images/s24_images/speakers-header.svg'
+// import useWindowDimensions from '../../utils/useWindowDimensions'
 
 import bergerj from '../../images/s24_images/speakers/bergerj.png'
 import hor from '../../images/s24_images/speakers/hor.png'
@@ -46,7 +43,7 @@ function SpeakersCell(props) {
                 {props.company ?
                     <>
                         <div className={`speakers-info speakers-text-${props.textColor}`}>[{props.position}</div>
-                        <div className={`speakers-info speakers-text-${props.textColor}`}>{props.company}]</div>
+                        <div className={`speakers-info speakers-text-${props.textColor}`}>{`@ ${props.company}`}]</div>
                     </>
                     :
                     <div className={`speakers-workshop speakers-text-${props.textColor}`}>{`Workshop: ${props.workshop}`}</div>
@@ -57,9 +54,9 @@ function SpeakersCell(props) {
 }
 
 export default function Speakers() {
-    const { width } = useWindowDimensions();
-    const PHONE_SCREEN_BREAKPOINT = 600;
-    const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
+    // const { width } = useWindowDimensions();
+    // const PHONE_SCREEN_BREAKPOINT = 600;
+    // const isPhoneScreen = width <= PHONE_SCREEN_BREAKPOINT;
 
     return (
         <div className='speakers' id='speakers'>
@@ -85,35 +82,6 @@ export default function Speakers() {
                     ]}
                 />
             </div>
-            {/* isPhoneScreen ?
-                <div className='speakers-frame'>
-                    <div className='speakers-header'>
-                        
-                    </div>
-                    <div className='speakers-grid'>
-                        <SpeakersCell class='speakers-cell-left' company='Figma' img={cardona} name='Miguel Cardona' position='Designer Advocate for Education'/>
-                        <SpeakersCell class='speakers-cell-right' company='Riot Games' img={xue} name='Janny Xue' position='User Experience Designer'/>
-                        <SpeakersCell class='speakers-cell-left' company='Gaucho Creative' img={vo} name='Van Vo' position='Director of Design'/>
-                        <SpeakersCell class='speakers-cell-right' company='Pitchbook Data' img={jahng} name='Christine Jahng' position='Product Designer'/>
-                        <SpeakersCell class='speakers-cell-left' img={bours} name='Enya Bours' position='Freelance Product' position2='Designer'/>
-                    </div>
-                </div>
-                :
-                <div className='speakers-frame'>
-                    <div className='speakers-header'>
-                        
-                    </div>
-                    <div className='speakers-grid speakers-grid-1'>
-                        <SpeakersCell company='Figma' img={cardona} name='Miguel Cardona' position='Designer Advocate for Education'/>
-                        <SpeakersCell company='Riot Games' img={xue} name='Janny Xue' position='User Experience Designer'/>
-                        <SpeakersCell company='Gaucho Creative' img={vo} name='Van Vo' position='Director of Design'/>
-                    </div>
-                    <div className='speakers-grid speakers-grid-2'>
-                        <SpeakersCell company='Pitchbook Data' img={jahng} name='Christine Jahng' position='Product Designer'/>
-                        <SpeakersCell img={bours} name='Enya Bours' position='Freelance Product' position2='Designer'/>
-                    </div>
-                </div>
-            */}
         </div>
     )
 }

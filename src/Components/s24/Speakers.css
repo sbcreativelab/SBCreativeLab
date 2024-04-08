@@ -5,11 +5,6 @@
     --speakers-purple: #8151FB;
 }
 
-.speakers {
-    /* background: right / auto 100% no-repeat url(../../images/s23_images/speakers-background.svg); */
-    /* height: 56.5vw; */
-}
-
 .speakers-background {
 	position: absolute;
 	width: 100%;
@@ -105,6 +100,8 @@
     align-items: center;
     /* gap: 6px; */
     flex-shrink: 0;
+    
+    text-align: center;
 }
 
 .speakers-desc-teal {
@@ -156,53 +153,48 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .speakers {
-        background: right / 100% auto no-repeat url(../../images/s23_images/phone_view/speakers-background-phone.svg);
-        height: 100%;
-    }
-
     .speakers-frame {
         padding: 2.4em 8%;
+    }
+    
+    .speakers-section {
+        gap: 20px;
     }
 
     .speakers-header {
         height: 16vw;
         position: relative;
+        font-size: 12vw;
     }
     
-    .speakers-header > img {
-        position: absolute;
-        width: 66%;
+    .speakers-header-teal {
+        text-stroke: 0.5vw var(--speakers-teal);
+        -webkit-text-stroke: 0.5vw var(--speakers-teal);
     }
-
-    .speakers-grid {
-        row-gap: 3em;
-        display: grid;
+    
+    .speakers-header-blue {
+        text-stroke: 0.5vw var(--speakers-blue);
+        -webkit-text-stroke: 0.5vw var(--speakers-blue);
     }
-
-    .speakers-cell > img {
-        width: 66%;
+    
+    .speakers-header-pink {
+        text-stroke: 0.5vw var(--speakers-pink);
+        -webkit-text-stroke: 0.5vw var(--speakers-pink);
     }
-
-    .speakers-cell-left > .speakers-desc {
-        right: 30%;
+    
+    .speakers-row {
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
     }
-
-    .speakers-cell-right {
-        text-align: right;
+    
+    .speakers-profile {
+        width: 35vw;
+        height: 35vw;
     }
-
-    .speakers-cell-right > .speakers-desc {
-        left: 30%;
-    }
-
+    
     .speakers-desc {
-        background-color: #8151FB;
-        padding: 4.8px 9.6px;
-        position: absolute;
-        text-align: center;
-        top: 90%;
-        width: fit-content;
+        width: 37vw;
     }
 
     .speakers-name {
