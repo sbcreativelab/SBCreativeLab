@@ -1,6 +1,8 @@
-.speakers {
-    background: right / auto 100% no-repeat url(../../images/s23_images/speakers-background.svg);
-    height: 56.5vw;
+:root {
+    --speakers-teal: #46C2C0;
+    --speakers-blue: #1173D9;
+    --speakers-pink: #EDB2D0;
+    --speakers-purple: #8151FB;
 }
 
 .speakers-background {
@@ -14,109 +16,185 @@
 
 .speakers-frame {
     padding: 4vw 8%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.speakers-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .speakers-header {
-    height: 7.5vw;
-    position: relative;
+    color: #2F302D;
+    font-family: Magilio;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.speakers-header > img {
-    position: absolute;
-    width: 42%;
+.speakers-header-teal {
+    text-stroke: 3px var(--speakers-teal);
+    -webkit-text-stroke: 3px var(--speakers-teal);
 }
 
-.speakers-grid {
-    column-gap: 4%;
-    display: grid;
+.speakers-header-blue {
+    text-stroke: 3px var(--speakers-blue);
+    -webkit-text-stroke: 3px var(--speakers-blue);
 }
 
-.speakers-grid-1 {
-    grid-template-columns: repeat(3, 25%);
+.speakers-header-pink {
+    text-stroke: 3px var(--speakers-pink);
+    -webkit-text-stroke: 3px var(--speakers-pink);
 }
 
-.speakers-grid-2 {
-    grid-template-columns: repeat(2, 25%);
-    margin-top: 3%;
-    margin-left: 12%;
+.speakers-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    
+    flex-wrap: wrap;
 }
 
 .speakers-cell {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: -22.4px; */
 }
 
-.speakers-cell > img {
-    width: 100%;
+.speakers-profile {
+    width: 208px;
+    height: 208px;
+    
+    border-radius: 240px;
+    
+    margin-bottom: -28px;
+}
+
+.speakers-profile-teal {
+    border: 2px solid var(--speakers-teal);
+}
+
+.speakers-profile-blue {
+    border: 2px solid var(--speakers-blue);
+}
+
+.speakers-profile-purple {
+    border: 2px solid var(--speakers-purple);
 }
 
 .speakers-desc {
-    background-color: #8151FB;
-    padding: 0.5vw 1vw;
-    position: absolute;
-    right: -10%;
+    display: flex;
+    flex-direction: column;
+    width: 239.2px;
+    /* height: 80.376px; */
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 6px; */
+    flex-shrink: 0;
+    
     text-align: center;
-    top: 80%;
-    width: fit-content;
+}
+
+.speakers-desc-teal {
+    background: var(--speakers-teal);
+}
+
+.speakers-desc-blue {
+    background: var(--speakers-blue);
+}
+
+.speakers-desc-purple {
+    background: var(--speakers-purple);
 }
 
 .speakers-name {
-    font: 800 1.4vw/2vw 'PP Object Sans';
-    margin: 0;
+    text-align: center;
+    font-family: "PP Object Sans";
+    font-size: 16.8px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.504px;
 }
 
-.speakers-position {
-    font: 1vw/1.25vw 'PP Object Sans';
-    margin: 0;
+.speakers-info {
+    font-family: "PP Object Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.speakers-workshop {
+    font-family: "PP Object Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.speakers-text-dark {
+    color: #2F302D;
+}
+
+.speakers-text-light {
+    color: #D9D9D9;
 }
 
 @media only screen and (max-width: 600px) {
-    .speakers {
-        background: right / 100% auto no-repeat url(../../images/s23_images/phone_view/speakers-background-phone.svg);
-        height: 100%;
-    }
-
     .speakers-frame {
         padding: 2.4em 8%;
+    }
+    
+    .speakers-section {
+        gap: 20px;
     }
 
     .speakers-header {
         height: 16vw;
         position: relative;
+        font-size: 12vw;
     }
     
-    .speakers-header > img {
-        position: absolute;
-        width: 66%;
+    .speakers-header-teal {
+        text-stroke: 0.5vw var(--speakers-teal);
+        -webkit-text-stroke: 0.5vw var(--speakers-teal);
     }
-
-    .speakers-grid {
-        row-gap: 3em;
-        display: grid;
+    
+    .speakers-header-blue {
+        text-stroke: 0.5vw var(--speakers-blue);
+        -webkit-text-stroke: 0.5vw var(--speakers-blue);
     }
-
-    .speakers-cell > img {
-        width: 66%;
+    
+    .speakers-header-pink {
+        text-stroke: 0.5vw var(--speakers-pink);
+        -webkit-text-stroke: 0.5vw var(--speakers-pink);
     }
-
-    .speakers-cell-left > .speakers-desc {
-        right: 30%;
+    
+    .speakers-row {
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
     }
-
-    .speakers-cell-right {
-        text-align: right;
+    
+    .speakers-profile {
+        width: 35vw;
+        height: 35vw;
     }
-
-    .speakers-cell-right > .speakers-desc {
-        left: 30%;
-    }
-
+    
     .speakers-desc {
-        background-color: #8151FB;
-        padding: 4.8px 9.6px;
-        position: absolute;
-        text-align: center;
-        top: 90%;
-        width: fit-content;
+        width: 37vw;
     }
 
     .speakers-name {
