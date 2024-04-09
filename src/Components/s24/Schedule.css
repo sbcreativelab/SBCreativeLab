@@ -1,6 +1,7 @@
 .schedule {
-	color: initial;
-	position: relative;
+    color: initial;
+    padding: 4vw 0;
+    position: relative;
 }
 
 .schedule-background {
@@ -21,22 +22,44 @@
 .schedule-phone {}
 
 .schedule-container h2 {
-    -webkit-text-stroke: 4px #46C2C0;
+    -webkit-text-stroke: 3px #57CFBA;
     color: rgb(0,0,0,0);
     font: 4em/normal Magilio;
 	margin-top: 3%;
 	margin-right: 3%;
 }
 
+.schedule-table h5 {
+    font-weight: bold;
+}
+
+.schedule-table a {
+    color: unset;
+    text-decoration: underline;
+}
+
+.schedule-table table {
+    border-collapse: unset;
+    border-spacing: 1em 2em;
+}
+
 .schedule-table td:first-of-type {
 	min-width: 15em;
+	vertical-align: top;
 }
 
 .schedule-table td:nth-of-type(2) {
-	min-width: 35em;
+	font: bold 1.25em/normal 'PP Object Sans';
+	min-width: 20em;
 	text-align: right;
+	vertical-align: top;
 }
 
 .schedule-table td:last-of-type {
+	color: #909586;
 	min-width: 15em;
+}
+
+.schedule-table p {
+    margin: unset;
 }
