@@ -37,11 +37,11 @@ export default function Sponsors() {
                     <img className='sponsors-header' src={sponsorsHeader} alt='sponsors' />
                 </div>
                 <div className='sponsors-cell sponsors-cell-purple' />
-                <SponsorsCell img={finn} link='' name='finn' />
+                <SponsorsCell img={finn} link={null} name='finn' />
                 <div className='sponsors-cell sponsors-cell-purple' />
                 <SponsorsCell img={lottie} link='https://lottiefiles.com/' name='LottieFiles' />
                 <div className='sponsors-cell sponsors-cell-purple' />
-                <SponsorsCell img={finn} link='' name='finn' />
+                <SponsorsCell img={finn} link={null} name='finn' />
                 <div className='sponsors-cell sponsors-cell-purple' />
             </div>
         </div>
