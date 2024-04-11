@@ -58,14 +58,12 @@ export default function Hero() {
 	    	</div>
 	    	{/* <div className='register-deadline'>Event ended, check back next year!</div> */}
                 <p className='hero-description'>
-                    SB Creative Lab presents its 2024 JUMPSTART 
-                    Designathon! Get hands-on design experience by 
-                    challenging the normal with out-of-the-box ideas and 
-                    intentional design. Join us in kicking off our 4-day 
-                    challenge April 11th through April 14th. During this 
-                    time, students will participate on various design 
-                    workshops and meet new friends from other college 
-                    campuses to tackle a design challenge together! 
+                    Get hands-on user-centered design experience by challenging 
+	            the norm with out-of-the-box ideas. Join us in kicking off 
+	            our 4-day challenge April 14th through April 16th. During 
+	            this time, students will participate on various design 
+	            workshops and meet new friends from other US college 
+	            campuses to tackle a 0-1 design challenge together!  
                 </p>
 	        <p className='eligibility-text'>Eligibility: any undergrad or grad students in North America can participate</p>
             </div>
