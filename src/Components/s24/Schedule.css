@@ -24,9 +24,9 @@
 .schedule-container h2 {
     -webkit-text-stroke: 3px #57CFBA;
     color: rgb(0,0,0,0);
-    font: 4em/normal Magilio;
-	margin-top: 3%;
-	margin-right: 3%;
+    font: 4rem/normal Magilio;
+    margin-top: 3%;
+    margin-right: 3%;
 }
 
 .schedule-table h5 {
@@ -38,28 +38,61 @@
     text-decoration: underline;
 }
 
-.schedule-table table {
-    border-collapse: unset;
-    border-spacing: 1em 2em;
+.schedule-table > div {
+    display: flex;
+    gap: 1em;
+    margin: 4em 0;
 }
 
-.schedule-table td:first-of-type {
-	min-width: 15em;
-	vertical-align: top;
+.schedule-table span:first-of-type {
+    min-width: 20%;
+    vertical-align: top;
 }
 
-.schedule-table td:nth-of-type(2) {
-	font: bold 1.25em/normal 'PP Object Sans';
-	min-width: 20em;
-	text-align: right;
-	vertical-align: top;
+.schedule-table span:nth-of-type(2) {
+    font: bold 1.25em/normal 'PP Object Sans';
+    min-width: 40%;
+    text-align: right;
+    vertical-align: top;
 }
 
-.schedule-table td:last-of-type {
-	color: #909586;
-	min-width: 15em;
+.schedule-table span:last-of-type {
+    color: #909586;
+    min-width: 30%;
 }
 
 .schedule-table p {
     margin: unset;
+}
+
+@media (max-width: 992px) {
+    .schedule-container h2 {
+        margin-top: 4rem;
+    }
+
+    .schedule-table h5 {
+        margin: 2rem 0;
+    }
+
+    .schedule-table > div {
+        display: block;
+	margin: 2em 0;
+    }
+    
+    .schedule-table span:first-of-type {
+        display: block;
+        min-width: unset;
+        vertical-align: top;
+    }
+
+    .schedule-table span:nth-of-type(2) {
+        display: block;
+        min-width: unset;
+        text-align: unset;
+    }
+
+    .schedule-table span:last-of-type {
+        display: block;
+        min-width: 40%;
+    }
 }
