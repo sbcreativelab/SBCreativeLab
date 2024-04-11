@@ -60,7 +60,7 @@ export default function Hero() {
                 <p className='hero-description'>
                     Get hands-on user-centered design experience by challenging 
 	            the norm with out-of-the-box ideas. Join us in kicking off 
-	            our 4-day challenge April 14th through April 16th. During 
+	            our 4-day challenge April 11th through April 14th. During 
 	            this time, students will participate on various design 
 	            workshops and meet new friends from other US college 
 	            campuses to tackle a 0-1 design challenge together!  
