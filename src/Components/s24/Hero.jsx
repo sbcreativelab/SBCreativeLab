@@ -23,10 +23,10 @@ export default function Hero() {
                 </a>
                 <nav>
 	            {/* (<NavBarItem name={"Prompt"} id={"prompt"} /> */}
-	            {/* <NavBarItem name={"Timeline"} id={"timeline"} /> */}
                     {/* <NavBarItem name={"Speakers"} id={"speakers"} /> */}
                     {/* <NavBarItem name={"Judges"} id={"judges"} /> */}
                     {/* <NavBarItem name={"Mentors"} id={"mentors"} /> */}
+	            <NavBarItem name={"Schedule"} id={"schedule"} />
                     {/* <NavBarItem name={"Prizes"} id={"prizes"} /> */}
                     <NavBarItem name={"FAQ"} id={"FAQs"} />
                     <NavBarItem name={"Sponsors"} id={"sponsors"} />
