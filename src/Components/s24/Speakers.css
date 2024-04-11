@@ -49,9 +49,9 @@
     -webkit-text-stroke: 3px var(--speakers-blue);
 }
 
-.speakers-header-pink {
-    text-stroke: 3px var(--speakers-pink);
-    -webkit-text-stroke: 3px var(--speakers-pink);
+.speakers-header-purple {
+    text-stroke: 3px var(--speakers-purple);
+    -webkit-text-stroke: 3px var(--speakers-purple);
 }
 
 .speakers-row {
@@ -66,7 +66,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: -22.4px; */
+    
+    cursor: pointer;
 }
 
 .speakers-profile {
@@ -150,6 +151,70 @@
 
 .speakers-text-light {
     color: #D9D9D9;
+}
+
+.speakers-tooltip-frame {
+    background: url('../../images/s24_images/postit.svg');
+    width: 543px;
+    height: 507px;
+    
+    z-index: 2;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 36px;
+    padding-bottom: 36px;
+}
+
+.speakers-tooltip-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    align-items: center;
+}
+
+.speakers-tooltip-profile {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    
+    border-radius: 11.732px;
+    border: 2px solid #1173D9;
+}
+
+.speakers-tooltip-name {
+    color: #1173D9;
+    font-family: "PP Object Sans";
+    font-size: 26.525px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.796px;
+}
+
+.speakers-tooltip-info {
+    color: #1173D9;
+    font-family: "PP Object Sans";
+    font-size: 18.946px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.568px;
+}
+
+.speakers-tooltip-description {
+    color: #2F302D;
+    font-family: "PP Object Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.48px;
 }
 
 @media only screen and (max-width: 600px) {
