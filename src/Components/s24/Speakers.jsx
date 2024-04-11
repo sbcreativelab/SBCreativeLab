@@ -8,6 +8,7 @@ import leef from '../../images/s24_images/speakers/leef.png'
 import lottie from '../../images/s24_images/speakers/lottie.png'
 import millarh from '../../images/s24_images/speakers/millarh.png'
 import xuej from '../../images/s24_images/speakers/xuej.png'
+import vov from '../../images/s24_images/speakers/vov.png'
 
 function SpeakersSection(props) {
     return (
@@ -142,7 +143,8 @@ export default function Speakers() {
                 <SpeakersSection title={'Workshop Hosts'} color={'purple'} textColor={'light'}
                     speakers={[
                         {image: millarh, name: "Hannah Millar", pronouns: "She/Her", workshop: "User Research", link: "https://www.linkedin.com/in/hannah--millar/"},
-                        {image: lottie, name: "Lottie Files", pronouns: "Very cool company", workshop: "Motion Design 101", link: "https://lottiefiles.com"}
+                        {image: lottie, name: "Lottie Files", pronouns: "Very cool company", workshop: "Motion Design 101", link: "https://lottiefiles.com"},
+                        {image: vov, name: "Van Vo", pronouns: "She/Her", workshop: "Intro to Figma", link: null}
                     ]}
                 />
             </div>
