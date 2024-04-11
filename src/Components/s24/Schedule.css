@@ -16,7 +16,7 @@
     margin: auto;
     padding: 4rem 0 1rem;
     position: relative;
-    width: 75%;
+    width: 84%;
 }
 
 .schedule-phone {}
@@ -61,6 +61,13 @@
 
 .schedule-table p {
     margin: unset;
+}
+
+.schedule-challenge {
+    background: #2F302D;
+    border-radius: 40px;
+    color: #F7F3ED;
+    padding: 4rem 1rem 1rem;
 }
 
 @media (max-width: 992px) {
