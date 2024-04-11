@@ -12,7 +12,7 @@ import Speakers from './Components/s24/Speakers'
 // import Mentors from './Components/s24/Mentors'
 // import Prompt from './Components/s24/Prompt'
 import Schedule from './Components/s24/Schedule'
-// import Prizes from './Components/s24/Prizes'
+import Prizes from './Components/s24/Prizes'
 import FAQs from './Components/s24/FAQs'
 import Sponsors from './Components/s24/Sponsors'
 import Footer from './Components/s24/Footer'
@@ -52,7 +52,7 @@ export class App extends Component {
         {/* <Mentors /> */}
 	{/* <Prompt /> */}
         <Schedule />
-        {/* <Prizes /> */}
+        <Prizes />
         <FAQs />
         <Sponsors />
         <Footer />

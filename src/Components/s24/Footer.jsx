@@ -32,7 +32,7 @@ export default function Footer() {
 						{/*     <SectionButton name={"Judges"} id={"judges"} /> */}
 						{/*     <SectionButton name={"Mentors"} id={"mentors"} /> */}
 						    <SectionButton name={"Schedule"} id={"schedule"} />
-						{/*     <SectionButton name={"Prizes"} id={"prizes"} /> */}
+						    <SectionButton name={"Prizes"} id={"prizes"} />
 						    <SectionButton name={"FAQ"} id={"FAQs"} />
 						    <SectionButton name={"Sponsors"} id={"sponsors"} />
 						</div>
