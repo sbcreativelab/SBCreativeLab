@@ -7,7 +7,8 @@ import sponsorsHeader from '../../images/s24_images/sponsors-header.svg'
 import finn from '../../images/finn-head.png'
 import protoio from '../../images/s24_images/sponsor_logo/protoio.png'
 import adobe from '../../images/s24_images/sponsor_logo/adobe.png'
-import rosenfeld from '../../images/s24_images/sponsor_logo/rosenfeld.png'
+import lottie from '../../images/s24_images/sponsor_logo/lottie.svg'
+import adplist from '../../images/s24_images/sponsor_logo/adplist.png'
 
 function SponsorsCell(props) {
     return (
@@ -27,7 +28,7 @@ export default function Sponsors() {
                 <div className='sponsors-cell sponsors-cell-purple' />
                 <SponsorsCell img={protoio} link='https://proto.io/' name='Protoio' />
                 <div className='sponsors-cell sponsors-cell-purple' />
-                <SponsorsCell img={finn} link='' name='finn' />
+                <SponsorsCell img={adplist} link='https://adplist.org/' name='ADPList' />
                 <div className='sponsors-cell sponsors-cell-purple' />
                 <SponsorsCell img={adobe} link='https://www.adobe.com/' name='Adobe' />
                 <div className='sponsors-cell sponsors-cell-purple' />
@@ -36,9 +37,9 @@ export default function Sponsors() {
                     <img className='sponsors-header' src={sponsorsHeader} alt='sponsors' />
                 </div>
                 <div className='sponsors-cell sponsors-cell-purple' />
-                <SponsorsCell img={rosenfeld} link='https://rosenfeldmedia.com/' name='Rosenfeld' />
-                <div className='sponsors-cell sponsors-cell-purple' />
                 <SponsorsCell img={finn} link='' name='finn' />
+                <div className='sponsors-cell sponsors-cell-purple' />
+                <SponsorsCell img={lottie} link='https://lottiefiles.com/' name='LottieFiles' />
                 <div className='sponsors-cell sponsors-cell-purple' />
                 <SponsorsCell img={finn} link='' name='finn' />
                 <div className='sponsors-cell sponsors-cell-purple' />
