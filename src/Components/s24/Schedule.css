@@ -1,0 +1,99 @@
+.schedule {
+    color: initial;
+    position: relative;
+}
+
+.schedule-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: #E5E5E5;
+    z-index: -1; /* higher index here since noise doesn't look good on light backgrounds */
+}
+
+.schedule-container {
+    margin: auto;
+    padding: 4rem 0 1rem;
+    position: relative;
+    width: 84%;
+}
+
+.schedule-phone {}
+
+.schedule-container h2 {
+    -webkit-text-stroke: 3px #57CFBA;
+    color: rgb(0,0,0,0);
+    font: 4rem/normal Magilio;
+}
+
+.schedule-table h5 {
+    font-weight: bold;
+}
+
+.schedule-table a {
+    color: unset;
+    text-decoration: underline;
+}
+
+.schedule-table > div {
+    display: flex;
+    gap: 1em;
+    margin: 4em 0;
+}
+
+.schedule-table span:first-of-type {
+    min-width: 20%;
+    vertical-align: top;
+}
+
+.schedule-table span:nth-of-type(2) {
+    font: bold 1.25em/normal 'PP Object Sans';
+    min-width: 40%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.schedule-table span:last-of-type {
+    color: #909586;
+    min-width: 30%;
+}
+
+.schedule-table p {
+    margin: unset;
+}
+
+.schedule-challenge {
+    background: #2F302D;
+    border-radius: 40px;
+    color: #F7F3ED;
+    padding: 4rem 1rem 1rem;
+}
+
+@media (max-width: 992px) {
+    .schedule-table h5 {
+        margin: 2rem 0;
+    }
+
+    .schedule-table > div {
+        display: block;
+	margin: 2em 0;
+    }
+    
+    .schedule-table span:first-of-type {
+        display: block;
+        min-width: unset;
+        vertical-align: top;
+    }
+
+    .schedule-table span:nth-of-type(2) {
+        display: block;
+        min-width: unset;
+        text-align: unset;
+    }
+
+    .schedule-table span:last-of-type {
+        display: block;
+        min-width: 40%;
+    }
+}

@@ -8,8 +8,8 @@ import linkedinLogo from '../../images/linkedin.svg'
 import discordLogo from '../../images/discord.svg'
 
 export default function Footer() {
-	const applicationLink = 'https://tinyurl.com/SBCLDesignathon23'
-	const submitLink = 'https://forms.gle/BugadXrreZY93TuY6'
+        const applicationLink = 'https://forms.gle/JbbRT3279CfsNktMA'
+	const submitLink = ''
 
 	const facebookLink = "https://www.facebook.com/sbcreativelab/"
 	const instagramLink = "https://www.instagram.com/sbcreativelab/"
@@ -25,17 +25,17 @@ export default function Footer() {
 			<div className='footer-container'>
 				<div className='footer-top'>
 					<div className='footer-link-sections'>
-		                                {/* <div className='footer-links-container'> */}
-						{/*     <SectionButton name={"JUMPSTART"} id={"hero"} isHeader={true} /> */}
+		                                <div className='footer-links-container'>
+						    <SectionButton name={"JUMPSTART"} id={"hero"} isHeader={true} />
 						{/*     <SectionButton name={"Prompt"} id={"prompt"} /> */}
-						{/*     <SectionButton name={"Timeline"} id={"timeline"} /> */}
-						{/*     <SectionButton name={"Speakers"} id={"speakers"} /> */}
+						    <SectionButton name={"Speakers"} id={"speakers"} />
 						{/*     <SectionButton name={"Judges"} id={"judges"} /> */}
 						{/*     <SectionButton name={"Mentors"} id={"mentors"} /> */}
-						{/*     <SectionButton name={"Prizes"} id={"prizes"} /> */}
-						{/*     <SectionButton name={"FAQ"} id={"FAQs"} /> */}
-						{/*     <SectionButton name={"Sponsors"} id={"sponsors"} /> */}
-						{/* </div> */}
+						    <SectionButton name={"Schedule"} id={"schedule"} />
+						    <SectionButton name={"Prizes"} id={"prizes"} />
+						    <SectionButton name={"FAQ"} id={"FAQs"} />
+						    <SectionButton name={"Sponsors"} id={"sponsors"} />
+						</div>
 						<div className='footer-links-container'>
 							<a href='https://sbcreativelab.com' className='footer-links-header'>SBCL</a>
 							<a href='https://sbcreativelab.com/about' className='footer-link'>About</a>
@@ -45,14 +45,14 @@ export default function Footer() {
 							<a href='https://sbcreativelab.com/merch' className='footer-link'>Merch</a>
 						</div>
 					</div>
-					{/* <div className='footer-buttons-container'>
+					<div className='footer-buttons-container'>
 						<a href={applicationLink} className='footer-button'>
 							<div className='footer-button-text'>Register</div>
 						</a>
-						<a className='footer-button'>
+                                                {/* <a className='footer-button'>
 							<div className='footer-button-text'>Submit Project</div>
-						</a>
-					</div> */}
+						</a> */}
+					</div>
 				</div>
 				<div className='footer-bottom'>
 					<div className='footer-socials-container'>

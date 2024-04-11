@@ -7,12 +7,12 @@ import { UserAgent } from "react-useragent"
 import Hero from './Components/s24/Hero'
 import RegisterSideButton from './Components/s24/RegisterSideButton'
 import Teaser from './Components/s24/Teaser'
-// import Speakers from './Components/s24/Speakers'
+import Speakers from './Components/s24/Speakers'
 // import Judges from './Components/s24/Judges'
 // import Mentors from './Components/s24/Mentors'
 // import Prompt from './Components/s24/Prompt'
-// import Timeline from './Components/s24/Timeline' // should change to "Schedule"
-// import Prizes from './Components/s24/Prizes'
+import Schedule from './Components/s24/Schedule'
+import Prizes from './Components/s24/Prizes'
 import FAQs from './Components/s24/FAQs'
 import Sponsors from './Components/s24/Sponsors'
 import Footer from './Components/s24/Footer'
@@ -45,14 +45,14 @@ export class App extends Component {
           }}
         </UserAgent>
         <Hero />
-	<Teaser />
+        <Teaser />
+        <Speakers />
         {/* <RegisterSideButton /> */}
-	{/* <Speakers /> */}
         {/* <Judges /> */}
         {/* <Mentors /> */}
 	{/* <Prompt /> */}
-        {/* <Timeline /> */}
-        {/* <Prizes /> */}
+        <Schedule />
+        <Prizes />
         <FAQs />
         <Sponsors />
         <Footer />

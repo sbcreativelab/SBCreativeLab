@@ -7,66 +7,55 @@
     width: 100%;
     height: 100%;
 
-    background-color: #E1DBD2;
     z-index: -3;
 }
 
 .prizes-frame {
-    padding: 4em;
+    margin: auto;
+    padding: 4rem 0;
+    width: 84%;
 }
 
-.prizes-header {
-    height: fit-content;
-    text-align: center;
+.prizes-frame h2 {
+    -webkit-text-stroke: 3px #E5889D;
+    color: rgb(0,0,0,0);
+    font: 4rem/normal Magilio;
 }
 
-.prizes-grid {
+.prizes-beginner, .prizes-intermediate {
     display: flex;
-    margin-top: 6em;
+    flex: 1;
+    gap: 6rem;
+    margin: 4rem 0;
 }
 
-.prizes-grid-box {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
+.prizes-beginner > div, .prizes-intermediate > div {
+    flex: 1;
 }
 
-.prizes-grid-box > p {
-    align-self: center;
-    font: bold 1.2em/1.2em 'PP Object Sans';
-    padding: 0.5em;
-    text-align: center;
-    width: fit-content;
+.prizes-beginner h4, .prizes-intermediate h4 {
+    font-family: "PP Object Sans";
+    font-weight: bold;
 }
 
-.prizes-grid-box-intermediate > p {
-    background: #1173D9;
+.prizes-beginner div:first-of-type > h4, .prizes-intermediate div:first-of-type > h4 {
+    color: #FAC640;
 }
 
-.prizes-grid-box-beginner > p {
-    background: #46C2C0;
+.prizes-beginner div:nth-of-type(2) > h4, .prizes-intermediate div:nth-of-type(2) > h4 {
+    color: #57CFBA;
 }
 
-.prizes-grid-box-winner > p {
-    background: #E5889D;
+.prizes-beginner div:last-of-type > h4, .prizes-intermediate div:last-of-type > h4 {
+    color: #FFA8A6;
 }
 
-.prizes-desc {
-    position: relative;
-}
+@media (max-width: 992px) {
+    .prizes-beginner, .prizes-intermediate {
+        display: unset;
+    }
 
-/* .prizes-desc > * {
-    position: absolute;
-} */
-
-.prizes-placement {
-    width: 5%;
-}
-
-.prizes-img{
-    width: 40%;
-}
-
-.prizes-desc > p {
-    color: #2F302D;
+    .prizes-beginner > div, .prizes-intermediate > div {
+        margin: 4em 0;
+    }
 }
