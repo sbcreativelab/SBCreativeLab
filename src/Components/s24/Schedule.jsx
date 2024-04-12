@@ -88,17 +88,17 @@ export default function Schedule() {
                 			title: 'Challenge Brief',
                 			desc: 'Announcing this year\'s designathon theme and prompts'
                 		},
-                		{
-                			time: '8:00-9:00 pm',
-                			title: <p style={{ color: "#9CCCFF" }}>Studio Hours (IP)</p>,
-                			desc: <p>
-                				Teams can work in person together 
-                				at our work rooms. Possible peer 
-                				mentorship is provided. <br/>
-                				<br/>
-                				Location: Library room 2528
-                			</p>
-                		},
+                		// {
+                		// 	time: '8:00-9:00 pm',
+                		// 	title: <p style={{ color: "#9CCCFF" }}>Studio Hours (IP)</p>,
+                		// 	desc: <p>
+                		// 		Teams can work in person together 
+                		// 		at our work rooms. Possible peer 
+                		// 		mentorship is provided. <br/>
+                		// 		<br/>
+                		// 		Location: Library room 2528
+                		// 	</p>
+                		// },
                 	]} />
                 <hr color="#F7F3ED"/>
                 <ScheduleDay
@@ -124,18 +124,18 @@ export default function Schedule() {
                 				Join us on <a href='https://ucsb.zoom.us/j/8215276243'>Zoom</a>
                 			</p>
                 		},
-                		{
-                			time: '7:00-11:00 pm',
-                			title: <p style={{ color: "#9CCCFF" }}>Studio Hours (IP)</p>,
-                			desc: <p>
-                				Teams can work in person together 
-                				at our work rooms. Possible peer 
-                				mentorship is provided.<br/>
-                				<br/>
-                				Location: Library rooms 2326&nbsp;(7-10 pm), <wbr/>
-                				2332&nbsp;(rest of the time)
-                			</p>
-                		},
+                		// {
+                		// 	time: '7:00-11:00 pm',
+                		// 	title: <p style={{ color: "#9CCCFF" }}>Studio Hours (IP)</p>,
+                		// 	desc: <p>
+                		// 		Teams can work in person together 
+                		// 		at our work rooms. Possible peer 
+                		// 		mentorship is provided.<br/>
+                		// 		<br/>
+                		// 		Location: Library rooms 2326&nbsp;(7-10 pm), <wbr/>
+                		// 		2332&nbsp;(rest of the time)
+                		// 	</p>
+                		// },
                 	]} />
                 <hr color="#F7F3ED"/>
                 <ScheduleDay
