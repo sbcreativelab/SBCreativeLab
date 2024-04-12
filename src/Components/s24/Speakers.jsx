@@ -144,7 +144,7 @@ export default function Speakers() {
                     speakers={[
                         {image: millarh, name: "Hannah Millar", pronouns: "She/Her", workshop: "User Research", link: "https://www.linkedin.com/in/hannah--millar/"},
                         {image: lottie, name: "Lottie Files", pronouns: "Very cool company", workshop: "Motion Design 101", link: "https://lottiefiles.com"},
-                        {image: vov, name: "Van Vo", pronouns: "She/Her", workshop: "Intro to Figma", link: null}
+                        {image: vov, name: "Van Vo", pronouns: "She/Her", workshop: "Intro to Figma", link: "https://www.linkedin.com/in/vovvan"}
                     ]}
                 />
             </div>

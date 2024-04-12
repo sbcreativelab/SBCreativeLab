@@ -57,7 +57,7 @@
 .speakers-row {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: max(40px, 2vw);
     
     flex-wrap: wrap;
 }
@@ -71,10 +71,10 @@
 }
 
 .speakers-profile {
-    width: 208px;
-    height: 208px;
+    width: max(208px, 16vw);
+    height: max(208px, 16vw);
     
-    border-radius: 240px;
+    border-radius: 1000px;
     
     margin-bottom: -28px;
 }
@@ -94,7 +94,7 @@
 .speakers-desc {
     display: flex;
     flex-direction: column;
-    width: 239.2px;
+    width: max(239.2px, 18vw);
     /* height: 80.376px; */
     padding: 6px 12px;
     justify-content: center;
@@ -120,7 +120,7 @@
 .speakers-name {
     text-align: center;
     font-family: "PP Object Sans";
-    font-size: 16.8px;
+    font-size: max(16.8px, 1.3vw);
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -129,7 +129,7 @@
 
 .speakers-info {
     font-family: "PP Object Sans";
-    font-size: 12px;
+    font-size: max(12px, 0.92vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -138,7 +138,7 @@
 
 .speakers-workshop {
     font-family: "PP Object Sans";
-    font-size: 12px;
+    font-size: max(12px, 0.92vw);
     font-style: normal;
     font-weight: 800;
     line-height: normal;
