@@ -8,7 +8,7 @@ function PromptBox(props) {
 			<div className={'prompt-header'}>{props.title}</div>
 			<div className={'prompt-description'}>{props.description}</div>
 			{
-				props.note ?? <div className={'prompt-description'}>{props.note}</div>
+				props.note ? <div className={'prompt-description'}>{props.note}</div> : <></>
 			}
 			<a className={'prompt-button'} href={props.link}>{props.linkTitle}</a>
 		</div>
