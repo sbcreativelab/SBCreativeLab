@@ -10,7 +10,7 @@ import Teaser from './Components/s24/Teaser'
 import Speakers from './Components/s24/Speakers'
 // import Judges from './Components/s24/Judges'
 // import Mentors from './Components/s24/Mentors'
-// import Prompt from './Components/s24/Prompt'
+import Prompt from './Components/s24/Prompt'
 import Schedule from './Components/s24/Schedule'
 import Prizes from './Components/s24/Prizes'
 import FAQs from './Components/s24/FAQs'
@@ -45,12 +45,11 @@ export class App extends Component {
           }}
         </UserAgent>
         <Hero />
-        <Teaser />
+        <Prompt />
         <Speakers />
         {/* <RegisterSideButton /> */}
         {/* <Judges /> */}
         {/* <Mentors /> */}
-	{/* <Prompt /> */}
         <Schedule />
         <Prizes />
         <FAQs />
