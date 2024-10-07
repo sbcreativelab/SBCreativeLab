@@ -118,12 +118,12 @@ export default function Team() {
                     <TeamMember
                         imgsrc="benny.png"
                         name="Benny Ruehlman"
-                        role={<div>Director of Logisticss</div>}
+                        role={<div>Director of Logistics</div>}
                     />
                     <TeamMember
                         imgsrc="caren.png"
                         name="Caren Chua"
-                        role={<div>Project Teams lead</div>}
+                        role={<div>Project Teams Lead</div>}
                     />
                     <TeamMember
                         imgsrc="masayo.png"
