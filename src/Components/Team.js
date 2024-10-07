@@ -111,89 +111,74 @@ export default function Team() {
                 <img className="decoration-sparkle" src={"/sparkle.png"} style={{ height: "80px", left: "62%", top: "480%", width: "40px" }} />
                 <div className="gallery-container">
                     <TeamMember
-                        imgsrc="kaien.png"
-                        name="Kai En Lee"
-                        role={<div>Co-President {'\u2022'} Design Lead</div>}
+                        imgsrc="elyse.png"
+                        name="Elyse Denzler"
+                        role={<div>Director of Publicity</div>}
                     />
                     <TeamMember
-                        imgsrc="tvisha.png"
-                        name="Tvisha Patel"
-                        role={<div>Co-President {'\u2022'} Events Lead {'\u2022'}<br/>Project Teams</div>}
-                    />
-                    <TeamMember
-                        imgsrc="felix.png"
-                        name="Felix Lo"
-                        role={<div>Vice President {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams Lead</div>}
+                        imgsrc="benny.png"
+                        name="Benny Ruehlman"
+                        role={<div>Director of Logisticss</div>}
                     />
                     <TeamMember
                         imgsrc="caren.png"
                         name="Caren Chua"
-                        role={<div>Project Teams</div>}
+                        role={<div>Project Teams lead</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
+                        imgsrc="masayo.png"
+                        name="Masayo Machii"
+                        role={<div>Director of Design</div>}
+                    />
+                    <TeamMember
+                        imgsrc="christy.png"
                         name="Christy Yu"
-                        role={<div>Design {'\u2022'} Web Dev</div>}
+                        role={<div>Director of Web Dev {'\u2022'} Design</div>}
                     />
                     <TeamMember
-                        imgsrc="ian.png"
-                        name="Ian Wen"
-                        role={<div>Web Dev</div>}
+                        imgsrc="may.png"
+                        name="May Wong"
+                        role={<div>Treasurer</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="Diane Kim"
-                        role={<div>Design</div>}
+                        imgsrc="michelle.png"
+                        name="Michelle Dominguez"
+                        role={<div>Social Media Manager</div>}
                     />
                     <TeamMember
-                        imgsrc="jackson.png"
-                        name="Jackson Cooley"
-                        role={<div>Web Dev Lead</div>}
+                        imgsrc="aastha.png"
+                        name="Aastha Prakash"
+                        role={<div>Programmer</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="Elyse Denzler"
-                        role={<div>Design {'\u2022'} Marketing</div>}
+                        imgsrc="kavya.png"
+                        name="Kavya Verma"
+                        role={<div>UI/UX Designer</div>}
                     />
                     <TeamMember
-                        imgsrc="zoe.png"
-                        name="Zoe Luu"
-                        role={<div>Marketing Lead</div>}
-                    />
-                    {/* <TeamMember
-                        imgsrc=""
-                        name="Hannah Su"
-                        role={<div>Marketing</div>}
-                    /> */}
-                    <TeamMember
-                        imgsrc="finn.png"
-                        name="Julie Broch"
-                        role={<div>Design</div>}
+                        imgsrc="priyanka.png"
+                        name="Priyanka Ballani"
+                        role={<div>Event Coordinator {'\u2022'} Programmer</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="Kayura Narayanan"
-                        role={<div>Marketing</div>}
+                        imgsrc="cat.png"
+                        name="Cat Li"
+                        role={<div>Graphic Designer {'\u2022'} Event Coordinator</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="Martin Nguyen"
-                        role={<div>Design {'\u2022'} Events</div>}
+                        imgsrc="amelie.png"
+                        name="Amelie Machatzke"
+                        role={<div>Social Media Manager {'\u2022'} UI/UX Desginer</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="Mateo Wang"
-                        role={<div>Web Dev</div>}
+                        imgsrc="claire.png"
+                        name="Claire Herzog"
+                        role={<div>UX Intern</div>}
                     />
                     <TeamMember
-                        imgsrc="finn.png"
-                        name="May Wang"
-                        role={<div>Events {'\u2022'} Marketing</div>}
-                    />
-                    <TeamMember
-                        imgsrc="finn.png"
-                        name="Sharon Tan"
-                        role={<div>Design Lead {'\u2022'} UIUX Lead {'\u2022'}<br/>Project Teams</div>}
+                        imgsrc="ashlyn.png"
+                        name="Ashlyn Ko"
+                        role={<div>Graphic Designer {'\u2022'} UX Intern</div>}
                     />
                     <TeamMember
                         imgsrc="finn.png"
