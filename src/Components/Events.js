@@ -90,7 +90,7 @@ export class Events extends Component {
                         Events
                     </div>
                     <div className='calendar-months-container'>
-                        <img className='calendar-month-image' src={`/images/events/2023-november${isMobile ? "-mobile" : ""}.svg`} />
+                        <img className='calendar-month-image' src={`/images/events/Oct24.svg`} />
                     </div>
                 </div>
             </div>
@@ -107,3 +107,5 @@ export const withMediaQuery = (queries = []) => Component => props => {
 }
 
 export default withMediaQuery({"isMobile": '(max-width:1000px)'})(Events);
+
+
