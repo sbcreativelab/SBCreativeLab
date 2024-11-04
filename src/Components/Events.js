@@ -91,6 +91,7 @@ export class Events extends Component {
                     </div>
                     <div className='calendar-months-container'>
                         <img className='calendar-month-image' src={`/images/events/Oct24.svg`} />
+			<img className='calendar-month-image' src={`/images/events/Nov24.svg`} />
                     </div>
                 </div>
             </div>
