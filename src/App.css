@@ -2443,10 +2443,12 @@ a:hover i.fa-cog{
 }
 
 .calendar-months-container {
+  gap: 8vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
+  margin-left: 10%;
 }
 
 .calendar-month-image {
