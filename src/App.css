@@ -2465,6 +2465,8 @@ a:hover i.fa-cog{
 @media only screen and (max-width: 1000px) {
   .calendar-months-container {
     gap: 8vw;
-    padding-bottom: 35vw;
+  }
+  .events {
+    min-height: 100vh;
   }
 }

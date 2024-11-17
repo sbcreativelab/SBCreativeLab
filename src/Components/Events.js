@@ -112,10 +112,8 @@ export class Events extends Component {
           <div className="calendar-months-container">
             <img
               className="calendar-month-image"
-              alt="Calendar of November SBCL events"
-              src={`/images/events/2024-november${
-                isMobile ? "-mobile" : ""
-              }.svg`}
+              alt="Calendar of 2024 SBCL events"
+              src={`/images/events/2024${isMobile ? "-mobile" : ""}.svg`}
             />
           </div>
         </div>
