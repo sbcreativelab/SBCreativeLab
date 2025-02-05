@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.3",
     "circletype": "^2.3.0",
+    "gh-pages": "^6.2.0",
     "hex-rgb": "^4.1.0",
     "imagesloaded": "^4.1.4",
     "ios-inner-height": "^1.1.1",
