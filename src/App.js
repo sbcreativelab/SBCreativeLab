@@ -3,7 +3,6 @@ import {Route} from "react-router-dom";
 import './main.css'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
-import Fest from './Components/Fest'
 import Oops from './Components/Oops'
 import About from './Components/About'
 import Resources from './Components/Resources'
@@ -38,7 +37,6 @@ export class App extends Component {
         </head>
           <div className="main-body">
               <Route exact path="/" render={(props) => <Home {...props}/>}/>
-              <Route exact path="/fest" render={(props) => <Fest {...props}/>}/>
               <Route exact path="/oops" render={(props) => <Oops {...props}/>}/>
               <Route exact path="/about" render={(props) => <About {...props}/>}/>
               <Route exact path="/resources" render={(props) => <Resources {...props}/>}/>
