@@ -70,17 +70,20 @@ select {
   position: absolute;
   top: 8.1vw;
   left: 11.85vw;
-  height: 505px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 1277px;
+}
+
+.billboard {
+  height: 505px;
   padding-top: 25px;
   padding-left: 25px;
   padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.hero-content h1 {
+.hero-title {
   font-size: 7.5rem;
   text-shadow: #00000040 0 4px 4px;
 }
