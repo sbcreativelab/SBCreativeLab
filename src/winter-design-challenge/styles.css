@@ -127,3 +127,30 @@ select {
 }
 
 
+
+.FAQ{
+    background-color: #804438;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10vw;
+    gap: 20px;
+}
+.faq-title {
+    font-size: 6rem;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    color: white;
+  }
+.faq-question{
+    font-size: 3rem;
+    color: #577C8E;
+    padding-top: 10px;
+    align-self: flex-start;
+}
+.faq-answer{
+    font-family: "Phudu", serif;
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
