@@ -97,3 +97,33 @@ select {
 .hero-subtext-number {
   color: #577c8e;
 }
+
+.prompt{
+    position: absolute;
+    top: 65vw;
+    left: 11vw;
+    width: 900px;
+}
+
+.prompt-title {
+  font-size: 6rem;
+  margin-top: 25px;
+}
+
+.prompt-text {
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.prompt-note {
+    font-size: 2rem;
+    text-align: right;
+    position: absolute;
+    top: 85vw;
+    right: 3vw;
+    width: 400px;
+    font-family: "Phudu", serif;
+    color: #577C8E;
+}
+
+
