@@ -121,7 +121,7 @@ select {
     font-size: 2rem;
     text-align: right;
     position: absolute;
-    top: 85vw;
+    top: 90vw;
     right: 3vw;
     width: 400px;
     font-family: "Phudu", serif;
@@ -160,6 +160,7 @@ select {
     font-family: "Phudu", serif;
     padding-top: 10px;
     font-size: 2rem;
+    align-self: flex-start;
 }
 
 
