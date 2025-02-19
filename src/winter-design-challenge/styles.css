@@ -106,13 +106,15 @@ select {
 }
 
 .prompt-title {
-  font-size: 6rem;
+  font-size: 3rem;
   margin-top: 25px;
 }
 
 .prompt-text {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-family: "phudu", serif;
     margin-top: 10px;
+    width: 800px;
 }
 
 .prompt-note {
@@ -125,7 +127,13 @@ select {
     font-family: "Phudu", serif;
     color: #577C8E;
 }
-
+.prompt-list{
+    list-style-type: disc;
+    margin-top: 10px;
+    width: 800px;
+    font-family: "Phudu", serif;
+    font-size: 1.5rem;
+}
 
 
 .FAQ{
