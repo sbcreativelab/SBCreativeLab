@@ -127,6 +127,13 @@ select {
     font-family: "Phudu", serif;
     color: #577C8E;
 }
+.rules{
+    color: #804438;
+}
+.rules:hover{
+    color: red;
+}
+
 .prompt-list{
     list-style-type: disc;
     margin-top: 10px;
@@ -173,6 +180,7 @@ select {
 .judges{
     background-color: #804438;
     margin: 0 7.475vw;
+    padding-bottom: 980px;
 }
 .judges-img {
     justify-self: center;
@@ -200,3 +208,9 @@ select {
 .judges-bio{
     font-family: "Phudu", serif;
 }
+
+.timeline-img{
+    position: absolute;
+    top: 650vh;
+}
+
