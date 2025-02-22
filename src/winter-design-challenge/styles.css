@@ -98,6 +98,52 @@ select {
   color: #577c8e;
 }
 
+.hero-cta-container {
+  position: relative;
+  width: 330px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Updated pseudo-element with radial gradient */
+.hero-cta-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle at center,
+    rgba(128, 68, 56, 0.8) 0%,
+    rgba(128, 68, 56, 0.6) 30%,
+    rgba(128, 68, 56, 0.3) 60%,
+    rgba(128, 68, 56, 0) 100%
+  );
+  filter: blur(20px); /* Reduced blur for softer edges */
+  z-index: 1;
+}
+
+.hero-cta {
+  position: relative;
+  font-family: "Phudu";
+  font-weight: 500;
+  font-size: 1.75rem;
+  display: block;
+  margin: 20px auto 0;
+  width: 200px;
+  height: 50px;
+  background-color: #db0155;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 2;
+}
+
 .prompt{
     position: absolute;
     top: 65vw;
