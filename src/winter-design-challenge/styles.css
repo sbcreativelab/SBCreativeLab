@@ -214,3 +214,61 @@ select {
     top: 650vh;
 }
 
+/* Mobile responsiveness for screens 480px and below */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-content {
+    width: 100%;
+    top: 10vw;
+    left: 5vw;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtext {
+    font-size: 1.5rem;
+  }
+
+  .prompt {
+    top: 60vw;
+    left: 5vw;
+    width: 90%;
+  }
+
+  .prompt-title {
+    font-size: 2rem;
+  }
+
+  .prompt-text {
+    font-size: 1.2rem;
+  }
+
+  .faq-title {
+    font-size: 4rem;
+  }
+
+  .faq-question {
+    font-size: 2rem;
+  }
+
+  .faq-answer {
+    font-size: 1.5rem;
+  }
+
+  .judges-img {
+    max-width: 90%;
+  }
+
+  .judges-cards {
+    flex-direction: column;
+  }
+
+  .judges-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
