@@ -137,6 +137,7 @@ export default class Home extends Component {
                         <div className="masonry-grid2">
                             <WorkshopItem
                                 slidesLink="https://sneakyfelix.com/hand-coding-the-web/"
+				noVid={true}
                                 imgURL="/images/html-css-emily.jpg"
                                 alt="html css workshop"
 			    />
