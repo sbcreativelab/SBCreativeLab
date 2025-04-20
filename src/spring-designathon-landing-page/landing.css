@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #FCE1EE;
+    color: #333;
+  }
+  
+  .landing {
+    text-align: center;
+    padding-top: 200px;
+  }
+  
+  /* === SBCL Logo === */
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 45px;
+    height: auto;
+    z-index: 10;
+  }
+  
+  /* === Title Section === */
+  .title-wrapper {
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+  }
+  
+  .title-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  
+  /* === Background Elements === */
+  .soft-star,
+  .green-starburst,
+  .blue-star-1,
+  .blue-star-2,
+  .yellow-arrow,
+  .purple-frame,
+  .pink-asterisk,
+  .blue-scribble,
+  .corners {
+    position: absolute;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .soft-star { top: -130px; left: 35px; width: 150px; }
+  .green-starburst { top: 150px; left: 190px; width: 300px; }
+  .blue-star-1 { top: 120px; right: 700px; width: 45px; }
+  .blue-star-2 { top: 150px; right: 670px; width: 45px; }
+  .yellow-arrow { top: 140px; right: 130px; width: 110px; }  /* FIXED: added missing dot */
+  .purple-frame { top: 195px; left: 1050px; width: 180px; }
+  .pink-asterisk { top: 320px; left: 900px; width: 100px; }
+  .blue-scribble { top: 245px; left: 550px; width: 160px; }
+  .corners { top: 560px; left: 50%; transform: translateX(-50%); width: 900px; }
+  
+  .designathon {
+    font-family: 'Quando', serif;
+    font-size: 6rem;
+    color: #00B3AD;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    position: relative;
+    -webkit-text-stroke: 7px #D5DA9E;
+    paint-order: stroke fill;
+  }
+  
+  .jumpstart {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 5rem;
+    color: #DE716E;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0%, -80%);
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+  .title-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+  .sbcl {
+    font-family: 'Quando', serif;
+    font-size: 3rem;
+    color: #DE716E;
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+  .date-pill {
+    background: #DE716E;
+    color: white;
+    padding: 0.4rem 5rem;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  /* === Register Section === */
+  .cta-container {
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .register-button {
+    background-color: #D5DA9E;
+    color: #005C59;
+    font-family: 'Quando', serif;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: 5px solid #005C59;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #c7cf91;
+  }
+  
+  .deadline-text {
+    margin-top: 2rem;
+  }
+  
+  .register-deadline {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #005C59;
+    margin: 0;
+  }
+  
+  .register-sub {
+    font-size: 1rem;
+    color: #005C59;
+    margin: 0.25rem 0 0;
+  }
+  
+  /* === Description Section === */
+  .description {
+    max-width: 850px;
+    margin: 2rem auto 2rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    color: #C46D61;
+    line-height: 1.8;
+  }
+  
+  .eligibility {
+    color: #00B3AD;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+  }
