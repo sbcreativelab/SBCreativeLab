@@ -55,11 +55,11 @@ body {
   .green-starburst { top: 150px; left: 190px; width: 300px; }
   .blue-star-1 { top: 120px; right: 700px; width: 45px; }
   .blue-star-2 { top: 150px; right: 670px; width: 45px; }
-  .yellow-arrow { top: 140px; right: 130px; width: 110px; }  /* FIXED: added missing dot */
+  .yellow-arrow { top: 140px; right: 130px; width: 110px; }  
   .purple-frame { top: 195px; left: 1050px; width: 180px; }
   .pink-asterisk { top: 320px; left: 900px; width: 100px; }
   .blue-scribble { top: 245px; left: 550px; width: 160px; }
-  .corners { top: 560px; left: 50%; transform: translateX(-50%); width: 900px; }
+  .corners { top: 550px; left: 50%; transform: translateX(-50%); width: 900px; }
   
   .designathon {
     font-family: 'Quando', serif;
@@ -90,7 +90,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 5px;
+    margin-top: -5rem; 
   }
   
   .sbcl {
