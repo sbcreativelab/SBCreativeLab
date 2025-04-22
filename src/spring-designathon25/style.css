@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #FCE1EE;
+    color: #333;
+  }
+  
+  .landing {
+    text-align: center;
+    padding-top: 200px;
+  }
+  
+  /* === SBCL Logo === */
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 45px;
+    height: auto;
+    z-index: 10;
+  }
+  
+  /* === Title Section === */
+  .title-wrapper {
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+  }
+  
+  .title-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  
+  /* === Background Elements === */
+  .soft-star,
+  .green-starburst,
+  .blue-star-1,
+  .blue-star-2,
+  .yellow-arrow,
+  .purple-frame,
+  .pink-asterisk,
+  .blue-scribble,
+  .corners {
+    position: absolute;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .soft-star { top: -130px; left: 35px; width: 150px; }
+  .green-starburst { top: 150px; left: 190px; width: 300px; }
+  .blue-star-1 { top: 120px; right: 700px; width: 45px; }
+  .blue-star-2 { top: 150px; right: 670px; width: 45px; }
+  .yellow-arrow { top: 140px; right: 130px; width: 110px; }  
+  .purple-frame { top: 195px; left: 1050px; width: 180px; }
+  .pink-asterisk { top: 320px; left: 900px; width: 100px; }
+  .blue-scribble { top: 245px; left: 550px; width: 160px; }
+  .corners { top: 550px; left: 50%; transform: translateX(-50%); width: 900px; }
+  
+  .designathon {
+    font-family: 'Quando', serif;
+    font-size: 6rem;
+    color: #00B3AD;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    position: relative;
+    -webkit-text-stroke: 7px #D5DA9E;
+    paint-order: stroke fill;
+  }
+  
+  .jumpstart {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 5rem;
+    color: #DE716E;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0%, -80%);
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+  .title-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5px;
+    margin-top: -5rem; 
+  }
+  
+  .sbcl {
+    font-family: 'Quando', serif;
+    font-size: 3rem;
+    color: #DE716E;
+    white-space: nowrap;
+    margin: 0;
+  }
+  
+  .date-pill {
+    background: #DE716E;
+    color: white;
+    padding: 0.4rem 5rem;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  /* === Register Section === */
+  .cta-container {
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .register-button {
+    background-color: #D5DA9E;
+    color: #005C59;
+    font-family: 'Quando', serif;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: 5px solid #005C59;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #c7cf91;
+  }
+  
+  .deadline-text {
+    margin-top: 2rem;
+  }
+  
+  .register-deadline {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #005C59;
+    margin: 0;
+  }
+  
+  .register-sub {
+    font-size: 1rem;
+    color: #005C59;
+    margin: 0.25rem 0 0;
+  }
+  
+  /* === Description Section === */
+  .description {
+    max-width: 850px;
+    margin: 2rem auto 2rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    color: #C46D61;
+    line-height: 1.8;
+  }
+  
+  .eligibility {
+    color: #00B3AD;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+  }
+  /* === More Info + Links Section === */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto 1rem auto; 
+    padding: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 270px;  
+  }
+  
+  
+  /* === Individual Card Backgrounds === */
+  .design-brief {
+    background-color: #DE716E;
+    color: #FFFDE4;
+  }
+  
+  .devpost {
+    background-color: #D5DA9E;
+    color: #005C59;
+  }
+  
+  .rubric-beginner {
+    background-color: #005C59;
+    color: #FFFDE4;
+  }
+  
+  .rubric-intermediate {
+    background-color: #FFFDE4;
+    color: #DE716E;
+  }
+  
+  /* === Typography === */
+  .card h2 {
+    font-family: 'Quando', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Buttons === */
+  .card-button {
+    display: inline-block;
+    margin-top: auto;
+    font-family: 'Quando', serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: 3px solid #005C59;
+    border-radius: 15px;
+    text-decoration: none;
+    background: #D5DA9E;
+    color: #005C59;
+    transition: background-color 0.2s ease;
+  }
+  
+  .card-button.outline {
+    background: transparent;
+    border-color: #FFFDE4;
+    color: #FFFDE4;
+  }
+  
+  .card-button.outline.red {
+    background: transparent;
+    border: 3px solid #DE716E;
+    color: #DE716E;
+  }
+  
+  .card-button:hover,
+  .card-button.outline:hover,
+  .card-button.outline.red:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* === People Page === */
+  
+  .people-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #FCE1EE;
+    padding: 4rem 1rem 10rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -2rem; 
+  }
+  
+  .people-section {
+    margin-bottom: 6rem;
+  }
+  
+  /* === Section Titles === */
+  .section-title {
+    font-family: 'Quando', serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .section-title.keynote {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #DE716E;
+  }
+  
+  .section-title.judges {
+    color: #FFFDE4;
+    text-shadow:
+      -1px -1px 0 #DE716E,
+       1px -1px 0 #DE716E,
+      -1px  1px 0 #DE716E,
+       1px  1px 0 #DE716E,
+      -2px  0   0 #DE716E,
+       2px  0   0 #DE716E,
+       0   -2px 0 #DE716E,
+       0    2px 0 #DE716E;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .section-title.workshop {
+    color: #005C59;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  /* === Layout for Card Rows === */
+  .section-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+    max-width: 1500px;
+    margin: 0 auto 4rem;
+  }
+  
+  /* === Profile Cards === */
+  .profile-card {
+    width: 260px;
+    height: 170px;
+    border-radius: 20px;
+    padding-top: 4.3rem;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .profile-card p {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  
+  /* === Circle Wrappers (Border Backgrounds) === */
+  .person-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .person-circle.keynote {
+    background-color: #FFFDE4;
+  }
+  .person-circle.judge {
+    background-color: #DE716E;
+  }
+  .person-circle.workshop {
+    background-color: #D5DA9E;
+  }
+  
+  /* === Actual Profile Images === */
+  .profile-img {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* === Card Colors === */
+  .profile-card.keynote {
+    background-color: #FFFDE4;
+    color: #DE716E;
+  }
+  
+  .profile-card.judge {
+    background-color: #DE716E;
+    color: #FFFDE4;
+  }
+  
+  .profile-card.workshop {
+    background-color: #D5DA9E;
+    color: #005C59;
+    font-size: 0.9rem;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .section-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-card {
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 2rem;
+    }
+  }
+  
