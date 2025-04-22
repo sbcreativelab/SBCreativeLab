@@ -13,11 +13,10 @@ body {
   
   /* === SBCL Logo === */
   .logo {
-    position: absolute;
+    position: sticky;
     top: 30px;
     left: 30px;
     width: 45px;
-    height: auto;
     z-index: 10;
   }
   
@@ -48,18 +47,18 @@ body {
   .corners {
     position: absolute;
     height: auto;
-    z-index: 0;
+    z-index: -1;
   }
   
-  .soft-star { top: -130px; left: 35px; width: 150px; }
+  .soft-star { top: -100px; left: 1vw; width: 15vw; max-width: 120px; }
   .green-starburst { top: 150px; left: 190px; width: 300px; }
-  .blue-star-1 { top: 120px; right: 700px; width: 45px; }
-  .blue-star-2 { top: 150px; right: 670px; width: 45px; }
-  .yellow-arrow { top: 140px; right: 130px; width: 110px; }  
-  .purple-frame { top: 195px; left: 1050px; width: 180px; }
+  .blue-star-1 { top: 120px; right: 60vw; width: 45px; }
+  .blue-star-2 { top: 150px; right: 55vw; width: 45px; }
+  .yellow-arrow { top: 190px; right: 220px; width: 110px; }  
+  .purple-frame { top: 240px; right: 21vw; width: 170px; }
   .pink-asterisk { top: 320px; left: 900px; width: 100px; }
   .blue-scribble { top: 245px; left: 550px; width: 160px; }
-  .corners { top: 550px; left: 50%; transform: translateX(-50%); width: 900px; }
+  .corners { top: 600px; left: 50%; transform: translateX(-50%); width: 900px; }
   
   .designathon {
     font-family: 'Quando', serif;
@@ -105,11 +104,71 @@ body {
   .date-pill {
     background: #DE716E;
     color: white;
-    padding: 0.4rem 5rem;
+    padding: 0.4rem 6vw;
     border-radius: 15px;
     font-size: 1.25rem;
     text-align: center;
   }
+
+    /* make titles mobile responsive */
+    @media (max-width: 1200px) {
+      .designathon {
+        font-size: 4rem;
+        -webkit-text-stroke: 5px #D5DA9E;
+      }
+      .jumpstart {
+        font-size: 4rem;
+        right: 10vw;
+      }
+      .sbcl {
+        font-size: 2.5rem;
+        margin-left: 10vw;
+      }
+      .date-pill {
+        font-size: 1rem;
+        margin-right: 10vw;;
+      }
+      .soft-star{
+        left:10vw;
+      }
+      .corners { top: 550px; left: 50%; transform: translateX(-50%); width: 900px; }
+      .purple-frame { display: none;}
+      .pink-asterisk {display: none;}
+    }
+
+    @media (max-width: 700px) {
+      .designathon {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 5px #D5DA9E;
+      }
+      .jumpstart {
+        font-size: 2.5rem;
+        right: 10vw;
+      }
+      .sbcl {
+        font-size: 2rem;
+        margin: 0 auto;
+      }
+      .date-pill {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        padding: 0.5rem 8vw;
+      }
+      .title-footer {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        width: 100%;
+        /* padding: 0 5px; */
+        /* margin-top: -5rem;  */
+      }
+      .blue-scribble{ display: none;}
+    }
+
+
+
+
   
   /* === Register Section === */
   .cta-container {
@@ -126,6 +185,7 @@ body {
     border-radius: 20px;
     text-decoration: none;
     transition: background-color 0.2s ease;
+    z-index: 10;
   }
   
   .register-button:hover {
@@ -151,17 +211,16 @@ body {
   
   /* === Description Section === */
   .description {
-    max-width: 850px;
+    width: clamp(100px,80%,850px);
     margin: 2rem auto 2rem;
-    padding: 0 1rem;
-    font-size: 1.1rem;
+    padding: 0 3rem;
+    font-size: 1rem;
     color: #C46D61;
-    line-height: 1.8;
   }
   
   .eligibility {
     color: #00B3AD;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0.25rem;
   }
