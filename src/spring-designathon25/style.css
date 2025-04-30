@@ -781,3 +781,172 @@ body {
 .red-title{
   color:#DE716E
 }
+
+
+
+/* Sponsors Section Styling */
+
+.sponsors-container {
+  background-color: #fce9f1; /* Light pink background */
+  padding: 3rem 1rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header styling */
+.sponsors-header-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.sponsors-header {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #00B3AD;
+  text-shadow:
+    -2px -2px 0 #D5DA9E,
+     2px -2px 0 #D5DA9E,
+    -2px  2px 0 #D5DA9E,
+     2px  1px 0 #D5DA9E,
+    -3px  0   0 #D5DA9E,
+     3px  0   0 #D5DA9E,
+     0   -3px 0 #D5DA9E,
+     0    3px 0 #D5DA9E;
+  font-family:'Quando', serif;
+  margin: 1.5rem 0;
+  z-index: 2;
+}
+
+/* Single decorative image */
+.sponsors-decorations-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Current sponsor */
+.current-sponsor {
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.visme-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Previous sponsors section */
+.previous-sponsors-header {
+  margin: 3rem 0 1.5rem;
+}
+
+.previous-sponsors-header h3 {
+  font-size: 2rem;
+  color: #d97e7e; /* Coral/pink color */
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Sponsors list */
+.sponsors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* Coral banner behind sponsors */
+.sponsors-list::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  height: 100px;
+  background-color: #d97e7e;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.sponsor-card {
+  flex: 0 0 220px;
+  height: 180px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.previous-sponsor-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.blue-card {
+  background-color: #16B4F2;
+}
+
+.green-card {
+  background-color: #D5DA9E;
+}
+
+.cream-card {
+  background-color: #FFFDE4;
+}
+
+.teal-card {
+  background-color: #00B3AD;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsors-list {
+    gap: 1rem;
+  }
+}
+
+.sponsors-decorations-img {
+  max-width: 320px;
+}
+
+@media (max-width: 480px) {
+.sponsors-header {
+  font-size: 2rem;
+}
+
+.sponsors-decorations-img {
+  max-width: 280px;
+}
+
+.sponsor-card {
+  flex: 0 0 140px;
+  height: 120px;
+}
+}
+
+/* Optional: add a subtle animation to the header decoration image */
+.sponsors-decorations-img {
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.9; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.02); }
+  100% { opacity: 0.9; transform: translate(-50%, -50%) scale(1); }
+}
