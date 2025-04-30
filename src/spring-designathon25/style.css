@@ -950,3 +950,43 @@ body {
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.02); }
   100% { opacity: 0.9; transform: translate(-50%, -50%) scale(1); }
 }
+
+
+
+.footer-section {
+  background-color: #fff9e6;
+  padding: 20px;
+  text-align: center;
+  /* width: 100%; */
+  margin: 0;
+}
+
+.follow-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.follow-text h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #e07a5f;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
