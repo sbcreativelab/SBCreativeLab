@@ -580,42 +580,68 @@ body {
 
 .prizes-header {
   position: relative;
-  display: inline-block;
-  margin: 3rem auto;
-  font: 3rem 'Quando', serif;
-  color: #C1EADC;
-  -webkit-text-stroke: 2px #3DB3AB;
-  paint-order: stroke fill;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #00B3AD;
+  text-shadow:
+    -2px -2px 0 #D5DA9E,
+     2px -2px 0 #D5DA9E,
+    -2px  2px 0 #D5DA9E,
+     2px  1px 0 #D5DA9E,
+    -3px  0   0 #D5DA9E,
+     3px  0   0 #D5DA9E,
+     0   -3px 0 #D5DA9E,
+     0    3px 0 #D5DA9E;
+  font-family:'Quando', serif;
+  margin: 1.5rem 0;
+  z-index: 2;
 }
 
-/* the big one behind the text */
-.prizes-header .starburst {
-  position: absolute;
-  width: 160px;         /* adjust size */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -2;
+.prizes-sparkles {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -4rem 0 2rem; /* Pull it up to overlap with the header */
+  padding: 0 2rem;
+  z-index: 1;
 }
 
-/* all other sparkles share this */
-.prizes-header .sparkle {
+.sparkle {
   position: absolute;
-  width: 50px;          /* adjust size */
-  height: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.left1 {
+  left: calc(50% - 170px);
+  top: -35px;
+}
+
+.left2 {
+  left: calc(50% - 240px);
+  top: -15px;
+}
+
+.right1 {
+  right: calc(50% - 170px);
+  top: -35px;
+}
+
+.right2 {
+  right: calc(50% - 240px);
+  top: -15px;
+}
+
+.starburst {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.3;
   z-index: -1;
+  filter: hue-rotate(320deg); /* Adjust to get the right pink hue */
 }
-
-/* two on the left */
-.prizes-header .sparkle.left1  { top: 20%;  left: -70px; }
-.prizes-header .sparkle.left2  { top: 60%;  left: -90px; }
-
-/* golden one in the middle (if you want it slightly above/below text) */
-.prizes-header .center { top: 50%;  left: 50%; transform: translate(-50%, -50%); }
-
-/* two on the right */
-.prizes-header .sparkle.right1 { top: 20%;  right: -70px; }
-.prizes-header .sparkle.right2 { top: 60%;  right: -90px; }
 
 
 .prizes-intro,
@@ -632,7 +658,8 @@ body {
 
 
 .prizes-grid {
-  display: grid;
+  /* display: grid; */
+  display: none; /*TODO: will show prizes when logistics updates*/
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
   text-align: left;
@@ -675,4 +702,82 @@ body {
   .prizes-grid {
     gap: 1.5rem;
   }
+}
+
+/* TODO: delete this when logistics updates with prizes info */
+.temp-prizes{
+  max-width: 800px;
+  margin: 0.5rem auto;
+  color: #D76A64; /* coral */
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+
+/* FAQ section */
+.FAQ-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ-title {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #00B3AD;
+  text-shadow:
+    -2px -2px 0 #D5DA9E,
+     2px -2px 0 #D5DA9E,
+    -2px  2px 0 #D5DA9E,
+     2px  1px 0 #D5DA9E,
+    -3px  0   0 #D5DA9E,
+     3px  0   0 #D5DA9E,
+     0   -3px 0 #D5DA9E,
+     0    3px 0 #D5DA9E;
+  font-family:'Quando', serif;
+  margin: 1.5rem 0;
+  z-index: 2;
+}
+.sparkle-left{
+  max-width: 30vw;
+}
+.sparkle-right{
+  max-width: 30vw;
+}
+.FAQ-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.FAQ-container{
+  padding: 40px 30px;
+  border-radius: 30px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ-item h3{
+  font-family: 'Racing Sans One', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.blue-title{
+  color:#00B3AD
+}
+.orange-title{
+  color:#F2994A
+}
+.red-title{
+  color:#DE716E
 }
