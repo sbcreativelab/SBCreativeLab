@@ -466,3 +466,213 @@ body {
     }
   }
   
+
+  body {
+    background-color: #f7ddea;
+    font-family: 'Quando', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .timeline-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #fce4ec; /* optional soft pink like in your image */
+  }
+  .schedule-container {
+    background-color: #FFFDE4;
+    padding: 40px 30px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .schedule-header {
+    font-family: 'Quando', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #DE716E;
+    margin-bottom: 30px;
+  }
+  
+  .schedule-list {
+    list-style: none;
+    padding: 50px;
+    margin-bottom: 0px;
+  }
+
+  .schedule-list li{
+    margin-bottom: 70px;
+  }
+  
+  .event-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Quando', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #DE716E;
+  }
+  
+  .star {
+    color: #D5DA9E;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+  .event-title {
+    flex-grow: 1;
+    border-bottom: 1px dotted #d9b5b5;
+    margin-right: 10px;
+    padding-bottom: 2px;
+  }
+  
+  .date-pill {
+    background-color: #DE716E;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    min-width: 50px;
+    text-align: center;
+    font-family: 'Quando', sans-serif;
+  }
+  
+  .subtext {
+    font-size: 0.85rem;
+    color: #888;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'Quando', sans-serif;
+  }
+  
+  .subevents {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  .subevent {
+    display: flex;
+    color: #888;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-family: 'Quando', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+/* ====== PRIZES SECTION ====== */
+.prizes-section {
+  background: #FCE1EE;
+  padding: 4rem 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.prizes-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prizes-header {
+  position: relative;
+  display: inline-block;
+  margin: 3rem auto;
+  font: 3rem 'Quando', serif;
+  color: #C1EADC;
+  -webkit-text-stroke: 2px #3DB3AB;
+  paint-order: stroke fill;
+}
+
+/* the big one behind the text */
+.prizes-header .starburst {
+  position: absolute;
+  width: 160px;         /* adjust size */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+/* all other sparkles share this */
+.prizes-header .sparkle {
+  position: absolute;
+  width: 50px;          /* adjust size */
+  height: auto;
+  z-index: -1;
+}
+
+/* two on the left */
+.prizes-header .sparkle.left1  { top: 20%;  left: -70px; }
+.prizes-header .sparkle.left2  { top: 60%;  left: -90px; }
+
+/* golden one in the middle (if you want it slightly above/below text) */
+.prizes-header .center { top: 50%;  left: 50%; transform: translate(-50%, -50%); }
+
+/* two on the right */
+.prizes-header .sparkle.right1 { top: 20%;  right: -70px; }
+.prizes-header .sparkle.right2 { top: 60%;  right: -90px; }
+
+
+.prizes-intro,
+.prizes-subintro {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  color: #D76A64; /* coral */
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.prizes-subintro {
+  margin-bottom: 3rem;
+}
+
+
+.prizes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  text-align: left;
+}
+
+
+.prize-item h3 {
+  font-family: 'Quando', serif;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.prize-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+.prize-item.beginner.first h3,
+.prize-item.intermediate.first h3 {
+  color: #3DB3AB; /* teal */
+}
+.prize-item.beginner.second h3,
+.prize-item.intermediate.second h3 {
+  color: #E6A24D; /* gold */
+}
+.prize-item.beginner.third h3,
+.prize-item.intermediate.third h3 {
+  color: #D76A64; /* coral */
+}
+
+@media (max-width: 600px) {
+  .prizes-header {
+    font-size: 2.5rem;
+  }
+  .prizes-intro, .prizes-subintro {
+    font-size: 1rem;
+    margin: 0.5rem 1rem;
+  }
+  .prizes-grid {
+    gap: 1.5rem;
+  }
+}

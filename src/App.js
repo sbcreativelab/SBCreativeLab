@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Route} from "react-router-dom";
 import './main.css'
 import Home from './Components/Home'
-import Menu from './Components/Menu'
+// import Menu from './Components/Menu'
 import Oops from './Components/Oops'
 import About from './Components/About'
 import Resources from './Components/Resources'
