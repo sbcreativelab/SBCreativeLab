@@ -1,3 +1,7 @@
+html{
+  margin:0;
+  padding:0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -43,22 +47,26 @@ body {
   .yellow-arrow,
   .purple-frame,
   .pink-asterisk,
-  .blue-scribble,
-  .corners {
+  .blue-scribble {
     position: absolute;
     height: auto;
     z-index: -1;
   }
   
   .soft-star { top: -100px; left: 1vw; width: 15vw; max-width: 120px; }
-  .green-starburst { top: 150px; left: 190px; width: 300px; }
+  .green-starburst { 
+    top: 150px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80vw; 
+    max-width: 300px; 
+  }
   .blue-star-1 { top: 120px; right: 60vw; width: 45px; }
   .blue-star-2 { top: 150px; right: 55vw; width: 45px; }
   .yellow-arrow { top: 190px; right: 220px; width: 110px; }  
   .purple-frame { top: 240px; right: 21vw; width: 170px; }
   .pink-asterisk { top: 320px; left: 900px; width: 100px; }
   .blue-scribble { top: 245px; left: 550px; width: 160px; }
-  .corners { top: 600px; left: 50%; transform: translateX(-50%); width: 900px; }
   
   .designathon {
     font-family: 'Quando', serif;
@@ -131,14 +139,13 @@ body {
       .soft-star{
         left:10vw;
       }
-      .corners { top: 550px; left: 50%; transform: translateX(-50%); width: 900px; }
       .purple-frame { display: none;}
       .pink-asterisk {display: none;}
     }
 
     @media (max-width: 700px) {
       .designathon {
-        font-size: 2.5rem;
+        font-size: 2rem;
         -webkit-text-stroke: 5px #D5DA9E;
       }
       .jumpstart {
@@ -157,15 +164,14 @@ body {
       .title-footer {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         align-items: center;
         width: 100%;
-        /* padding: 0 5px; */
-        /* margin-top: -5rem;  */
       }
       .blue-scribble{ display: none;}
-      .corners { display: none; }
-
+      .green-starburst {
+        top: 100px;
+        width: 90vw;
+      }
     }
   
   /* === Register Section === */
@@ -476,15 +482,15 @@ body {
   .timeline-page {
     display: flex;
     justify-content: center;
-    padding: 40px 0;
-    background-color: #fce4ec; /* optional soft pink like in your image */
+    padding: 40px 20px;
+    background-color: #fce4ec;
   }
   .schedule-container {
     background-color: #FFFDE4;
     padding: 40px 30px;
     border-radius: 30px;
     width: 90%;
-    max-width: 700px;
+    /* max-width: 700px; */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
   
@@ -597,52 +603,11 @@ body {
   margin: 1.5rem 0;
   z-index: 2;
 }
-
-.prizes-sparkles {
-  position: relative;
-  display: flex;
+.prizes-stars{
   justify-content: center;
   align-items: center;
-  margin: -4rem 0 2rem; /* Pull it up to overlap with the header */
-  padding: 0 2rem;
-  z-index: 1;
+  width: 100%;
 }
-
-.sparkle {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-}
-
-.left1 {
-  left: calc(50% - 170px);
-  top: -35px;
-}
-
-.left2 {
-  left: calc(50% - 240px);
-  top: -15px;
-}
-
-.right1 {
-  right: calc(50% - 170px);
-  top: -35px;
-}
-
-.right2 {
-  right: calc(50% - 240px);
-  top: -15px;
-}
-
-.starburst {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0.3;
-  z-index: -1;
-  filter: hue-rotate(320deg); /* Adjust to get the right pink hue */
-}
-
 
 .prizes-intro,
 .prizes-subintro {
@@ -788,10 +753,10 @@ body {
 
 .sponsors-container {
   background-color: #fce9f1; /* Light pink background */
-  padding: 3rem 1rem 4rem;
+  padding: 3rem 0rem 4rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
 }
 
 /* Header styling */
@@ -844,6 +809,10 @@ body {
   max-width: 100%;
   height: auto;
 }
+.intuit-logo {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Previous sponsors section */
 .previous-sponsors-header {
@@ -855,6 +824,12 @@ body {
   color: #d97e7e; /* Coral/pink color */
   font-style: italic;
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .previous-sponsors-header h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Sponsors list */
@@ -871,8 +846,8 @@ body {
 .sponsors-list::before {
   content: "";
   position: absolute;
-  left: -5%;
-  right: -5%;
+  left: 0%;
+  right: 0%;
   height: 100px;
   background-color: #d97e7e;
   top: 50%;
