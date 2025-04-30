@@ -6,7 +6,7 @@ import ReactGA from "react-ga";
 
 // const hexRgb = require('hex-rgb');
 let backgroundColor = "#faf2e6";
-let primaryColor = "#1BB994";
+// let primaryColor = "#1BB994";
 let darkColor = "#356A69";
 
 export class Events extends Component {
