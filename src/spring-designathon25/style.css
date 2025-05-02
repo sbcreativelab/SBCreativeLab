@@ -598,10 +598,9 @@ body {
 }
 .prizes-stars{
   position: absolute;
-  /* top: 0; */
   width: 100%;
-  max-width: 1300px;
-  z-index:0;
+  max-width: 800px;
+  z-index:-1;
 }
 .prizes-header-wrapper{
   display: flex;
@@ -618,6 +617,7 @@ body {
 }
 .prizes-subintro {
   margin-bottom: 3rem;
+  z-index: 2;
 }
 
 
@@ -675,6 +675,7 @@ body {
   color: #D76A64; /* coral */
   font-size: 2.5rem;
   line-height: 1.4;
+  z-index: 2;
 }
 
 
