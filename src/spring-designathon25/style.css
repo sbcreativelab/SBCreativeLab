@@ -598,7 +598,7 @@ body {
 }
 .prizes-stars{
   position: absolute;
-  width: 100%;
+  width: 80%;
   max-width: 800px;
   z-index:-1;
 }
@@ -610,7 +610,7 @@ body {
 
 .prizes-subintro {
   max-width: 800px;
-  margin: 0.5rem auto;
+  margin: 5rem auto;
   color: #D76A64; /* coral */
   font-size: 1.1rem;
   line-height: 1.4;
