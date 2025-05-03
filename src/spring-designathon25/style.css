@@ -572,7 +572,7 @@ body {
 }
 
 .prizes-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto;
   text-align: center;
 }
@@ -614,70 +614,30 @@ body {
   color: #D76A64; /* coral */
   font-size: 1.1rem;
   line-height: 1.4;
-}
-.prizes-subintro {
   margin-bottom: 3rem;
   z-index: 2;
-}
-
-
-.prizes-grid {
-  /* display: grid; */
-  display: none; /*TODO: will show prizes when logistics updates*/
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-  text-align: left;
-}
-
-
-.prize-item h3 {
-  font-family: 'Quando', serif;
-  font-size: 1.75rem;
-  margin-bottom: 0.75rem;
-}
-.prize-item p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;
-}
-
-
-.prize-item.beginner.first h3,
-.prize-item.intermediate.first h3 {
-  color: #3DB3AB; /* teal */
-}
-.prize-item.beginner.second h3,
-.prize-item.intermediate.second h3 {
-  color: #E6A24D; /* gold */
-}
-.prize-item.beginner.third h3,
-.prize-item.intermediate.third h3 {
-  color: #D76A64; /* coral */
 }
 
 @media (max-width: 600px) {
   .prizes-header {
     font-size: 2.5rem;
   }
-  .prizes-intro, .prizes-subintro {
+  .prizes-subintro {
     font-size: 1rem;
     margin: 0.5rem 1rem;
   }
-  .prizes-grid {
-    gap: 1.5rem;
-  }
 }
-
-/* TODO: delete this when logistics updates with prizes info */
-.temp-prizes{
-  max-width: 800px;
-  margin: 0.5rem auto;
-  color: #D76A64; /* coral */
-  font-size: 2.5rem;
-  line-height: 1.4;
-  z-index: 2;
+.prizes-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
-
+.prizes-cards img{
+  height: auto;
+  width: clamp(400px, 70vw, 600px);
+}
 
 /* FAQ section */
 .FAQ-section{
