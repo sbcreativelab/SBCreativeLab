@@ -54,8 +54,6 @@ export class Events extends Component {
   }
 
   render() {
-    const { isMobile } = this.props;
-
     return (
       <div style={{ backgroundColor: backgroundColor }} className="content">
         <Menu />
@@ -112,8 +110,28 @@ export class Events extends Component {
           <div className="calendar-months-container">
             <img
               className="calendar-month-image"
-              alt="Calendar of 2024 SBCL events"
-              src={`/images/events/2024${isMobile ? "-mobile" : ""}.svg`}
+              alt="Calendar of 2025 SBCL events"
+              src={`/images/events/2025-may.svg`}
+            />
+            <img
+              className="calendar-month-image"
+              alt="Calendar of 2025 SBCL events"
+              src={`/images/events/2025-april.svg`}
+            />
+            <img
+              className="calendar-month-image"
+              alt="Calendar of 2025 SBCL events"
+              src={`/images/events/2025-march.svg`}
+            />
+            <img
+              className="calendar-month-image"
+              alt="Calendar of 2025 SBCL events"
+              src={`/images/events/2025-february.svg`}
+            />
+            <img
+              className="calendar-month-image"
+              alt="Calendar of 2025 SBCL events"
+              src={`/images/events/2025-january.svg`}
             />
           </div>
         </div>

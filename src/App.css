@@ -2443,7 +2443,7 @@ a:hover i.fa-cog{
 }
 
 .calendar-months-container {
-  gap: 8vw;
+  gap: 3vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
