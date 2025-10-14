@@ -131,7 +131,7 @@ export default function Team() {
                         role={<div>Marketing Lead</div>}
                     />
                     <TeamMember
-                        imgsrc="brooke.kpeg"
+                        imgsrc="brooke.jpeg"
                         name="Brooke Slovensky"
                         role={<div>Social Media Manager</div>}
                     />
@@ -141,7 +141,7 @@ export default function Team() {
                         role={<div>Web Dev. Co-Lead</div>}
                     />
                     <TeamMember
-                        imgsrc="taneesha.png"
+                        imgsrc="taneesha.jpeg"
                         name="Taneesha Panda"
                         role={<div>Web Dev. Co-Lead</div>}
                     />
@@ -166,7 +166,7 @@ export default function Team() {
                         role={<div>Graphic Designer</div>}
                     />
                     <TeamMember
-                        imgsrc="catherine.kpg"
+                        imgsrc="catherine.jpg"
                         name="Cat Li"
                         role={<div>Project Teams Lead</div>}
                     />
