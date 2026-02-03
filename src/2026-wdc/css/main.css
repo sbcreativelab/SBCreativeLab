@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(254,245,230,1);
+}
+
+
+.hero-section {
+  width: 100%;
+  min-height: 150vh;
+  background: url("../images/1958-UC-Santa-Barbara.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 2rem;
+  margin-bottom: 100px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-top: 24px;
+  position: absolute;
+  bottom: 55px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button-background {
+  width: 340px;
+  height: 70px;
+  background: rgba(202,152,63,1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-text {
+  width: 100%;
+  color: rgba(58,58,58,1);
+  font-family: Abhaya Libre ExtraBold;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+}
+
+.tagline {
+  width: 100%;
+  color: rgba(202,152,63,1);
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-shadow: 0px 17px 4px rgba(0, 0, 0, 0.25);
+  font-family: Bevan;
+  font-weight: Regular;
+  font-size: 120px;
+  opacity: 1;
+  text-align: center;
+}
+
+.subtitle{
+  width: 100%;
+  color: rgba(245,228,200,1);
+  position: absolute;
+  top: 160px;
+  font-family: Abhaya Libre ExtraBold;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+
+.prompt {
+  width: 100%;
+  min-height: 130vh;
+  background: url("../images/Prompt.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 2rem;
+}
+
+.rubric {
+  width: 100%;
+  min-height: 130vh;
+  background: url("../images/Rubric.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+  
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 2rem;
+}
