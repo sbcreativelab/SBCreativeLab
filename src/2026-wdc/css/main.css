@@ -5,13 +5,13 @@
 }
 
 body {
-  background: rgba(254,245,230,1);
+  background-color: #f9efe3;
 }
 
-
+/* Landing page */
 .hero-section {
   width: 100%;
-  min-height: 150vh;
+  min-height: 110vh;
   background: url("../images/1958-UC-Santa-Barbara.png");
   background-size: cover;
   background-position: center;
@@ -34,7 +34,7 @@ body {
   gap: 60px;
   margin-top: 24px;
   position: absolute;
-  bottom: 55px;
+  top: 600px;
 }
 
 .button-link {
@@ -68,7 +68,7 @@ body {
   width: 100%;
   color: rgba(202,152,63,1);
   position: absolute;
-  top: 240px;
+  top: 170px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -84,7 +84,7 @@ body {
   width: 100%;
   color: rgba(245,228,200,1);
   position: absolute;
-  top: 160px;
+  top: 100px;
   font-family: Abhaya Libre ExtraBold;
   font-weight: Regular;
   font-size: 32px;
@@ -92,31 +92,96 @@ body {
   text-align: center;
 }
 
-.prompt {
-  width: 100%;
-  min-height: 130vh;
-  background: url("../images/Prompt.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 2rem;
+/* Prompt section */
+.prompt-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
-.rubric {
+.prompt-image {
   width: 100%;
-  min-height: 130vh;
-  background: url("../images/Rubric.svg");
-  background-size: cover;
-  background-position: center;
+  max-width: 1400px;   /* controls desktop size */
+  height: auto;       /* preserves aspect ratio */
+  display: block;
+}
+
+/* RUBRIC SECTION */
+.rubric-section {
+  padding: 1rem 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.rubric-heading {
+  display: inline-block;
+  margin: 0 auto 2rem;
+  padding: 2.5rem 2.5rem;
+
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  color: #323232;
+
+  background-image: url("../images/ticket.svg");
   background-repeat: no-repeat;
-  position: absolute;
-  left: 40px;
-  
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 2rem;
+  background-size: contain;
+  background-position: center;
+
+  border-radius: 0px;
+}
+
+/* TABLE LAYOUT */
+.rubric-table {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+
+  background-color: #c24e2c;
+  padding: 3rem;
+  border-radius: 30px;
+
+  text-align: left;
+}
+
+/* HEADER */
+.rubric-header {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, 1fr);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.mobile-rubric-header {
+  display: none;
+}
+
+/* ROWS */
+.rubric-row {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* row grids */
+.rubric-row:not(:last-child) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 1rem;
+}
+
+.rubric-row h3 {
+  font-size: 1.1rem;
+}
+
+.rubric-row p {
+  font-size: 1.0rem;
 }
