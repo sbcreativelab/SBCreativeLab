@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9efe3;
+}
+
+/* FONT */
+.bevan-regular {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bevan-regular-italic {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.abhaya-libre-regular {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.abhaya-libre-medium {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abhaya-libre-semibold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.abhaya-libre-bold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+/* Landing page */
+.hero-section {
+  width: 100%;
+  min-height: 110vh;
+  background: url("../images/1958-UC-Santa-Barbara.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 2rem;
+  margin-bottom: 100px;
+}
+
+.tagline {
+  width: 100%;
+  color: rgba(202,152,63,1);
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-shadow: 0px 17px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(1.5rem, 6vw + 1rem, 8rem);
+  opacity: 1;
+  text-align: center;
+}
+
+.subtitle{
+  width: 100%;
+  color: rgba(245,228,200,1);
+  position: absolute;
+  top: 100px;
+  font-size: clamp(0.65rem, 1.5vw + 0.75rem, 1.75rem);
+  opacity: 1;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 24px;
+  position: absolute;
+  top: 600px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button {
+  font-size: clamp(0.8rem, 0.8vw + 0.9rem, 1.75rem);
+  color: rgba(58,58,58,1);
+  text-align: center;
+  padding: clamp(0.8rem, 0.8vw, 0.8rem)
+          clamp(4rem, 1vw, 20rem);
+
+  background: rgba(202,152,63,1);
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+/* PROMPT SECTION */
+.prompt-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.prompt-image {
+  width: 100%;
+  max-width: 1400px;   /* controls desktop size */
+  height: auto;       /* preserves aspect ratio */
+  display: block;
+}
+
+/* RUBRIC SECTION */
+.rubric-section {
+  padding: 1rem 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.rubric-heading {
+  display: inline-block;
+  margin: 0 auto 2rem;
+  padding: clamp(1.8rem, 2vw + 1rem, 2.5rem) clamp(1.8rem, 2vw + 1rem, 2.5rem);
+
+  font-size: clamp(1.8rem, 2vw + 1rem, 3.5rem);
+  text-align: center;
+  color: #323232;
+
+  background-image: url("../images/ticket.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  border-radius: 0px;
+}
+
+/* TABLE LAYOUT */
+.rubric-table {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+
+  background-color: #c24e2c;
+  padding: 3rem;
+  border-radius: 30px;
+
+  text-align: left;
+}
+
+/* HEADER */
+.rubric-header {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, 1fr);
+  font-size: 1.1rem;
+  /* font-weight: bold; */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.mobile-rubric-header {
+  display: none;
+}
+
+/* ROWS */
+.rubric-row {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* row grids */
+.rubric-row:not(:last-child) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 1rem;
+}
+
+.rubric-row h3 {
+  font-size: 1.1rem;
+}
+
+.rubric-row p {
+  font-size: 1.0rem;
+}
+
+/* =====================
+   AASTHA — JUDGES + TIMELINE
+===================== */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Abhaya Libre", serif;
+  font-size: 18px;      /* slightly bigger but safe */
+  line-height: 1.4;
+  color: #323232;
+}
+
+/* SECTION BACKGROUND */
+.judges {
+  min-height: 100vh;
+  background: rgba(162, 197, 191, 1);
+  padding: 120px 40px 96px; /* more top space for title */
+  position: relative;
+  overflow: hidden;
+}
+
+/* SPARKLES */
+.judges__sparkles {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  pointer-events: none;
+}
+
+.judges__sparkles--top {
+  top: 48px;
+  right: 48px;
+}
+
+.judges__sparkles--bottom{
+  left: -20px;
+  bottom: -100px;
+}
+
+
+/* FRAME (CREAM BORDER BOX) */
+.judges__frame {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 90px 70px 64px; /* extra top padding */
+  border: 8px solid rgba(245, 228, 200, 1);
+  border-radius: 20px;
+  border: none;                 /* <- remove */
+  box-shadow: 0px 4px 4px rgba(0,0,0,.13);
+  position: relative;
+}
+
+.judges__frame::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+
+  top: 50px;                    /* <- THIS moves the top line down */
+  border: 8px solid rgba(245, 228, 200, 1);
+  border-radius: 20px;
+  pointer-events:none;
+}
+
+
+/* TICKET WRAPPER */
+.judges__labelWrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 260px;
+  height: 110px;
+  top: -80px;
+}
+
+/* TICKET IMAGE */
+.judges__ticket {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* TEXT ON TOP OF TICKET */
+.judges__labelText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Bevan, serif;
+  font-size: 46px;
+  color: #323232;
+}
+
+/* GRID */
+.judges__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 44px;
+  align-items: start;
+}
+
+/* CARD */
+.judgeCard {
+  text-align: center;
+}
+
+.judgeCard__img {
+  width: 265px;
+  height: 265px;
+  border-radius: 38px;
+  border: 2px solid #000;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.judgeCard__name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;   /* try 2px–6px */
+
+}
+
+.judgeCard__role {
+  margin-top: 0;
+
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1280px) {
+  .judges__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .judges { padding: 140px 18px 72px; }
+
+  .judges__labelWrap {
+    width: 300px;
+    height: 130px;
+    top: -65px;
+  }
+
+  .judges__grid { grid-template-columns: 1fr; }
+
+  .judgeCard__img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+
+/* =========================
+   TIMELINE SECTION
+========================= */
+
+/* =========================
+   TIMELINE (Calendar Ticket Version)
+========================= */
+
+.timeline{
+  min-height: 100vh;
+  background: #C6983F;
+  padding: 140px 40px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sparkles base */
+.timeline__sparkle {
+  position: absolute;
+  width: 180px;
+  pointer-events: none;
+}
+
+/* Top Right Sparkle */
+.timeline__sparkle--top {
+  top: 60px;
+  right: 80px;
+}
+
+/* Bottom Left Sparkle */
+.timeline__sparkle--bottom {
+  bottom: 60px;
+  left: 40px;
+}
+
+/* Calendar Ticket */
+.timeline__labelWrap{
+  position:absolute;
+  top:60px;
+  left:50%;
+  transform:translateX(-50%);
+  width:350px;
+}
+
+.timeline__ticket{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+
+/* Card */
+.timeline__card{
+  max-width: 1000px;
+  margin: 120px auto 0;
+  background: #F5E4C8;
+  border-radius: 18px;
+  padding: 65px 60px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
+}
+
+/* Rows */
+.timeline__row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 2px solid rgba(0,0,0,.28);
+}
+
+.timeline__row:last-child{
+  border-bottom: none;
+}
+
+.timeline__labelText{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transform: translateX(-3px);
+
+
+  font-family:"Bevan", serif;
+  font-size:48px;
+  color:#323232;
+}
+
+/* Text */
+.timeline__date{
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.timeline__event{
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-size: 26px;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+
+  .timeline{
+    padding: 120px 20px 90px;
+  }
+
+  .timeline__labelWrap{
+    width: 300px;
+    top: 50px;
+  }
+
+  .timeline__card{
+    max-width: 600px;
+    padding: 26px 22px;
+    margin-top: 100px;
+  }
+
+  .timeline__row{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .timeline__event{
+    text-align: left;
+  }
+}
+
