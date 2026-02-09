@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+html, body { height: 100%; }
+
 body {
   background-color: #f9efe3;
 }
@@ -156,7 +158,7 @@ body {
   text-align: center;
   color: #323232;
 
-  background-image: url("../images/ticket.svg");
+  background-image: url("../images/long_ticket.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -504,4 +506,270 @@ body {
     text-align: left;
   }
 }
+
+/* =========================
+   PRIZES SECTION
+========================= */
+
+.prizes{
+  background-color: #333333;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.prizes .circles{
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* wrapper for each circle plus label */
+.circle-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.circle{
+  border-radius: 50%;
+  background: #F5E4C8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-align: center;
+  color: #A14E37;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.circle--large{ width: 300px; height: 300px; font-size: 38px; }
+.circle--medium{ width: 240px; height: 240px; font-size: 32px; }
+.circle--small{ width: 180px; height: 180px; font-size: 28px; }
+
+
+
+.prizes__sparkle{
+  position: absolute;
+  width: 140px;
+  pointer-events: none;
+  opacity: 0.95;
+  z-index: 2;
+}
+
+.prizes__sparkle--topleft{
+  top: 24px;
+  left: 24px;
+}
+
+.prizes__sparkle--bottomright{
+  bottom: 24px;
+  right: 24px;
+}
+
+@media (max-width: 700px){
+  .prizes{ padding: 60px 6px; }
+  .circle--large{ width: 120px; height: 120px; font-size: 20px; }
+  .circle--medium{ width: 88px; height: 88px; font-size: 14px; }
+  .circle--small{ width: 60px; height: 60px; font-size: 10px; }
+  .prizes__decor{ width: 120px; }
+  .circle-label{ font-size: 14px; }
+  .pillar{ width: 22px; }
+  .pillar--tall{ height: 120px; }
+  .pillar--medium{ height: 84px; }
+  .pillar--short{ height: 56px; }
+}
+
+/* Prizes ticket header (mirrors timeline header style) */
+.prizes__labelWrap{
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 350px;
+}
+
+.prizes__ticket{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prizes__labelText{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Bevan, serif;
+  font-size: 48px;
+  color: #323232; /* light ticket color for contrast */
+}
+
+@media (max-width: 700px){
+  .prizes__labelWrap{ width: 300px; top: 50px; }
+  .prizes__labelText{ font-size: 36px; }
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq{
+  background: #f9efe3; 
+  padding: 120px 20px 80px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.faq__labelWrap{
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 350px;
+}
+
+.faq__ticket{ width: 100%; height: auto; display: block; }
+
+.faq__labelText{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Bevan, serif;
+  font-size: 48px;
+  color: #323232;
+}
+
+/* Sparkles for FAQ */
+.faq__sparkle{
+  position: absolute;
+  width: 140px;
+  pointer-events: none;
+  opacity: 0.95;
+  z-index: 2;
+}
+
+.faq__sparkle--top{
+  top: 40px;
+  right: 40px;
+}
+
+.faq__sparkle--bottom{
+  left: 24px;
+  bottom: 24px;
+}
+
+.faq__card{
+  max-width: 1000px;
+  margin: 120px auto 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq__row{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.faq__row:nth-child(odd){ background: rgba(0,0,0,0.02); }
+.faq__row:nth-child(even){ background: rgba(0,0,0,0.04); }
+
+.faq__stripNum{
+  min-width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #323232;
+}
+
+.faq__stripText{
+  flex: 1;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  color: #323232;
+}
+
+@media (max-width: 700px){
+  .faq{ padding: 100px 12px 60px; }
+  .faq__labelWrap{ width: 300px; top: 50px; }
+  .faq__labelText{ font-size: 36px; }
+  .faq__row{ padding: 16px 18px; }
+}
+
+/* Toggle button on right to reveal answers */
+.faq__toggle{
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #323232;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq__answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .28s ease, padding .2s ease;
+  padding-top: 0;
+  font-weight: 400;
+  color: #323232;
+}
+
+.faq__row.open .faq__answer{
+  max-height: 400px;
+  padding-top: 12px;
+}
+
+/* Contact links under FAQ */
+.faq__links{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 54px auto 0;
+  max-width: 1000px;
+}
+
+.faq__link{
+  display: inline-block;
+  background: #CA5331;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.faq__link:hover{ opacity: 0.92; }
+
+@media (max-width: 700px){
+  .faq__links{ flex-direction: column; gap: 12px; padding: 0 12px; }
+  .faq__link{ text-align: center; }
+}
+
+
 

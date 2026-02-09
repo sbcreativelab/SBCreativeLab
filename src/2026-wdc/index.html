@@ -3,6 +3,8 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
         
         <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Bevan:ital@0;1&display=swap" rel="stylesheet">
@@ -105,7 +107,7 @@
                    src="images/v5233_5827.png" alt="" />
           
               <div class="judges__labelWrap">
-                <img class="judges__ticket" src="images/ticket.svg" alt="" />
+                <img class="judges__ticket" src="images/long_ticket.png" alt="" />
                 <div class="judges__labelText">Judges</div>
               </div>
           
@@ -194,6 +196,98 @@
             </div>
           </section>
           
+          <!-- Prizes Section -->
+          <section class="prizes">
+            <div class="prizes__labelWrap">
+              <img src="images/long_ticket.png" class="prizes__ticket" alt="" />
+              <div class="prizes__labelText">Prizes</div>
+            </div>
+            <div class="prizes-inner">
+              <div class="circles" aria-hidden="true">
+                <div class="circle-wrap">
+                  <div class="circle circle--large">$30 Amazon Giftcard 🥇</div>
+                </div>
+
+                <div class="circle-wrap">
+                  <div class="circle circle--medium">$20 Amazon Giftcard 🥈</div>
+                </div>
+
+                <div class="circle-wrap">
+                  <div class="circle circle--small">$10 Amazon Giftcard 🥉</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/v5233_5827.png" alt="sparkle" class="prizes__sparkle prizes__sparkle--topleft" />
+            <img src="images/v5233_5827.png" alt="sparkle" class="prizes__sparkle prizes__sparkle--bottomright" />
+          </section>
           
+          <!-- FAQ Section (beneath prizes) -->
+          <section class="faq">
+            <img src="images/v5233_5827.png" alt="sparkle" class="faq__sparkle faq__sparkle--top" />
+            <div class="faq__labelWrap">
+              <img src="images/long_ticket.png" class="faq__ticket" alt="" />
+              <div class="faq__labelText">FAQs</div>
+            </div>
+
+            <div class="faq__card">
+              <div class="faq__row" id="faq-row-1">
+                <div class="faq__stripText">Who is eligible to participate?
+                  <div class="faq__answer" id="faq-answer-1">UCSB students of any major are eligible to participate!</div>
+                </div>
+                <button class="faq__toggle" aria-expanded="false" aria-controls="faq-answer-1">▾</button>
+              </div>
+
+              <div class="faq__row" id="faq-row-2">
+                <div class="faq__stripText">Do I need to have prior experience?
+                  <div class="faq__answer" id="faq-answer-2">Nope! All levels of graphic design experience are encouraged to participate, as SBCL will be hosting events for students to learn more throughout the process!</div>
+                </div>
+                <button class="faq__toggle" aria-expanded="false" aria-controls="faq-answer-2">▾</button>
+              </div>
+
+              <div class="faq__row" id="faq-row-3">
+                <div class="faq__stripText">How will my poster be judged?
+                  <div class="faq__answer" id="faq-answer-3">Please refer to the above rubric.</div>
+                </div>
+                <button class="faq__toggle" aria-expanded="false" aria-controls="faq-answer-3">▾</button>
+              </div>
+
+              <div class="faq__row" id="faq-row-4">
+                <div class="faq__stripText">Will I have the chance to ask for feedback or advice?
+                  <div class="faq__answer" id="faq-answer-4">Yes! Our Discord channel will be open for participants to chat with each other and with the SBCL team.</div>
+                </div>
+                <button class="faq__toggle" aria-expanded="false" aria-controls="faq-answer-4">▾</button>
+              </div>
+
+              <div class="faq__row" id="faq-row-5">
+                <div class="faq__stripText">Further questions? Reach out to us on our Discord channel!
+        
+              </div>
+            </div>
+
+            <div class="faq__links">
+              <a class="faq__link" href="mailto:ucsbcreativelab@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              <a class="faq__link" href="https://discord.gg/8eTmfkxE" target="_blank" rel="noopener"><i class="fa-brands fa-discord"></i></a>
+              <a class="faq__link" href="https://www.instagram.com/sbcreativelab/?hl=en" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <img src="images/v5233_5827.png" alt="sparkle" class="faq__sparkle faq__sparkle--bottom" />
+          </section>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              document.querySelectorAll('.faq__toggle').forEach(function(btn){
+                btn.addEventListener('click', function(){
+                  var controls = btn.getAttribute('aria-controls');
+                  var row = btn.closest('.faq__row');
+                  var expanded = btn.getAttribute('aria-expanded') === 'true';
+                  if(!expanded){
+                    row.classList.add('open');
+                    btn.setAttribute('aria-expanded','true');
+                  } else {
+                    row.classList.remove('open');
+                    btn.setAttribute('aria-expanded','false');
+                  }
+                });
+              });
+            });
+          </script>
     </body>
 </html>
