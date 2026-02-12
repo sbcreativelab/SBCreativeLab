@@ -57,7 +57,7 @@ body {
 /* Landing page */
 .hero-section {
   width: 100%;
-  min-height: 110vh;
+  min-height: 100vh;
   background: url("../images/1958-UC-Santa-Barbara.png");
   background-size: cover;
   background-position: center;
@@ -77,11 +77,6 @@ body {
 .tagline {
   width: 100%;
   color: rgba(202,152,63,1);
-  position: absolute;
-  top: 170px;
-  left: 50%;
-  transform: translateX(-50%);
-
   text-shadow: 0px 17px 4px rgba(0, 0, 0, 0.25);
   font-size: clamp(1.5rem, 6vw + 1rem, 8rem);
   opacity: 1;
@@ -91,8 +86,6 @@ body {
 .subtitle{
   width: 100%;
   color: rgba(245,228,200,1);
-  position: absolute;
-  top: 100px;
   font-size: clamp(0.65rem, 1.5vw + 0.75rem, 1.75rem);
   opacity: 1;
   text-align: center;
@@ -104,8 +97,6 @@ body {
   justify-content: center;
   gap: 60px;
   margin-top: 24px;
-  position: absolute;
-  top: 600px;
 }
 
 .button-link {
