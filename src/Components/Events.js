@@ -111,11 +111,6 @@ export class Events extends Component {
             <img
               className="calendar-month-image"
               alt="Calendar of 2026 SBCL events"
-              src={`/images/events/2026-june.svg`}
-            />
-            <img
-              className="calendar-month-image"
-              alt="Calendar of 2026 SBCL events"
               src={`/images/events/2026-may.svg`}
             />
             <img
