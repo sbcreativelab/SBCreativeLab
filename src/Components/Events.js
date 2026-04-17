@@ -110,6 +110,16 @@ export class Events extends Component {
           <div className="calendar-months-container">
             <img
               className="calendar-month-image"
+              alt="Calendar of 2026 SBCL events"
+              src={`/images/events/2026-may.svg`}
+            />
+            <img
+              className="calendar-month-image"
+              alt="Calendar of 2026 SBCL events"
+              src={`/images/events/2026-april.svg`}
+            />
+            <img
+              className="calendar-month-image"
               alt="Calendar of 2025 SBCL events"
               src={`/images/events/2025-november.svg`}
             />
