@@ -350,11 +350,14 @@ body {
     position: relative;
     z-index: 5;
   }
-  
-  .section-title.keynote {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    color: #DE716E;
+
+  .section-title {
+    font-family: 'Quando', serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 5;
+    text-align: center;   /* ADD THIS */
   }
   
   .section-title.judges {
