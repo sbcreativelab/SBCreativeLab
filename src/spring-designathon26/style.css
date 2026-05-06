@@ -665,23 +665,6 @@ body {
 }
 .FAQ-title {
   position: relative;
-  /* text-align: center;
-  font-size: 3.5rem;
-  font-weight: 600;
-  color: #FFFDE4;
-  text-shadow:
-    -1px -1px 0 #DE716E,
-      1px -1px 0 #DE716E,
-    -1px  1px 0 #DE716E,
-      1px  1px 0 #DE716E,
-    -2px  0   0 #DE716E,
-      2px  0   0 #DE716E,
-      0   -2px 0 #DE716E,
-      0    2px 0 #DE716E;
-  font-family:'Quando', serif;
-  margin: 1.5rem 0;
-  z-index: 2; */
-
   font-family: 'Quando', serif;
   font-size: 3.5rem;
   text-align: center;
