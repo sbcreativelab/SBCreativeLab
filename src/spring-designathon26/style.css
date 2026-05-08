@@ -118,6 +118,47 @@ body {
     text-align: center;
   }
 
+  /* === Design Prompts Section === */
+  .design-prompts-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .design-prompts-section h2 {
+    font-family: 'Quando', serif;
+    font-size: 2.5rem;
+    color: #ff9a1a;
+    margin-bottom: 1rem;
+  }
+
+  .prompts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .prompt {
+    background: #fff;
+    border: 2px solid #E5889D;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .prompt h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #DE716E;
+    margin-top: 0;
+  }
+
+  .prompt p {
+    font-size: 1rem;
+    color: #333;
+  }
+
     /* make titles mobile responsive */
     @media (max-width: 1200px) {
       .designathon {
